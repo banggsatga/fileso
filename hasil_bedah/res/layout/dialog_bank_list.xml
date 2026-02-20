@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/header_text_size" ="@color/black" ="center" ="@id/bank_list_title" ="@dimen/twenty_dp" ="fill_parent" ="wrap_content" />
+    <View ="@color/gray_divider" ="fill_parent" ="@dimen/one_dp" ="@id/bank_list_title" />
+    <androidx.recyclerview.widget.RecyclerView ="@id/bank_list_items" ="fill_parent" ="fill_parent" ="@id/bank_list_ok" ="@id/bank_list_title" />
+    <View ="@color/gray_divider" ="fill_parent" ="@dimen/one_dp" ="@id/bank_list_ok" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="bold" ="@color/colorPrimary" ="center" ="@id/bank_list_ok" ="@dimen/twelve_dp" ="fill_parent" ="wrap_content" ="@string/ok" ="true" />
+</RelativeLayout>

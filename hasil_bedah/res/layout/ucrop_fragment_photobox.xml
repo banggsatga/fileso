@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@id/ucrop_photobox" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout ="@id/ucrop_frame" ="@color/ucrop_color_crop_background" ="fill_parent" ="fill_parent" ="-12.0dip" ="@id/controls_wrapper">
+        <ImageView ="center" ="@id/image_view_logo" ="@dimen/ucrop_default_crop_logo_size" ="@dimen/ucrop_default_crop_logo_size" srcCompat="@drawable/ucrop_vector_ic_crop" />
+        <com.yalantis.ucrop.view.UCropView ="@id/ucrop" ="fill_parent" ="fill_parent" ="0.0" />
+    </FrameLayout>
+    <FrameLayout ="@id/controls_wrapper" ="gone" ="fill_parent" ="wrap_content" ="true" />
+</RelativeLayout>

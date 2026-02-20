@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View ="@id/places_autocomplete_powered_by_google_separator" ="@color/places_autocomplete_separator" ="fill_parent" ="1.0dip" ="@dimen/places_autocomplete_search_bar_margin" />
+    <FrameLayout ="fill_parent" ="wrap_content">
+        <ProgressBar ="center_vertical" ="@id/places_autocomplete_progress" ="3.0dip" ="@dimen/places_autocomplete_progress_size" ="@dimen/places_autocomplete_progress_size" ="true" ="@dimen/places_autocomplete_progress_horizontal_margin" ="@color/places_autocomplete_progress_tint" ="src_atop" style="@style/Widget.AppCompat.ProgressBar" />
+        <ImageView ="@id/places_autocomplete_powered_by_google" ="wrap_content" ="@dimen/places_autocomplete_powered_by_google_height" ="@null" ="center" ="@string/places_powered_by_google" ="@dimen/places_autocomplete_search_bar_margin" />
+    </FrameLayout>
+</merge>

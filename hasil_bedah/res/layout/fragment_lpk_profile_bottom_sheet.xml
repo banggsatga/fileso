@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_bottomsheet" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View ="@color/colorLineBottomSheet" ="@dimen/dimen_35dp" ="@dimen/dimen_4dp" ="@dimen/dimen_15dp" ="true" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@dimen/text_size_18sp" ="@id/tvTitleBottomSheet" ="wrap_content" ="wrap_content" ="@dimen/dimen_35dp" ="Profil LPK" ="@dimen/dimen_27dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <com.kennyc.view.MultiStateView ="@id/msvContent" ="fill_parent" ="wrap_content" ="@dimen/dimen_27dp" ="@dimen/dimen_16dp" ="@dimen/dimen_27dp" ="@dimen/dimen_48dp" ="@dimen/dimen_27dp" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitleBottomSheet" msv_errorView="@layout/default_error_layout" msv_loadingView="@layout/default_loading_layout">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+            <TextView ="@dimen/text_size_18sp" ="@id/tvLpkName" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="true" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <ImageView ="@id/imgLpkAddress" ="wrap_content" ="wrap_content" ="@dimen/dimen_24dp" ="@drawable/ic_map_circle" layout_constraintStart_toStartOf="@id/tvLpkName" layout_constraintTop_toBottomOf="@id/tvLpkName" />
+            <TextView ="@id/tvLpkAddress" ="wrap_content" ="wrap_content" ="@string/sample_training_location" ="@dimen/dimen_8dp" layout_constraintStart_toEndOf="@id/imgLpkAddress" layout_constraintTop_toTopOf="@id/imgLpkAddress" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <ImageView ="@id/imgEmail" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@drawable/ic_email" layout_constraintStart_toStartOf="@id/imgLpkAddress" layout_constraintTop_toBottomOf="@id/tvLpkAddress" />
+            <TextView ="@id/tvEmail" ="wrap_content" ="wrap_content" ="@dimen/dimen_8dp" layout_constraintStart_toEndOf="@id/imgEmail" layout_constraintTop_toTopOf="@id/imgEmail" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <ImageView ="@id/imgPhoneNumber" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@drawable/ic_phone" layout_constraintStart_toStartOf="@id/imgEmail" layout_constraintTop_toBottomOf="@id/tvEmail" />
+            <TextView ="@id/tvPhoneNumber" ="wrap_content" ="wrap_content" ="@dimen/dimen_8dp" layout_constraintStart_toEndOf="@id/imgPhoneNumber" layout_constraintTop_toTopOf="@id/imgPhoneNumber" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.kennyc.view.MultiStateView>
+</androidx.constraintlayout.widget.ConstraintLayout>

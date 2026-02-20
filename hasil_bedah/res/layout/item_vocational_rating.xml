@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/text_size_14sp" ="@id/tvRatingTitle" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" ="@string/sample_rating" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+    <androidx.appcompat.widget.AppCompatRatingBar ="@style/BpjstkuRatingBar" ="@id/rtbVocation" ="wrap_content" ="wrap_content" ="5" ="3.0" ="1.0" ="@dimen/dimen_20dp" />
+</LinearLayout>

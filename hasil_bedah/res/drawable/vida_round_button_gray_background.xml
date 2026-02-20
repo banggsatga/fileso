@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple ="@color/vida_white"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="@android:id/mask">
+        <shape ="rectangle">
+            <solid ="@android:color/white" />
+            <corners ="@dimen/vida_layout_dim_5" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <solid ="?vida_secondary_cta_background_color" />
+            <corners ="@dimen/vida_layout_dim_5" />
+            <stroke ="@dimen/vida_layout_dim_1" ="?vida_secondary_cta_border_color" />
+        </shape>
+    </item>
+</ripple>

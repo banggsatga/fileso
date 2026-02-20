@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@color/colorPaleGrey" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.chrisbanes.photoview.PhotoView ="@id/imgDigitalCardDetail" ="fill_parent" ="fill_parent" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" />
+    <com.google.android.material.button.MaterialButton ="@id/btnSaveDigitalCard" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_35dp" ="@dimen/dimen_20dp" ="@dimen/dimen_32dp" ="@string/action_save" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" style="@style/BpjstkuButton.WhiteText" />
+</RelativeLayout>

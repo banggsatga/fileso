@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="@drawable/ic_home" ="@id/menu_home" ="100" ="@string/menu_home" />
+    <item ="@drawable/ic_news" ="@id/menu_news" ="200" ="@string/menu_news" />
+    <item ="@drawable/ic_digital_card" ="@id/menu_digital_card" ="300" ="@string/menu_card" />
+    <item ="@drawable/ic_profile" ="@id/menu_profile" ="400" ="@string/menu_profile" />
+</menu>

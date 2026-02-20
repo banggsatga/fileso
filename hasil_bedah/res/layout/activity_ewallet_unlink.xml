@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="@color/colorWhite" ="fill_parent" ="fill_parent" ="true" ="never" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@android:color/transparent" ="fill_parent" ="wrap_content">
+        <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+        <ImageView ="@id/imgBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView ="@id/rvEwallet" ="@dimen/dimen_0dp" ="wrap_content" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" />
+        <Button ="@id/unlinkEwallet" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="Hapus" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.95" style="@style/BpjstkuOutlinedButtonRed" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

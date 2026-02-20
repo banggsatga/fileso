@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="@color/mtrl_textinput_focused_box_stroke_color" />
+    <item ="@color/mtrl_textinput_hovered_box_stroke_color" ="true" />
+    <item ="false" ="@color/mtrl_textinput_disabled_color" />
+    <item ="@color/mtrl_textinput_default_box_stroke_color" />
+</selector>

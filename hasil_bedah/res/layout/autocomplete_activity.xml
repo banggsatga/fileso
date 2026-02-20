@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment ="com.google.android.libraries.places.widget.internal.autocomplete.ui.BaseAutocompleteImplFragment" ="@id/autocomplete_content" ="fill_parent" ="fill_parent" ="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

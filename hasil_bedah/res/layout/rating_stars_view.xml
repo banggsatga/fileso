@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center_vertical" ="horizontal" ="wrap_content" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/rating_star_1" ="wrap_content" ="wrap_content" ="centerInside" ="no" />
+    <View ="@dimen/rating_stars_spacing" ="wrap_content" />
+    <ImageView ="@id/rating_star_2" ="wrap_content" ="wrap_content" ="centerInside" ="no" />
+    <View ="@dimen/rating_stars_spacing" ="wrap_content" />
+    <ImageView ="@id/rating_star_3" ="wrap_content" ="wrap_content" ="centerInside" ="no" />
+    <View ="@dimen/rating_stars_spacing" ="wrap_content" />
+    <ImageView ="@id/rating_star_4" ="wrap_content" ="wrap_content" ="centerInside" ="no" />
+    <View ="@dimen/rating_stars_spacing" ="wrap_content" />
+    <ImageView ="@id/rating_star_5" ="wrap_content" ="wrap_content" ="centerInside" ="no" />
+</LinearLayout>

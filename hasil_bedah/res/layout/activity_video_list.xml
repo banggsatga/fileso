@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@id/rootView" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar_center" ="fill_parent" ="wrap_content" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <androidx.recyclerview.widget.RecyclerView ="@id/rvVideo" ="fill_parent" ="fill_parent" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" />
+</LinearLayout>

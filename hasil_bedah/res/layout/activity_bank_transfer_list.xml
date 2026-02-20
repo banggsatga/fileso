@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout ="@android:color/white" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/appbar_payment" />
+    <RelativeLayout ="vertical" ="visible" ="fill_parent" ="wrap_content" layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView ="@id/rv_bank_list" ="fill_parent" ="wrap_content" ="@id/container_item_details" ="@id/container_item_details" ="true" />
+        <View ="@id/background_dim" ="@color/dim_background" ="gone" ="fill_parent" ="wrap_content" ="@id/container_item_details" />
+        <LinearLayout ="vertical" ="@id/container_item_details" ="fill_parent" ="wrap_content" ="true">
+            <androidx.recyclerview.widget.RecyclerView ="@id/rv_transaction_detail" ="gone" ="fill_parent" ="wrap_content" />
+            <View ="@color/light_gray" ="fill_parent" ="@dimen/two_dp" />
+            <include layout="@layout/layout_total_amount" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

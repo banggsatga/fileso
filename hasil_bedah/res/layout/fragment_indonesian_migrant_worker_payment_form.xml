@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="fill_parent" ="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilIdentityNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@string/hint_number_identitiy_card" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtIdentityNumber" style="@style/BpjstkuTextInputEditTextUnderline" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilFullName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_full_name" layout_constraintEnd_toEndOf="@id/tilIdentityNumber" layout_constraintStart_toStartOf="@id/tilIdentityNumber" layout_constraintTop_toBottomOf="@id/tilIdentityNumber" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtFullname" style="@style/BpjstkuTextInputEditTextUnderline" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDate" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_date_birth" layout_constraintEnd_toEndOf="@id/tilFullName" layout_constraintStart_toStartOf="@id/tilFullName" layout_constraintTop_toBottomOf="@id/tilFullName" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDate" style="@style/BpjstkuTextInputEditTextUnderline" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilGender" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_gender" layout_constraintEnd_toEndOf="@id/tilBirthDate" layout_constraintStart_toStartOf="@id/tilBirthDate" layout_constraintTop_toBottomOf="@id/tilBirthDate" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtGender" style="@style/BpjstkuTextInputEditTextUnderline" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilMothersName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_mothers_name" layout_constraintEnd_toEndOf="@id/tilGender" layout_constraintStart_toStartOf="@id/tilGender" layout_constraintTop_toBottomOf="@id/tilGender" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtMothersName" style="@style/BpjstkuTextInputEditTextUnderline" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilFathersName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_fathers_name" layout_constraintEnd_toEndOf="@id/tilMothersName" layout_constraintStart_toStartOf="@id/tilMothersName" layout_constraintTop_toBottomOf="@id/tilMothersName" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtFathersName" style="@style/BpjstkuTextInputEditTextUnderline" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseProvince" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_province" layout_constraintEnd_toEndOf="@id/tilFathersName" layout_constraintStart_toStartOf="@id/tilFathersName" layout_constraintTop_toBottomOf="@id/tilFathersName" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChoosedProvince" style="@style/BpjstkuTextInputEditTextUnderline" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseCity" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_city" layout_constraintEnd_toEndOf="@id/tilChooseProvince" layout_constraintStart_toStartOf="@id/tilChooseProvince" layout_constraintTop_toBottomOf="@id/tilChooseProvince" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChoosedCity" style="@style/BpjstkuTextInputEditTextUnderline" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilBranchOffice" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_registered_branch_office" layout_constraintEnd_toEndOf="@id/tilChooseCity" layout_constraintStart_toStartOf="@id/tilChooseCity" layout_constraintTop_toBottomOf="@id/tilChooseCity" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtBranchOffice" style="@style/BpjstkuTextInputEditTextUnderline" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatTextView ="@id/tvChoosedProgram" ="@dimen/dimen_24dp" ="@string/label_program_choosed" layout_constraintStart_toStartOf="@id/tilBranchOffice" layout_constraintTop_toBottomOf="@id/tilBranchOffice" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <com.google.android.material.card.MaterialCardView ="@id/cvProgramChoosed" ="@drawable/border_darkmint" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" layout_constraintEnd_toEndOf="@id/tilBranchOffice" layout_constraintStart_toStartOf="@id/tvChoosedProgram" layout_constraintTop_toBottomOf="@id/tvChoosedProgram">
+            <androidx.appcompat.widget.AppCompatImageView ="@id/imgProgramChoosed" ="@dimen/dimen_36dp" ="@dimen/dimen_36dp" ="@dimen/dimen_19dp" ="@dimen/dimen_19dp" ="@drawable/ic_people_jkk" ="@dimen/dimen_16dp" />
+            <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_18sp" ="center_vertical" ="@id/tvProgramChoosed" ="@string/label_jkk_jkm" ="67.0dip" style="@style/BpjstkuTextViewPoppins.CharcoalGrey" />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton ="@id/btnConfirmation" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_22dp" ="@string/action_confirmation" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/cvProgramChoosed" layout_constraintStart_toStartOf="@id/cvProgramChoosed" layout_constraintTop_toBottomOf="@id/cvProgramChoosed" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

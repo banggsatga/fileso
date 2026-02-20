@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton ="center_vertical" ="@id/places_autocomplete_back_button" ="?selectableItemBackgroundBorderless" ="@dimen/places_autocomplete_search_bar_button_padding" ="wrap_content" ="wrap_content" ="@null" ="@string/places_navigate_up" ="20.0dip" />
+    <EditText ="20.0sp" ="@color/places_autocomplete_search_text" ="@color/places_autocomplete_search_hint" ="@id/places_autocomplete_search_bar" ="@android:color/transparent" ="0.0dip" ="fill_parent" ="@string/places_autocomplete_search_hint" ="1" ="1" ="true" ="1.0" ="textNoSuggestions" ="actionSearch|flagNoExtractUi" ="@null" ="no" />
+    <ImageButton ="center_vertical" ="@id/places_autocomplete_clear_button" ="?selectableItemBackgroundBorderless" ="@dimen/places_autocomplete_search_bar_button_padding" ="wrap_content" ="wrap_content" ="@null" ="@string/places_autocomplete_clear_button" />
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="?placesColorSurface" ="true" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="?placesColorSurface" ="fill_parent" ="wrap_content" ="locale" ="locale">
+        <LinearLayout ="@dimen/gmp_sys_measurement_spacing_medium" ="fill_parent" ="wrap_content">
+            <LinearLayout ="@drawable/search_bar_background" ="fill_parent" ="wrap_content" ="@dimen/min_touch_target_size_for_a11y">
+                <include layout="@layout/autocomplete_search_bar" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView ="@id/autocomplete_prediction_list" ="fill_parent" ="0.0dip" ="1.0" ="yes" />
+        <include layout="@layout/autocomplete_no_matching_results" />
+        <include layout="@layout/autocomplete_google_maps_attribution" />
+    </LinearLayout>
+</FrameLayout>

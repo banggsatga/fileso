@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kennyc.view.MultiStateView ="@id/msvContent" ="fill_parent" ="fill_parent" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/layout_default_loading" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout ="@id/clNews" ="fill_parent" ="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout ="@id/appbarNews" ="@android:color/transparent" ="fill_parent" ="wrap_content" elevation="@dimen/dimen_0dp" expanded="true">
+            <com.google.android.material.appbar.CollapsingToolbarLayout ="@android:color/transparent" ="fill_parent" ="wrap_content" layout_scrollFlags="scroll|exitUntilCollapsed">
+                <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+                    <TextView ="@dimen/text_size_18sp" ="@id/tvLatestNews" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@string/label_latest_news" ="@dimen/dimen_20dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+                    <com.google.android.material.card.MaterialCardView ="@id/cvLatestNews" ="false" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_20dp" ="@dimen/dimen_4dp" ="@dimen/dimen_20dp" cardElevation="@dimen/dimen_4dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="fill_parent" ="fill_parent">
+                            <ImageView ="@id/imgNews" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="fitCenter" layout_constraintDimensionRatio="16:9" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+                            <TextView ="@dimen/text_size_12sp" ="@id/tvNewsDate" ="@drawable/bg_rounded_dark_mint" ="@dimen/dimen_6dp" ="@dimen/dimen_2dp" ="@dimen/dimen_6dp" ="@dimen/dimen_2dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_6dp" ="@dimen/dimen_2dp" layout_constraintBottom_toBottomOf="@id/imgNews" layout_constraintStart_toStartOf="parent" style="@style/BpjstkuTextViewBarlow.White" />
+                            <TextView ="@dimen/text_size_12sp" ="@id/tvNewsTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_14dp" ="@dimen/dimen_16dp" ="@dimen/dimen_14dp" ="@dimen/dimen_16dp" ="@dimen/dimen_14dp" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgNews" style="@style/BpjstkuTextViewBarlow.Dark.SemiBold" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout ="vertical" ="fill_parent" ="wrap_content" layout_behavior="@string/appbar_scrolling_view_behavior">
+            <TextView ="@dimen/text_size_18sp" ="@id/tvOtherNews" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" ="@dimen/dimen_20dp" ="@string/label_other_news" ="@dimen/dimen_20dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvOtherNews" ="fill_parent" ="fill_parent" ="@dimen/dimen_18dp" ="@dimen/dimen_22dp" ="@dimen/dimen_18dp" ="@dimen/dimen_18dp" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.kennyc.view.MultiStateView>

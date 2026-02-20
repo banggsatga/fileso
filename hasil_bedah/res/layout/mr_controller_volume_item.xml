@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="@id/volume_item_container" ="24.0dip" ="60.0dip" ="8.0dip" ="fill_parent" ="@dimen/mr_controller_volume_group_list_item_height">
+        <TextView ="@style/TextAppearance.MediaRouter.SecondaryText" ="@id/mr_name" ="wrap_content" ="wrap_content" ="true" />
+        <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="wrap_content">
+            <ImageView ="@id/mr_volume_item_icon" ="@dimen/mr_controller_volume_group_list_item_icon_size" ="@dimen/mr_controller_volume_group_list_item_icon_size" ="8.0dip" ="8.0dip" ="?mediaRouteAudioTrackDrawable" ="fitCenter" />
+            <androidx.mediarouter.app.MediaRouteVolumeSlider ="@id/mr_volume_slider" ="fill_parent" ="40.0dip" ="40.0dip" ="40.0dip" ="@string/mr_controller_volume_slider" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

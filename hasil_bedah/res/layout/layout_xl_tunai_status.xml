@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="left" ="@dimen/eight_dp" ="wrap_content" ="wrap_content" ="@string/text_hint_xl_order_id" />
+    <LinearLayout ="center_vertical" ="fill_parent" ="wrap_content">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/header_text_size" ="@color/black" ="center" ="@id/text_order_id" ="@color/light_gray" ="@dimen/eight_dp" ="0.0dip" ="wrap_content" ="@dimen/four_dp" ="1.0" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="center_vertical" ="@id/btn_copy_order_id" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="visible" ="wrap_content" ="fill_parent" fb_borderColor="?colorPrimary" fb_borderWidth="1.0dip" fb_defaultColor="@android:color/white" fb_focusColor="@color/colorAccentLight" fb_iconColor="?colorPrimary" fb_radius="5.0dip" fb_text="@string/copy" fb_textColor="?colorPrimary" />
+    </LinearLayout>
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@string/text_hint_xl_merchant_code" />
+    <LinearLayout ="fill_parent" ="wrap_content">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/header_text_size" ="@color/black" ="center" ="@id/text_merchant_code" ="@color/light_gray" ="@dimen/eight_dp" ="0.0dip" ="wrap_content" ="@dimen/four_dp" ="1.0" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="center_vertical" ="@id/btn_copy_merchant_code" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="visible" ="wrap_content" ="fill_parent" fb_borderColor="?colorPrimary" fb_borderWidth="1.0dip" fb_defaultColor="@android:color/white" fb_focusColor="@color/colorAccentLight" fb_iconColor="?colorPrimary" fb_radius="5.0dip" fb_text="@string/copy" fb_textColor="?colorPrimary" />
+    </LinearLayout>
+    <LinearLayout ="center" ="vertical" ="@color/faint_yellow" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@color/black" ="wrap_content" ="wrap_content" ="@string/valid_until" />
+        <com.midtrans.sdk.uikit.widgets.SemiBoldTextView ="@dimen/secondary_text_size" ="@color/black" ="@id/text_validity" ="wrap_content" ="wrap_content" ="@string/valid_date" />
+    </LinearLayout>
+    <com.midtrans.sdk.uikit.widgets.FancyButton ="center_horizontal" ="@id/button_instruction" ="@dimen/eight_dp" ="visible" ="wrap_content" ="fill_parent" ="@dimen/twenty_four_dp" fb_defaultColor="@android:color/white" fb_focusColor="@color/colorAccentLight" fb_iconPaddingRight="@dimen/four_dp" fb_iconResource="@null" fb_radius="5.0dip" fb_text="@string/kioson_instruction" style="@style/ButtonSecondary" />
+</LinearLayout>

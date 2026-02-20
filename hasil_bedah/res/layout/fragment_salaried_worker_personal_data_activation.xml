@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="@color/colorWhite" ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@id/salariedWorkerPersonalDataContainer" ="true" ="true" ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_16sp" ="@id/tvCompleteYourPersonalData" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="@dimen/dimen_18dp" ="@dimen/dimen_20dp" ="@string/label_complete_your_personal_data" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilIdNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_24dp" ="@string/hint_id_number" layout_constraintEnd_toEndOf="@id/tvCompleteYourPersonalData" layout_constraintStart_toStartOf="@id/tvCompleteYourPersonalData" layout_constraintTop_toBottomOf="@id/tvCompleteYourPersonalData" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtIdNumber" ="text" ="actionNext" ="@id/tilJamsostekIdNumber" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilJamsostekIdNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_jamsostek_id_number" layout_constraintEnd_toEndOf="@id/tilIdNumber" layout_constraintStart_toStartOf="@id/tilIdNumber" layout_constraintTop_toBottomOf="@id/tilIdNumber" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="11" ="textCapCharacters" ="actionNext" ="@id/tilFullName" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilFullName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_fullname" layout_constraintEnd_toEndOf="@id/tilJamsostekIdNumber" layout_constraintStart_toStartOf="@id/tilJamsostekIdNumber" layout_constraintTop_toBottomOf="@id/tilJamsostekIdNumber" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="textPersonName|textCapCharacters" ="actionDone" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDate" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@dimen/dimen_24dp" ="@string/hint_birth_date_on_id_card" layout_constraintBottom_toTopOf="@id/btnNext" layout_constraintEnd_toEndOf="@id/tilFullName" layout_constraintStart_toStartOf="@id/tilFullName" layout_constraintTop_toBottomOf="@id/tilFullName" layout_constraintVertical_bias="0.0" style="@style/BpjstkuTextInputLayout.Calender">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDate" ="date" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton ="false" ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_22dp" ="@string/action_next" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/tilBirthDate" layout_constraintStart_toStartOf="@id/tilBirthDate" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

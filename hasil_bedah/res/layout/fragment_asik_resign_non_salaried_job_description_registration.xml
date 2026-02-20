@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="true" ="true" ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_12sp" ="center_vertical" ="@id/tvWarningPleaseFillYourPersonalDataNow" ="@drawable/bg_rounded_macaroni_and_cheese" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@dimen/dimen_20dp" ="@string/label_please_fill_your_job" ="@dimen/dimen_14dp" ="@drawable/ic_warning" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.White.Bold" />
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseLocation" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_24dp" ="@string/label_choose_location" layout_constraintEnd_toEndOf="@id/tvWarningPleaseFillYourPersonalDataNow" layout_constraintStart_toStartOf="@id/tvWarningPleaseFillYourPersonalDataNow" layout_constraintTop_toBottomOf="@id/tvWarningPleaseFillYourPersonalDataNow" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseLocation" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseJob" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_choose_job" layout_constraintEnd_toEndOf="@id/tilChooseLocation" layout_constraintStart_toStartOf="@id/tilChooseLocation" layout_constraintTop_toBottomOf="@id/tilChooseLocation" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseJob" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.card.MaterialCardView ="@id/cvSalary" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_24dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintBottom_toTopOf="@id/btnNext" layout_constraintEnd_toEndOf="@id/tilChooseJob" layout_constraintStart_toStartOf="@id/tilChooseJob" layout_constraintTop_toBottomOf="@id/tilChooseJob" layout_constraintVertical_bias="0.0" strokeColor="@color/colorPaleGrey" strokeWidth="@dimen/dimen_1dp">
+            <RelativeLayout ="fill_parent" ="wrap_content">
+                <TextView ="@dimen/text_size_16sp" ="@id/tvPrefixSalary" ="@color/colorPaleGreyFour" ="@dimen/dimen_20dp" ="wrap_content" ="wrap_content" ="@string/label_prefix_rupiah" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilSalary" ="fill_parent" ="wrap_content" ="@string/hint_sallary" ="@id/tvPrefixSalary" ="@id/tvPrefixSalary" ="@id/tvPrefixSalary" style="@style/BpjstkuTextInputLayout.Prefixed">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtSalary" ="\ 0123456789" ="number" ="actionDone" style="@style/BpjstkuTextInputEditTextPrefixed" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_22dp" ="@string/action_next" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/cvSalary" layout_constraintStart_toStartOf="@id/cvSalary" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

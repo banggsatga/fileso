@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView ="@android:color/white" ="fill_parent" ="fill_parent" layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="fill_parent" ="fill_parent">
+        <androidx.appcompat.widget.AppCompatButton ="center_vertical" ="@id/instruction_toggle" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/show_instruction" style="@style/ButtonSecondaryExpandable" />
+        <LinearLayout ="vertical" ="@id/instruction_layout" ="gone" ="fill_parent" ="fill_parent">
+            <LinearLayout ="top" ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="wrap_content" ="wrap_content" ="@string/instruction_1" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_bca_1" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="wrap_content" ="wrap_content" ="@string/bca_instruction_step1" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="wrap_content" ="wrap_content" ="@string/instruction_2" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_bca_2" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@string/bca_instruction_step2" ="2.0dip" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="wrap_content" ="wrap_content" ="@string/instruction_3" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_bca_3" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@string/bca_instruction_step3" ="2.0dip" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="wrap_content" ="wrap_content" ="@string/instruction_4" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_bca_4" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@string/bca_instruction_step4" ="2.0dip" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="wrap_content" ="wrap_content" ="@string/instruction_5" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_bca_5" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="@string/bca_instruction_step5" ="2.0dip" />
+            </LinearLayout>
+            <RelativeLayout ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@id/no_six_instruction" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="wrap_content" ="wrap_content" ="@string/instruction_6" />
+                <ImageView ="@id/sixth_image_instruction" ="wrap_content" ="wrap_content" ="@id/no_six_instruction" ="@id/no_six_instruction" srcCompat="@drawable/instruction_bca_6" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="center_vertical" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="fill_parent" ="@string/bca_instruction_step6" ="@id/sixth_image_instruction" ="2.0dip" ="@id/sixth_image_instruction" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

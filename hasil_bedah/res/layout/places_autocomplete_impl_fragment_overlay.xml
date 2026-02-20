@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="8.0dip" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView ="fill_parent" ="wrap_content" ="@dimen/places_autocomplete_overlay_padding">
+        <LinearLayout ="vertical" ="fill_parent" ="wrap_content" ="locale" ="locale">
+            <LinearLayout ="horizontal" ="@id/places_autocomplete_search_bar_container" ="fill_parent" ="@dimen/card_search_height">
+                <ImageButton ="center_vertical" ="@id/places_autocomplete_back_button" ="?selectableItemBackgroundBorderless" ="@string/places_cancel" ="@dimen/card_search_content_start_margin" ="20.0dip" srcCompat="@drawable/ic_arrow_back_black_24dp" style="@style/PingIcon.OnSurface" />
+                <EditText ="@style/TextAppearance.MaterialComponents.Body1" ="@color/material_on_surface_emphasis_medium" ="@id/places_autocomplete_search_bar" ="@android:color/transparent" ="0.0dip" ="fill_parent" ="@string/places_autocomplete_search_hint" ="1" ="1" ="true" ="1.0" ="textNoSuggestions" ="actionSearch|flagNoExtractUi" />
+                <ImageButton ="center_vertical" ="@id/places_autocomplete_clear_button" ="?selectableItemBackgroundBorderless" ="@dimen/places_autocomplete_search_bar_button_padding" ="@string/places_autocomplete_clear_button" ="16.0dip" srcCompat="@drawable/ic_close_black_24dp" style="@style/PingIcon.OnSurface" />
+            </LinearLayout>
+            <View ="@id/places_autocomplete_search_bar_separator" ="?colorSecondary" ="fill_parent" ="1.0dip" ="2.0dip" ="1.0dip" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/places_autocomplete_list" ="fill_parent" ="0.0dip" ="1.0" ="16.0dip" />
+            <include layout="@layout/places_autocomplete_impl_error" />
+            <View ="@id/places_autocomplete_powered_by_google_separator" ="@color/places_autocomplete_separator" ="fill_parent" ="1.0dip" />
+            <FrameLayout ="fill_parent" ="wrap_content">
+                <ProgressBar ="center_vertical" ="@id/places_autocomplete_progress" ="4.0dip" ="@dimen/places_autocomplete_progress_size" ="@dimen/places_autocomplete_progress_size" ="true" ="@dimen/places_autocomplete_progress_horizontal_margin" ="?colorSecondary" ="src_atop" style="@style/Widget.AppCompat.ProgressBar" />
+                <ImageView ="center" ="@id/places_autocomplete_powered_by_google" ="wrap_content" ="@dimen/places_autocomplete_powered_by_google_height" ="@drawable/wrapper_places_powered_by_google" ="center" ="@string/places_powered_by_google" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

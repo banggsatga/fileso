@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@id/rlBottomSheetBranchOffice" ="@drawable/bg_rounded_bottomsheet" ="fill_parent" ="@dimen/dimen_280dp" layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView ="@id/imgLineBottomSheet" ="@color/colorLineBottomSheet" ="@dimen/dimen_40dp" ="@dimen/dimen_4dp" ="@dimen/dimen_8dp" ="true" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" />
+    <RelativeLayout ="@id/containerIconMarkerClosest" ="@drawable/bg_rounded_darkmint10" ="@dimen/dimen_100dp" ="@dimen/dimen_30dp" ="@dimen/dimen_18dp" ="@id/imgLineBottomSheet" ="@dimen/dimen_24dp">
+        <androidx.appcompat.widget.AppCompatImageView ="@id/imgMarkerClosest" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@drawable/ic_marker_closest" ="true" ="@dimen/dimen_12dp" />
+        <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_12sp" ="@color/colorDarkMint" ="@dimen/dimen_60dp" ="@string/label_closest" ="true" ="@dimen/dimen_8dp" ="@id/imgMarkerClosest" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Medium" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatTextView ="@id/tvNameLocationBranchOFfice" ="@dimen/dimen_16dp" ="@id/containerIconMarkerClosest" ="@dimen/dimen_24dp" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+    <androidx.appcompat.widget.AppCompatTextView ="12.0sp" ="@id/tvDescLocationBranchOFfice" ="210.0dip" ="@dimen/dimen_5dp" ="@id/tvNameLocationBranchOFfice" ="@dimen/dimen_24dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <androidx.appcompat.widget.AppCompatTextView ="12.0sp" ="@id/tvTelpBranchOFfice" ="gone" ="@dimen/dimen_210dp" ="@string/label_sample_phone_number_branch_office" ="@id/tvDescLocationBranchOFfice" ="@dimen/dimen_24dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_12sp" ="@id/tvFaxBranchOFfice" ="gone" ="@dimen/dimen_210dp" ="@string/label_sample_fax_branch_office" ="@id/tvTelpBranchOFfice" ="@dimen/dimen_24dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <androidx.appcompat.widget.AppCompatImageView ="@id/imgDirection" ="@dimen/dimen_52dp" ="@dimen/dimen_52dp" ="@dimen/dimen_18dp" ="@drawable/ic_bottomsheet_branch_office" ="@dimen/dimen_20dp" ="true" />
+    <androidx.appcompat.widget.AppCompatImageView ="@id/imgLocationBranchOffice" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_12dp" ="@drawable/ic_placeholder" ="fitXY" ="@id/tvFaxBranchOFfice" ="@dimen/dimen_25dp" ="@dimen/dimen_25dp" />
+</RelativeLayout>

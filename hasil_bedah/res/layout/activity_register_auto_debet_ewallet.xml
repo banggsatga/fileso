@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout="@layout/layout_toolbar_center" />
+    <RelativeLayout ="@id/containerTitleInputPhoneNumber" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" layout_constraintVertical_bias="0.12">
+        <TextView ="@dimen/text_size_18sp" ="@android:color/black" ="center_vertical" ="@id/tvPaymentMethod" ="wrap_content" ="wrap_content" ="Aktivasi E-Wallet" ="true" ="true" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+        <ImageView ="center" ="@id/imgLogo" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="gone" ="@dimen/dimen_80dp" ="@dimen/dimen_40dp" ="@id/tvPaymentMethod" ="true" srcCompat="@null" />
+    </RelativeLayout>
+    <TextView ="@id/tvEnterPhoneNumberInstruction" ="@dimen/dimen_4dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="Silakan masukkan nomor handphone akun ewallet anda untuk proses pendaftaran auto debit" ="0.02" layout_constraintEnd_toEndOf="@id/containerTitleInputPhoneNumber" layout_constraintStart_toStartOf="@id/containerTitleInputPhoneNumber" layout_constraintTop_toBottomOf="@id/containerTitleInputPhoneNumber" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <com.google.android.material.card.MaterialCardView ="@id/cvPhoneNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_14dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintEnd_toEndOf="@id/tvEnterPhoneNumberInstruction" layout_constraintStart_toStartOf="@id/tvEnterPhoneNumberInstruction" layout_constraintTop_toBottomOf="@id/tvEnterPhoneNumberInstruction" layout_constraintVertical_bias="0.0" strokeColor="@color/colorPaleGrey" strokeWidth="@dimen/dimen_1dp">
+        <RelativeLayout ="fill_parent" ="wrap_content">
+            <TextView ="@dimen/text_size_16sp" ="@id/tvPrefix" ="@color/colorPaleGreyFour" ="@dimen/dimen_20dp" ="wrap_content" ="wrap_content" ="@string/label_prefix_indonesia_phone" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+            <EditText ="@id/edtPhoneNumber" ="@null" ="fill_parent" ="wrap_content" ="" ="1" ="1" ="14" ="\ 0123456789" ="@id/tvPrefix" ="@id/tvPrefix" ="phone" ="actionDone" ="@dimen/dimen_18dp" ="8.0dip" ="@id/tvPrefix" ="no" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <Button ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_18dp" ="@string/action_next" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/edtPhoneNumber" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

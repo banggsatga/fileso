@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="?placesSpacingLarge" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView ="@id/place_collage" ="gone" ="fill_parent" ="0.0dip" ="?placesSpacingExtraLarge" ="?placesSpacingExtraLarge" ="?placesSpacingExtraLarge" cardBackgroundColor="@android:color/transparent" cardCornerRadius="?placesCornerRadiusCollageOuter" cardElevation="0.0dip" layout_constraintDimensionRatio="H,4:3" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+            <androidx.cardview.widget.CardView ="@id/place_image_card" ="gone" ="0.0dip" ="0.0dip" cardCornerRadius="@dimen/gmp_sys_shape_corner_extra_small_corner_size" cardElevation="0.0dip" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/place_image_card2" layout_constraintHorizontal_weight="1.0" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+                <ImageView ="@id/place_image" ="fill_parent" ="fill_parent" ="centerCrop" ="true" ="@string/place_details_image_content_description" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView ="@id/place_image_card2" ="gone" ="0.0dip" ="0.0dip" ="?placesSpacingExtraSmall" cardCornerRadius="@dimen/gmp_sys_shape_corner_extra_small_corner_size" cardElevation="0.0dip" layout_constraintBottom_toTopOf="@id/place_image_card3" layout_constraintEnd_toEndOf="parent" layout_constraintHorizontal_weight="1.0" layout_constraintStart_toEndOf="@id/place_image_card" layout_constraintTop_toTopOf="parent" layout_constraintVertical_weight="1.0">
+                <ImageView ="@id/place_image2" ="fill_parent" ="fill_parent" ="centerCrop" ="true" ="@string/place_details_image_content_description" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView ="@id/place_image_card3" ="gone" ="0.0dip" ="0.0dip" ="?placesSpacingExtraSmall" cardCornerRadius="@dimen/gmp_sys_shape_corner_extra_small_corner_size" cardElevation="0.0dip" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/place_image_card2" layout_constraintStart_toStartOf="@id/place_image_card2" layout_constraintTop_toBottomOf="@id/place_image_card2" layout_constraintVertical_weight="1.0">
+                <ImageView ="@id/place_image3" ="fill_parent" ="fill_parent" ="centerCrop" ="true" ="@string/place_details_image_content_description" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView ="@id/place_image_card_number_of_photos" ="gone" ="wrap_content" ="wrap_content" ="?placesSpacingMedium" cardBackgroundColor="@color/gmp_sys_color_dark_surface_immersive" cardCornerRadius="@dimen/gmp_sys_shape_corner_extra_small_corner_size" cardElevation="0.0dip" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+                <LinearLayout ="center_vertical" ="horizontal" ="wrap_content" ="wrap_content" ="@dimen/lightbox_hint_chip_vertical_margin" ="@dimen/lightbox_hint_chip_vertical_margin" ="@dimen/lightbox_hint_chip_horizontal_margin" ="@dimen/lightbox_hint_chip_horizontal_margin">
+                    <ImageView ="@dimen/gmp_ref_measurement_icon_size_14" ="@dimen/gmp_ref_measurement_icon_size_14" ="@drawable/gs_photo_library_vd_24" ="centerCrop" ="true" ="@android:color/white" ="no" ="@dimen/lightbox_hint_chip_icon_margin_end" />
+                    <TextView ="?placesTextAppearanceLabelMedium" ="@android:color/white" ="center_vertical" ="@id/place_image_card_number_of_photos_text" ="wrap_content" ="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout ="@id/place_collage_error" ="?placesColorNeutralContainer" ="gone" ="fill_parent" ="fill_parent" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_weight="1.0">
+            <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnNeutralContainer" ="center" ="wrap_content" ="wrap_content" ="@string/place_photo_viewer_image_load_failed_message" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

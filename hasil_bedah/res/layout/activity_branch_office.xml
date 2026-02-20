@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout="@layout/layout_toolbar_center" />
+    <FrameLayout ="@id/flMap" ="fill_parent" ="fill_parent" ="?actionBarSize" />
+    <include ="@id/layout_bottomsheet_branch_office" layout="@layout/layout_bottomsheet_branch_office" />
+    <RelativeLayout ="bottom" ="@id/rlBottomSheetBranchOfficeDirectory" ="@drawable/bg_rounded_bottom_sheet_blue" ="fill_parent" ="70.0dip">
+        <androidx.appcompat.widget.AppCompatTextView ="@drawable/bg_rounded_bottom_sheet_blue" ="@string/label_branch_office_directory" ="true" ="@dimen/dimen_24dp" style="@style/BpjstkuTextViewPoppins.White.SemiBold" />
+        <androidx.appcompat.widget.AppCompatImageView ="@id/ivExpandBottomSheetDirectory" ="5.0dip" ="@dimen/dimen_30dp" ="@dimen/dimen_20dp" ="@drawable/ic_arrow_up" ="true" ="@dimen/dimen_24dp" ="true" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

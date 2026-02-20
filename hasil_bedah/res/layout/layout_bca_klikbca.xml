@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout ="@id/container_user_id" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="true" ="true" ="fill_parent" ="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edit_user_id" ="fill_parent" ="wrap_content" ="@string/klikbca_user_id_hint" ="1" ="100" ="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/dark_gray" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/twenty_four_dp" ="@string/instruction" />
+        <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction1" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/klikbca_instruction_1" />
+        </LinearLayout>
+        <LinearLayout ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction2" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextViewWithLink ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/klikbca_instruction_2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="true" ="?colorOnContainer" ="@dimen/m3_comp_text_button_pressed_state_layer_opacity" />
+    <item ="true" ="false" ="?colorOnContainer" ="@dimen/m3_comp_text_button_focus_state_layer_opacity" />
+    <item ="false" ="?colorOnContainer" ="@dimen/m3_comp_text_button_hover_state_layer_opacity" ="true" />
+    <item ="false" ="?colorOnContainer" ="@dimen/m3_ripple_default_alpha" />
+    <item ="true" ="true" ="?colorOnSurface" ="@dimen/m3_comp_text_button_pressed_state_layer_opacity" />
+    <item ="true" ="true" ="?colorOnSecondaryContainer" ="@dimen/m3_comp_text_button_focus_state_layer_opacity" />
+    <item ="true" ="?colorOnSecondaryContainer" ="@dimen/m3_comp_text_button_hover_state_layer_opacity" ="true" />
+    <item ="true" ="?colorOnSecondaryContainer" ="@dimen/m3_ripple_default_alpha" />
+    <item ="true" ="?colorOnSecondaryContainer" ="@dimen/m3_comp_text_button_pressed_state_layer_opacity" />
+    <item ="true" ="?colorOnSurface" ="@dimen/m3_comp_text_button_focus_state_layer_opacity" />
+    <item ="?colorOnSurface" ="@dimen/m3_comp_text_button_hover_state_layer_opacity" ="true" />
+    <item ="?colorOnSurface" ="@dimen/m3_ripple_default_alpha" />
+</selector>

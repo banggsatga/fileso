@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@id/mr_cast_meta" ="12.0dip" ="32.0dip" ="fill_parent" ="wrap_content" ="24.0dip" ="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton ="center_vertical" ="@id/mr_cast_close_button" ="?selectableItemBackgroundBorderless" ="24.0dip" ="24.0dip" ="?mediaRouteCloseDrawable" />
+    <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="wrap_content" ="12.0dip" ="@id/mr_cast_close_button">
+        <ImageView ="@id/mr_cast_meta_art" ="36.0dip" ="36.0dip" ="fitCenter" />
+        <LinearLayout ="center_vertical" ="vertical" ="8.0dip" ="8.0dip" ="0.0dip" ="wrap_content" ="1.0">
+            <TextView ="14.0sp" ="end" ="@id/mr_cast_meta_title" ="fill_parent" ="wrap_content" ="1" />
+            <TextView ="13.0sp" ="end" ="@id/mr_cast_meta_subtitle" ="fill_parent" ="wrap_content" ="1" />
+        </LinearLayout>
+        <Button ="@id/mr_cast_stop_button" ="?selectableItemBackgroundBorderless" ="114.0dip" ="36.0sp" ="@string/mr_controller_stop_casting" />
+    </LinearLayout>
+</RelativeLayout>

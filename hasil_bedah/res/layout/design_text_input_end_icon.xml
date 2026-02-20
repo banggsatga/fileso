@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.internal.CheckableImageButton ="end|center" ="@id/text_input_end_icon" ="?actionBarItemBackground" ="gone" ="wrap_content" ="wrap_content" ="@dimen/mtrl_min_touch_target_size" ="@dimen/mtrl_min_touch_target_size" ="@dimen/mtrl_textinput_end_icon_margin_start"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

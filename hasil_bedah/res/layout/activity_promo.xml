@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <com.kennyc.view.MultiStateView ="@id/msvPromo" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/layout_default_loading">
+        <androidx.recyclerview.widget.RecyclerView ="@id/rvPromo" ="fill_parent" ="fill_parent" />
+    </com.kennyc.view.MultiStateView>
+</androidx.constraintlayout.widget.ConstraintLayout>

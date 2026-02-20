@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="gone" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="@string/offer_applied" style="@style/OfferText.Success" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/text_offer_status_not_applied" ="gone" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="@string/offer_not_applied" style="@style/OfferText.Failure" />
+    </LinearLayout>
+    <RelativeLayout ="@id/container_card_number" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content">
+        <com.midtrans.sdk.uikit.widgets.BoldTextView ="10.0sp" ="@color/gray.primary_dark" ="@id/title_card_detail" ="@dimen/eight_dp" ="@dimen/eight_dp" ="wrap_content" ="wrap_content" ="@string/card_detail_title" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/hint_card_number" ="fill_parent" ="wrap_content" ="@string/hint_card_number" ="@id/title_card_detail" style="@style/EditTextHint" />
+        <androidx.appcompat.widget.AppCompatEditText ="@id/field_card_number" ="@id/field_expiry" ="fill_parent" ="wrap_content" ="@string/hint_card_number_example" ="1" ="19" ="0123456789 " ="@id/hint_card_number" ="true" ="number" ="actionNext" ="true" />
+        <LinearLayout ="center_vertical" ="horizontal" ="@dimen/twelve_dp" ="wrap_content" ="wrap_content" ="@id/field_card_number" ="true" ="true" ="true">
+            <com.midtrans.sdk.uikit.widgets.AspectRatioImageView ="@id/bank_logo" ="@dimen/bank_logo_size" ="@dimen/bank_logo_size" ="@dimen/four_dp" ="@dimen/four_dp" />
+            <com.midtrans.sdk.uikit.widgets.AspectRatioImageView ="@id/payment_card_logo" ="@dimen/payment_logo_size" ="@dimen/payment_logo_size" ="@dimen/four_dp" ="@dimen/four_dp" />
+            <com.midtrans.sdk.uikit.widgets.AspectRatioImageView ="?selectableItemBackground" ="gone" ="@dimen/promo_logo_size" ="@dimen/promo_logo_size" ="@null" />
+        </LinearLayout>
+        <TextView ="@id/error_message_card_number" ="fill_parent" ="wrap_content" ="@id/field_card_number" style="@style/FormErrorMessage" />
+    </RelativeLayout>
+    <LinearLayout ="horizontal" ="@id/container_card_expiry" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="false" ="1.0">
+        <RelativeLayout ="0.0dip" ="wrap_content" ="0.6">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/hint_card_expiry" ="fill_parent" ="wrap_content" ="@string/hint_expiry_date" style="@style/EditTextHint" />
+            <androidx.appcompat.widget.AppCompatEditText ="bottom" ="@id/field_expiry" ="@id/field_cvv" ="fill_parent" ="wrap_content" ="@string/hint_expiry_date_example" ="1" ="7" ="@id/hint_card_expiry" ="date" />
+            <TextView ="@id/error_message_expiry" ="fill_parent" ="wrap_content" ="@id/field_expiry" style="@style/FormErrorMessage" />
+        </RelativeLayout>
+        <RelativeLayout ="0.0dip" ="wrap_content" ="0.4">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/hint_card_cvv" ="fill_parent" ="wrap_content" ="@string/hint_cvv" style="@style/EditTextHint" />
+            <com.google.android.material.textfield.TextInputEditText ="@id/field_cvv" ="fill_parent" ="wrap_content" ="@string/hint_cvv_example" ="1" ="6" ="@id/hint_card_cvv" ="numberPassword" ="actionDone" />
+            <ImageButton ="@id/help_cvv_button" ="?selectableItemBackground" ="wrap_content" ="wrap_content" ="@null" ="true" ="true" ="@string/what_is_cvv" ="true" />
+            <TextView ="@id/error_message_cvv" ="fill_parent" ="wrap_content" ="1" ="@id/field_cvv" style="@style/FormErrorMessage" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout ="end" ="horizontal" ="@id/container_bni_point" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="gone" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+        <androidx.appcompat.widget.AppCompatCheckBox ="@id/checkbox_point" ="visible" ="fill_parent" ="wrap_content" ="@dimen/four_dp" ="@dimen/four_dp" ="@string/redeem_bni_reward" />
+        <ImageButton ="?colorAccent" ="@id/help_bank_point" ="?selectableItemBackground" ="wrap_content" ="wrap_content" ="@null" ="true" ="true" ="@string/redeem_bank_point_title" ="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView ="@id/recycler_promo" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" />
+    <View ="@color/light_gray" ="fill_parent" ="@dimen/one_dp" ="@dimen/eight_dp" ="@dimen/eight_dp" />
+    <LinearLayout ="center_vertical" ="vertical" ="@id/container_installment" ="gone" ="fill_parent" ="wrap_content" ="@id/container_bni_point">
+        <com.midtrans.sdk.uikit.widgets.BoldTextView ="10.0sp" ="@color/gray.primary_dark" ="@id/title_installment" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="wrap_content" ="wrap_content" ="@string/pay_with_instalments" />
+        <LinearLayout ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/four_dp">
+            <com.midtrans.sdk.uikit.widgets.FancyButton ="@id/button_installment_decrease" ="@dimen/forty_dp" ="@dimen/forty_dp" fb_text="-" style="@style/CreditCardInstallmentButton" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="bold" ="center" ="@id/text_installment_term" ="@color/gray.secondary" ="0.0dip" ="fill_parent" ="@dimen/eight_dp" ="@dimen/eight_dp" ="@string/installment_term" ="1.0" />
+            <com.midtrans.sdk.uikit.widgets.FancyButton ="@id/button_installment_increase" ="@dimen/forty_dp" ="@dimen/forty_dp" fb_radius="5.0dip" fb_text="+" style="@style/CreditCardInstallmentButton" />
+        </LinearLayout>
+        <View ="@color/light_gray" ="fill_parent" ="@dimen/one_dp" ="@dimen/eight_dp" ="@dimen/eight_dp" />
+    </LinearLayout>
+    <com.midtrans.sdk.uikit.widgets.FancyButton ="center_horizontal" ="@id/button_delete" ="gone" ="wrap_content" ="wrap_content" fb_iconColor="@color/delete_color" fb_iconPaddingRight="@dimen/four_dp" fb_iconResource="@null" fb_text="@string/delete_this_card" fb_textColor="@color/delete_color" style="@style/ButtonSecondary" />
+    <com.midtrans.sdk.uikit.widgets.FancyButton ="center_horizontal" ="@id/button_scan_card" ="gone" ="wrap_content" ="wrap_content" ="@id/button_delete" fb_iconPaddingRight="@dimen/four_dp" fb_iconResource="@null" fb_text="@string/btn_scan_card" style="@style/ButtonSecondary" />
+    <View ="@id/button_separator" ="@color/light_gray" ="fill_parent" ="@dimen/one_dp" ="@dimen/eight_dp" ="@dimen/eight_dp" />
+    <LinearLayout ="vertical" ="@id/container_user_detail" ="gone" ="fill_parent" ="wrap_content" ="false">
+        <com.midtrans.sdk.uikit.widgets.BoldTextView ="10.0sp" ="@color/gray.primary_dark" ="@dimen/eight_dp" ="@dimen/eight_dp" ="wrap_content" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/contact_detail_title" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/hint_user_email" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/hint_email_optional" style="@style/EditTextHint" />
+        <androidx.appcompat.widget.AppCompatEditText ="bottom" ="@id/field_email" ="@id/field_phone" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/hint_email_example" ="1" ="128" ="textEmailAddress" />
+        <TextView ="@id/error_message_email" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/validation_email_invalid_optional" style="@style/FormErrorMessage" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/hint_user_phone" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@string/hint_phone_number_optional" style="@style/EditTextHint" />
+        <androidx.appcompat.widget.AppCompatEditText ="bottom" ="@id/field_phone" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/hint_phone_example" ="1" ="13" ="@string/hint_phone_example" ="phone" ="actionDone" />
+        <TextView ="@id/error_message_phone" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/validation_phone_no_invalid_optional" style="@style/FormErrorMessage" />
+        <View ="@color/light_gray" ="fill_parent" ="@dimen/one_dp" ="@dimen/eight_dp" ="@dimen/eight_dp" />
+    </LinearLayout>
+    <RelativeLayout ="@id/container_save_card_details" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="gone" ="fill_parent" ="wrap_content" ="@id/container_user_detail">
+        <androidx.appcompat.widget.AppCompatCheckBox ="end" ="@id/checkbox_save_card" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="@string/save_card_message" ="1" ="@id/help_save_card" ="true" ="@dimen/eight_dp" ="@id/help_save_card" ="true" buttonTint="@color/gray.primary_dark" />
+        <ImageButton ="@id/help_save_card" ="?selectableItemBackground" ="wrap_content" ="wrap_content" ="@null" ="true" ="true" ="@string/save_card_info" ="true" />
+    </RelativeLayout>
+    <LinearLayout ="center_vertical" ="horizontal" ="@drawable/grey_rounded_background" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp">
+        <ImageView ="@id/cc_badge" ="fill_parent" ="wrap_content" ="@dimen/four_dp" ="@dimen/four_dp" ="centerInside" ="@dimen/four_dp" ="@dimen/four_dp" />
+    </LinearLayout>
+</LinearLayout>

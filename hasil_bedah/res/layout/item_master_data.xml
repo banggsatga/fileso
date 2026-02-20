@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="center_vertical" ="?selectableItemBackground" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_16sp" ="@id/tvName" ="fill_parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+    <androidx.appcompat.widget.AppCompatImageView ="@id/imgSelected" ="@drawable/ic_success" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="true" />
+</RelativeLayout>

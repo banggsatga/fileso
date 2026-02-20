@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgProgramDetailBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@dimen/dimen_14dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/layout_toolbar" ="fill_parent" ="?actionBarSize" layout_scrollFlags="scroll|enterAlways" layout="@layout/layout_toolbar_center" />
+    <com.kennyc.view.MultiStateView ="@id/msvContent" ="@dimen/dimen_0dp" ="wrap_content" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/layout_default_loading">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout ="fill_parent" ="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout ="vertical" ="@id/appbarProgramDetail" ="@android:color/transparent" ="fill_parent" ="wrap_content">
+                <com.google.android.material.appbar.CollapsingToolbarLayout ="@id/collapsingToolbarProgramDetail" ="fill_parent" ="wrap_content" contentScrim="@color/colorWhite" layout_scrollFlags="scroll|exitUntilCollapsed" scrimVisibleHeightTrigger="@dimen/dimen_0dp" titleEnabled="false">
+                    <com.google.android.material.card.MaterialCardView ="@id/cvProgramDescription" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_32dp" ="@dimen/dimen_20dp" ="@dimen/dimen_36dp" ="@dimen/dimen_20dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" cardPreventCornerOverlap="true">
+                        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+                            <ImageView ="@id/imgProgram" ="@dimen/dimen_36dp" ="@dimen/dimen_36dp" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="@id/tvProgramUserStatus" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="@id/tvProgramTitle" />
+                            <TextView ="@dimen/text_size_16sp" ="@id/tvProgramTitle" ="@dimen/dimen_0dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" layout_constraintEnd_toStartOf="@id/imgStatusCheck" layout_constraintStart_toEndOf="@id/imgProgram" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+                            <TextView ="@dimen/text_size_12sp" ="@color/colorCoolGrey" ="@id/tvProgramUserStatus" ="@dimen/dimen_0dp" ="@font/dmsans_reguler" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="@id/tvProgramTitle" layout_constraintTop_toBottomOf="@id/tvProgramTitle" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+                            <ImageView ="@id/imgStatusCheck" ="visible" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@dimen/dimen_7dp" ="@drawable/ic_success" ="@dimen/dimen_7dp" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" />
+                            <View ="@id/viewDivider" ="@color/colorPaleGreySix" ="@dimen/dimen_0dp" ="@dimen/dimen_1dp" ="@dimen/dimen_20dp" ="@dimen/dimen_26dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvProgramUserStatus" />
+                            <TextView ="@dimen/text_size_14sp" ="@id/tvProgramDescription" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="@dimen/dimen_24dp" ="@dimen/text_size_4sp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/viewDivider" layout_constraintStart_toStartOf="@id/viewDivider" layout_constraintTop_toBottomOf="@id/viewDivider" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+                <com.google.android.material.tabs.TabLayout ="@id/tabProgramDetail" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" tabBackground="@color/colorWhite" tabIndicatorColor="@color/colorDarkMint" tabSelectedTextColor="@color/colorDarkMint" tabTextAppearance="@style/BpjstkuProgramDetailTabTextAppearance" tabTextColor="@color/colorCoolGrey" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.core.widget.NestedScrollView ="fill_parent" ="fill_parent" layout_behavior="@string/appbar_scrolling_view_behavior">
+                <LinearLayout ="vertical" ="fill_parent" ="wrap_content" ="1200.0dip">
+                    <androidx.viewpager.widget.ViewPager ="@id/vpProgramDetail" ="fill_parent" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="1.0" ="@dimen/dimen_20dp" layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.kennyc.view.MultiStateView>
+</androidx.constraintlayout.widget.ConstraintLayout>

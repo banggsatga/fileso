@@ -1,0 +1,136 @@
+.class public final Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Landroidx/compose/ui/text/font/PlatformFontLoader;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u000c\u0008\u0001\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0018\u0010\u0008\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u0006H\u0096@\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0017\u0010\n\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u0006H\u0017\u00a2\u0006\u0004\u0008\n\u0010\u000bR\u001a\u0010\u000c\u001a\u00020\u00078\u0017X\u0097\u0004\u00a2\u0006\u000c\n\u0004\u0008\u000c\u0010\r\u001a\u0004\u0008\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u00028\u0001X\u0081\u0004\u00a2\u0006\u000c\n\u0004\u0008\u0010\u0010\u0011\u001a\u0004\u0008\u0012\u0010\u0013"
+    }
+    d2 = {
+        "Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;",
+        "Landroidx/compose/ui/text/font/PlatformFontLoader;",
+        "Landroidx/compose/ui/text/font/Font$ResourceLoader;",
+        "p0",
+        "<init>",
+        "(Landroidx/compose/ui/text/font/Font$ResourceLoader;)V",
+        "Landroidx/compose/ui/text/font/Font;",
+        "",
+        "awaitLoad",
+        "(Landroidx/compose/ui/text/font/Font;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+        "loadBlocking",
+        "(Landroidx/compose/ui/text/font/Font;)Ljava/lang/Object;",
+        "cacheKey",
+        "Ljava/lang/Object;",
+        "getCacheKey",
+        "()Ljava/lang/Object;",
+        "loader",
+        "Landroidx/compose/ui/text/font/Font$ResourceLoader;",
+        "getLoader$ui_text_release",
+        "()Landroidx/compose/ui/text/font/Font$ResourceLoader;"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final $stable:I = 0x8
+
+
+# instance fields
+.field private final cacheKey:Ljava/lang/Object;
+
+.field private final loader:Landroidx/compose/ui/text/font/Font$ResourceLoader;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/compose/ui/text/font/Font$ResourceLoader;)V
+    .locals 0
+
+    .line 72
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 74
+    iput-object p1, p0, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;->loader:Landroidx/compose/ui/text/font/Font$ResourceLoader;
+
+    .line 78
+    new-instance p1, Ljava/lang/Object;
+
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;->cacheKey:Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final awaitLoad(Landroidx/compose/ui/text/font/Font;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/ui/text/font/Font;",
+            "Lkotlin/coroutines/Continuation<",
+            "Ljava/lang/Object;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 82
+    iget-object p2, p0, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;->loader:Landroidx/compose/ui/text/font/Font$ResourceLoader;
+
+    invoke-interface {p2, p1}, Landroidx/compose/ui/text/font/Font$ResourceLoader;->load(Landroidx/compose/ui/text/font/Font;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final getCacheKey()Ljava/lang/Object;
+    .locals 1
+
+    .line 78
+    iget-object v0, p0, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;->cacheKey:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public final getLoader$ui_text_release()Landroidx/compose/ui/text/font/Font$ResourceLoader;
+    .locals 1
+
+    .line 74
+    iget-object v0, p0, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;->loader:Landroidx/compose/ui/text/font/Font$ResourceLoader;
+
+    return-object v0
+.end method
+
+.method public final loadBlocking(Landroidx/compose/ui/text/font/Font;)Ljava/lang/Object;
+    .locals 1
+
+    .line 80
+    iget-object v0, p0, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;->loader:Landroidx/compose/ui/text/font/Font$ResourceLoader;
+
+    invoke-interface {v0, p1}, Landroidx/compose/ui/text/font/Font$ResourceLoader;->load(Landroidx/compose/ui/text/font/Font;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method

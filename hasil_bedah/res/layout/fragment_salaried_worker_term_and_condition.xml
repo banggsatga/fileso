@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="@color/colorWhite" ="fill_parent" ="fill_parent" ="@dimen/dimen_22dp" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@id/salariedWorkerPersonalDataContainer" ="true" ="true" ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvTermConditions" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@string/message_term_condition" ="inherit" ="@dimen/dimen_20dp" ="inter_word" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_16sp" ="@id/tvConfirmation" ="@dimen/dimen_0dp" ="@dimen/dimen_18dp" ="@string/message_disclaimer_registration" layout_constraintEnd_toEndOf="@id/tvTermConditions" layout_constraintStart_toStartOf="@id/tvTermConditions" layout_constraintTop_toBottomOf="@id/tvTermConditions" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <com.google.android.material.button.MaterialButton ="@id/btnAgree" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_22dp" ="@string/action_agree" layout_constraintEnd_toEndOf="@id/tvConfirmation" layout_constraintStart_toStartOf="@id/tvConfirmation" layout_constraintTop_toBottomOf="@id/tvConfirmation" style="@style/BpjstkuButton.WhiteText" />
+        <com.google.android.material.button.MaterialButton ="@id/btnDisagree" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_22dp" ="@string/action_disagree" layout_constraintEnd_toEndOf="@id/btnAgree" layout_constraintStart_toStartOf="@id/btnAgree" layout_constraintTop_toBottomOf="@id/btnAgree" layout_constraintVertical_bias="1.0" style="@style/BpjstkuOutlinedButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

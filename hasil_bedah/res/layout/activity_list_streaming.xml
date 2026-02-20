@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <LinearLayout ="vertical" ="@id/llRctiPlus" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_32dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/layout_toolbar">
+        <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+            <ImageView ="center" ="@id/imgRctiPlus" ="@dimen/dimen_18dp" ="@dimen/dimen_120dp" ="@dimen/dimen_40dp" ="true" ="true" ="true" srcCompat="@drawable/bg_rcti_plus" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View ="@id/viewRctiPlusSeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_2dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="@id/llRctiPlus" layout_constraintStart_toStartOf="@id/llRctiPlus" layout_constraintTop_toBottomOf="@id/llRctiPlus" />
+    <LinearLayout ="vertical" ="@id/llVisionPlus" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/viewRctiPlusSeparator">
+        <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+            <ImageView ="center" ="@id/imgVisionPlus" ="@dimen/dimen_18dp" ="@dimen/dimen_120dp" ="@dimen/dimen_40dp" ="true" ="true" ="true" srcCompat="@drawable/bg_vision_plus" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View ="@id/viewVisionPlusSeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_2dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="@id/llVisionPlus" layout_constraintStart_toStartOf="@id/llVisionPlus" layout_constraintTop_toBottomOf="@id/llVisionPlus" />
+</androidx.constraintlayout.widget.ConstraintLayout>

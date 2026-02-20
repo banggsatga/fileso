@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_4dp" cardPreventCornerOverlap="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <ImageView ="@id/imgPromo" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="fitCenter" ="true" layout_constraintBottom_toBottomOf="parent" layout_constraintDimensionRatio="3:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

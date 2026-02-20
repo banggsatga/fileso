@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center_vertical" ="horizontal" ="?selectableItemBackground" ="fill_parent" ="48.0dip" ="16.0dip" ="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/mr_cast_group_icon" ="24.0dip" ="24.0dip" ="16.0dip" />
+    <TextView ="@id/mr_cast_group_name" ="0.0dip" ="wrap_content" ="true" ="1.0" />
+</LinearLayout>

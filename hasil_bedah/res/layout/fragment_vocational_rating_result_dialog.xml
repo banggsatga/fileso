@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_white" ="@dimen/dimen_20dp" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgSuccess" ="@dimen/dimen_56dp" ="@dimen/dimen_56dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@dimen/text_size_18sp" ="@id/tvResultTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_10dp" ="center" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgSuccess" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <TextView ="@id/tvResultMessage" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_30dp" ="@dimen/dimen_10dp" ="@dimen/dimen_30dp" ="@dimen/text_size_6sp" ="center" ="@dimen/dimen_30dp" layout_constraintEnd_toEndOf="@id/tvResultTitle" layout_constraintStart_toStartOf="@id/tvResultTitle" layout_constraintTop_toBottomOf="@id/tvResultTitle" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <com.google.android.material.button.MaterialButton ="@id/btnResultDialog" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_18dp" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="@id/tvResultMessage" layout_constraintStart_toStartOf="@id/tvResultMessage" layout_constraintTop_toBottomOf="@id/tvResultMessage" style="@style/BpjstkuButton.WhiteText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,188 @@
+.class public final Landroidx/navigation/NavArgument$Builder;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/navigation/NavArgument;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\n\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J#\u0010\u0007\u001a\u00020\u0000\"\u0004\u0008\u0000\u0010\u00042\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0005H\u0007\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u0017\u0010\n\u001a\u00020\u00002\u0006\u0010\u0006\u001a\u00020\tH\u0007\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u0019\u0010\u000c\u001a\u00020\u00002\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0001H\u0007\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0017\u0010\u000e\u001a\u00020\u00002\u0006\u0010\u0006\u001a\u00020\tH\u0001\u00a2\u0006\u0004\u0008\u000e\u0010\u000bJ\u000f\u0010\u0010\u001a\u00020\u000fH\u0007\u00a2\u0006\u0004\u0008\u0010\u0010\u0011R \u0010\u0012\u001a\u000c\u0012\u0006\u0012\u0004\u0018\u00010\u0001\u0018\u00010\u00058\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0012\u0010\u0013R\u0016\u0010\u0014\u001a\u00020\t8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0014\u0010\u0015R\u0018\u0010\u0016\u001a\u0004\u0018\u00010\u00018\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0016\u0010\u0017R\u0016\u0010\u0018\u001a\u00020\t8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0018\u0010\u0015R\u0016\u0010\u0019\u001a\u00020\t8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0019\u0010\u0015"
+    }
+    d2 = {
+        "Landroidx/navigation/NavArgument$Builder;",
+        "",
+        "<init>",
+        "()V",
+        "T",
+        "Landroidx/navigation/NavType;",
+        "p0",
+        "setType",
+        "(Landroidx/navigation/NavType;)Landroidx/navigation/NavArgument$Builder;",
+        "",
+        "setIsNullable",
+        "(Z)Landroidx/navigation/NavArgument$Builder;",
+        "setDefaultValue",
+        "(Ljava/lang/Object;)Landroidx/navigation/NavArgument$Builder;",
+        "setUnknownDefaultValuePresent$navigation_common_release",
+        "Landroidx/navigation/NavArgument;",
+        "build",
+        "()Landroidx/navigation/NavArgument;",
+        "type",
+        "Landroidx/navigation/NavType;",
+        "isNullable",
+        "Z",
+        "defaultValue",
+        "Ljava/lang/Object;",
+        "defaultValuePresent",
+        "unknownDefaultValuePresent"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private defaultValue:Ljava/lang/Object;
+
+.field private defaultValuePresent:Z
+
+.field private isNullable:Z
+
+.field private type:Landroidx/navigation/NavType;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/navigation/NavType<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private unknownDefaultValuePresent:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 131
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final build()Landroidx/navigation/NavArgument;
+    .locals 8
+
+    .line 199
+    iget-object v0, p0, Landroidx/navigation/NavArgument$Builder;->type:Landroidx/navigation/NavType;
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Landroidx/navigation/NavType;->Companion:Landroidx/navigation/NavType$Companion;
+
+    iget-object v1, p0, Landroidx/navigation/NavArgument$Builder;->defaultValue:Ljava/lang/Object;
+
+    invoke-virtual {v0, v1}, Landroidx/navigation/NavType$Companion;->inferFromValueType(Ljava/lang/Object;)Landroidx/navigation/NavType;
+
+    move-result-object v0
+
+    const-string v1, ""
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    :cond_0
+    move-object v3, v0
+
+    .line 202
+    iget-boolean v4, p0, Landroidx/navigation/NavArgument$Builder;->isNullable:Z
+
+    .line 203
+    iget-object v5, p0, Landroidx/navigation/NavArgument$Builder;->defaultValue:Ljava/lang/Object;
+
+    .line 204
+    iget-boolean v6, p0, Landroidx/navigation/NavArgument$Builder;->defaultValuePresent:Z
+
+    .line 205
+    iget-boolean v7, p0, Landroidx/navigation/NavArgument$Builder;->unknownDefaultValuePresent:Z
+
+    .line 200
+    new-instance v0, Landroidx/navigation/NavArgument;
+
+    move-object v2, v0
+
+    invoke-direct/range {v2 .. v7}, Landroidx/navigation/NavArgument;-><init>(Landroidx/navigation/NavType;ZLjava/lang/Object;ZZ)V
+
+    return-object v0
+.end method
+
+.method public final setDefaultValue(Ljava/lang/Object;)Landroidx/navigation/NavArgument$Builder;
+    .locals 0
+
+    .line 172
+    iput-object p1, p0, Landroidx/navigation/NavArgument$Builder;->defaultValue:Ljava/lang/Object;
+
+    const/4 p1, 0x1
+
+    .line 173
+    iput-boolean p1, p0, Landroidx/navigation/NavArgument$Builder;->defaultValuePresent:Z
+
+    return-object p0
+.end method
+
+.method public final setIsNullable(Z)Landroidx/navigation/NavArgument$Builder;
+    .locals 0
+
+    .line 159
+    iput-boolean p1, p0, Landroidx/navigation/NavArgument$Builder;->isNullable:Z
+
+    return-object p0
+.end method
+
+.method public final setType(Landroidx/navigation/NavType;)Landroidx/navigation/NavArgument$Builder;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Landroidx/navigation/NavType<",
+            "TT;>;)",
+            "Landroidx/navigation/NavArgument$Builder;"
+        }
+    .end annotation
+
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 146
+    iput-object p1, p0, Landroidx/navigation/NavArgument$Builder;->type:Landroidx/navigation/NavType;
+
+    return-object p0
+.end method
+
+.method public final setUnknownDefaultValuePresent$navigation_common_release(Z)Landroidx/navigation/NavArgument$Builder;
+    .locals 0
+
+    .line 187
+    iput-boolean p1, p0, Landroidx/navigation/NavArgument$Builder;->unknownDefaultValuePresent:Z
+
+    return-object p0
+.end method

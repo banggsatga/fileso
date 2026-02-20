@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="wrap_content" ="wrap_content" ="@dimen/twenty_four_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/payment_code" />
+    <LinearLayout ="center_vertical" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/header_text_size" ="@color/black" ="@id/text_payment_code" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/four_dp" ="0.0dip" ="wrap_content" ="@dimen/four_dp" ="@string/payment_code" ="1.0" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="center_vertical" ="@id/btn_copy_va" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="visible" ="wrap_content" ="fill_parent" fb_borderColor="?colorPrimary" fb_borderWidth="1.0dip" fb_defaultColor="@android:color/white" fb_focusColor="@color/colorAccentLight" fb_iconColor="?colorPrimary" fb_radius="5.0dip" fb_text="@string/copy" fb_textColor="?colorPrimary" />
+    </LinearLayout>
+    <LinearLayout ="center" ="vertical" ="@color/faint_yellow" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="center" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="@string/valid_until" />
+        <com.midtrans.sdk.uikit.widgets.SemiBoldTextView ="@dimen/secondary_text_size" ="@color/black" ="@id/text_validity" ="@color/faint_yellow" ="wrap_content" ="wrap_content" ="@string/valid_date" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton ="center_vertical" ="@id/instruction_toggle" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/show_instruction" style="@style/ButtonSecondaryExpandable" />
+    <ScrollView ="fill_parent" ="wrap_content">
+        <LinearLayout ="vertical" ="@id/instruction_layout" ="gone" ="fill_parent" ="wrap_content">
+            <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction1" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/kioson_instruction_step1" />
+            </LinearLayout>
+            <LinearLayout ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction2" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/kioson_instruction_step2" />
+            </LinearLayout>
+            <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction3" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/kioson_instruction_step3" />
+            </LinearLayout>
+            <LinearLayout ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction4" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/kioson_instruction_step4" />
+            </LinearLayout>
+            <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction5" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/kioson_instruction_step5" />
+            </LinearLayout>
+            <LinearLayout ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction6" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/kioson_instruction_step6" />
+            </LinearLayout>
+            <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction7" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/kioson_instruction_step7" />
+            </LinearLayout>
+            <LinearLayout ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction8" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/kioson_instruction_step8" />
+            </LinearLayout>
+            <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="@dimen/eight_dp" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction9" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/kioson_instruction_step9" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

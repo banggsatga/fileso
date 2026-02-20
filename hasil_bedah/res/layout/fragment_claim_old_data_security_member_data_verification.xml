@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="@color/colorWhite" ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <com.google.android.material.card.MaterialCardView ="@id/cvSelfieInfo" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_18dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" strokeColor="@color/colorPaleGreyTwelve" strokeWidth="@dimen/dimen_1dp">
+            <androidx.appcompat.widget.AppCompatImageView ="@id/ivInformation" ="wrap_content" ="wrap_content" ="@dimen/dimen_13dp" ="@drawable/ic_information_yellow" ="@dimen/dimen_14dp" />
+            <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_12sp" ="@id/tvTitleInformation" ="200.0dip" ="@dimen/dimen_13dp" ="@string/label_selfie_instruction" ="@dimen/dimen_57dp" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_12sp" ="@dimen/dimen_54dp" ="@dimen/dimen_15dp" ="@string/label_selfie_instruction_information" ="@dimen/dimen_57dp" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        </com.google.android.material.card.MaterialCardView>
+        <TextView ="@dimen/text_size_16sp" ="@id/tvLivenessCheck" ="@dimen/dimen_18dp" ="@string/label_selfie_verification" layout_constraintStart_toStartOf="@id/cvSelfieInfo" layout_constraintTop_toBottomOf="@id/cvSelfieInfo" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <androidx.cardview.widget.CardView ="@id/cvLivenessCheck" ="@dimen/dimen_0dp" ="@dimen/dimen_100dp" ="@dimen/dimen_16dp" ="@dimen/dimen_24dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintBottom_toTopOf="@id/btnNext" layout_constraintStart_toStartOf="@id/tvLivenessCheck" layout_constraintTop_toBottomOf="@id/tvLivenessCheck" layout_constraintVertical_bias="0.0" layout_constraintWidth_percent="0.42">
+            <ImageView ="@id/imgSelfiePhoto" ="gone" ="wrap_content" ="@dimen/dimen_100dp" ="@drawable/ic_ktp" />
+            <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/selector_bordered_grey_blue" ="fill_parent" ="fill_parent">
+                <ImageView ="@id/imgLivenessCheck" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@drawable/ic_camera" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.4" />
+                <TextView ="@dimen/text_size_12sp" ="@id/tvLivenessCheckLabel" ="@string/action_get_photo" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgLivenessCheck" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.button.MaterialButton ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_22dp" ="@string/action_next" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

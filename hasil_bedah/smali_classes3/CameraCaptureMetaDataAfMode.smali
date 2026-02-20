@@ -1,0 +1,93 @@
+.class public final LCameraCaptureMetaDataAfMode;
+.super LgetSurfaceConfig;
+.source ""
+
+
+# direct methods
+.method public constructor <init>(LTakePictureRequestExternalSyntheticLambda4;)V
+    .locals 0
+
+    .line 11
+    invoke-direct {p0, p1}, LgetSurfaceConfig;-><init>(LTakePictureRequestExternalSyntheticLambda4;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final TuitionPaymentFragmentbindingInflater1(LlambdaonPostviewBitmapAvailable4androidxcameracoreimagecaptureTakePictureRequest;)LlambdaonPostviewBitmapAvailable4androidxcameracoreimagecaptureTakePictureRequest;
+    .locals 3
+
+    .line 16
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 3083
+    iget v1, p1, LlambdaonPostviewBitmapAvailable4androidxcameracoreimagecaptureTakePictureRequest;->TuitionPaymentFragmentspecialinlinedviewModeldefault3:I
+
+    const/16 v2, 0x10
+
+    .line 16
+    invoke-static {v1, v2}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "\r\n"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 17
+    invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, LlambdaonPostviewBitmapAvailable4androidxcameracoreimagecaptureTakePictureRequest;->TuitionPaymentFragmentspecialinlinedviewModeldefault2(Ljava/nio/ByteBuffer;)V
+
+    .line 18
+    invoke-virtual {v1}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, LlambdaonPostviewBitmapAvailable4androidxcameracoreimagecaptureTakePictureRequest;->TuitionPaymentFragmentspecialinlinedviewModeldefault3(Ljava/nio/ByteBuffer;)LlambdaonPostviewBitmapAvailable4androidxcameracoreimagecaptureTakePictureRequest;
+
+    return-object p1
+.end method
+
+.method public final TuitionPaymentFragmentbindingInflater1()V
+    .locals 1
+
+    const v0, 0x7fffffff
+
+    .line 1107
+    iput v0, p0, LgetRemainingRetries;->TuitionPaymentFragmentbindingInflater1:I
+
+    .line 25
+    new-instance v0, LlambdaonPostviewBitmapAvailable4androidxcameracoreimagecaptureTakePictureRequest;
+
+    invoke-direct {v0}, LlambdaonPostviewBitmapAvailable4androidxcameracoreimagecaptureTakePictureRequest;-><init>()V
+
+    .line 26
+    invoke-virtual {p0, v0}, LgetRemainingRetries;->b(LlambdaonPostviewBitmapAvailable4androidxcameracoreimagecaptureTakePictureRequest;)V
+
+    const/4 v0, 0x0
+
+    .line 2107
+    iput v0, p0, LgetRemainingRetries;->TuitionPaymentFragmentbindingInflater1:I
+
+    return-void
+.end method

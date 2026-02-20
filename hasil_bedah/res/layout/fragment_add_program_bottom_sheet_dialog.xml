@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="@drawable/bottom_sheet_background" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@dimen/dimen_16dp" ="fill_parent" ="wrap_content">
+        <View ="@color/colorPaleGreyFour" ="40.0dip" ="4.0dip" ="@dimen/dimen_15dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_18sp" ="@id/tvChooseProgram" ="wrap_content" ="wrap_content" ="@dimen/dimen_35dp" ="@string/label_add_program" ="@dimen/dimen_27dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <CheckBox ="@id/cbOldDaySecurity" ="@dimen/dimen_16dp" ="wrap_content" ="wrap_content" ="true" ="@string/label_old_day_security" ="@dimen/dimen_16dp" ="@drawable/ic_people_jht" ="@dimen/dimen_27dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvChooseProgram" />
+        <View ="@id/viewLineJHT" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_1dp" ="@dimen/dimen_30dp" ="@dimen/dimen_16dp" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/cbOldDaySecurity" />
+        <com.google.android.material.button.MaterialButton ="@id/btnCancel" ="@dimen/dimen_21dp" ="@string/action_just_cancel" layout_constraintEnd_toStartOf="@id/btnAddProgram" layout_constraintStart_toStartOf="@id/viewLineJHT" layout_constraintTop_toBottomOf="@id/viewLineJHT" style="@style/BpjstkuTextButton.CoolGrey.SemiBold" />
+        <com.google.android.material.button.MaterialButton ="@dimen/text_size_14sp" ="@id/btnAddProgram" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_164dp" ="wrap_content" ="@dimen/dimen_21dp" ="@string/action_add" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="@id/viewLineJHT" layout_constraintTop_toBottomOf="@id/viewLineJHT" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

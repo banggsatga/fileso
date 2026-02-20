@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="horizontal" ="@id/status_bar_latest_event_content" ="fill_parent" ="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@dimen/notification_large_icon_width" ="@dimen/notification_large_icon_height" layout="@layout/notification_template_icon_group" />
+    <LinearLayout ="horizontal" ="@id/notification_main_column_container" ="@dimen/notification_main_column_padding_top" ="0.0dip" ="wrap_content" ="@dimen/notification_large_icon_height" ="1.0" ="@id/cancel_action" ="@id/cancel_action">
+        <FrameLayout ="@id/notification_main_column" ="fill_parent" ="wrap_content" ="@dimen/notification_content_margin_start" ="8.0dip" ="8.0dip" ="1.0" ="@dimen/notification_content_margin_start" ="8.0dip" />
+        <FrameLayout ="@id/right_side" ="@dimen/notification_right_side_padding_top" ="wrap_content" ="wrap_content" ="8.0dip" ="8.0dip">
+            <DateTimeView ="@style/TextAppearance.Compat.Notification.Time.Media" ="end|center|top" ="@id/time" ="gone" ="wrap_content" ="wrap_content" ="true" />
+            <Chronometer ="@style/TextAppearance.Compat.Notification.Time.Media" ="end|center|top" ="@id/chronometer" ="gone" ="wrap_content" ="wrap_content" ="true" />
+            <TextView ="@style/TextAppearance.Compat.Notification.Info.Media" ="end|bottom|center" ="@id/info" ="wrap_content" ="wrap_content" ="20.0dip" ="true" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout ="end|center" ="horizontal" ="@id/media_actions" ="wrap_content" ="fill_parent" ="ltr" />
+    <include ="48.0dip" ="fill_parent" ="6.0dip" ="6.0dip" layout="@layout/notification_media_cancel_action" />
+    <ImageView ="@id/end_padder" ="6.0dip" ="fill_parent" />
+</LinearLayout>

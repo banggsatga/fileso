@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton ="center_vertical" ="@id/autocomplete_back_image_button" ="?selectableItemBackgroundBorderless" ="@dimen/min_touch_target_size_for_a11y" ="@dimen/min_touch_target_size_for_a11y" ="@null" ="centerInside" ="?placesColorOnSurface" ="@string/places_navigate_up" />
+    <EditText ="@style/TextAppearance.Gmp.Sys.Typescale.TitleLarge" ="?placesColorOnSurface" ="?placesColorOnSurfaceVariant" ="center_vertical" ="@id/autocomplete_search_bar_edit_text" ="@android:color/transparent" ="0.0dip" ="wrap_content" ="@dimen/min_touch_target_size_for_a11y" ="@string/autocomplete_search_hint" ="1" ="1" ="true" ="1.0" ="textNoSuggestions" ="actionSearch|flagNoExtractUi" ="@null" ="" />
+    <ImageButton ="center_vertical" ="@id/autocomplete_clear_image_button" ="?selectableItemBackgroundBorderless" ="@dimen/min_touch_target_size_for_a11y" ="@dimen/min_touch_target_size_for_a11y" ="@drawable/cancel_icon" ="centerInside" ="?placesColorOnSurface" ="@string/places_autocomplete_clear_button" />
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@id/containerWebCustomActivity" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar ="@id/progressBar" ="0.0dip" ="0.0dip" ="wrap_content" ="0.0dip" ="4.0dip" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="?android:progressBarStyleHorizontal" />
+    <androidx.constraintlayout.widget.ConstraintLayout ="@id/containerError" ="fill_parent" ="fill_parent" layout_constraintTop_toBottomOf="@id/progressBar">
+        <ImageView ="@id/imgError" ="fill_parent" ="wrap_content" ="@dimen/dimen_32dp" ="@drawable/ic_no_network" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.25" />
+        <TextView ="@dimen/text_size_16sp" ="wrap_content" ="wrap_content" ="@dimen/dimen_24dp" ="Gagal terhubung \nSilakan periksa koneksi anda" ="center" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgError" style="@style/BpjstkuTextViewPoppins.Black.Bold" />
+        <Button ="@id/btnTryAgain" ="fill_parent" ="wrap_content" ="@dimen/dimen_40dp" ="@dimen/dimen_40dp" ="Coba kembali" ="@dimen/dimen_40dp" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.9" style="@style/BpjstkuButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <WebView ="@id/webView" ="0.0dip" ="0.0dip" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/progressBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

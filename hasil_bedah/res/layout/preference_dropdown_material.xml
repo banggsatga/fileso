@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner ="@id/spinner" ="invisible" ="0.0dip" ="wrap_content" ="@dimen/preference_dropdown_padding_start" ="@dimen/preference_dropdown_padding_start" />
+    <include layout="@layout/preference_material" />
+</FrameLayout>

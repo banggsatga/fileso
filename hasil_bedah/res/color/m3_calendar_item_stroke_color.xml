@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="?colorOnSurfaceVariant" />
+    <item ="true" ="?colorOnSurfaceVariant" />
+    <item ="?colorOutline" ="true" />
+    <item ="@android:color/transparent" />
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@id/main" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/toolbar" ="fill_parent" ="wrap_content" layout="@layout/ef_imagepicker_toolbar" />
+    <FrameLayout ="@id/ef_imagepicker_fragment_placeholder" ="fill_parent" ="fill_parent" ="@id/toolbar" />
+</RelativeLayout>

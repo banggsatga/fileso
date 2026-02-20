@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.cast.framework.internal.featurehighlight.HelpTextView ="vertical" ="wrap_content" ="wrap_content" ="@dimen/cast_libraries_material_featurehighlight_text_horizontal_margin" ="@dimen/cast_libraries_material_featurehighlight_text_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/cast_libraries_material_featurehighlight_text_header_size" ="@color/cast_libraries_material_featurehighlight_text_header_color" ="@id/cast_featurehighlight_help_text_header_view" ="wrap_content" ="wrap_content" />
+    <TextView ="@dimen/cast_libraries_material_featurehighlight_text_body_size" ="@color/cast_libraries_material_featurehighlight_text_body_color" ="@id/cast_featurehighlight_help_text_body_view" ="wrap_content" ="wrap_content" ="@dimen/cast_libraries_material_featurehighlight_text_vertical_space" />
+</com.google.android.gms.cast.framework.internal.featurehighlight.HelpTextView>

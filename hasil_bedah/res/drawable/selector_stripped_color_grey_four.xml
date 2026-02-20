@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true">
+        <shape ="rectangle">
+            <solid ="@color/colorGrey" />
+            <corners ="@dimen/dimen_4dp" />
+            <stroke ="@dimen/dimen_1dp" ="@color/colorCoolGreyFour" ="@dimen/dimen_4dp" ="@dimen/dimen_8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <solid ="@color/colorWhite" />
+            <corners ="@dimen/dimen_4dp" />
+            <stroke ="@dimen/dimen_1dp" ="@color/colorCoolGreyFour" ="@dimen/dimen_4dp" ="@dimen/dimen_8dp" />
+        </shape>
+    </item>
+</selector>

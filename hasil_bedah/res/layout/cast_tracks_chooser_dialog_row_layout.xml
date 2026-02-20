@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="fill_parent" ="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton ="@id/radio" ="false" ="false" ="wrap_content" ="wrap_content" ="10.0dip" ="true" ="true" ="10.0dip" ="true" />
+    <TextView ="@dimen/cast_tracks_chooser_dialog_row_text_size" ="@id/text" ="wrap_content" ="wrap_content" ="10.0dip" ="@id/radio" ="true" ="true" ="10.0dip" ="@id/radio" ="true" />
+</RelativeLayout>

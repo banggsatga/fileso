@@ -1,0 +1,54 @@
+.class public interface abstract LsetDynamicRangeProfile;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\u0008f\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u00020\u0002J\'\u0010\t\u001a\u00020\u00082\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00028\u00002\u0006\u0010\u0007\u001a\u00020\u0006H\'\u00a2\u0006\u0004\u0008\t\u0010\n"
+    }
+    d2 = {
+        "LsetDynamicRangeProfile;",
+        "T",
+        "",
+        "LisSurfaceSharingEnabled;",
+        "p0",
+        "p1",
+        "Lcom/datadog/android/api/storage/EventType;",
+        "p2",
+        "",
+        "TuitionPaymentFragmentbindingInflater1",
+        "(LisSurfaceSharingEnabled;Ljava/lang/Object;Lcom/datadog/android/api/storage/EventType;)Z"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# virtual methods
+.method public abstract TuitionPaymentFragmentbindingInflater1(LisSurfaceSharingEnabled;Ljava/lang/Object;Lcom/datadog/android/api/storage/EventType;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LisSurfaceSharingEnabled;",
+            "TT;",
+            "Lcom/datadog/android/api/storage/EventType;",
+            ")Z"
+        }
+    .end annotation
+.end method

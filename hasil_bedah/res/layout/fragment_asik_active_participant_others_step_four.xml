@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@id/mainContainer" ="@color/colorWhite" ="true" ="true" ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_12sp" ="center_vertical" ="@id/tvReminderVerifyDataPersonal" ="@drawable/bg_rounded_macaroni_and_cheese" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@dimen/dimen_20dp" ="@string/label_instruction_membership_document" ="@dimen/dimen_14dp" ="@drawable/ic_warning" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.White.Medium" />
+        <TextView ="@dimen/text_size_16sp" ="@id/tvGender" ="@dimen/dimen_16dp" ="@string/label_gender_participant" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tvReminderVerifyDataPersonal" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <RadioGroup ="horizontal" ="@id/rgChooseGender" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tvGender">
+            <androidx.appcompat.widget.AppCompatRadioButton ="@dimen/text_size_16sp" ="@id/rbMale" ="@string/label_male" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+            <androidx.appcompat.widget.AppCompatRadioButton ="@dimen/text_size_16sp" ="@id/rbFemale" ="@string/label_female" ="@dimen/dimen_40dp" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilAddressPostalCode" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="*Kabupaten/Kecamatan/Kelurahan/Kode Pos" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/rgChooseGender" layout_constraintVertical_bias="0.0" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtAddressPostalCode" ="true" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="true" ="@id/tilParticipantAddress" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_alamat_mandatory" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tilAddressPostalCode" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText.LongText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilMotherName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_mother_name_mandatory" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tilParticipantAddress" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilMaritalStatus" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@string/hint_marital_status_participant" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tilMotherName" layout_constraintVertical_bias="0.0" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtMaritalStatus" ="true" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilSpouseName" ="gone" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_wife_name" layout_constraintEnd_toEndOf="@id/tilMaritalStatus" layout_constraintStart_toStartOf="@id/tilMaritalStatus" layout_constraintTop_toBottomOf="@id/tilMaritalStatus" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateSpouse" ="gone" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_4dp" ="@string/hint_birth_date_wife" layout_constraintEnd_toEndOf="@id/tilSpouseName" layout_constraintStart_toStartOf="@id/tilSpouseName" layout_constraintTop_toBottomOf="@id/tilSpouseName" style="@style/BpjstkuTextInputLayout.Calender">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateSpouse" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilFatherName" ="gone" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_father_name" layout_constraintEnd_toEndOf="@id/tilMaritalStatus" layout_constraintStart_toStartOf="@id/tilMaritalStatus" layout_constraintTop_toBottomOf="@id/tilMaritalStatus" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateFather" ="gone" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_4dp" ="@string/hint_birth_date_father" layout_constraintEnd_toEndOf="@id/tilFatherName" layout_constraintStart_toStartOf="@id/tilFatherName" layout_constraintTop_toBottomOf="@id/tilFatherName" style="@style/BpjstkuTextInputLayout.Calender">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateFather" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout ="@id/childrenContainer" ="@dimen/dimen_0dp" ="wrap_content" layout_constraintEnd_toEndOf="@id/tilBirthDateSpouse" layout_constraintStart_toStartOf="@id/tilBirthDateSpouse" layout_constraintTop_toBottomOf="@id/tilBirthDateSpouse">
+            <TextView ="@dimen/text_size_16sp" ="@id/tvChildren" ="@dimen/dimen_16dp" ="@string/label_number_of_children" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+            <com.google.android.material.button.MaterialButton ="@id/btnMin" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_48dp" ="@dimen/dimen_48dp" ="@dimen/dimen_16dp" ="@string/hint_minus" ="@dimen/dimen_14dp" layout_constraintStart_toStartOf="@id/tvChildren" layout_constraintTop_toBottomOf="@id/tvChildren" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilChildren" ="@dimen/dimen_10dp" ="@dimen/dimen_10dp" ="@dimen/dimen_80dp" ="wrap_content" ="@dimen/dimen_12dp" ="@dimen/dimen_8dp" ="@dimen/dimen_10dp" layout_constraintStart_toEndOf="@id/btnMin" layout_constraintTop_toBottomOf="@id/tvChildren" style="@style/BpjstkuTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText ="@dimen/dimen_20dp" ="@id/edtChildren" ="@dimen/dimen_0dp" ="@dimen/dimen_12dp" ="@dimen/dimen_0dp" ="@dimen/dimen_12dp" ="2" ="\ 0123456789" ="number" ="actionNext" ="center" ="@dimen/dimen_0dp" ="@dimen/dimen_12dp" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton ="@id/btnPlus" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_48dp" ="@dimen/dimen_48dp" ="@dimen/dimen_16dp" ="+" ="@dimen/dimen_12dp" ="@dimen/dimen_14dp" layout_constraintStart_toEndOf="@id/tilChildren" layout_constraintTop_toBottomOf="@id/tvChildren" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+            <LinearLayout ="vertical" ="@id/childrenNameContainer" ="fill_parent" ="fill_parent" layout_constraintEnd_toEndOf="@id/tilChildren" layout_constraintStart_toStartOf="@id/tilChildren" layout_constraintTop_toBottomOf="@id/tilChildren">
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilFirstChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_first_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateFirstChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_first_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateFirstChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilSecondChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_second_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateSecondChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_second_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateSecondChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilThirdChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_third_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateThirdChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_third_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateThirdChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilFourthChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_fourth_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateFourthChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_fourth_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateFourthChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilFifthChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_fifth_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateFifthChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_fifth_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateFifthChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilSixthChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_sixth_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateSixthChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_sixth_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateSixthChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilSevenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_seven_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateSevenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_seven_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateSevenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilEightChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_eight_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateEightChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_eight_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateEightChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilNineChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_nine_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateNineChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_nine_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateNineChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilTenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_ten_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateTenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_ten_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateTenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilElevenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_eleven_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateElevenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_eleven_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateElevenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilTwelveChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_twelve_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateTwelveChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_twelve_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateTwelveChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilThirteenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_thirteen_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateThirteenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_thirteen_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateThirteenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilFourteenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_fourteen_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateFourteenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_fourteen_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateFourteenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilFifteenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_fifteen_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateFifteenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_fifteen_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateFifteenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilSixteenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_sixteen_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateSixteenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_sixteen_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateSixteenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilSeventeenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_seventeen_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateSeventeenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_seventeen_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateSeventeenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilEighteenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_eighteen_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateEighteenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_eighteen_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateEighteenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilNineteenChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_nineteen_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateNineteenChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_nineteen_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateNineteenChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilTwentyChild" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_twenty_child" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDateTwentyChildren" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_twenty_child" style="@style/BpjstkuTextInputLayout.Calender">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDateTwentyChildren" ="true" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView ="@dimen/text_size_16sp" ="@id/tvScanKTP" ="gone" ="@dimen/dimen_16dp" ="@string/action_scan_id_card" layout_constraintStart_toStartOf="@id/tilSpouseName" layout_constraintTop_toBottomOf="@id/childrenContainer" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <androidx.cardview.widget.CardView ="@id/cvScanKtp" ="gone" ="@dimen/dimen_0dp" ="@dimen/dimen_100dp" ="@dimen/dimen_16dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintEnd_toEndOf="parent" layout_constraintHorizontal_bias="0.0" layout_constraintStart_toStartOf="@id/childrenContainer" layout_constraintTop_toBottomOf="@id/tvScanKTP" layout_constraintWidth_percent="0.42">
+            <ImageView ="@id/imgKtpPhoto" ="gone" ="wrap_content" ="@dimen/dimen_100dp" ="@drawable/ic_ktp" />
+            <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/selector_bordered_grey_blue" ="fill_parent" ="fill_parent">
+                <ImageView ="@id/imgKtpUpload" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@drawable/ic_camera" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.4" />
+                <TextView ="@dimen/text_size_12sp" ="@id/tvScanKTPLabel" ="@string/label_scan_idcard" ="@id/imgKtpUpload" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgKtpUpload" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView ="@dimen/text_size_16sp" ="@id/tvScanKK" ="gone" ="@dimen/dimen_16dp" ="@string/label_scan_kk" ="@dimen/dimen_22dp" layout_constraintStart_toEndOf="@id/cvScanKtp" layout_constraintTop_toBottomOf="@id/childrenContainer" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <androidx.cardview.widget.CardView ="@id/cvScanKK" ="gone" ="@dimen/dimen_0dp" ="@dimen/dimen_100dp" ="@dimen/dimen_16dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintEnd_toEndOf="parent" layout_constraintHorizontal_bias="0.0" layout_constraintStart_toStartOf="@id/tvScanKK" layout_constraintTop_toBottomOf="@id/tvScanKTP" layout_constraintWidth_percent="0.42">
+            <ImageView ="@id/imgKKPhoto" ="gone" ="wrap_content" ="@dimen/dimen_100dp" ="@drawable/ic_ktp" />
+            <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/selector_bordered_grey_blue" ="fill_parent" ="fill_parent">
+                <ImageView ="@id/imgKKUpload" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@drawable/ic_camera" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.4" />
+                <TextView ="@dimen/text_size_12sp" ="@id/tvScanKKLabel" ="@string/label_scan_kk" ="@id/imgKKUpload" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgKKUpload" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView ="@dimen/text_size_12sp" ="@id/tvKtpError" ="gone" ="wrap_content" ="wrap_content" ="@dimen/dimen_8dp" ="@string/error_empty_id_card_photo" layout_constraintStart_toStartOf="@id/cvScanKtp" layout_constraintTop_toBottomOf="@id/cvScanKtp" style="@style/BpjstkuTextViewDmSans.Reddish" />
+        <TextView ="@dimen/text_size_12sp" ="@id/tvKKError" ="gone" ="wrap_content" ="wrap_content" ="@dimen/dimen_8dp" ="@string/error_empty_family_card_photo" layout_constraintStart_toStartOf="@id/cvScanKK" layout_constraintTop_toBottomOf="@id/cvScanKK" style="@style/BpjstkuTextViewDmSans.Reddish" />
+        <com.google.android.material.button.MaterialButton ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@string/action_next" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/childrenContainer" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

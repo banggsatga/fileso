@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="bottom" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="bottom" ="@drawable/bg_rounded_white" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp">
+        <ImageView ="@id/imgWarning" ="wrap_content" ="wrap_content" ="@dimen/dimen_21dp" ="@drawable/ic_warning_2" ="@dimen/dimen_21dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_16sp" ="@id/tvConfirmation" ="wrap_content" ="wrap_content" ="@string/label_confirmation" ="@dimen/dimen_8dp" layout_constraintStart_toEndOf="@id/imgWarning" layout_constraintTop_toTopOf="@id/imgWarning" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <TextView ="@id/tvConfirmationContent" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_53dp" ="@dimen/dimen_17dp" ="@dimen/dimen_53dp" ="@string/sample_vocational_confirmation" ="@dimen/dimen_53dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgWarning" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+        <Button ="@color/colorCoolGrey" ="@id/btnCancel" ="wrap_content" ="wrap_content" ="@dimen/dimen_35dp" ="@dimen/dimen_30dp" ="@string/action_cancel_id" ="@dimen/dimen_16dp" ="@color/colorWhite" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/btnConfirmation" layout_constraintHorizontal_chainStyle="packed" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvConfirmationContent" style="@style/BpjstkuButton" />
+        <Button ="@id/btnConfirmation" ="wrap_content" ="wrap_content" ="@string/action_yes_im_sure" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/btnCancel" layout_constraintTop_toTopOf="@id/btnCancel" style="@style/BpjstkuButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

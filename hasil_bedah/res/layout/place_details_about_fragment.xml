@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@id/about_tab" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView ="@id/features_list" ="fill_parent" ="wrap_content" ="@dimen/gmp_sys_measurement_horizontal_margin" ="@dimen/gmp_sys_measurement_horizontal_margin" ="false" />
+</LinearLayout>

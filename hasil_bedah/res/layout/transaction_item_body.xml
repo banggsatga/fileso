@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="horizontal" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@color/black" ="end" ="@id/item_name" ="@dimen/eight_dp" ="0.0dip" ="wrap_content" ="true" ="5.0" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@color/black" ="end" ="center_horizontal" ="@id/item_quantity" ="@dimen/eight_dp" ="@dimen/eight_dp" ="0.0dip" ="wrap_content" ="1.0" />
+    <com.midtrans.sdk.uikit.widgets.BoldTextView ="@color/black" ="end" ="right" ="@id/item_price" ="@dimen/eight_dp" ="0.0dip" ="wrap_content" ="true" ="3.0" />
+</LinearLayout>

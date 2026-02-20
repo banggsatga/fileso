@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="wrap_content" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@style/TextAppearance.AppCompat.Tooltip" ="?tooltipForegroundColor" ="end" ="@id/message" ="?tooltipFrameBackground" ="@dimen/tooltip_horizontal_padding" ="@dimen/tooltip_vertical_padding" ="@dimen/tooltip_horizontal_padding" ="@dimen/tooltip_vertical_padding" ="wrap_content" ="wrap_content" ="@dimen/tooltip_margin" ="256.0dip" ="3" ="@dimen/tooltip_horizontal_padding" ="@dimen/tooltip_horizontal_padding" />
+</LinearLayout>

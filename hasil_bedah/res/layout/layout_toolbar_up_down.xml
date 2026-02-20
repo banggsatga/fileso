@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar ="@id/toolbar" ="@drawable/bg_half_rounded_white" ="fill_parent" ="?actionBarSize" contentInsetEnd="@dimen/dimen_0dp" contentInsetStartWithNavigation="@dimen/dimen_0dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/text_size_14sp" ="@id/tvToolbarTitle" ="wrap_content" ="wrap_content" ="Direktori Kantor Cabang" ="@dimen/dimen_32dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+    <ImageButton ="wrap_content" ="wrap_content" ="@drawable/ic_arrow_down" />
+</com.google.android.material.appbar.MaterialToolbar>

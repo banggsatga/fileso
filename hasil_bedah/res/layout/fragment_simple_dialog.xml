@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_white" ="@dimen/dimen_20dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+        <TextView ="@id/tvResultMessage" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_21dp" ="@dimen/text_size_6sp" ="center" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout_goneMarginTop="@dimen/dimen_21dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+        <com.google.android.material.button.MaterialButton ="@id/btnResultDialog" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_32dp" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="@id/tvResultMessage" layout_constraintStart_toStartOf="@id/tvResultMessage" layout_constraintTop_toBottomOf="@id/tvResultMessage" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

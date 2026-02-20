@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" ="@dimen/dimen_20dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="@dimen/dimen_10dp" ="fill_parent" ="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView ="@id/icLoyaltiMenu" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" ="true" ="@dimen/dimen_20dp" />
+        <androidx.appcompat.widget.AppCompatTextView ="@color/colorBlack" ="@id/tvTitleLoyalti" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@id/imgBalanceCheck" ="@id/icLoyaltiMenu" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <androidx.appcompat.widget.AppCompatImageView ="@id/imgBalanceCheck" ="wrap_content" ="wrap_content" ="@drawable/ic_chevron_right" ="true" ="@dimen/dimen_20dp" ="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

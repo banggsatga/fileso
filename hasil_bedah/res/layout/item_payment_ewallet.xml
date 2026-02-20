@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="false" ="fill_parent" ="wrap_content" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgEwallet" ="?selectableItemBackground" ="@dimen/dimen_150dp" ="@dimen/dimen_50dp" ="centerCrop" ="true" layout_constraintDimensionRatio="3:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <ImageView ="@id/imgCheckListGopay" ="gone" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="@dimen/dimen_7dp" ="@drawable/ic_success" ="@dimen/dimen_7dp" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" />
+    <ImageView ="@id/imgCheckListShopeePay" ="gone" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="@dimen/dimen_7dp" ="@drawable/ic_success" ="@dimen/dimen_7dp" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

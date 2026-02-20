@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="@color/colorWhite" ="fill_parent" ="fill_parent" ="true" ="never" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@android:color/transparent" ="fill_parent" ="wrap_content">
+        <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+        <TextView ="@dimen/text_size_20sp" ="center" ="@id/act_ewconnect_title" ="fill_parent" ="wrap_content" ="@dimen/dimen_64dp" ="@dimen/dimen_16dp" ="@dimen/dimen_64dp" ="@string/label_connect_motionpay" ="@dimen/dimen_64dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+        <ImageView ="@id/act_ewconnect_logo" ="@dimen/dimen_128dp" ="@dimen/dimen_128dp" ="@dimen/dimen_14dp" ="@drawable/ic_motionpay" ="fitCenter" ="true" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/act_ewconnect_title" />
+        <TextView ="@dimen/text_size_24sp" ="center" ="@id/act_ewconnect_phone" ="fill_parent" ="wrap_content" ="@dimen/dimen_64dp" ="@dimen/dimen_0dp" ="@dimen/dimen_64dp" ="@dimen/dimen_64dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/act_ewconnect_logo" style="@style/BpjstkuTextViewPoppins.CoolGrey.SemiBold" />
+        <com.google.android.material.button.MaterialButton ="@color/red" ="@id/act_ewconnect_phone_change" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_5dp" ="@dimen/dimen_16dp" ="@string/label_motionpay_phone" ="@dimen/dimen_16dp" layout_constraintTop_toBottomOf="@id/act_ewconnect_phone" style="@style/BpjstkuTextButton" />
+        <ScrollView ="@color/colorPaleGrey" ="fill_parent" ="@dimen/dimen_0dp" ="@dimen/dimen_18dp" ="@dimen/dimen_16dp" ="@dimen/dimen_18dp" ="@dimen/dimen_16dp" ="false" ="@dimen/dimen_18dp" ="@dimen/dimen_16dp" layout_constraintBottom_toTopOf="@id/act_ewconnect_connect" layout_constraintTop_toBottomOf="@id/act_ewconnect_phone_change">
+            <TextView ="@dimen/text_size_14sp" ="@id/act_ewconnect_tc" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" ="fill_parent" ="wrap_content" ="@string/label_ewallet_motionpay_tc" ="true" ="simple" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Black" />
+        </ScrollView>
+        <com.google.android.material.button.MaterialButton ="@id/act_ewconnect_connect" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@string/action_connect_v2_id" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="parent" style="@style/BpjstkuButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

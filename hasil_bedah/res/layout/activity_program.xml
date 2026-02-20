@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgProgramBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@dimen/dimen_14dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/layout_toolbar" layout="@layout/layout_toolbar_center" />
+    <com.kennyc.view.MultiStateView ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" msv_emptyView="@layout/default_error_layout" msv_errorView="@layout/default_error_layout" msv_loadingView="@layout/default_loading_layout">
+        <androidx.recyclerview.widget.RecyclerView ="@id/rvProgram" ="fill_parent" ="fill_parent" ="@dimen/dimen_36dp" ="never" />
+    </com.kennyc.view.MultiStateView>
+</androidx.constraintlayout.widget.ConstraintLayout>

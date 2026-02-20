@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content" ="16.0dip" ="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="48.0dip">
+        <ImageView ="@id/mr_cast_route_icon" ="24.0dip" ="24.0dip" />
+        <TextView ="@id/mr_cast_route_name" ="0.0dip" ="wrap_content" ="16.0dip" ="16.0dip" ="true" ="1.0" />
+        <CheckBox ="@id/mr_cast_checkbox" ="24.0dip" ="24.0dip" />
+    </LinearLayout>
+    <LinearLayout ="center_vertical" ="horizontal" ="@id/mr_cast_volume_layout" ="fill_parent" ="48.0dip">
+        <ImageView ="center" ="24.0dip" ="24.0dip" ="16.0dip" ="?mediaRouteAudioTrackDrawable" ="center" />
+        <androidx.mediarouter.app.MediaRouteVolumeSlider ="@id/mr_cast_volume_slider" ="fill_parent" ="fill_parent" ="@string/mr_controller_volume_slider" />
+    </LinearLayout>
+</LinearLayout>

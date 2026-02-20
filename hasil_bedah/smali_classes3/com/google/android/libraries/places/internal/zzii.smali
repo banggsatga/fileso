@@ -1,0 +1,40 @@
+.class final synthetic Lcom/google/android/libraries/places/internal/zzii;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/android/gms/tasks/SuccessContinuation;
+
+
+# instance fields
+.field private final synthetic zza:Lcom/google/android/libraries/places/internal/zzip;
+
+
+# direct methods
+.method synthetic constructor <init>(Lcom/google/android/libraries/places/internal/zzip;)V
+    .locals 0
+
+    .line 65354
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/libraries/places/internal/zzii;->zza:Lcom/google/android/libraries/places/internal/zzip;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic then(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
+    .locals 1
+
+    .line 65353
+    iget-object v0, p0, Lcom/google/android/libraries/places/internal/zzii;->zza:Lcom/google/android/libraries/places/internal/zzip;
+
+    check-cast p1, Lcom/google/android/libraries/places/internal/zzato;
+
+    invoke-virtual {v0, p1}, Lcom/google/android/libraries/places/internal/zzip;->zzn(Lcom/google/android/libraries/places/internal/zzato;)Lcom/google/android/gms/tasks/Task;
+
+    move-result-object p1
+
+    return-object p1
+.end method

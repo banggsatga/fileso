@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="@android:color/transparent" ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_18sp" ="@id/tvWelcomeCareContactCenter" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@string/label_welcome_care_contact_center" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <TextView ="@dimen/text_size_12sp" ="center_vertical" ="@id/tvOurServiceInfo" ="@drawable/bg_rounded_macaroni_and_cheese" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_25dp" ="@string/label_service_hour" ="@dimen/dimen_14dp" ="@drawable/ic_loud_speaker_circle" ="center" layout_constraintEnd_toEndOf="@id/tvWelcomeCareContactCenter" layout_constraintStart_toStartOf="@id/tvWelcomeCareContactCenter" layout_constraintTop_toBottomOf="@id/tvWelcomeCareContactCenter" style="@style/BpjstkuTextViewDmSans.White.Bold" />
+        <ImageView ="@id/imgCallCenter" ="@android:color/transparent" ="@dimen/dimen_0dp" ="@dimen/dimen_202dp" ="@dimen/dimen_30dp" ="@drawable/ic_ask_bpjamsostek" layout_constraintEnd_toEndOf="@id/tvOurServiceInfo" layout_constraintStart_toStartOf="@id/tvOurServiceInfo" layout_constraintTop_toBottomOf="@id/tvOurServiceInfo" />
+        <com.google.android.material.button.MaterialButton ="@id/btnCallCareContactCenter" ="@dimen/dimen_22dp" ="@dimen/dimen_16dp" ="@dimen/dimen_22dp" ="@dimen/dimen_16dp" ="0.0dip" ="wrap_content" ="@dimen/dimen_30dp" ="@string/action_call_contact_center" ="false" ="center" ="@dimen/dimen_22dp" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="@id/imgCallCenter" layout_constraintStart_toStartOf="@id/imgCallCenter" layout_constraintTop_toBottomOf="@id/imgCallCenter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

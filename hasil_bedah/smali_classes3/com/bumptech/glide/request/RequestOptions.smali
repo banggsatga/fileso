@@ -1,0 +1,164 @@
+.class public Lcom/bumptech/glide/request/RequestOptions;
+.super Lcom/bumptech/glide/request/BaseRequestOptions;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/bumptech/glide/request/BaseRequestOptions<",
+        "Lcom/bumptech/glide/request/RequestOptions;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 26
+    invoke-direct {p0}, Lcom/bumptech/glide/request/BaseRequestOptions;-><init>()V
+
+    return-void
+.end method
+
+.method public static TuitionPaymentFragmentspecialinlinedviewModeldefault1(Ljava/lang/Class;)Lcom/bumptech/glide/request/RequestOptions;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "*>;)",
+            "Lcom/bumptech/glide/request/RequestOptions;"
+        }
+    .end annotation
+
+    .line 213
+    new-instance v0, Lcom/bumptech/glide/request/RequestOptions;
+
+    invoke-direct {v0}, Lcom/bumptech/glide/request/RequestOptions;-><init>()V
+
+    invoke-virtual {v0, p0}, Lcom/bumptech/glide/request/BaseRequestOptions;->b(Ljava/lang/Class;)Lcom/bumptech/glide/request/BaseRequestOptions;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bumptech/glide/request/RequestOptions;
+
+    return-object p0
+.end method
+
+.method public static TuitionPaymentFragmentspecialinlinedviewModeldefault2(LSynchronizedCaptureSessionBaseImplExternalSyntheticLambda1;)Lcom/bumptech/glide/request/RequestOptions;
+    .locals 1
+
+    .line 134
+    new-instance v0, Lcom/bumptech/glide/request/RequestOptions;
+
+    invoke-direct {v0}, Lcom/bumptech/glide/request/RequestOptions;-><init>()V
+
+    invoke-virtual {v0, p0}, Lcom/bumptech/glide/request/BaseRequestOptions;->b(LSynchronizedCaptureSessionBaseImplExternalSyntheticLambda1;)Lcom/bumptech/glide/request/BaseRequestOptions;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bumptech/glide/request/RequestOptions;
+
+    return-object p0
+.end method
+
+.method public static TuitionPaymentFragmentspecialinlinedviewModeldefault3(I)Lcom/bumptech/glide/request/RequestOptions;
+    .locals 1
+
+    .line 77
+    new-instance v0, Lcom/bumptech/glide/request/RequestOptions;
+
+    invoke-direct {v0}, Lcom/bumptech/glide/request/RequestOptions;-><init>()V
+
+    invoke-virtual {v0, p0}, Lcom/bumptech/glide/request/BaseRequestOptions;->TuitionPaymentFragmentspecialinlinedviewModeldefault1(I)Lcom/bumptech/glide/request/BaseRequestOptions;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bumptech/glide/request/RequestOptions;
+
+    return-object p0
+.end method
+
+.method public static TuitionPaymentFragmentspecialinlinedviewModeldefault3(Lr8lambdaVqnrtq704RDT2IwKgNqufDXYKI;)Lcom/bumptech/glide/request/RequestOptions;
+    .locals 1
+
+    .line 52
+    new-instance v0, Lcom/bumptech/glide/request/RequestOptions;
+
+    invoke-direct {v0}, Lcom/bumptech/glide/request/RequestOptions;-><init>()V
+
+    invoke-virtual {v0, p0}, Lcom/bumptech/glide/request/BaseRequestOptions;->TuitionPaymentFragmentbindingInflater1(Lr8lambdaVqnrtq704RDT2IwKgNqufDXYKI;)Lcom/bumptech/glide/request/BaseRequestOptions;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bumptech/glide/request/RequestOptions;
+
+    return-object p0
+.end method
+
+.method public static bitmapTransform(Lcom/bumptech/glide/load/Transformation;)Lcom/bumptech/glide/request/RequestOptions;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/bumptech/glide/load/Transformation<",
+            "Landroid/graphics/Bitmap;",
+            ">;)",
+            "Lcom/bumptech/glide/request/RequestOptions;"
+        }
+    .end annotation
+
+    .line 185
+    new-instance v0, Lcom/bumptech/glide/request/RequestOptions;
+
+    invoke-direct {v0}, Lcom/bumptech/glide/request/RequestOptions;-><init>()V
+
+    invoke-virtual {v0, p0}, Lcom/bumptech/glide/request/BaseRequestOptions;->TuitionPaymentFragmentspecialinlinedviewModeldefault3(Lcom/bumptech/glide/load/Transformation;)Lcom/bumptech/glide/request/BaseRequestOptions;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bumptech/glide/request/RequestOptions;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 286
+    instance-of v0, p1, Lcom/bumptech/glide/request/RequestOptions;
+
+    if-eqz v0, :cond_0
+
+    invoke-super {p0, p1}, Lcom/bumptech/glide/request/BaseRequestOptions;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    .line 294
+    invoke-super {p0}, Lcom/bumptech/glide/request/BaseRequestOptions;->hashCode()I
+
+    move-result v0
+
+    return v0
+.end method

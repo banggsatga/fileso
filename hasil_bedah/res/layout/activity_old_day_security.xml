@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="@color/colorWhite" ="fill_parent" ="fill_parent" ="true" ="never" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+        <ImageView ="@id/imgOldDaySecurtityBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+        <com.kennyc.view.MultiStateView ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@dimen/dimen_30dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" msv_emptyView="@layout/default_error_layout" msv_errorView="@layout/default_error_layout" msv_loadingView="@layout/default_loading_layout">
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvOldDaySecurity" ="fill_parent" ="fill_parent" ="@dimen/dimen_22dp" ="ifContentScrolls" />
+        </com.kennyc.view.MultiStateView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

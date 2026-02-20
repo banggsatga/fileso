@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="@android:id/background" ="@drawable/ic_star_rating_empty" />
+    <item ="@android:id/secondaryProgress" ="@drawable/ic_star_rating" />
+    <item ="@android:id/progress" ="@drawable/ic_star_rating" />
+</layer-list>

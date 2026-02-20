@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.browser.browseractions.BrowserActionsFallbackMenuView ="center" ="vertical" ="@id/browser_actions_menu_view" ="@color/browser_actions_bg_grey" ="wrap_content" ="wrap_content" ="280.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="13.0sp" ="bold" ="@color/browser_actions_title_color" ="end" ="center" ="@id/browser_actions_header_text" ="fill_parent" ="wrap_content" ="10.0dip" ="10.0dip" ="1" ="20.0dip" ="20.0dip" />
+    <View ="@color/browser_actions_divider_color" ="fill_parent" ="1.0dip" />
+    <ListView ="@id/browser_actions_menu_items" ="8.0dip" ="8.0dip" ="fill_parent" ="wrap_content" ="@null" ="0.0dip" />
+</androidx.browser.browseractions.BrowserActionsFallbackMenuView>

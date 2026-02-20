@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@id/bottomSheetContainer" ="@drawable/bg_bottom_sheet" ="true" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView ="fill_parent" ="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout ="@dimen/dimen_10dp" ="@dimen/dimen_10dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@dimen/dimen_10dp">
+            <View ="@id/viewTopLine" ="@color/colorPaleGreyFour" ="@dimen/dimen_50dp" ="@dimen/dimen_4dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+            <LinearLayout ="center" ="horizontal" ="@id/llPaymentItem" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/viewTopLine">
+                <ImageView ="@id/imgStatusPaymentHistory" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" />
+                <TextView ="@dimen/text_size_16sp" ="@id/tvStatusPaymentHistory" ="wrap_content" ="wrap_content" style="@style/BpjstkuTextViewDmSans.Black.Bold" />
+            </LinearLayout>
+            <TextView ="@dimen/text_size_14sp" ="@id/tvDatePayment" ="wrap_content" ="wrap_content" ="@dimen/dimen_6dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/llPaymentItem" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <TextView ="@dimen/text_size_16sp" ="@id/tvTitleTransactionId" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_60dp" ="@dimen/dimen_20dp" ="NIK" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvDatePayment" style="@style/BpjstkuTextViewDmSans.Black.Bold" />
+            <TextView ="@dimen/text_size_14sp" ="@id/tvValueTransactionId" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_6dp" ="@dimen/dimen_20dp" ="\ 12312312321321" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitleTransactionId" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <TextView ="@dimen/text_size_16sp" ="@id/tvTitlePaymentHistory" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_24dp" ="@dimen/dimen_20dp" ="Rincian Pembayaran" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvValueTransactionId" style="@style/BpjstkuTextViewDmSans.Black.Bold" />
+            <com.kennyc.view.MultiStateView ="@id/msvDetailTuitionResult" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="@id/tvTitlePaymentHistory" layout_constraintTop_toBottomOf="@id/tvTitlePaymentHistory" msv_emptyView="@layout/default_error_layout" msv_errorView="@layout/default_error_layout" msv_loadingView="@layout/default_loading_layout">
+                <androidx.recyclerview.widget.RecyclerView ="@id/rvDetailTuitionResult" ="fill_parent" ="fill_parent" ="never" />
+            </com.kennyc.view.MultiStateView>
+            <TextView ="@dimen/text_size_16sp" ="@id/tvMerchantPayment" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_24dp" ="@dimen/dimen_20dp" ="Metode Pembayaran" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/msvDetailTuitionResult" style="@style/BpjstkuTextViewDmSans.Black.Bold" />
+            <ImageView ="center" ="@id/imgMethodPayment" ="@dimen/dimen_56dp" ="@dimen/dimen_32dp" ="@dimen/dimen_8dp" layout_constraintStart_toStartOf="@id/tvMerchantPayment" layout_constraintTop_toBottomOf="@id/tvMerchantPayment" />
+            <TextView ="@dimen/text_size_16sp" ="center" ="@id/tvMerchantPaymentDescription" ="wrap_content" ="wrap_content" ="GoPay" ="@dimen/dimen_12dp" layout_constraintBottom_toBottomOf="@id/imgMethodPayment" layout_constraintStart_toEndOf="@id/imgMethodPayment" layout_constraintTop_toTopOf="@id/imgMethodPayment" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <com.google.android.material.button.MaterialButton ="@id/btnBack" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@string/action_back" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toBottomOf="@id/tvMerchantPaymentDescription" style="@style/BpjstkuTextButton.WhiteBackground" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="fill_parent" ="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView ="@id/imgJpnSimulation" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" ="@drawable/ic_jp_simulation" ="@id/tvJpSimulationMenu" ="@id/tvJpSimulationDescription" ="@dimen/dimen_20dp" />
+        <androidx.appcompat.widget.AppCompatTextView ="@color/colorBlack" ="@id/tvJpSimulationMenu" ="@dimen/dimen_20dp" ="@string/label_jp_simulation_menu" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@id/imgBalanceCheck" ="@id/imgJpnSimulation" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <androidx.appcompat.widget.AppCompatTextView ="@id/tvJpSimulationDescription" ="@dimen/dimen_20dp" ="@string/label_jp_simulation_description" ="@id/tvJpSimulationMenu" ="@id/imgJpnSimulation" ="@id/tvJpSimulationMenu" ="@id/tvJpSimulationMenu" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+        <androidx.appcompat.widget.AppCompatImageView ="@id/imgBalanceCheck" ="wrap_content" ="wrap_content" ="@drawable/ic_chevron_right" ="true" ="@dimen/dimen_20dp" ="true" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="@id/card_number_container" ="fill_parent" ="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout ="@id/container_edit_card_number" ="fill_parent" ="wrap_content" ="true">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edit_card_number" ="@id/et_exp_date" ="fill_parent" ="wrap_content" ="@string/hint_card_number" ="true" ="19" ="0123456789 " ="number" ="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout ="@dimen/eight_dp" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="true" ="true">
+            <com.midtrans.sdk.uikit.widgets.AspectRatioImageView ="@id/image_bank_logo" ="@dimen/bank_logo_size" ="@dimen/bank_logo_size" ="@dimen/four_dp" ="@dimen/four_dp" />
+            <com.midtrans.sdk.uikit.widgets.AspectRatioImageView ="@id/image_card_logo" ="@dimen/payment_logo_size" ="@dimen/payment_logo_size" ="@dimen/four_dp" ="@dimen/four_dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout ="horizontal" ="@id/container_card_expiry_cvv" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="false" ="1.0" ="@id/card_number_container">
+        <RelativeLayout ="0.0dip" ="wrap_content" ="0.6">
+            <com.google.android.material.textfield.TextInputLayout ="@id/container_card_expiry" ="fill_parent" ="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText ="bottom" ="@id/edit_card_expiry" ="@id/et_cvv" ="fill_parent" ="wrap_content" ="@string/hint_expiry_date" ="1" ="7" ="date" ="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout ="0.0dip" ="wrap_content" ="@dimen/eight_dp" ="0.4" ="@dimen/eight_dp">
+            <com.google.android.material.textfield.TextInputLayout ="@id/container_card_cvv" ="fill_parent" ="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText ="@id/edit_card_cvv" ="fill_parent" ="wrap_content" ="@string/hint_cvv" ="1" ="6" ="numberPassword" ="actionDone" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.midtrans.sdk.uikit.widgets.FancyButton ="@id/button_scan_card" ="visible" ="wrap_content" ="wrap_content" ="19.0dip" ="@id/container_card_expiry_cvv" ="true" fb_borderColor="@color/navy_blue.primary_dark" fb_iconColor="@color/navy_blue.primary_dark" fb_iconResource="@null" fb_text="@string/btn_scan_card" fb_textColor="@color/navy_blue.primary_dark" style="@style/ButtonSecondary" />
+</RelativeLayout>

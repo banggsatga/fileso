@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="center_vertical" ="false" ="wrap_content" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="center" ="@id/dot" ="@drawable/dot_background" ="8.0dip" ="8.0dip" />
+</FrameLayout>

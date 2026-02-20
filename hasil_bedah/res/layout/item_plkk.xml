@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="@color/colorWhite" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_16sp" ="@id/tvPlkkName" ="wrap_content" ="wrap_content" ="@dimen/dimen_13dp" ="@string/sample_plkk_1" ="@dimen/dimen_30dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <ImageView ="@id/imgSelected" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@drawable/ic_success" ="@dimen/dimen_30dp" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="@id/tvPlkkName" />
+        <View ="@color/colorPaleGreyFour" ="fill_parent" ="1.0dip" ="@dimen/dimen_30dp" ="@dimen/dimen_21dp" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvPlkkName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

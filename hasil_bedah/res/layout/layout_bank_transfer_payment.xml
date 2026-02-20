@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.tabs.TabLayout ="@id/tab_instructions" ="fill_parent" ="wrap_content" tabGravity="fill" tabIndicatorColor="@color/gray.primary" />
+    <View ="@color/gray_divider" ="fill_parent" ="1.0dip" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/text_notificationToken" ="gone" ="fill_parent" ="wrap_content" style="@style/TokenNotification" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/text_notificationOtp" ="gone" ="fill_parent" ="wrap_content" style="@style/OtpNotification" />
+    <include ="@id/other_atm_guidance" ="gone" ="fill_parent" ="wrap_content" layout="@layout/layout_other_atm_network_guidance" />
+    <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout ="@id/container_email" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="true" ="true" ="fill_parent" ="wrap_content" ="@string/hint_email_optional">
+            <androidx.appcompat.widget.AppCompatEditText ="@id/edit_email" ="fill_parent" ="wrap_content" ="1" ="100" ="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/tertiary_text_size" ="@color/dark_gray" ="@dimen/twenty_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@string/email_instruction" ="@dimen/twenty_dp" ="@dimen/sixteen_dp" />
+        <com.midtrans.sdk.uikit.widgets.MagicViewPager ="@id/tab_view_pager" ="fill_parent" ="wrap_content" ="@dimen/twelve_dp" />
+    </LinearLayout>
+</LinearLayout>

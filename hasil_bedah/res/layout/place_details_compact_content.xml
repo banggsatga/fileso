@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="?placesSpacingMedium" ="fill_parent" ="fill_parent" ="?placesSpacingLarge" ="?placesSpacingLarge" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar ="center_horizontal" ="@id/loading_indicator" ="wrap_content" ="wrap_content" ="true" ="?placesColorPrimary" />
+    <TextView ="?placesTextAppearanceBodyMedium" ="?placesColorOnSurface" ="@id/loading_failed_message" ="wrap_content" ="wrap_content" ="@string/place_details_loading_failed" />
+    <TextView ="?placesTextAppearanceTitleSmall" ="?placesColorOnSurface" ="@id/place_name" ="wrap_content" ="wrap_content" ="locale" ="locale" />
+    <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_address" ="wrap_content" ="wrap_content" ="locale" ="locale" />
+    <View ="fill_parent" ="?placesSpacingSmall" />
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <LinearLayout ="horizontal" ="@id/place_rating_container" ="wrap_content" ="wrap_content">
+            <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_rating" ="wrap_content" ="wrap_content" ="no" />
+            <View ="@id/place_rating_spacer" ="?placesSpacingExtraSmall" ="@dimen/rating_stars_spacing" />
+            <ImageView ="center_vertical" ="@id/rating_stars" ="gone" ="wrap_content" ="wrap_content" ="@drawable/ratings_full_star" ="centerInside" ="no" />
+        </LinearLayout>
+        <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="?placesColorPrimary" ="@id/place_rating_count" ="gone" ="0.0dip" ="wrap_content" />
+        <androidx.constraintlayout.helper.widget.Flow ="horizontal" ="fill_parent" ="fill_parent" constraint_referenced_ids="place_rating_container,place_rating_count" flow_horizontalBias="0.0" flow_horizontalGap="?placesSpacingExtraSmall" flow_horizontalStyle="packed" flow_wrapMode="chain" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_type" ="wrap_content" ="wrap_content" ="locale" ="locale" />
+        <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_type_price_spacer" ="gone" ="wrap_content" ="wrap_content" ="@string/place_details_content_spacer" ="no" />
+        <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_price" ="wrap_content" ="wrap_content" />
+        <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_price_a11y_spacer" ="gone" ="wrap_content" ="wrap_content" ="@string/place_details_content_spacer" ="no" />
+        <ImageView ="center_vertical" ="@id/wheelchair_accessibility_icon" ="gone" ="wrap_content" ="wrap_content" ="@drawable/gs_accessible_forward_vd_24" ="centerInside" ="?placesColorInfo" ="@string/place_details_wheelchair_icon_a11y_label" />
+        <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_wheelchair_icon_label" ="gone" ="wrap_content" ="wrap_content" ="@string/place_details_wheelchair_icon_label" />
+        <androidx.constraintlayout.helper.widget.Flow ="horizontal" ="fill_parent" ="fill_parent" constraint_referenced_ids="place_type,place_type_price_spacer,place_price,place_price_a11y_spacer,wheelchair_accessibility_icon,place_wheelchair_icon_label" flow_horizontalBias="0.0" flow_horizontalGap="?placesSpacingExtraSmall" flow_horizontalStyle="packed" flow_wrapMode="chain" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_open_status" ="wrap_content" ="wrap_content" />
+        <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_open_status_and_time_spacer" ="gone" ="wrap_content" ="wrap_content" ="@string/place_details_content_spacer" ="no" />
+        <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurfaceVariant" ="@id/place_next_open_or_close_time" ="wrap_content" ="wrap_content" />
+        <androidx.constraintlayout.helper.widget.Flow ="horizontal" ="fill_parent" ="fill_parent" constraint_referenced_ids="place_open_status,place_open_status_and_time_spacer,place_next_open_or_close_time" flow_horizontalBias="0.0" flow_horizontalGap="?placesSpacingExtraSmall" flow_horizontalStyle="packed" flow_wrapMode="chain" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View ="fill_parent" ="?placesSpacingSmall" />
+</LinearLayout>

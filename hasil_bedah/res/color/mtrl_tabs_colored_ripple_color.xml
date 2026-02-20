@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="?colorOnPrimary" ="0.16" />
+    <item ="true" ="?colorOnPrimary" ="0.32" ="true" />
+    <item ="true" ="?colorOnPrimary" ="0.24" />
+    <item ="?colorOnPrimary" ="0.08" ="true" />
+    <item ="?colorOnPrimary" ="0.0" />
+</selector>

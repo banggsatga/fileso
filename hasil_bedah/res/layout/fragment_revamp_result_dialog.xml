@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_white" ="@dimen/dimen_20dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+        <ImageView ="@id/imgDialog" ="visible" ="wrap_content" ="wrap_content" ="centerCrop" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <ImageView ="@id/imgState" ="gone" ="@dimen/dimen_72dp" ="@dimen/dimen_72dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_16sp" ="@id/tvResultTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@string/label_title_confirm_asik_dialog" ="center" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgDialog" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <TextView ="@dimen/text_size_13sp" ="@id/tvResultMessage" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_message_confirm_asik_dialog" ="center" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvResultTitle" layout_goneMarginTop="@dimen/dimen_10dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+        <LinearLayout ="horizontal" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvResultMessage">
+            <com.google.android.material.button.MaterialButton ="@id/btnRevampCancel" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="0.0dip" ="wrap_content" ="@string/action_return" ="1.0" ="@dimen/dimen_10dp" ="@dimen/dimen_14dp" style="@style/BpjstkuOutlinedButton" />
+            <com.google.android.material.button.MaterialButton ="@id/btnRevampContinue" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="0.0dip" ="wrap_content" ="@string/label_Lapak_asik_dialog" ="1.0" ="@dimen/dimen_14dp" style="@style/BpjstkuButton.WhiteText" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

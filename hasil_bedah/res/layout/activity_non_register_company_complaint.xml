@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@color/colorWhite" ="true" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout="@layout/layout_toolbar_center" />
+    <ScrollView ="fill_parent" ="fill_parent" ="true">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+            <ImageButton ="@id/btnTakeCompanyPhoto" ="@drawable/selector_stripped_color_grey_four" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="@dimen/dimen_28dp" ="@dimen/dimen_20dp" ="centerCrop" ="@dimen/dimen_20dp" layout_constraintDimensionRatio="16:9" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+            <ImageView ="@id/imgCamera" ="@drawable/ic_camera" ="wrap_content" ="wrap_content" layout_constraintBottom_toBottomOf="@id/btnTakeCompanyPhoto" layout_constraintEnd_toEndOf="@id/btnTakeCompanyPhoto" layout_constraintStart_toStartOf="@id/btnTakeCompanyPhoto" layout_constraintTop_toTopOf="@id/btnTakeCompanyPhoto" layout_constraintVertical_bias="0.4" />
+            <TextView ="@id/tvTakePhoto" ="wrap_content" ="wrap_content" ="@dimen/dimen_10dp" ="@string/label_take_company_photo" layout_constraintEnd_toEndOf="@id/btnTakeCompanyPhoto" layout_constraintStart_toStartOf="@id/btnTakeCompanyPhoto" layout_constraintTop_toBottomOf="@id/imgCamera" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            <TextView ="@color/colorErrorRed" ="@id/tvCompanyPhotoError" ="visible" ="wrap_content" ="wrap_content" ="@dimen/dimen_8dp" ="@string/error_company_image_empty" layout_constraintLeft_toLeftOf="@id/btnTakeCompanyPhoto" layout_constraintTop_toBottomOf="@id/btnTakeCompanyPhoto" />
+            <TextView ="@color/colorCharcoalGrey" ="@id/tvFillForm" ="@dimen/dimen_0dp" ="@dimen/dimen_16dp" ="@string/label_fill_nonreg_company_complaint_form" layout_constraintEnd_toEndOf="@id/btnTakeCompanyPhoto" layout_constraintStart_toStartOf="@id/btnTakeCompanyPhoto" layout_constraintTop_toBottomOf="@id/tvCompanyPhotoError" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilCompanyName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_nama_perusahaan" layout_constraintEnd_toEndOf="@id/btnTakeCompanyPhoto" layout_constraintStart_toStartOf="@id/btnTakeCompanyPhoto" layout_constraintTop_toBottomOf="@id/tvFillForm" style="@style/BpjstkuTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText ="textCapCharacters" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilCompanyLocation" ="false" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_lokasi_perusahaan" layout_constraintEnd_toEndOf="@id/btnTakeCompanyPhoto" layout_constraintStart_toStartOf="@id/btnTakeCompanyPhoto" layout_constraintTop_toBottomOf="@id/tilCompanyName" style="@style/BpjstkuTextInputLayout.Location">
+                <com.google.android.material.textfield.TextInputEditText ="@dimen/dimen_12dp" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilCompanyAddress" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_alamat_perusahaan" layout_constraintEnd_toEndOf="@id/btnTakeCompanyPhoto" layout_constraintStart_toStartOf="@id/btnTakeCompanyPhoto" layout_constraintTop_toBottomOf="@id/tilCompanyLocation" style="@style/BpjstkuTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText ="start|center|top" ="5" ="5" ="150" ="textCapCharacters|textMultiLine" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button ="false" ="@id/btnSendComplaintNonRegisteredCompany" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@string/label_sent" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/tilCompanyAddress" layout_constraintStart_toStartOf="@id/tilCompanyAddress" layout_constraintTop_toBottomOf="@id/tilCompanyAddress" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

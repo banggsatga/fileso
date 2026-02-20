@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="horizontal" ="?placesSpacingLarge" ="wrap_content" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@dimen/gmp_sys_measurement_icon_size_small" ="@dimen/gmp_sys_measurement_icon_size_small" ="@drawable/gs_check_vd_24" ="?placesColorOnSurface" ="no" ="?placesSpacingExtraSmall" />
+    <TextView ="?placesTextAppearanceBodySmall" ="?placesColorOnSurface" ="@id/feature_name" ="?placesSpacingLarge" ="wrap_content" ="wrap_content" ="?placesSpacingSmall" />
+</LinearLayout>

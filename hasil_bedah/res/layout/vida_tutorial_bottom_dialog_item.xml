@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center" ="horizontal" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView ="@id/logo" ="@dimen/vida_layout_dim_72" ="@dimen/vida_layout_dim_72" />
+    <androidx.appcompat.widget.AppCompatTextView ="?vida_tutorial_dialog_screen_warning_text_font_size" ="?vida_tutorial_dialog_screen_warning_text_color" ="@id/description" ="fill_parent" ="wrap_content" ="?vida_tutorial_dialog_screen_warning_text_font_family" ="@dimen/vida_layout_dim_8" />
+</LinearLayout>

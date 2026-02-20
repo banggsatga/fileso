@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/dark_gray" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@string/instruction" />
+    <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="1." />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="fill_parent" ="wrap_content" ="@string/cimb_instruction_step1" ="2.0dip" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="2." />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/cimb_instruction_step2" ="2.0dip" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="3." />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/cimb_instruction_step3" ="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

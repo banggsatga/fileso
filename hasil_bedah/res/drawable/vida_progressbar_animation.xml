@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:fromDegrees="0.0" android:toDegrees="1440.0" android:pivotX="50.0%" android:pivotY="50.0%"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape ="ring" ="3.0" ="10.0" ="false">
+        <size ="@dimen/vida_layout_dim_60" ="@dimen/vida_layout_dim_60" />
+        <gradient ="?vida_spinner_start_color" ="?vida_spinner_end_color" ="false" ="0.0" ="sweep" ="0.5" ="?vida_spinner_center_color" />
+    </shape>
+</rotate>

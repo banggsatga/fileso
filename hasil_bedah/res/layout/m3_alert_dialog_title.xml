@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@id/topPanel" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="@id/title_template" style="?materialAlertDialogTitlePanelStyle">
+        <ImageView ="@android:id/icon" style="?materialAlertDialogTitleIconStyle" />
+        <androidx.appcompat.widget.DialogTitle ="@id/alertTitle" style="?materialAlertDialogTitleTextStyle" />
+    </LinearLayout>
+    <android.widget.Space ="@id/titleDividerNoCustom" ="gone" ="fill_parent" ="@dimen/m3_alert_dialog_title_bottom_margin" />
+</LinearLayout>

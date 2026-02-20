@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="true" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout="@layout/layout_toolbar_center" />
+    <ImageView ="@id/imgBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseCitizenship" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_34dp" ="@dimen/dimen_20dp" ="@string/hint_choose_citizenship" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView ="@id/actvChooseCitizenship" ="@color/colorWhite" ="@id/actvChooseCitizenship" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseSegment" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@string/hint_choose_segment" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tilChooseCitizenship" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView ="@id/actvChooseSegment" ="@color/colorWhite" ="@id/actvChooseSegment" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout ="@id/tilIdentityNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_24dp" ="@string/label_identity_no" ="@dimen/dimen_20dp" layout_constraintBottom_toTopOf="@id/btnSave" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tilChooseSegment" layout_constraintVertical_bias="0.0" style="@style/BpjstkuTextInputLayout">
+        <com.google.android.material.textfield.TextInputEditText ="@id/edtIdentityNumber" ="16" ="textCapCharacters" ="actionDone" style="@style/BpjstkuTextInputEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button ="false" ="@id/btnSave" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_29dp" ="@string/action_save" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" style="@style/BpjstkuButton.WhiteText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout ="bottom" ="fill_parent" ="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_white" ="@dimen/dimen_25dp" ="@dimen/dimen_25dp" ="true" ="true" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_25dp">
+            <TextView ="@id/tvNotificationTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.Dark.SemiBold" />
+            <TextView ="@dimen/text_size_12sp" ="start" ="@id/tvNotificationContent" ="fill_parent" ="wrap_content" ="@dimen/dimen_12dp" layout_constraintEnd_toEndOf="@id/tvNotificationTitle" layout_constraintStart_toStartOf="@id/tvNotificationTitle" layout_constraintTop_toBottomOf="@id/tvNotificationTitle" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            <androidx.constraintlayout.widget.Guideline ="vertical" ="@id/guideline" ="wrap_content" ="wrap_content" layout_constraintGuide_percent="0.5" />
+            <Button ="@id/btnOk" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@dimen/dimen_19dp" ="@dimen/dimen_23dp" ="@string/action_dismiss" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/guideline" layout_constraintTop_toBottomOf="@id/tvNotificationContent" layout_constraintVertical_bias="0.0" style="@style/BpjstkuButton" />
+            <Button ="@id/btnDeleteNotification" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_19dp" ="@dimen/dimen_8dp" ="@dimen/dimen_23dp" ="@string/action_delete" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/guideline" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvNotificationContent" layout_constraintVertical_bias="0.0" style="@style/BpjstkuTextButton.Reddish.Medium" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</ScrollView>

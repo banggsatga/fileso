@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AlertDialogLayout ="start|center|top" ="vertical" ="@id/parentPanel" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/m3_alert_dialog_title" />
+    <FrameLayout ="@id/contentPanel" ="fill_parent" ="wrap_content" ="48.0dip">
+        <ImageView ="top" ="@id/scrollIndicatorUp" ="#1f000000" ="gone" ="fill_parent" ="1.0dip" ="@null" backgroundTint="?android:colorForeground" />
+        <androidx.core.widget.NestedScrollView ="@id/scrollView" ="false" ="fill_parent" ="wrap_content">
+            <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+                <android.widget.Space ="@id/textSpacerNoTitle" ="gone" ="fill_parent" ="@dimen/abc_dialog_padding_top_material" />
+                <TextView ="@android:id/message" ="?dialogPreferredPadding" ="?dialogPreferredPadding" ="fill_parent" ="wrap_content" style="?materialAlertDialogBodyTextStyle" />
+                <android.widget.Space ="@id/textSpacerNoButtons" ="gone" ="fill_parent" ="@dimen/abc_dialog_padding_top_material" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <ImageView ="bottom" ="@id/scrollIndicatorDown" ="#1f000000" ="gone" ="fill_parent" ="1.0dip" ="@null" backgroundTint="?android:colorForeground" />
+    </FrameLayout>
+    <FrameLayout ="@id/customPanel" ="fill_parent" ="wrap_content" ="48.0dip">
+        <FrameLayout ="@id/custom" ="fill_parent" ="wrap_content" />
+    </FrameLayout>
+    <include ="fill_parent" ="wrap_content" layout="@layout/m3_alert_dialog_actions" />
+</androidx.appcompat.widget.AlertDialogLayout>

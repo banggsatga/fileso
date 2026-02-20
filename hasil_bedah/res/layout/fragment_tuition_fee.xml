@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@color/colorWhite" ="@dimen/dimen_16dp" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="horizontal" ="@id/llTuitionPu" ="fill_parent" ="wrap_content">
+        <ImageView ="visible" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@drawable/ic_success" ="@dimen/dimen_16dp" />
+        <TextView ="@dimen/text_size_14sp" ="@color/colorCharcoalGrey" ="@id/tvTuitionPu" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@font/dmsans_reguler" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@id/llTuitionBpu" ="fill_parent" ="wrap_content">
+        <ImageView ="visible" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@drawable/ic_success" ="@dimen/dimen_16dp" />
+        <TextView ="@dimen/text_size_14sp" ="@color/colorCharcoalGrey" ="@id/tvTuitionBpu" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@font/dmsans_reguler" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@id/llTuitionJakon" ="fill_parent" ="wrap_content">
+        <ImageView ="visible" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@drawable/ic_success" ="@dimen/dimen_16dp" />
+        <TextView ="@dimen/text_size_14sp" ="@color/colorCharcoalGrey" ="@id/tvTuitionJakon" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@font/dmsans_reguler" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@id/llTuitionPmi" ="fill_parent" ="wrap_content">
+        <ImageView ="visible" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@drawable/ic_success" ="@dimen/dimen_16dp" />
+        <TextView ="@dimen/text_size_14sp" ="@color/colorCharcoalGrey" ="@id/tvTuitionPMI" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@font/dmsans_reguler" />
+    </LinearLayout>
+</LinearLayout>

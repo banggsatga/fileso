@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView ="@style/TextAppearance.AppCompat.Body2" ="?android:textColorSecondary" ="start|center" ="?listPreferredItemPaddingLeft" ="?listPreferredItemPaddingRight" ="fill_parent" ="?listPreferredItemHeightSmall" ="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

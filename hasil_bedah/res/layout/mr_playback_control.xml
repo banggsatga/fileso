@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="horizontal" ="24.0dip" ="12.0dip" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton ="@id/mr_control_playback_ctrl" ="?selectableItemBackgroundBorderless" ="gone" ="wrap_content" ="wrap_content" ="12.0dip" ="true" ="true" ="@string/mr_controller_play" />
+    <LinearLayout ="vertical" ="@id/mr_control_title_container" ="wrap_content" ="wrap_content" ="@id/mr_control_playback_ctrl" ="true" ="true">
+        <TextView ="@style/TextAppearance.MediaRouter.PrimaryText" ="@id/mr_control_title" ="wrap_content" ="wrap_content" ="true" />
+        <TextView ="@style/TextAppearance.MediaRouter.SecondaryText" ="@id/mr_control_subtitle" ="wrap_content" ="wrap_content" ="true" />
+    </LinearLayout>
+</RelativeLayout>

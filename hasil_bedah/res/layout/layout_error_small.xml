@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@id/error_layout" ="16.0dip" ="fill_parent" ="wrap_content" ="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="bold" ="center_horizontal" ="center_horizontal" ="@id/tv_title" ="fill_parent" ="wrap_content" ="16.0dip" />
+    <TextView ="center_horizontal" ="center_horizontal" ="@id/tv_error" ="fill_parent" ="wrap_content" ="8.0dip" />
+    <Button ="center_horizontal" ="@id/btn_error" ="gone" ="wrap_content" ="wrap_content" ="8.0dip" style="@style/Widget.MaterialComponents.Button.TextButton" />
+</LinearLayout>

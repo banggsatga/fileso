@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@id/expanded_controller_layout" ="@color/cast_expanded_controller_background_color" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/background_image_view" ="fill_parent" ="fill_parent" ="centerCrop" ="@string/cast_expanded_controller_background_image" />
+    <ImageView ="@id/blurred_background_image_view" ="gone" ="fill_parent" ="fill_parent" ="centerCrop" ="@string/cast_expanded_controller_background_image" />
+    <RelativeLayout ="@drawable/cast_expanded_controller_bg_gradient_light" ="fill_parent" ="fill_parent">
+        <androidx.appcompat.widget.Toolbar ="?castExpandedControllerToolbarStyle" ="@id/toolbar" ="@drawable/cast_expanded_controller_actionbar_bg_gradient_light" ="fill_parent" ="wrap_content" ="@dimen/cast_expanded_controller_control_toolbar_min_height" />
+        <RelativeLayout ="fill_parent" ="fill_parent" ="@id/status_text" ="@id/toolbar">
+            <ImageView ="@id/background_place_holder_image_view" ="96.0dip" ="96.0dip" ="@null" ="fitCenter" ="true" ="@string/cast_expanded_controller_background_image" />
+            <RelativeLayout ="@id/ad_container" ="gone" ="fill_parent" ="@dimen/cast_expanded_controller_ad_container_layout_height" ="true">
+                <TextView ="@id/ad_label" ="5.0dip" ="5.0dip" ="wrap_content" ="@dimen/cast_expanded_controller_ad_label_layout_height" ="@string/cast_ad_label" ="true" />
+                <RelativeLayout ="fill_parent" ="wrap_content" ="8.0dip" ="@id/ad_label">
+                    <View ="@id/ad_background_image_view" ="@android:color/black" ="gone" ="@dimen/cast_expanded_controller_ad_background_layout_width" ="@dimen/cast_expanded_controller_ad_background_layout_height" ="true" />
+                    <TextView ="center" ="@id/ad_in_progress_label" ="gone" ="@dimen/cast_expanded_controller_ad_layout_width" ="@dimen/cast_expanded_controller_ad_layout_height" ="@string/cast_expanded_controller_ad_in_progress" ="true" />
+                    <ImageView ="@id/ad_image_view" ="gone" ="false" ="@dimen/cast_expanded_controller_ad_layout_width" ="@dimen/cast_expanded_controller_ad_layout_height" ="@null" ="centerInside" ="true" ="true" ="true" ="true" ="@string/cast_expanded_controller_ad_image_description" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView ="?android:textAppearanceSmall" ="@color/cast_expanded_controller_text_color" ="@id/ad_skip_text" ="15.0dip" ="4.0dip" ="15.0dip" ="4.0dip" ="gone" ="false" ="wrap_content" ="wrap_content" ="4.0dip" ="@string/cast_expanded_controller_skip_ad_text" ="true" ="true" />
+            <TextView ="?android:textAppearanceSmall" ="@color/cast_expanded_controller_text_color" ="@id/ad_skip_button" ="@drawable/cast_skip_ad_label_border" ="15.0dip" ="4.0dip" ="15.0dip" ="4.0dip" ="gone" ="false" ="wrap_content" ="wrap_content" ="4.0dip" ="@string/cast_expanded_controller_skip_ad_label" ="true" ="true" />
+            <ProgressBar ="@id/loading_indicator" ="gone" ="wrap_content" ="wrap_content" ="true" style="?android:progressBarStyleLarge" />
+        </RelativeLayout>
+        <TextView ="?android:textAppearanceSmall" ="@color/cast_expanded_controller_text_color" ="end" ="center_horizontal" ="@id/status_text" ="fill_parent" ="wrap_content" ="@dimen/cast_expanded_controller_margin_between_status_text_and_seek_bar" ="20.0dip" ="1" ="@id/controllers" />
+        <RelativeLayout ="@id/tooltip_container" ="gone" ="fill_parent" ="wrap_content" ="24.0dip" ="24.0dip" ="12.0dip" ="@id/controllers" ="true" ="ltr" ="24.0dip" ="24.0dip">
+            <TextView ="@color/cast_expanded_controller_progress_text_color" ="center" ="@id/tooltip" ="@drawable/cast_rounded_corner" ="16.0dip" ="16.0dip" ="wrap_content" ="wrap_content" ="32.0dip" ="1" />
+        </RelativeLayout>
+        <RelativeLayout ="@id/controllers" ="fill_parent" ="wrap_content" ="8.0dip" ="8.0dip" ="8.0dip" ="true" ="8.0dip" ="8.0dip">
+            <SeekBar ="1.0" ="@id/seek_bar" ="16.0dip" ="16.0dip" ="fill_parent" ="wrap_content" ="20.0dip" ="true" ="true" ="@string/cast_seek_bar" />
+            <RelativeLayout ="@id/seek_bar_indicators" ="fill_parent" ="wrap_content" ="16.0dip" ="16.0dip" ="20.0dip" ="@id/seek_bar" ="ltr" ="16.0dip" ="16.0dip">
+                <RelativeLayout ="@id/start_text_container" ="wrap_content" ="wrap_content" ="20.0dip" ="true" ="true" ="ltr">
+                    <TextView ="@color/cast_expanded_controller_progress_text_color" ="@id/start_text" ="wrap_content" ="wrap_content" ="@string/cast_invalid_stream_position_text" ="1" ="true" />
+                </RelativeLayout>
+                <RelativeLayout ="@id/end_text_container" ="wrap_content" ="wrap_content" ="20.0dip" ="true" ="true" ="ltr">
+                    <TextView ="@color/cast_expanded_controller_progress_text_color" ="@id/end_text" ="wrap_content" ="wrap_content" ="12.0dip" ="@string/cast_invalid_stream_duration_text" ="1" ="true" />
+                </RelativeLayout>
+                <RelativeLayout ="@id/live_indicators" ="wrap_content" ="wrap_content" ="20.0dip" ="@id/end_text_container" ="@id/start_text_container" ="@string/cast_expanded_controller_live_stream_indicator" ="ltr" ="@id/end_text_container" ="@id/start_text_container">
+                    <TextView ="@color/cast_expanded_controller_progress_text_color" ="@id/live_indicator_text" ="gone" ="wrap_content" ="wrap_content" ="@string/cast_live_label" ="1" ="true" ="true" />
+                    <ImageView ="@id/live_indicator_dot" ="6.0dip" ="6.0dip" ="4.0dip" ="6.0dip" ="gone" ="wrap_content" ="wrap_content" ="@drawable/cast_expanded_controller_live_indicator_drawable" ="18.0dip" ="20.0dip" ="@id/live_indicator_text" ="true" ="@string/cast_expanded_controller_live_head_description" ="@id/live_indicator_text" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout ="fill_parent" ="wrap_content" ="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" ="@id/seek_bar_indicators">
+                <ImageButton ="@id/button_0" ="0.0dip" ="wrap_content" ="wrap_content" ="@dimen/cast_expanded_controller_control_button_margin" ="@id/button_1" ="true" ="@dimen/cast_expanded_controller_control_button_margin" ="@id/button_1" />
+                <ImageButton ="@id/button_1" ="0.0dip" ="wrap_content" ="wrap_content" ="@dimen/cast_expanded_controller_control_button_margin" ="@id/button_play_pause_toggle" ="true" ="@dimen/cast_expanded_controller_control_button_margin" ="@id/button_play_pause_toggle" />
+                <ImageButton ="@id/button_play_pause_toggle" ="0.0dip" ="64.0dip" ="64.0dip" ="fitCenter" ="true" />
+                <ImageButton ="@id/button_2" ="0.0dip" ="wrap_content" ="wrap_content" ="@dimen/cast_expanded_controller_control_button_margin" ="@id/button_play_pause_toggle" ="true" ="@dimen/cast_expanded_controller_control_button_margin" ="@id/button_play_pause_toggle" />
+                <ImageButton ="@id/button_3" ="0.0dip" ="wrap_content" ="wrap_content" ="@dimen/cast_expanded_controller_control_button_margin" ="@id/button_2" ="true" ="@dimen/cast_expanded_controller_control_button_margin" ="@id/button_2" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

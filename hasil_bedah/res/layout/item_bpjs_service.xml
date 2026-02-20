@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="false" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgService" ="?selectableItemBackground" ="@dimen/dimen_60dp" ="@dimen/dimen_60dp" ="true" ="@id/tvServiceName" ="@id/tvServiceName" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@dimen/text_size_11sp" ="@id/tvServiceName" ="@dimen/dimen_12dp" ="center" layout_constraintEnd_toEndOf="@id/imgService" layout_constraintStart_toStartOf="@id/imgService" layout_constraintTop_toBottomOf="@id/imgService" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Medium" />
+</androidx.constraintlayout.widget.ConstraintLayout>

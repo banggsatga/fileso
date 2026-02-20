@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@color/colorWhite" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout="@layout/layout_toolbar_center" />
+    <ScrollView ="fill_parent" ="fill_parent" ="true">
+        <androidx.constraintlayout.widget.ConstraintLayout ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp">
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseJamsostekIdNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_40dp" ="@string/label_choose_jamsostekIdNumber" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+                <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseJamsostekIdNumber" ="@id/edtChooseJamsostekIdNumber" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView ="@id/tvChooseAnswerQuestion" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_23dp" ="@string/label_answer_question_complaint_submission" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tilChooseJamsostekIdNumber" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <TextView ="@id/tv_question_status_active" ="@dimen/dimen_0dp" ="@dimen/dimen_31dp" ="@string/label_choose_status_membership" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvChooseAnswerQuestion" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <RadioGroup ="horizontal" ="@id/rgMembershipStatus" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tv_question_status_active">
+                <RadioButton ="@dimen/text_size_16sp" ="@id/rbActiveMembership" ="true" ="@string/label_yes" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+                <RadioButton ="@dimen/text_size_16sp" ="@id/rbNonActiveMembership" ="@string/label_no" ="@dimen/dimen_60dp" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+            </RadioGroup>
+            <View ="@id/viewMembershipStatusSeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_1dp" ="@dimen/dimen_25dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/rgMembershipStatus" />
+            <TextView ="@id/tv_question_wages_status" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_choose_wages_status" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/viewMembershipStatusSeparator" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <RadioGroup ="horizontal" ="@id/rgWagesStatus" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tv_question_wages_status">
+                <RadioButton ="@dimen/text_size_16sp" ="@id/rbCorrectWages" ="true" ="@string/label_yes" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+                <RadioButton ="@dimen/text_size_16sp" ="@id/rbInCorrectWages" ="@string/label_no" ="@dimen/dimen_60dp" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+            </RadioGroup>
+            <LinearLayout ="vertical" ="@id/wageCorrectionContainer" ="gone" ="fill_parent" ="wrap_content" layout_constraintTop_toBottomOf="@id/rgWagesStatus">
+                <androidx.cardview.widget.CardView ="@android:color/white" ="@drawable/selector_bordered_grey_blue" ="fill_parent" ="@dimen/dimen_60dp" ="@dimen/dimen_4dp" ="@dimen/dimen_8dp" ="@dimen/dimen_4dp" ="@dimen/dimen_8dp" cardCornerRadius="@dimen/dimen_8dp" layout_constraintTop_toBottomOf="@id/rgMembershipStatus">
+                    <androidx.appcompat.widget.AppCompatButton ="start" ="@color/colorPaleGreyFour" ="@dimen/dimen_60dp" ="@dimen/dimen_60dp" ="@string/sample_indonesian_currency" ="false" ="@font/dmsans_bold" />
+                    <com.google.android.material.textfield.TextInputLayout ="end" ="@id/tilActualWage" ="@color/colorWhite" ="wrap_content" ="wrap_content" ="@dimen/dimen_350dp" ="@string/hint_actual_wage" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="@dimen/dimen_60dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/cvWageAmount" style="@style/BpjstkuTextInputLayout.Prefixed">
+                        <com.google.android.material.textfield.TextInputEditText ="@id/edtActualWage" ="\ 0123456789" ="number" ="actionNext" style="@style/BpjstkuTextInputEditTextPrefixed" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView ="@android:color/white" ="@drawable/selector_bordered_grey_blue" ="fill_parent" ="@dimen/dimen_60dp" ="@dimen/dimen_4dp" ="@dimen/dimen_8dp" ="@dimen/dimen_4dp" ="@dimen/dimen_8dp" cardCornerRadius="@dimen/dimen_8dp" layout_constraintTop_toBottomOf="@id/rgMembershipStatus">
+                    <androidx.appcompat.widget.AppCompatButton ="start" ="@color/colorPaleGreyFour" ="@dimen/dimen_60dp" ="@dimen/dimen_60dp" ="@string/sample_indonesian_currency" ="false" ="@font/dmsans_bold" />
+                    <com.google.android.material.textfield.TextInputLayout ="false" ="end|center|top" ="@id/tilReportedWage" ="@color/colorPaleGreyFour" ="fill_parent" ="fill_parent" ="@dimen/dimen_350dp" ="@string/hint_reported_wage" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="@dimen/dimen_60dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/cvWageAmount" style="@style/BpjstkuTextInputLayout.Prefixed">
+                        <com.google.android.material.textfield.TextInputEditText ="@id/edtReportedWage" ="\ 0123456789" ="number" ="actionNext" style="@style/BpjstkuTextInputEditTextPrefixed" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <View ="@id/divQuestionSecond" ="@color/colorPaleGrey" ="@dimen/dimen_0dp" ="@dimen/dimen_1dp" ="@dimen/dimen_25dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/wageCorrectionContainer" />
+            <TextView ="@id/tv_question_total_employee" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_choose_total_employee_status" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/divQuestionSecond" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <RadioGroup ="horizontal" ="@id/rgTotalEmployeeStatus" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tv_question_total_employee">
+                <RadioButton ="@dimen/text_size_16sp" ="@id/rbCorrectTotalEmployee" ="true" ="@string/label_yes" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+                <RadioButton ="@dimen/text_size_16sp" ="@id/rbInCorrectTotalEmployee" ="@string/label_no" ="@dimen/dimen_60dp" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+            </RadioGroup>
+            <LinearLayout ="vertical" ="@id/totalEmployeeCorrectionContainer" ="gone" ="fill_parent" ="wrap_content" layout_constraintTop_toBottomOf="@id/rgTotalEmployeeStatus">
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilActualTotalEmployee" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_actual_total_employee" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtActualTotalEmployee" ="\ 0123456789" ="number" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="false" ="@id/tilReportedTotalEmployee" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_reported_total_employee" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtReportedTotalEmployee" ="@color/colorPaleGreyFour" ="\ 0123456789" ="number" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton ="true" ="@id/btnSendComplaintDataUnMatched" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_35dp" ="@dimen/dimen_22dp" ="@string/action_send" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/rgTotalEmployeeStatus" layout_constraintStart_toStartOf="@id/rgTotalEmployeeStatus" layout_constraintTop_toBottomOf="@id/totalEmployeeCorrectionContainer" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+            <ProgressBar ="gone" ="wrap_content" ="wrap_content" ="@dimen/dimen_35dp" ="@dimen/dimen_22dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/rgTotalEmployeeStatus" layout_constraintStart_toStartOf="@id/rgTotalEmployeeStatus" layout_constraintTop_toBottomOf="@id/rgTotalEmployeeStatus" layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

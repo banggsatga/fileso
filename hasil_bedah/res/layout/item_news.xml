@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="fill_parent" ="wrap_content" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_2dp" cardElevation="@dimen/dimen_2dp" cardPreventCornerOverlap="true" cardUseCompatPadding="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+        <ImageView ="@id/imgNews" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="centerCrop" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_12sp" ="@id/tvNewsDate" ="@drawable/bg_rounded_dark_mint" ="@dimen/dimen_6dp" ="@dimen/dimen_2dp" ="@dimen/dimen_6dp" ="@dimen/dimen_2dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_6dp" ="@dimen/dimen_2dp" layout_constraintBottom_toBottomOf="@id/imgNews" layout_constraintStart_toStartOf="parent" style="@style/BpjstkuTextViewBarlow.White" />
+        <TextView ="@dimen/text_size_12sp" ="end" ="@id/tvNewsTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_14dp" ="@dimen/dimen_16dp" ="@dimen/dimen_14dp" ="@dimen/dimen_16dp" ="2" ="2" ="@dimen/dimen_14dp" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgNews" style="@style/BpjstkuTextViewBarlow.Dark.SemiBold" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

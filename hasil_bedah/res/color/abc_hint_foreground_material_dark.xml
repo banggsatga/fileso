@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="true" ="@color/foreground_material_dark" ="@dimen/hint_pressed_alpha_material_dark" />
+    <item ="@color/foreground_material_dark" ="@dimen/hint_alpha_material_dark" />
+</selector>

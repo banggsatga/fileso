@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="horizontal" ="wrap_content" ="wrap_content" ="@dimen/dimen_8dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/text_size_12sp" ="@id/tvTitlePaymentMethod" ="@drawable/bg_item_bordered" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" ="visible" ="wrap_content" ="wrap_content" ="Metode Pembayaran" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey" />
+</androidx.constraintlayout.widget.ConstraintLayout>

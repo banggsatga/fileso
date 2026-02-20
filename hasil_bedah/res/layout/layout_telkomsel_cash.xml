@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout ="@id/telkomsel_token_til" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText ="@id/telkomsel_token_et" ="fill_parent" ="wrap_content" ="@string/text_hint_telkomsel_token" ="1" ="12" ="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/dark_gray" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@string/instruction" />
+    <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction1" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/telkomsel_instruction_step1" />
+    </LinearLayout>
+    <LinearLayout ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction2" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/telkomsel_instruction_step2" />
+    </LinearLayout>
+    <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction3" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/telkomsel_instruction_step3" />
+    </LinearLayout>
+</LinearLayout>

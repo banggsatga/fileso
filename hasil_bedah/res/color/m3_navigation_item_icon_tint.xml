@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="?colorOnSurfaceVariant" ="@dimen/material_emphasis_disabled" />
+    <item ="true" ="true" ="?colorOnSecondaryContainer" />
+    <item ="true" ="true" ="?colorOnSecondaryContainer" />
+    <item ="true" ="?colorOnSecondaryContainer" ="true" />
+    <item ="true" ="?colorOnSecondaryContainer" />
+    <item ="true" ="?colorOnSurface" />
+    <item ="true" ="?colorOnSurface" />
+    <item ="?colorOnSurface" ="true" />
+    <item ="?colorOnSurfaceVariant" />
+</selector>

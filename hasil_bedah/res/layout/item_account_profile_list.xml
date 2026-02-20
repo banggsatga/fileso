@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="@dimen/dimen_53dp">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvEditProfileList" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@string/title_term_and_condition" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <ImageView ="@id/imgEditProfileList" ="wrap_content" ="wrap_content" ="@color/colorSteel" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="@id/tvEditProfileList" />
+        <View ="@color/colorPaleGreyFour" ="fill_parent" ="@dimen/dimen_1dp" ="@dimen/dimen_20dp" ="@dimen/dimen_15dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvEditProfileList" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

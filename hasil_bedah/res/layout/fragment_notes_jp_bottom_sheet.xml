@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="vertical" ="@drawable/bottom_sheet_background" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/text_size_18sp" ="@id/tvResultTitle" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_24dp" ="@dimen/dimen_16dp" ="@string/label_notes_urgent" ="true" ="center" ="true" ="true" ="@dimen/dimen_16dp" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+    <ScrollView ="true" ="none" ="fill_parent" ="fill_parent" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="true" ="@id/tvResultTitle" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="true" ="true">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+            <LinearLayout ="vertical" ="@id/tvResultMessage" ="@drawable/bg_rounded_grey" ="@dimen/dimen_18dp" ="@dimen/dimen_8dp" ="@dimen/dimen_18dp" ="@dimen/dimen_8dp" ="fill_parent" ="wrap_content" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey">
+                <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_number_1" style="@style/BpjstkuTextViewPoppins.Medium" />
+                    <LinearLayout ="vertical" ="0.0dip" ="wrap_content" ="1.0">
+                        <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_notes_jp_1" ="@dimen/dimen_5dp" style="@style/BpjstkuTextViewPoppins.Medium" />
+                        <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                            <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_minus" style="@style/BpjstkuTextViewPoppins.Medium" />
+                            <TextView ="@dimen/text_size_12sp" ="0.0dip" ="wrap_content" ="@string/label_notes_jp_1_1" ="1.0" ="@dimen/dimen_5dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Medium" />
+                        </LinearLayout>
+                        <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                            <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_minus" style="@style/BpjstkuTextViewPoppins.Medium" />
+                            <TextView ="@dimen/text_size_12sp" ="0.0dip" ="wrap_content" ="@string/label_notes_jp_1_2" ="1.0" ="@dimen/dimen_5dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Medium" />
+                        </LinearLayout>
+                        <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                            <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_minus" style="@style/BpjstkuTextViewPoppins.Medium" />
+                            <TextView ="@dimen/text_size_12sp" ="0.0dip" ="wrap_content" ="@string/label_notes_jp_1_3" ="1.0" ="@dimen/dimen_5dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Medium" />
+                        </LinearLayout>
+                        <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                            <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_minus" style="@style/BpjstkuTextViewPoppins.Medium" />
+                            <TextView ="@dimen/text_size_12sp" ="0.0dip" ="wrap_content" ="@string/label_notes_jp_1_4" ="1.0" ="@dimen/dimen_5dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Medium" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_number_2" style="@style/BpjstkuTextViewPoppins.Medium" />
+                    <TextView ="@dimen/text_size_12sp" ="0.0dip" ="wrap_content" ="@string/label_notes_jp_2" ="1.0" ="@dimen/dimen_5dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Medium" />
+                </LinearLayout>
+                <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_number_3" style="@style/BpjstkuTextViewPoppins.Medium" />
+                    <TextView ="@dimen/text_size_12sp" ="0.0dip" ="wrap_content" ="@string/label_notes_jp_3" ="1.0" ="@dimen/dimen_5dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Medium" />
+                </LinearLayout>
+                <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_number_4" style="@style/BpjstkuTextViewPoppins.Medium" />
+                    <TextView ="@dimen/text_size_12sp" ="0.0dip" ="wrap_content" ="@string/label_notes_jp_4" ="1.0" ="@dimen/dimen_5dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Medium" />
+                </LinearLayout>
+                <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_number_5" style="@style/BpjstkuTextViewPoppins.Medium" />
+                    <TextView ="@dimen/text_size_12sp" ="0.0dip" ="wrap_content" ="@string/label_notes_jp_5" ="1.0" ="@dimen/dimen_5dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Medium" />
+                </LinearLayout>
+                <LinearLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <TextView ="@dimen/text_size_12sp" ="wrap_content" ="wrap_content" ="@string/label_number_6" style="@style/BpjstkuTextViewPoppins.Medium" />
+                    <TextView ="@dimen/text_size_12sp" ="0.0dip" ="wrap_content" ="@string/label_notes_jp_6" ="1.0" ="@dimen/dimen_5dp" ="inter_word" style="@style/BpjstkuTextViewPoppins.Medium" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton ="@id/btnResultDialog" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_18dp" ="@dimen/dimen_18dp" ="@string/action_ok" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvResultMessage" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

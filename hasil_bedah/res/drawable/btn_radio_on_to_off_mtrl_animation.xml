@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector ="@drawable/btn_radio_on_mtrl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target ="ring_outer" ="@anim/btn_radio_to_off_mtrl_ring_outer_animation" />
+    <target ="ring_outer_path" ="@anim/btn_radio_to_off_mtrl_ring_outer_path_animation" />
+    <target ="dot_group" ="@anim/btn_radio_to_off_mtrl_dot_group_animation" />
+</animated-vector>

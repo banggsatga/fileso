@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="end" ="horizontal" ="@id/date_picker_actions" ="@dimen/mtrl_calendar_action_padding" ="fill_parent" ="@dimen/mtrl_calendar_action_height" ="@dimen/mtrl_calendar_action_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button ="center_vertical" ="@id/cancel_button" ="wrap_content" ="wrap_content" ="@string/mtrl_picker_cancel" style="?buttonBarNegativeButtonStyle" />
+    <Button ="center_vertical" ="@id/confirm_button" ="wrap_content" ="wrap_content" ="@dimen/mtrl_calendar_action_confirm_button_min_width" ="@string/mtrl_picker_confirm" style="?buttonBarPositiveButtonStyle" />
+</LinearLayout>

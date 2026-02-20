@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@id/navigation_header_container" ="@dimen/design_navigation_separator_vertical_padding" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

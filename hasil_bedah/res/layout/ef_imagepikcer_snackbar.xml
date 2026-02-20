@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge ="fill_parent" ="@dimen/ef_height_snackbar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@color/ef_white" ="@id/ef_snackbar_txt_bottom_caption" ="wrap_content" ="wrap_content" ="2" ="@id/ef_snackbar_btn_action" ="true" ="@id/ef_snackbar_btn_action" />
+    <Button ="?colorAccent" ="@id/ef_snackbar_btn_action" ="?selectableItemBackground" ="wrap_content" ="wrap_content" ="true" ="true" ="true" />
+</merge>

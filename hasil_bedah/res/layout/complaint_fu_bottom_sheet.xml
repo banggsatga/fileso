@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bottom_sheet_background" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View ="@id/line1" ="@color/colorPaleGreyTen" ="@dimen/dimen_40dp" ="@dimen/dimen_4dp" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@dimen/text_size_18sp" ="center" ="@id/tvTitle" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_24dp" ="@dimen/dimen_20dp" ="@string/label_fu_complaint" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/line1" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    <LinearLayout ="center" ="horizontal" ="@id/llActivity" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/tvTitle">
+        <TextView ="@dimen/text_size_14sp" ="0.0dip" ="wrap_content" ="@string/label_activity_complaint" ="1.0" style="@style/BpjstkuTextViewPoppins.CoolGrey" />
+        <TextView ="@dimen/text_size_14sp" ="wrap_content" ="wrap_content" ="@dimen/dimen_5dp" ="@dimen/dimen_5dp" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvAktifitas" ="0.0dip" ="wrap_content" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    </LinearLayout>
+    <View ="@id/line2" ="@color/colorPaleGreyFour" ="fill_parent" ="@dimen/dimen_2dp" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/llActivity" />
+    <LinearLayout ="center" ="horizontal" ="@id/llStatusKpj" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/line2">
+        <TextView ="@dimen/text_size_14sp" ="0.0dip" ="wrap_content" ="@string/label_status_complaint" ="1.0" style="@style/BpjstkuTextViewPoppins.CoolGrey" />
+        <TextView ="@dimen/text_size_14sp" ="wrap_content" ="wrap_content" ="@dimen/dimen_5dp" ="@dimen/dimen_5dp" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvStatus" ="0.0dip" ="wrap_content" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    </LinearLayout>
+    <View ="@id/line3" ="@color/colorPaleGreyFour" ="fill_parent" ="@dimen/dimen_2dp" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/llStatusKpj" />
+    <TextView ="@dimen/text_size_14sp" ="@id/llDesc" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@string/label_desc_complaint" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/line3" style="@style/BpjstkuTextViewPoppins.CoolGrey" />
+    <TextView ="@dimen/text_size_14sp" ="@id/tvContentDesc" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/llDesc" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    <com.google.android.material.button.MaterialButton ="@dimen/text_size_14sp" ="@id/btnBack" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="visible" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@string/action_back" ="false" ="@font/poppins_semibold" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvContentDesc" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <ScrollView ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="true" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar">
+        <LinearLayout ="vertical" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+            <TextView ="@dimen/text_size_12sp" ="center_vertical" ="@id/tvComplaintInfo" ="@drawable/bg_rounded_macaroni_and_cheese" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_35dp" ="@string/label_complaint_announce" ="@dimen/dimen_14dp" ="@drawable/ic_loud_speaker_circle" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" style="@style/BpjstkuTextViewDmSans.White.Medium" />
+            <com.google.android.material.card.MaterialCardView ="@id/cvUnmatchedData" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" cardPreventCornerOverlap="false">
+                <LinearLayout ="center" ="horizontal" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="vertical" ="0.0dip" ="wrap_content" ="1.0">
+                        <ImageView ="@id/imgUnmatchedData" ="@drawable/ic_icon_invalid_data" ="wrap_content" ="wrap_content" ="@dimen/dimen_18dp" ="@dimen/dimen_26dp" />
+                        <androidx.appcompat.widget.AppCompatTextView ="center_vertical" ="@id/tvUnmatchedData" ="fill_parent" ="wrap_content" ="@dimen/dimen_9dp" ="@string/label_invalid_data" ="@dimen/dimen_26dp" ="@dimen/dimen_16dp" drawableTint="@color/colorDarkMint" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                        <TextView ="@dimen/text_size_12sp" ="fill_parent" ="wrap_content" ="@dimen/dimen_3dp" ="@dimen/dimen_13dp" ="@string/label_complaint_invalid_data" ="@dimen/dimen_26dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatTextView ="center_vertical" ="wrap_content" ="wrap_content" ="@dimen/dimen_9dp" ="@drawable/ic_chevron_right" ="@dimen/dimen_5dp" ="@dimen/dimen_16dp" drawableTint="@color/colorDarkMint" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView ="@id/cvNonRegisteredCompany" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" cardPreventCornerOverlap="false">
+                <LinearLayout ="center" ="horizontal" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="vertical" ="0.0dip" ="wrap_content" ="1.0">
+                        <ImageView ="@id/imgNonRegisteredCompany" ="@drawable/ic_icon_nonreg_company" ="wrap_content" ="wrap_content" ="@dimen/dimen_18dp" ="@dimen/dimen_26dp" />
+                        <androidx.appcompat.widget.AppCompatTextView ="center_vertical" ="@id/tvNonRegisteredCompany" ="fill_parent" ="wrap_content" ="@dimen/dimen_9dp" ="@string/label_non_registered_company" ="@dimen/dimen_26dp" ="@dimen/dimen_16dp" drawableTint="@color/colorDarkMint" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                        <TextView ="@dimen/text_size_12sp" ="fill_parent" ="wrap_content" ="@dimen/dimen_3dp" ="@dimen/dimen_13dp" ="@string/label_complaint_nonreg_company" ="@dimen/dimen_26dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatTextView ="center_vertical" ="wrap_content" ="wrap_content" ="@dimen/dimen_9dp" ="@drawable/ic_chevron_right" ="@dimen/dimen_5dp" ="@dimen/dimen_16dp" drawableTint="@color/colorDarkMint" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView ="@id/cvComplaintHistory" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" cardPreventCornerOverlap="false">
+                <LinearLayout ="center" ="horizontal" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="vertical" ="0.0dip" ="wrap_content" ="1.0">
+                        <ImageView ="@id/imgComplaintHistory" ="@drawable/ic_complaint_history" ="wrap_content" ="wrap_content" ="@dimen/dimen_18dp" ="@dimen/dimen_26dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+                        <androidx.appcompat.widget.AppCompatTextView ="center_vertical" ="@id/tvComplaintHistory" ="fill_parent" ="wrap_content" ="@dimen/dimen_9dp" ="@string/label_complaint_history" ="@dimen/dimen_26dp" ="@dimen/dimen_16dp" drawableTint="@color/colorDarkMint" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                        <TextView ="@dimen/text_size_12sp" ="fill_parent" ="wrap_content" ="@dimen/dimen_3dp" ="@dimen/dimen_13dp" ="@string/label_desc_complaint_history" ="@dimen/dimen_26dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatTextView ="center_vertical" ="wrap_content" ="wrap_content" ="@dimen/dimen_9dp" ="@drawable/ic_chevron_right" ="@dimen/dimen_5dp" ="@dimen/dimen_16dp" drawableTint="@color/colorDarkMint" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

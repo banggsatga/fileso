@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@android:color/white" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout ="@id/main_appbar" ="true" ="fill_parent" ="?actionBarSize">
+        <androidx.appcompat.widget.Toolbar ="@id/toolbar" ="@color/white" ="@dimen/activity_horizontal_margin" ="fill_parent" ="?actionBarSize" ="@dimen/activity_horizontal_margin" layout_scrollFlags="scroll|exitUntilCollapsed" style="@style/ThemeOverlay.AppCompat.ActionBar">
+            <ImageView ="@id/merchant_logo" ="wrap_content" ="wrap_content" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/tool_bar_title_size" ="@color/dark_gray" ="end" ="visible" ="fill_parent" ="wrap_content" ="@string/title_user_details" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout ="@id/user_detail_container" ="fill_parent" ="fill_parent" />
+</LinearLayout>

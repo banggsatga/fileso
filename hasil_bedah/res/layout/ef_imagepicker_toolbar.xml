@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar ="@style/ef_CustomToolbarTheme" ="?colorPrimary" ="fill_parent" ="?actionBarSize" ="@dimen/ef_toolbar_elevation" contentInsetStart="0.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

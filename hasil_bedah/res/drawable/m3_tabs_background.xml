@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape ="rectangle">
+            <solid ="?colorSurface" />
+        </shape>
+    </item>
+    <item ="bottom">
+        <shape>
+            <size ="@dimen/m3_comp_divider_thickness" />
+            <solid ="?colorOutlineVariant" />
+        </shape>
+    </item>
+</layer-list>

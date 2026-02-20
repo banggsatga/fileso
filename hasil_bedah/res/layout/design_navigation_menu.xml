@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.internal.NavigationMenuView ="@id/design_navigation_view" ="@dimen/design_navigation_padding_bottom" ="vertical" ="false" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

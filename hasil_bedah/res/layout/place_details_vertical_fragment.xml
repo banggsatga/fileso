@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView ="@id/place_details_vertical_fragment" ="fill_parent" ="fill_parent" ="no" cardCornerRadius="?placesCornerRadius" cardElevation="0.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="?placesColorSurface" ="fill_parent" ="wrap_content" ="@drawable/place_widgets_foreground">
+        <LinearLayout ="start|center" ="horizontal" ="fill_parent" ="wrap_content">
+            <ImageView ="@id/google_maps_attribution" ="wrap_content" ="wrap_content" ="@drawable/google_maps_attribution_image" ="fitXY" ="@string/google_maps_attribution_image_description" ="?placesSpacingExtraLarge" />
+            <ImageView ="@id/legal_disclosures_icon" ="@dimen/icon_padding_for_min_touch_target_18dp_icon" ="@dimen/gmp_sys_measurement_tap_target" ="@dimen/gmp_sys_measurement_tap_target" ="@drawable/gs_info_vd_24" ="@string/place_widgets_legal_disclosures_icon_a11y_label" />
+        </LinearLayout>
+        <View ="@id/legal_disclosures_and_content_divider" ="?placesColorOutlineDecorative" ="fill_parent" ="@dimen/place_widget_border_width" />
+        <androidx.core.widget.NestedScrollView ="@id/scroll_view" ="fill_parent" ="wrap_content">
+            <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+                <ProgressBar ="center_horizontal" ="@id/loading_indicator" ="fill_parent" ="@dimen/gmp_sys_measurement_icon_size_medium" ="?placesSpacingLarge" ="?placesSpacingLarge" ="true" ="?placesColorPrimary" />
+                <TextView ="?placesTextAppearanceBodyMedium" ="?placesColorOnSurface" ="@id/loading_failed_message" ="wrap_content" ="wrap_content" ="?placesSpacingLarge" ="?placesSpacingLarge" ="@string/place_details_loading_failed" ="?placesSpacingExtraLarge" ="?placesSpacingExtraLarge" />
+                <TextView ="?placesTextAppearanceDisplaySmall" ="?placesColorOnSurface" ="@id/place_name" ="?placesSpacingMedium" ="wrap_content" ="wrap_content" ="?placesSpacingExtraLarge" ="?placesSpacingExtraLarge" />
+                <include ="@id/place_details_metadata" ="fill_parent" ="wrap_content" layout="@layout/place_details_metadata" />
+                <include ="@id/place_collage_card" ="gone" ="fill_parent" ="wrap_content" layout="@layout/place_collage" />
+                <TextView ="?placesTextAppearanceBodyMedium" ="?placesColorOnSurface" ="@id/place_summary" ="?placesSpacingLarge" ="wrap_content" ="wrap_content" ="?placesSpacingExtraLarge" ="?placesSpacingExtraLarge" />
+                <View ="@id/summary_and_tabs_divider" ="?placesColorOutlineDecorative" ="fill_parent" ="@dimen/place_widget_border_width" />
+                <com.google.android.material.tabs.TabLayout ="@id/tab_layout" ="fill_parent" ="wrap_content" tabIndicator="@drawable/current_tab_indicator" tabIndicatorFullWidth="false" tabMode="fixed" tabSelectedTextColor="?placesColorPrimary" tabTextAppearance="?placesTextAppearanceLabelLarge" tabTextColor="?placesColorOnSurfaceVariant" />
+                <View ="@id/tabs_and_tab_content_divider" ="?placesColorOutlineDecorative" ="fill_parent" ="@dimen/place_widget_border_width" />
+                <androidx.viewpager2.widget.ViewPager2 ="@id/tabs_view_pager" ="false" ="false" ="fill_parent" ="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

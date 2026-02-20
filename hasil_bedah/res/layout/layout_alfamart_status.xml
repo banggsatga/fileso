@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/text_validity" ="fill_parent" ="wrap_content" style="@style/OtherVaNotification" />
+    <ImageView ="center_horizontal" ="@id/barcode_container" ="gone" ="wrap_content" ="wrap_content" ="@dimen/sixteen_dp" ="centerInside" ="true" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="center" ="wrap_content" ="wrap_content" ="@dimen/twenty_four_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/payment_code" />
+    <LinearLayout ="center" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/va_number_size" ="bold" ="@color/dark_blue" ="center" ="@id/text_payment_code" ="@dimen/eight_dp" ="wrap_content" ="wrap_content" ="@dimen/four_dp" ="@dimen/four_dp" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="center_vertical" ="@id/btn_copy_va" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="visible" ="wrap_content" ="fill_parent" fb_text="@string/copy" style="@style/ButtonSecondaryTransparent" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton ="center_vertical" ="@id/instruction_toggle" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/instruction" ="true" style="@style/ButtonSecondaryExpandable" />
+    <ScrollView ="fill_parent" ="wrap_content">
+        <LinearLayout ="vertical" ="@id/instruction_layout" ="gone" ="fill_parent" ="wrap_content">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@string/alfamart_instruction_step0" />
+            <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction1" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/alfamart_instruction_done_step1" />
+            </LinearLayout>
+            <LinearLayout ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction2" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/alfamart_instruction_done_step2" />
+            </LinearLayout>
+            <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction3" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/alfamart_instruction_done_step3" />
+            </LinearLayout>
+            <LinearLayout ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction4" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/alfamart_instruction_done_step4" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

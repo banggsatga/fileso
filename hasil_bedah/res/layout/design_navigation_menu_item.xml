@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView ="@style/TextAppearance.AppCompat.Body2" ="start|center" ="@id/design_menu_item_text" ="0.0dip" ="fill_parent" ="1" ="@dimen/design_navigation_icon_padding" ="1.0" />
+    <ViewStub ="@id/design_menu_item_action_area_stub" ="@layout/design_menu_item_action_area" ="@id/design_menu_item_action_area" ="wrap_content" ="fill_parent" />
+</merge>

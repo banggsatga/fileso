@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="center|top" ="horizontal" ="@id/fullscreen_header" ="@dimen/mtrl_calendar_header_content_padding_fullscreen" ="@dimen/mtrl_calendar_header_content_padding_fullscreen" ="@dimen/mtrl_calendar_header_content_padding_fullscreen" ="fill_parent" ="@dimen/mtrl_calendar_header_height_fullscreen" ="@dimen/mtrl_calendar_header_content_padding_fullscreen" ="@dimen/mtrl_calendar_header_content_padding_fullscreen" style="?materialCalendarHeaderLayout">
+        <com.google.android.material.button.MaterialButton ="center" ="top" ="@id/cancel_button" ="12.0dip" ="@dimen/mtrl_min_touch_target_size" ="@dimen/mtrl_min_touch_target_size" ="0.0dip" ="0.0dip" ="@string/mtrl_picker_cancel" icon="@drawable/material_ic_clear_black_24dp" style="?materialCalendarHeaderCancelButton" />
+        <FrameLayout ="@id/mtrl_picker_header_title_and_selection" ="@dimen/mtrl_calendar_header_text_padding" ="true" ="true" ="0.0dip" ="fill_parent" ="1.0" ="@dimen/mtrl_calendar_header_text_padding">
+            <TextView ="start|bottom|center" ="start|center|top" ="@id/mtrl_picker_title_text" ="fill_parent" ="wrap_content" firstBaselineToTopHeight="@dimen/mtrl_calendar_title_baseline_to_top_fullscreen" style="?materialCalendarHeaderTitle" />
+            <TextView ="start|bottom|center" ="start|center|top" ="@id/mtrl_picker_header_selection_text" ="@dimen/mtrl_calendar_pre_l_text_clip_padding" ="fill_parent" ="wrap_content" firstBaselineToTopHeight="@dimen/mtrl_calendar_selection_baseline_to_top_fullscreen" lineHeight="@dimen/mtrl_calendar_header_selection_line_height" style="?materialCalendarHeaderSelection" />
+        </FrameLayout>
+        <LinearLayout ="@integer/mtrl_calendar_header_orientation" ="wrap_content" ="wrap_content">
+            <com.google.android.material.button.MaterialButton ="end|center|top" ="@id/confirm_button" ="wrap_content" ="@dimen/mtrl_min_touch_target_size" ="@string/mtrl_picker_save" ="@string/mtrl_picker_save" style="?materialCalendarHeaderConfirmButton" />
+            <include layout="@layout/mtrl_picker_header_toggle" />
+        </LinearLayout>
+    </LinearLayout>
+    <View ="bottom" ="fill_parent" ="@dimen/mtrl_calendar_header_divider_thickness" style="?materialCalendarHeaderDivider" />
+</merge>

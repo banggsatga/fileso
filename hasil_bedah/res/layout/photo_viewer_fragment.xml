@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/blurred_background_image" ="fill_parent" ="fill_parent" ="centerCrop" ="@null" ="0.8" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <FrameLayout ="@id/loading_failed_ui" ="@color/gmp_sys_color_light_disabled_surface" ="gone" ="fill_parent" ="fill_parent" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+        <TextView ="?placesTextAppearanceLabelLarge" ="@color/gmp_sys_color_light_on_surface" ="center" ="wrap_content" ="wrap_content" ="@string/place_photo_viewer_image_load_failed_message" />
+    </FrameLayout>
+    <View ="@drawable/places_lightbox_top_gradient" ="fill_parent" ="@dimen/lightbox_top_gradient_height" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <View ="@drawable/places_lightbox_bottom_gradient" ="fill_parent" ="@dimen/lightbox_bottom_gradient_height" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" />
+    <ImageView ="@id/photo_viewer_image" ="fill_parent" ="fill_parent" ="@string/place_photo_viewer_photo_viewer_image_content_description" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <View ="@id/previous_image_button" ="wrap_content" ="wrap_content" ="@string/place_photo_viewer_previous_image_button_content_description" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/next_image_button" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <View ="@id/next_image_button" ="wrap_content" ="wrap_content" ="@string/place_photo_viewer_next_image_button_content_description" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/previous_image_button" layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

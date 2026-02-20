@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.MaterialToolbar ="@id/mttbDirectoryOffice" ="@drawable/bg_half_rounded_white" ="fill_parent" ="?actionBarSize" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvToolbarTitle" ="wrap_content" ="wrap_content" ="Direktori Kantor Cabang" ="@dimen/dimen_32dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+        <ImageView ="@id/imgArrowDown" ="wrap_content" ="wrap_content" ="@drawable/ic_arrow_down" ="@dimen/dimen_140dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <androidx.recyclerview.widget.RecyclerView ="@id/rvBranchOfficeList" ="0.0dip" ="wrap_content" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/mttbDirectoryOffice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

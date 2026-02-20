@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="horizontal" ="@id/action_container" ="0.0dip" ="48.0dip" ="1.0" ="4.0dip" style="@style/Widget.Compat.NotificationActionContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="start|center" ="@id/action_image" ="@dimen/notification_action_icon_size" ="@dimen/notification_action_icon_size" ="centerInside" />
+    <TextView ="end" ="start|center" ="@id/action_text" ="false" ="wrap_content" ="wrap_content" ="true" ="4.0dip" style="@style/Widget.Compat.NotificationActionText" />
+</LinearLayout>

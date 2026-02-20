@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout ="center_horizontal" ="@id/navigation_bar_item_icon_container" ="true" ="wrap_content" ="wrap_content" ="@dimen/mtrl_navigation_rail_margin" ="@dimen/mtrl_navigation_rail_text_bottom_margin">
+        <View ="center" ="@id/navigation_bar_item_active_indicator_view" ="0.0dip" ="0.0dip" />
+        <ImageView ="center" ="@id/navigation_bar_item_icon_view" ="true" ="@dimen/mtrl_navigation_rail_icon_size" ="@dimen/mtrl_navigation_rail_icon_size" ="@null" />
+    </FrameLayout>
+    <com.google.android.material.internal.BaselineLayout ="bottom|center" ="@id/navigation_bar_item_labels_group" ="@dimen/mtrl_navigation_rail_text_bottom_margin" ="true" ="false" ="false" ="wrap_content" ="wrap_content">
+        <TextView ="@dimen/mtrl_navigation_rail_text_size" ="end" ="@id/navigation_bar_item_small_label_view" ="true" ="wrap_content" ="wrap_content" ="1" ="@dimen/m3_navigation_rail_label_padding_horizontal" ="@dimen/m3_navigation_rail_label_padding_horizontal" />
+        <TextView ="@dimen/mtrl_navigation_rail_active_text_size" ="end" ="@id/navigation_bar_item_large_label_view" ="invisible" ="true" ="wrap_content" ="wrap_content" ="1" ="@dimen/m3_navigation_rail_label_padding_horizontal" ="@dimen/m3_navigation_rail_label_padding_horizontal" />
+    </com.google.android.material.internal.BaselineLayout>
+</merge>

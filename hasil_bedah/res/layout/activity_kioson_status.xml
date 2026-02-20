@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout ="@android:color/white" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/appbar_payment" />
+    <RelativeLayout ="vertical" ="fill_parent" ="wrap_content" layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ScrollView ="fill_parent" ="wrap_content" ="@id/container_item_details" ="true">
+            <include layout="@layout/layout_kioson_status" />
+        </ScrollView>
+        <View ="@id/background_dim" ="@color/dim_background" ="gone" ="fill_parent" ="wrap_content" ="@id/container_item_details" />
+        <LinearLayout ="vertical" ="@id/container_item_details" ="fill_parent" ="wrap_content" ="@id/layout_primary_button">
+            <androidx.recyclerview.widget.RecyclerView ="@id/rv_transaction_detail" ="gone" ="fill_parent" ="wrap_content" />
+            <View ="@color/light_gray" ="fill_parent" ="@dimen/two_dp" />
+            <include layout="@layout/layout_total_amount" />
+        </LinearLayout>
+        <View ="@color/light_gray" ="fill_parent" ="@dimen/two_dp" ="@id/layout_primary_button" />
+        <include ="@id/layout_primary_button" layout="@layout/layout_primary_button" />
+    </RelativeLayout>
+    <include layout="@layout/layout_loading_and_badge" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

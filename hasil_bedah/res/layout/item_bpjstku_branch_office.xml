@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@id/tvBranchOfficeRegionalName" ="@color/colorPaleGreyFour" ="@dimen/dimen_6dp" ="@dimen/dimen_6dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_30dp" ="@dimen/dimen_8dp" ="@dimen/dimen_6dp" style="@style/BpjstkuTextViewDmSans.Black.Bold" />
+    <androidx.recyclerview.widget.RecyclerView ="@id/rvBranchOffice" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_30dp" />
+</LinearLayout>

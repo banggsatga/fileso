@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@color/colorWhite" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout="@layout/layout_toolbar_center" />
+    <ScrollView ="@id/eligibleView" ="gone" ="fill_parent" ="fill_parent" ="true">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp">
+            <TextView ="@dimen/text_size_16sp" ="@id/tvKpjLabel" ="gone" ="26.0dip" ="@string/label_kpj_number_2" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+            <TextView ="@dimen/text_size_16sp" ="@id/tvKpj" ="gone" ="@dimen/dimen_8dp" ="-" layout_constraintStart_toStartOf="@id/tvKpjLabel" layout_constraintTop_toBottomOf="@id/tvKpjLabel" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <TextView ="@dimen/text_size_16sp" ="@id/tvClaimType" ="26.0dip" ="@string/label_claim_type" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+            <com.kennyc.view.MultiStateView ="@id/msvClaimType" ="fill_parent" ="wrap_content" layout_constraintEnd_toEndOf="@id/tvKpjLabel" layout_constraintStart_toStartOf="@id/tvKpjLabel" layout_constraintTop_toBottomOf="@id/tvClaimType" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/default_loading_layout">
+                <androidx.recyclerview.widget.RecyclerView ="@id/rvClaimType" ="fill_parent" ="fill_parent" ="@dimen/dimen_24dp" layout_constraintVertical_bias="0.0" />
+            </com.kennyc.view.MultiStateView>
+            <com.google.android.material.button.MaterialButton ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@string/action_next" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" style="@style/BpjstkuButton.WhiteText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

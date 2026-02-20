@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="center" ="@id/places_autocomplete_sad_cloud" ="192.0dip" ="120.0dip" ="48.0dip" srcCompat="@drawable/quantum_ic_cloud_off_vd_theme_24" />
+    <TextView ="@style/PlacesAutocompleteErrorMessageText" ="center" ="@id/places_autocomplete_error_message" ="wrap_content" ="wrap_content" ="38.0dip" ="false" />
+    <FrameLayout ="center" ="wrap_content" ="wrap_content">
+        <Button ="@style/PlacesAutocompleteErrorButtonText" ="@id/places_autocomplete_try_again" ="@null" ="20.0dip" ="30.0dip" ="wrap_content" ="wrap_content" ="@string/places_try_again" ="false" />
+        <ProgressBar ="@id/places_autocomplete_try_again_progress" ="3.0dip" ="@dimen/places_autocomplete_progress_size" ="@dimen/places_autocomplete_progress_size" ="20.0dip" ="30.0dip" ="true" ="@color/places_autocomplete_progress_tint" ="src_atop" style="@style/Widget.AppCompat.ProgressBar" />
+    </FrameLayout>
+</merge>

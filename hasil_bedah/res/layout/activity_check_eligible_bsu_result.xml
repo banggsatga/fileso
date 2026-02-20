@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView ="@id/scroll_view" ="fill_parent" ="fill_parent" ="true">
+        <androidx.constraintlayout.widget.ConstraintLayout ="@id/mainContainer" ="@color/colorWhite" ="@dimen/dimen_20dp" ="true" ="true" ="fill_parent" ="wrap_content">
+            <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+            <ImageView ="@id/imgCheckEligibleResult" ="@dimen/dimen_80dp" ="@dimen/dimen_80dp" ="@drawable/ic_success" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" layout_constraintVertical_bias="0.1" />
+            <TextView ="@dimen/text_size_20sp" ="@id/tvStatusEligible" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="28.0dip" ="@dimen/dimen_20dp" ="center" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgCheckEligibleResult" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <TextView ="@dimen/text_size_14sp" ="center_vertical" ="@id/tvInstructionUpdateRekening" ="@drawable/bg_rounded_macaroni_and_cheese" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@dimen/dimen_20dp" ="@string/instruction_update_account_balance" ="@dimen/dimen_14dp" ="@drawable/ic_warning" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvStatusEligible" style="@style/BpjstkuTextViewDmSans.White.Medium" />
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilBankName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_bank_name" layout_constraintEnd_toEndOf="@id/tvStatusEligible" layout_constraintStart_toStartOf="@id/tvStatusEligible" layout_constraintTop_toBottomOf="@id/tvInstructionUpdateRekening" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+                <com.google.android.material.textfield.TextInputEditText ="textCapCharacters" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilBankAccountNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_bank_account_number" layout_constraintEnd_toEndOf="@id/tilBankName" layout_constraintStart_toStartOf="@id/tilBankName" layout_constraintTop_toBottomOf="@id/tilBankName" style="@style/BpjstkuTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText ="number" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilBankAccountName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@dimen/dimen_24dp" ="@string/hint_bank_account_name" layout_constraintBottom_toTopOf="@id/btnNext" layout_constraintEnd_toEndOf="@id/tilBankAccountNumber" layout_constraintStart_toStartOf="@id/tilBankAccountNumber" layout_constraintTop_toBottomOf="@id/tilBankAccountNumber" layout_constraintVertical_bias="0.0" style="@style/BpjstkuTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText ="textCapCharacters" ="actionDone" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button ="@id/btnOk" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_32dp" ="@dimen/dimen_48dp" ="@dimen/dimen_32dp" ="@dimen/dimen_24dp" ="@string/action_ok" ="@dimen/dimen_32dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tilBankAccountName" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

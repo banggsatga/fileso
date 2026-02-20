@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@id/error_layout" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="16.0dip" ="fill_parent" ="wrap_content" ="true">
+        <ImageView ="center_horizontal" ="@id/img_error" ="wrap_content" ="wrap_content" ="32.0dip" ="32.0dip" ="fitCenter" ="32.0dip" />
+        <TextView ="bold" ="center_horizontal" ="center_horizontal" ="@id/tv_title" ="fill_parent" ="wrap_content" ="16.0dip" />
+        <TextView ="center_horizontal" ="center_horizontal" ="@id/tv_error" ="fill_parent" ="wrap_content" ="8.0dip" />
+        <Button ="14.0sp" ="center_horizontal" ="@id/btn_error" ="gone" ="wrap_content" ="wrap_content" ="8.0dip" style="@style/Widget.MaterialComponents.Button.TextButton" />
+    </LinearLayout>
+</RelativeLayout>

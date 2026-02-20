@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="fill_parent" ="@dimen/dimen_120dp" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" cardCornerRadius="@dimen/dimen_5dp" strokeColor="@color/colorPaleGrey" strokeWidth="@dimen/dimen_1dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+        <TextView ="@dimen/text_size_12sp" ="center" ="@id/item_scholar_ps_title" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="fill_parent" ="@dimen/dimen_0dp" ="@dimen/dimen_8dp" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CoolGrey" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

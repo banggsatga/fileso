@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="fill_parent" ="58.0dip" style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@android:id/icon1" ="invisible" ="@dimen/abc_dropdownitem_icon_width" ="48.0dip" ="centerInside" ="true" ="true" style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Icon1" />
+    <ImageView ="@id/edit_query" ="?selectableItemBackground" ="gone" ="48.0dip" ="48.0dip" ="centerInside" ="true" ="true" style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Query" />
+    <ImageView ="@android:id/icon2" ="gone" ="48.0dip" ="48.0dip" ="centerInside" ="true" ="true" ="true" style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Icon2" />
+    <TextView ="?textAppearanceSearchResultSubtitle" ="top" ="@android:id/text2" ="4.0dip" ="gone" ="fill_parent" ="29.0dip" ="true" ="true" ="true" style="?android:dropDownItemStyle" />
+    <TextView ="?textAppearanceSearchResultTitle" ="@android:id/text1" ="fill_parent" ="wrap_content" ="true" ="@android:id/text2" ="true" style="?android:dropDownItemStyle" />
+</RelativeLayout>

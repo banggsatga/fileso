@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="false" ="?colorSurfaceContainerHighest" ="@dimen/m3_comp_switch_disabled_unselected_icon_opacity" />
+    <item ="false" ="true" ="?colorOnSurface" ="@dimen/m3_comp_switch_disabled_selected_icon_opacity" />
+    <item ="true" ="?colorOnPrimaryContainer" />
+    <item ="false" ="?colorSurfaceContainerHighest" ="true" />
+    <item ="true" ="false" ="?colorSurfaceContainerHighest" />
+    <item ="false" ="true" ="?colorSurfaceContainerHighest" />
+    <item ="false" ="?colorSurfaceContainerHighest" />
+</selector>

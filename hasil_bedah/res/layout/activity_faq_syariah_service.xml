@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@color/colorWhite" ="true" ="true" ="fill_parent" ="fill_parent" ="1.0" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar" />
+    <ScrollView ="fill_parent" ="0.0dip" ="@dimen/dimen_16dp" ="true" ="1.0">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+            <TextView ="@dimen/text_size_30sp" ="@id/tvTitleFaq" ="wrap_content" ="wrap_content" ="@dimen/dimen_30dp" ="FAQ" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.Black.Bold" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvListFaq" ="0.0dip" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" ="@dimen/dimen_20dp" layoutManager="androidx.recyclerview.widget.LinearLayoutManager" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitleFaq" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

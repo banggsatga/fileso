@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout ="@id/frag_scholar_edustate_lay" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="Kondisi akhir Anak saat pengajuan beasiswa" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/frag_scholar_edustate" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView ="13.0sp" ="@id/frag_scholar_note_title" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="Catatan" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/frag_scholar_edustate_lay" style="@style/BpjstkuTextViewPoppins.CoolGrey" />
+        <androidx.appcompat.widget.AppCompatEditText ="@dimen/text_size_14sp" ="@id/frag_scholar_note" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_5dp" ="@dimen/dimen_16dp" ="Isi jika ada catatan" ="textMultiLine" ="@color/colorCoolGrey" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/frag_scholar_note_title" style="@style/BpjstkuTextViewPoppins.CharcoalGrey" />
+        <androidx.recyclerview.widget.RecyclerView ="@id/frag_scholar_edubenefit_recycler" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_32dp" ="@dimen/dimen_32dp" ="@dimen/dimen_32dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/frag_scholar_note" />
+        <com.google.android.material.button.MaterialButton ="false" ="@dimen/text_size_14sp" ="@id/frag_scholar_step2_next" ="@dimen/dimen_16dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_24dp" ="@dimen/dimen_32dp" ="@dimen/dimen_24dp" ="@dimen/dimen_26dp" ="Lanjutkan" ="@dimen/dimen_24dp" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toBottomOf="@id/frag_scholar_edubenefit_recycler" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

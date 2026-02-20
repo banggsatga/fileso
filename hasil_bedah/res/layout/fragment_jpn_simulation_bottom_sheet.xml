@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="@drawable/bg_bottom_sheet" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@dimen/dimen_10dp" ="@dimen/dimen_10dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@dimen/dimen_10dp">
+        <View ="@id/viewTopLine" ="@color/colorPaleGreyFour" ="@dimen/dimen_50dp" ="@dimen/dimen_4dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_18sp" ="@id/tvJpSimulationResult" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@string/label_simulation_result" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/viewTopLine" style="@style/BpjstkuTextViewDmSans.Black.Bold" />
+        <View ="@id/viewLine" ="@color/colorPaleGreyFour" ="fill_parent" ="@dimen/dimen_1dp" ="@dimen/dimen_19dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvJpSimulationResult" />
+        <com.kennyc.view.MultiStateView ="@id/msvJpnSimulationResult" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_30dp" ="@dimen/dimen_8dp" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/viewLine" msv_emptyView="@layout/default_error_layout" msv_errorView="@layout/default_error_layout" msv_loadingView="@layout/default_loading_layout">
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvJpnSimulationResult" ="fill_parent" ="fill_parent" ="never" />
+        </com.kennyc.view.MultiStateView>
+        <com.google.android.material.button.MaterialButton ="@id/btnBack" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_22dp" ="@string/action_back" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="parent" layout_constraintEnd_toStartOf="parent" layout_constraintTop_toBottomOf="@id/msvJpnSimulationResult" style="@style/BpjstkuTextButton.WhiteBackground" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center_horizontal" ="vertical" ="@id/mtrl_picker_fullscreen" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/mtrl_picker_header_fullscreen" />
+    <androidx.fragment.app.FragmentContainerView ="@id/mtrl_calendar_frame" ="@dimen/mtrl_calendar_content_padding" ="@dimen/mtrl_calendar_content_padding" ="fill_parent" ="wrap_content" ="@dimen/mtrl_calendar_content_padding" ="@dimen/mtrl_calendar_content_padding" />
+</LinearLayout>

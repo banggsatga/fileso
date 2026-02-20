@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape ="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size ="160.0dip" ="@dimen/dimen_120dp" />
+    <stroke ="1.0dip" ="#fff5f514" ="10.0px" ="10.0px" />
+</shape>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="true" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/viewBackgroundn" ="@drawable/bg_dashboard" ="@dimen/dimen_0dp" ="wrap_content" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/layout_toolbar" layout="@layout/layout_toolbar_center" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout ="@id/srlComplaintHistory" ="@dimen/dimen_5dp" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar">
+        <com.kennyc.view.MultiStateView ="@id/msvComplaintHistory" ="fill_parent" ="fill_parent" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/default_loading_layout">
+            <androidx.core.widget.NestedScrollView ="fill_parent" ="fill_parent">
+                <androidx.cardview.widget.CardView ="@id/cvComplaintHistory" ="fill_parent" ="fill_parent" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_2dp">
+                    <androidx.recyclerview.widget.RecyclerView ="@id/rvComplaintHistory" ="fill_parent" ="wrap_content" />
+                </androidx.cardview.widget.CardView>
+            </androidx.core.widget.NestedScrollView>
+        </com.kennyc.view.MultiStateView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView ="@dimen/text_size_16sp" ="@id/tvEnmptyComplaint" ="gone" ="fill_parent" ="wrap_content" ="Belum ada pengaduan" ="center" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+</androidx.constraintlayout.widget.ConstraintLayout>

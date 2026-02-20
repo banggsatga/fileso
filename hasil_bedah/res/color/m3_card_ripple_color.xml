@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="true" ="?colorOnSurfaceVariant" ="@dimen/m3_comp_filled_card_pressed_state_layer_opacity" />
+    <item ="true" ="true" ="?colorSecondary" ="@dimen/m3_comp_filled_card_focus_state_layer_opacity" />
+    <item ="true" ="?colorSecondary" ="@dimen/m3_comp_filled_card_hover_state_layer_opacity" ="true" />
+    <item ="true" ="?colorSecondary" ="@dimen/m3_ripple_default_alpha" />
+    <item ="true" ="true" ="?colorSecondary" ="@dimen/m3_comp_filled_card_pressed_state_layer_opacity" />
+    <item ="false" ="true" ="?colorOnSurfaceVariant" ="@dimen/m3_comp_filled_card_pressed_state_layer_opacity" />
+    <item ="true" ="?colorOnSurfaceVariant" ="@dimen/m3_comp_filled_card_focus_state_layer_opacity" />
+    <item ="?colorOnSurfaceVariant" ="@dimen/m3_comp_filled_card_hover_state_layer_opacity" ="true" />
+    <item ="?colorOnSurfaceVariant" ="@dimen/m3_comp_filled_card_dragged_state_layer_opacity" />
+</selector>

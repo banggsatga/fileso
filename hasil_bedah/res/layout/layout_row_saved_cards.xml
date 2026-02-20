@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rambler.libs.swipe_layout.SwipeLayout ="@id/lyt_container" ="fill_parent" ="wrap_content" left_swipe_enabled="true" right_swipe_enabled="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="@id/save_card_main" ="?android:selectableItemBackground" ="@dimen/four_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content">
+        <RelativeLayout ="fill_parent" ="wrap_content">
+            <ImageView ="@id/image_arrow_right" ="@dimen/twenty_four_dp" ="@dimen/twenty_four_dp" ="@dimen/eight_dp" ="@null" ="true" ="true" ="0.3" ="@dimen/eight_dp" ="true" />
+            <ImageView ="@id/image_card_type" ="@dimen/thirtytwo_dp" ="@dimen/thirtytwo_dp" ="@dimen/four_dp" ="@dimen/four_dp" ="@null" ="@id/image_card_offer" ="true" />
+            <com.midtrans.sdk.uikit.widgets.AspectRatioImageView ="@id/image_card_offer" ="?selectableItemBackground" ="gone" ="@dimen/twenty_four_dp" ="@dimen/twenty_four_dp" ="@dimen/four_dp" ="@null" ="@id/image_arrow_right" ="true" />
+            <com.midtrans.sdk.uikit.widgets.AspectRatioImageView ="@id/bank_logo" ="@dimen/bank_logo_size" ="@dimen/bank_logo_size" ="@dimen/four_dp" ="@id/image_card_type" ="true" ="@dimen/four_dp" ="@id/image_card_type" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/sixteen_sp" ="@id/text_saved_card_name" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="1" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/text_saved_card_number" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="1" ="@id/image_card_offer" ="@id/text_saved_card_name" />
+        </RelativeLayout>
+        <View ="@id/divider" ="@color/gray_divider" ="fill_parent" ="1.0dip" ="@dimen/four_dp" />
+    </LinearLayout>
+    <LinearLayout ="@dimen/four_dp" ="@dimen/four_dp" ="wrap_content" ="fill_parent" clamp="self" gravity="right">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@android:color/white" ="center_vertical" ="@id/txt_delete" ="@color/red" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="fill_parent" ="@string/delete" />
+    </LinearLayout>
+</ru.rambler.libs.swipe_layout.SwipeLayout>

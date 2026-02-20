@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@id/indonesianMigrantWorkerContainer" ="@color/colorWhite" ="true" ="true" ="fill_parent" ="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilPlacementCountry" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_26dp" ="@dimen/dimen_20dp" ="@string/label_working_country" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtWorkingCountry" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView ="@id/tvRegistrationOptionId" ="@dimen/dimen_16dp" ="@string/label_identity_registration_option" layout_constraintStart_toStartOf="@id/tilPlacementCountry" layout_constraintTop_toBottomOf="@id/tilPlacementCountry" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <RadioGroup ="horizontal" ="@id/rgRegistrationOption" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="@id/tilPlacementCountry" layout_constraintStart_toStartOf="@id/tilPlacementCountry" layout_constraintTop_toBottomOf="@id/tvRegistrationOptionId">
+            <RadioButton ="@dimen/text_size_16sp" ="@id/rbKTP" ="true" ="@string/label_ktp" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+            <RadioButton ="@dimen/text_size_16sp" ="@id/rbPasspor" ="@string/label_paspor" ="@dimen/dimen_48dp" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+        </RadioGroup>
+        <LinearLayout ="vertical" ="@id/containerRegistrationDetail" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="@id/rgRegistrationOption" layout_constraintStart_toStartOf="@id/rgRegistrationOption" layout_constraintTop_toBottomOf="@id/rgRegistrationOption">
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilIdentityNumber" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_number_identitiy_card" style="@style/BpjstkuTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText ="16" ="\ 0123456789" ="phone" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilPassportNumber" ="gone" ="fill_parent" ="wrap_content" ="@string/hint_passport_number" style="@style/BpjstkuTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText ="textCapCharacters" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilExpirationPassportDate" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@dimen/dimen_16dp" ="@string/hint_expired_date_passport" style="@style/BpjstkuTextInputLayout.Calender">
+                <com.google.android.material.textfield.TextInputEditText ="@id/edtPublishedPassportDate" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilFullName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_fullname" layout_constraintEnd_toEndOf="@id/containerRegistrationDetail" layout_constraintStart_toStartOf="@id/containerRegistrationDetail" layout_constraintTop_toBottomOf="@id/containerRegistrationDetail" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="41.0dip" ="textCapCharacters" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthplace" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_place" layout_constraintEnd_toEndOf="@id/tilFullName" layout_constraintStart_toStartOf="@id/tilFullName" layout_constraintTop_toBottomOf="@id/tilFullName" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="textCapCharacters" ="actionDone" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDate" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_on_id_card" layout_constraintEnd_toEndOf="@id/tilBirthplace" layout_constraintStart_toStartOf="@id/tilBirthplace" layout_constraintTop_toBottomOf="@id/tilBirthplace" style="@style/BpjstkuTextInputLayout.Calender">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDate" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView ="@id/tvGender" ="@dimen/dimen_16dp" ="@string/label_gender" layout_constraintStart_toStartOf="@id/tilBirthDate" layout_constraintTop_toBottomOf="@id/tilBirthDate" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <RadioGroup ="horizontal" ="@id/rgGender" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="@id/tilBirthDate" layout_constraintStart_toStartOf="@id/tilBirthDate" layout_constraintTop_toBottomOf="@id/tvGender">
+            <RadioButton ="@dimen/text_size_16sp" ="@id/rbMale" ="true" ="@string/label_male" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+            <RadioButton ="@dimen/text_size_16sp" ="@id/rbFemale" ="@string/label_female" ="@dimen/dimen_48dp" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilFathersName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_fathers_name" layout_constraintEnd_toEndOf="@id/rgGender" layout_constraintStart_toStartOf="@id/rgGender" layout_constraintTop_toBottomOf="@id/rgGender" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="textPersonName|textCapCharacters" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilMothersName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_mothers_name" layout_constraintEnd_toEndOf="@id/tilFathersName" layout_constraintStart_toStartOf="@id/tilFathersName" layout_constraintTop_toBottomOf="@id/tilFathersName" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="textPersonName|textCapCharacters" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilAddress" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_address_pmi" layout_constraintEnd_toEndOf="@id/tilMothersName" layout_constraintStart_toStartOf="@id/tilMothersName" layout_constraintTop_toBottomOf="@id/tilMothersName" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText style="@style/BpjstkuTextInputEditText.LongText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseProvince" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_province" layout_constraintEnd_toEndOf="@id/tilAddress" layout_constraintStart_toStartOf="@id/tilAddress" layout_constraintTop_toBottomOf="@id/tilAddress" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseProvince" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseCity" ="0.0dip" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_24dp" ="@string/hint_city" endIconDrawable="@null" endIconTint="@color/colorDarkMint" layout_constraintBottom_toTopOf="@id/btnNext" layout_constraintEnd_toEndOf="@id/tilChooseProvince" layout_constraintStart_toStartOf="@id/tilChooseProvince" layout_constraintTop_toBottomOf="@id/tilChooseProvince" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseCity" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton ="false" ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_22dp" ="@string/action_next" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/tilChooseCity" layout_constraintStart_toStartOf="@id/tilChooseCity" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

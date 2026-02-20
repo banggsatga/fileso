@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@dimen/dimen_18dp" ="fill_parent" ="wrap_content">
+        <ImageView ="@id/imgDigitalCard" ="@dimen/dimen_80dp" ="@dimen/dimen_43dp" ="centerCrop" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@id/tvMembershipCategory" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_12dp" layout_constraintEnd_toStartOf="@id/imgDigitalCardCheck" layout_constraintStart_toEndOf="@id/imgDigitalCard" layout_constraintTop_toTopOf="@id/imgDigitalCard" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <TextView ="@id/tvKpjNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="@id/tvMembershipCategory" layout_constraintStart_toStartOf="@id/tvMembershipCategory" layout_constraintTop_toBottomOf="@id/tvMembershipCategory" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+        <ImageView ="@id/imgDigitalCardCheck" ="wrap_content" ="wrap_content" ="@drawable/ic_chevron_right" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

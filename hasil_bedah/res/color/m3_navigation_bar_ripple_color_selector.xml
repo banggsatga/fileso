@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="true" ="?colorOnSurface" ="@dimen/m3_comp_navigation_bar_pressed_state_layer_opacity" />
+    <item ="true" ="true" ="?colorOnSurface" ="@dimen/m3_comp_navigation_bar_focus_state_layer_opacity" />
+    <item ="true" ="?colorOnSurface" ="@dimen/m3_comp_navigation_bar_hover_state_layer_opacity" ="true" />
+    <item ="true" ="?colorOnSurface" ="@dimen/m3_comp_navigation_bar_pressed_state_layer_opacity" />
+    <item ="true" ="?colorOnSurface" ="@dimen/m3_comp_navigation_bar_focus_state_layer_opacity" />
+    <item ="?colorOnSurface" ="@dimen/m3_comp_navigation_bar_hover_state_layer_opacity" ="true" />
+    <item ="@android:color/transparent" />
+</selector>

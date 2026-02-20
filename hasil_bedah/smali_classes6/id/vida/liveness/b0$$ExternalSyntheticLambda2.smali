@@ -1,0 +1,28 @@
+.class public final synthetic Lid/vida/liveness/b0$$ExternalSyntheticLambda2;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/android/gms/tasks/OnCompleteListener;
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onComplete(Lcom/google/android/gms/tasks/Task;)V
+    .locals 0
+
+    .line 0
+    invoke-static {p1}, Lid/vida/liveness/b0;->a(Lcom/google/android/gms/tasks/Task;)V
+
+    return-void
+.end method

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/twelve_dp" ="@dimen/sixteen_dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="center_horizontal" ="@id/bank_point_logo" ="wrap_content" ="wrap_content" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@color/black" ="center_horizontal" ="@id/text_total_point" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" />
+    <com.google.android.material.textfield.TextInputLayout ="@id/container_redeemed_point" ="fill_parent" ="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText ="@id/redeemed_point_field" ="fill_parent" ="wrap_content" ="@string/how_much_point" ="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <RelativeLayout ="@id/container_fiestapoin" ="gone" ="fill_parent" ="wrap_content">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@color/black" ="@id/title_fiestapoint" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="@dimen/eight_dp" ="@string/redeem_100_point" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="center" ="center_horizontal" ="@id/container_total_point" ="visible" ="false" ="fill_parent" ="wrap_content" ="@id/title_fiestapoint" ="0.1" fb_defaultColor="?colorPrimary" fb_focusColor="@color/colorAccentLight" fb_radius="5.0dip" fb_text="" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="20.0sp" ="center" ="@id/text_fiestapoin_discount" ="wrap_content" ="wrap_content" ="@id/title_fiestapoint" ="@id/container_total_point" ="@id/container_total_point" ="@id/container_total_point" ="@id/container_total_point" />
+    </RelativeLayout>
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@color/black" ="wrap_content" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@string/amount_after_discount" />
+    <RelativeLayout ="fill_parent" ="wrap_content">
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="center" ="center_horizontal" ="@id/container_amount" ="visible" ="false" ="fill_parent" ="wrap_content" ="0.1" fb_defaultColor="?colorPrimary" fb_focusColor="@color/colorAccentLight" fb_radius="5.0dip" fb_text="" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="20.0sp" ="@id/text_amount_to_pay" ="wrap_content" ="wrap_content" ="@string/text_amount_here" ="true" />
+    </RelativeLayout>
+</LinearLayout>

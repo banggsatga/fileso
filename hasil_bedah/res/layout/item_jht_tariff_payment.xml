@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton ="@id/rbTariffItem" ="@drawable/selector_bordered_grey_blue" ="@dimen/dimen_8dp" ="@dimen/dimen_14dp" ="@dimen/dimen_8dp" ="@dimen/dimen_14dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@dimen/dimen_14dp" style="@style/BpjstkuRadioButton.PoppinsSemiBoldCoolGrey"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

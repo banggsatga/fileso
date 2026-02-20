@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="horizontal" ="@color/light_gray_min" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/four_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@color/black" ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_1" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="fill_parent" ="wrap_content" ="@string/tnc_bni_point_1" ="2.0dip" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+        <TextView ="@color/black" ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_2" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/tnc_bni_point_2" ="2.0dip" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@color/light_gray_min" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/four_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@color/black" ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_3" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="fill_parent" ="wrap_content" ="@string/tnc_bni_point_3" ="2.0dip" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+        <TextView ="@color/black" ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_4" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/tnc_bni_point_4" ="2.0dip" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@color/light_gray_min" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/four_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@color/black" ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_5" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="fill_parent" ="wrap_content" ="@string/tnc_bni_point_5" ="2.0dip" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+        <TextView ="@color/black" ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_6" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/tnc_bni_point_6" ="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

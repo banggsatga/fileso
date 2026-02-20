@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="fill_parent" ="@dimen/dimen_202dp" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" cardCornerRadius="@dimen/dimen_5dp" strokeColor="@color/colorPaleGrey" strokeWidth="@dimen/dimen_1dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+        <TextView ="@dimen/text_size_12sp" ="center|top" ="@id/item_scholar_prove_title" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_0dp" ="@dimen/dimen_70dp" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" ="Title" ="simple" ="@dimen/dimen_8dp" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CoolGrey" />
+        <ImageView ="@id/item_scholar_prove_image" ="fill_parent" ="@dimen/dimen_0dp" ="@dimen/dimen_16dp" ="fitCenter" ="true" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toBottomOf="@id/item_scholar_prove_title" />
+        <ImageView ="@id/item_scholar_prove_icon" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" ="@dimen/dimen_16dp" ="@drawable/ic_camera" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/item_scholar_prove_title" />
+        <androidx.constraintlayout.widget.Barrier ="@id/frag_scholar_prove_barrier" ="wrap_content" ="wrap_content" barrierDirection="bottom" constraint_referenced_ids="item_scholar_prove_title,item_scholar_prove_icon" />
+        <TextView ="@dimen/text_size_16sp" ="center" ="@id/item_scholar_prove_file" ="@dimen/dimen_32dp" ="@dimen/dimen_32dp" ="@dimen/dimen_32dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="simple" ="@dimen/dimen_32dp" layout_constraintTop_toBottomOf="@id/frag_scholar_prove_barrier" style="@style/BpjstkuTextViewPoppins.CoolGrey" />
+        <ImageButton ="@id/item_scholar_prove_edit" ="@dimen/dimen_40dp" ="@dimen/dimen_40dp" ="@dimen/dimen_8dp" ="@drawable/ic_edit_email" ="@dimen/dimen_50dp" ="@color/colorPaleGrey" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/item_scholar_prove_delete" tint="@color/green_forest.primary" />
+        <ImageButton ="@id/item_scholar_prove_delete" ="@dimen/dimen_40dp" ="@dimen/dimen_40dp" ="@dimen/dimen_8dp" ="@null" ="@dimen/dimen_50dp" ="@color/colorPaleGrey" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" tint="@color/red" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

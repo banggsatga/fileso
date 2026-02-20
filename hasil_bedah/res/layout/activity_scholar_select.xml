@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_350dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <ImageView ="@id/imgBackgroundTop" ="@dimen/dimen_0dp" ="@dimen/dimen_250dp" ="@dimen/dimen_30dp" ="@drawable/bg_art_scholarship" ="centerCrop" layout_constraintBottom_toBottomOf="@id/imgBackground" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" />
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <LinearLayout ="vertical" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgBackground">
+        <TextView ="@dimen/text_size_16sp" ="@android:color/black" ="@id/act_scholar_title" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@string/title_scholarship_selection" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+        <TextView ="@dimen/text_size_14sp" ="@color/gray.primary" ="@id/act_scholar_subtitle" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@string/subtitle_scholarship_selection" ="@dimen/dimen_16dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey" />
+        <androidx.recyclerview.widget.RecyclerView ="@id/act_scholar_recycler" ="fill_parent" ="fill_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

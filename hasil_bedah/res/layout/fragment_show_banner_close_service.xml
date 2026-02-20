@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="vertical" ="@android:color/transparent" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@id/containerBanner" ="@android:color/transparent" ="@dimen/dimen_4dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+        <com.google.android.material.card.MaterialCardView ="@android:color/transparent" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" cardCornerRadius="@dimen/dimen_32dp" layout_constraintDimensionRatio="679:960" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView ="@id/imgBanner" ="fill_parent" ="fill_parent" ="centerInside" />
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView ="right" ="@id/tvCloseBanner" ="@drawable/ic_close_dialog" ="wrap_content" ="wrap_content" ="@dimen/dimen_12dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+</FrameLayout>

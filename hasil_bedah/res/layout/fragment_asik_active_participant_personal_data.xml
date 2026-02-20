@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" ="never" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="true" ="true" ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_12sp" ="center_vertical" ="@id/tvReminderVerifyDataPersonal" ="@drawable/bg_rounded_macaroni_and_cheese" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@dimen/dimen_20dp" ="@string/label_compliance_data_personal" ="@dimen/dimen_14dp" ="@drawable/ic_warning" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.White.Medium" />
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilIdNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_24dp" ="@string/hint_id_number" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tvReminderVerifyDataPersonal" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="16" ="\ 0123456789" ="number" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilFullName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_fullname" layout_constraintEnd_toEndOf="@id/tilIdNumber" layout_constraintStart_toStartOf="@id/tilIdNumber" layout_constraintTop_toBottomOf="@id/tilIdNumber" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="textCapCharacters" ="actionDone" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDate" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_birth_date_on_id_card" layout_constraintEnd_toEndOf="@id/tilFullName" layout_constraintStart_toStartOf="@id/tilFullName" layout_constraintTop_toBottomOf="@id/tilFullName" style="@style/BpjstkuTextInputLayout.Calender">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDate" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatTextView ="@id/tvChooseGender" ="@dimen/dimen_16dp" ="@string/label_choose_sex" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tilBirthDate" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <RadioGroup ="horizontal" ="@id/rgChooseGender" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="@id/tilBirthDate" layout_constraintStart_toStartOf="@id/tilBirthDate" layout_constraintTop_toBottomOf="@id/tvChooseGender">
+            <androidx.appcompat.widget.AppCompatRadioButton ="@dimen/text_size_16sp" ="@id/rbMale" ="true" ="@string/label_male" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+            <androidx.appcompat.widget.AppCompatRadioButton ="@dimen/text_size_16sp" ="@id/rbFemale" ="@string/label_female" ="@dimen/dimen_40dp" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+        </RadioGroup>
+        <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_14sp" ="@id/tvScanKTP" ="@dimen/dimen_24dp" ="@string/label_scan_idnumber" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/rgChooseGender" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <androidx.cardview.widget.CardView ="@id/cvIdCardUpload" ="@dimen/dimen_150dp" ="@dimen/dimen_100dp" ="@dimen/dimen_16dp" ="@dimen/dimen_32dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintBottom_toTopOf="@id/btnNext" layout_constraintStart_toStartOf="@id/tvScanKTP" layout_constraintTop_toBottomOf="@id/tvScanKTP" layout_constraintVertical_bias="0.0">
+            <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/selector_bordered_grey_blue" ="fill_parent" ="fill_parent">
+                <ImageView ="@id/imgIdCardUpload" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@drawable/ic_camera" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.4" />
+                <TextView ="@dimen/text_size_12sp" ="@id/tvIdCardUploadLabel" ="@string/action_scan_id_card" ="@id/imgIdCardUpload" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgIdCardUpload" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.button.MaterialButton ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@string/action_next" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

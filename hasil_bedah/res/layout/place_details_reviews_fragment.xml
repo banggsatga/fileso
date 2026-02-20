@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@id/reviews_tab" ="fill_parent" ="wrap_content" ="?placesSpacingExtraLarge" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView ="@id/reviews_list" ="fill_parent" ="wrap_content" ="false" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <ImageView ="@id/about_reviews_icon" ="@dimen/icon_padding_for_min_touch_target_18dp_icon" ="@dimen/gmp_sys_measurement_tap_target" ="@dimen/gmp_sys_measurement_tap_target" ="@drawable/gs_info_vd_24" ="?placesColorOnSurfaceVariant" ="@string/about_reviews_icon_content_description" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toBottomOf="@id/reviews_list" />
+    <TextView ="?placesTextAppearanceBodyMedium" ="?placesColorOnSurface" ="@id/about_reviews" ="wrap_content" ="wrap_content" ="@string/reviews_disclosure_title" ="?placesSpacingExtraSmall" layout_constraintBottom_toBottomOf="@id/about_reviews_icon" layout_constraintEnd_toStartOf="@id/about_reviews_icon" layout_constraintTop_toTopOf="@id/about_reviews_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_5dp" ="@dimen/dimen_16dp" ="@dimen/dimen_5dp" ="@dimen/dimen_5dp" ="@dimen/dimen_16dp" ="@dimen/dimen_5dp" cardCornerRadius="@dimen/dimen_8dp" contentPaddingBottom="@dimen/dimen_8dp" contentPaddingLeft="@dimen/dimen_12dp" contentPaddingRight="@dimen/dimen_12dp" contentPaddingTop="@dimen/dimen_8dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+        <ImageView ="@id/imgBank" ="@dimen/dimen_60dp" ="@dimen/dimen_60dp" ="@null" ="fitCenter" ="true" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_16sp" ="@id/tvTitleBank" ="visible" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/arrowAction" layout_constraintStart_toEndOf="@id/imgBank" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+        <TextView ="@dimen/text_size_12sp" ="@color/dark_gray" ="@id/tvDescBank" ="gone" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" layout_constraintEnd_toStartOf="@id/arrowAction" layout_constraintHorizontal_bias="0.0" layout_constraintStart_toEndOf="@id/imgBank" layout_constraintTop_toBottomOf="@id/tvTitleBank" />
+        <ImageView ="@id/arrowAction" ="gone" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" ="@drawable/ic_chevron_right_green" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

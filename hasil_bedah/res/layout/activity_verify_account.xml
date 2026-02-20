@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="true" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <TextView ="@dimen/text_size_24sp" ="@id/tvEnterEmail" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@string/label_enter_email" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" layout_constraintVertical_bias="0.2" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+    <TextView ="@id/tvEnterEmailInstruction" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/label_register_message" ="0.02" layout_constraintEnd_toEndOf="@id/tvEnterEmail" layout_constraintStart_toStartOf="@id/tvEnterEmail" layout_constraintTop_toBottomOf="@id/tvEnterEmail" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <com.google.android.material.textfield.TextInputLayout ="@id/tilEmail" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_28dp" ="@string/hint_your_email" layout_constraintEnd_toEndOf="@id/tvEnterEmailInstruction" layout_constraintStart_toStartOf="@id/tvEnterEmailInstruction" layout_constraintTop_toBottomOf="@id/tvEnterEmailInstruction" style="@style/BpjstkuTextInputLayout">
+        <com.google.android.material.textfield.TextInputEditText ="textEmailAddress" ="actionDone" style="@style/BpjstkuTextInputEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton ="false" ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/action_next" ="false" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="@id/tilEmail" layout_constraintStart_toStartOf="@id/tilEmail" layout_constraintTop_toBottomOf="@id/tilEmail" style="@style/BpjstkuButton.WhiteText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="?colorOnSurface" ="@dimen/m3_comp_checkbox_selected_disabled_container_opacity" />
+    <item ="?colorError" state_error="true" />
+    <item ="?colorPrimary" state_indeterminate="true" />
+    <item ="true" ="?colorPrimary" />
+    <item ="false" ="?colorOnSurfaceVariant" />
+</selector>

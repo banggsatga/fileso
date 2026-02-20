@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/iconInfoProgram" ="visible" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@drawable/ic_success" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@dimen/text_size_14sp" ="@id/tvProgramTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_4dp" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/iconInfoProgram" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+    <TextView ="@id/tvProgramDescription" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/iconInfoProgram" layout_constraintTop_toBottomOf="@id/tvProgramTitle" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+</androidx.constraintlayout.widget.ConstraintLayout>

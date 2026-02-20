@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView ="@id/scroll_view" ="fill_parent" ="fill_parent" ="true">
+        <androidx.constraintlayout.widget.ConstraintLayout ="@id/mainContainer" ="@color/colorWhite" ="@dimen/dimen_20dp" ="true" ="true" ="fill_parent" ="wrap_content">
+            <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+            <TextView ="@dimen/text_size_16sp" ="center_vertical" ="@id/tvReminderVerifyDataPersonal" ="@drawable/bg_rounded_macaroni_and_cheese" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@dimen/dimen_20dp" ="Cek apakah kamu termasuk dalam calon peserta BSU" ="@dimen/dimen_14dp" ="@drawable/ic_warning" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" style="@style/BpjstkuTextViewDmSans.White.Medium" />
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilIdNumberParticipant" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_id_number" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tvReminderVerifyDataPersonal" style="@style/BpjstkuTextInputLayout.Disabled">
+                <com.google.android.material.textfield.TextInputEditText ="16" ="\ 0123456789" ="number" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilFullName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_4dp" ="@string/hint_full_name_on_id_card" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tilIdNumberParticipant" style="@style/BpjstkuTextInputLayout.Disabled">
+                <com.google.android.material.textfield.TextInputEditText ="textPersonName" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="false" ="@id/tilBirthDate" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_4dp" ="@string/hint_birth_date" layout_constraintEnd_toEndOf="@id/tilFullName" layout_constraintStart_toStartOf="@id/tilFullName" layout_constraintTop_toBottomOf="@id/tilFullName" style="@style/BpjstkuTextInputLayout.Calender">
+                <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDate" ="actionNext" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilEmail" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_email" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tilBirthDate" style="@style/BpjstkuTextInputLayout.Disabled">
+                <com.google.android.material.textfield.TextInputEditText ="textPersonName" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilPhoneNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_4dp" ="@string/hint_phone_num" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tilEmail" style="@style/BpjstkuTextInputLayout.Disabled">
+                <com.google.android.material.textfield.TextInputEditText ="textPersonName" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilMothersName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_4dp" ="@string/hint_mothers_name" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPersonal" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPersonal" layout_constraintTop_toBottomOf="@id/tilPhoneNumber" style="@style/BpjstkuTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText ="textPersonName" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button ="@id/btnCheckEligibleBsu" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="Lanjutkan" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tilMothersName" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

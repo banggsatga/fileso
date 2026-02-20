@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="center" ="@id/tvStepNumber" ="@drawable/bg_circle_green" ="@dimen/dimen_8dp" ="@dimen/dimen_8dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.White.SemiBold" />
+    <TextView ="start" ="@id/tvRegistrationStep" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_12dp" layout_constraintBottom_toBottomOf="@id/tvStepNumber" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/tvStepNumber" layout_constraintTop_toTopOf="@id/tvStepNumber" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <SeekBar ="@style/BpjstkuSeekbarTheme" ="@id/sbRegisterProgression" ="@color/colorWhite" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="100" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvStepNumber" />
+</androidx.constraintlayout.widget.ConstraintLayout>

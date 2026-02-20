@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="?selectableItemBackground" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/text_size_16sp" ="@id/tvTrainingName" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@string/sample_training_name" ="@dimen/dimen_24dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+    <TextView ="@dimen/text_size_12sp" ="@id/tvTrainingInformation" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@string/sample_training_information" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="@id/tvTrainingName" layout_constraintTop_toBottomOf="@id/tvTrainingName" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <ImageView ="@id/imgArrowRight" ="wrap_content" ="wrap_content" ="@dimen/dimen_15dp" ="@dimen/dimen_15dp" ="@null" ="@dimen/dimen_15dp" ="@dimen/dimen_15dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

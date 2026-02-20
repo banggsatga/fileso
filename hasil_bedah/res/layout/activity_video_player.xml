@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar_center" ="fill_parent" ="wrap_content" layout="@layout/layout_toolbar_center" />
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView ="@id/videoPlayer" ="fill_parent" ="wrap_content" ="@id/layout_toolbar_center" />
+    <ScrollView ="none" ="fill_parent" ="fill_parent" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@id/videoPlayer">
+        <LinearLayout ="vertical" ="@id/llVideo" ="fill_parent" ="wrap_content">
+            <TextView ="@dimen/text_size_18sp" ="@id/tvTitleVideo" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <TextView ="@dimen/text_size_14sp" ="center_vertical" ="@id/tvDescVideo" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_5dp" ="@dimen/dimen_20dp" ="6.0dip" ="@dimen/dimen_20dp" ="inter_word" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton ="@id/fab" ="true" ="true" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_45dp" ="@drawable/ic_share" ="true" ="@string/label_podcast" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="true" ="@color/colorBlue" tint="@color/white" />
+    <ProgressBar ="@id/progressBar" ="gone" ="wrap_content" ="wrap_content" ="true" style="@style/Widget.AppCompat.ProgressBar" />
+</RelativeLayout>

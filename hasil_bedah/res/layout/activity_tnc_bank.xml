@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <include ="@id/layout_toolbar_center" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+        <ImageView ="@id/imgBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_14sp" ="center" ="@id/tvTitleBank" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="-" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar_center" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+        <TextView ="@dimen/text_size_12sp" ="@id/tvBankDesc" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="-" ="inter_word" layout_constraintEnd_toEndOf="parent" layout_constraintHorizontal_bias="0.0" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitleBank" style="@style/BpjstkuTextViewPoppins.Black" />
+        <com.google.android.material.button.MaterialButton ="@id/btnAgree" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@string/action_i_agree" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toBottomOf="@id/tvBankDesc" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

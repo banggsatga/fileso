@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@color/colorWhite" ="true" ="true" ="fill_parent" ="fill_parent" ="1.0" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView ="fill_parent" ="0.0dip" ="@dimen/dimen_16dp" ="true" ="1.0">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilIdentityNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_18dp" ="@dimen/dimen_20dp" ="@string/hint_number_identitiy_card" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+                <com.google.android.material.textfield.TextInputEditText ="@id/edtIdentityNumber" ="number" style="@style/BpjstkuTextInputEditTextUnderline" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout ="vertical" ="@id/kpjContainer" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" layout_constraintEnd_toEndOf="@id/tilIdentityNumber" layout_constraintStart_toStartOf="@id/tilIdentityNumber" layout_constraintTop_toBottomOf="@id/tilIdentityNumber" />
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilFullName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_full_name" layout_constraintEnd_toEndOf="@id/kpjContainer" layout_constraintStart_toStartOf="@id/kpjContainer" layout_constraintTop_toBottomOf="@id/kpjContainer" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+                <com.google.android.material.textfield.TextInputEditText ="false" ="@id/edtFullname" ="textPersonName" style="@style/BpjstkuTextInputEditTextUnderline" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilNPWP" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_npwp" layout_constraintEnd_toEndOf="@id/tilFullName" layout_constraintStart_toStartOf="@id/tilFullName" layout_constraintTop_toBottomOf="@id/tilFullName" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+                <com.google.android.material.textfield.TextInputEditText ="false" ="@id/edtNPWP" ="number" style="@style/BpjstkuTextInputEditTextUnderline" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilPhoneNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_phone_number" layout_constraintEnd_toEndOf="@id/tilNPWP" layout_constraintStart_toStartOf="@id/tilNPWP" layout_constraintTop_toBottomOf="@id/tilNPWP" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+                <com.google.android.material.textfield.TextInputEditText ="false" ="@id/edtPhoneNumber" ="number" style="@style/BpjstkuTextInputEditTextUnderline" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilEmail" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_email" layout_constraintEnd_toEndOf="@id/tilPhoneNumber" layout_constraintStart_toStartOf="@id/tilPhoneNumber" layout_constraintTop_toBottomOf="@id/tilPhoneNumber" style="@style/BpjstkuTextInputLayoutUnderline.Disabled">
+                <com.google.android.material.textfield.TextInputEditText ="false" ="@id/edtEmail" ="textEmailAddress" style="@style/BpjstkuTextInputEditTextUnderline" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatCheckBox ="@dimen/text_size_12sp" ="top" ="@id/cbAgreeTermCondition" ="@dimen/dimen_4dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_21dp" ="@dimen/dimen_16dp" ="@string/label_agree_asik_term_condition" ="-8.0dip" ="inter_word" buttonTint="@color/colorDarkMint" layout_constraintEnd_toEndOf="@id/tilEmail" layout_constraintStart_toStartOf="@id/tilEmail" layout_constraintTop_toBottomOf="@id/tilEmail" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.google.android.material.button.MaterialButton ="@id/btnConfirmation" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_22dp" ="@string/action_confirmation" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" style="@style/BpjstkuButton.WhiteText" />
+</LinearLayout>

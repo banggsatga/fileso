@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="gone" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@id/text_view_rotate" style="@style/ucrop_TextViewWidgetText" />
+    <com.yalantis.ucrop.view.widget.HorizontalProgressWheelView ="@id/rotate_scroll_wheel" ="fill_parent" ="fill_parent" ="@id/wrapper_rotate_by_angle" ="@id/wrapper_reset_rotate" ="@id/text_view_rotate" ="@id/wrapper_rotate_by_angle" ="@id/wrapper_reset_rotate" />
+    <FrameLayout ="@id/wrapper_reset_rotate" ="?selectableItemBackground" ="true" style="@style/ucrop_WrapperRotateButton">
+        <ImageView srcCompat="@drawable/ucrop_ic_reset" style="@style/ucrop_ImageViewWidgetIcon" />
+    </FrameLayout>
+    <FrameLayout ="@id/wrapper_rotate_by_angle" ="?selectableItemBackground" ="true" ="true" ="true" style="@style/ucrop_WrapperRotateButton">
+        <ImageView ="@null" ="@color/ucrop_color_widget_rotate_angle" style="@style/ucrop_ImageViewWidgetIcon" />
+    </FrameLayout>
+</RelativeLayout>

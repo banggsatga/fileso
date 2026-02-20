@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="true" ="true" ="fill_parent" ="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseLocation" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_choose_location" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseLocation" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseJobFirst" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_choose_job_first" layout_constraintEnd_toEndOf="@id/tilChooseLocation" layout_constraintStart_toStartOf="@id/tilChooseLocation" layout_constraintTop_toBottomOf="@id/tilChooseLocation" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseJobFirst" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseJobSecond" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_choose_job_second" layout_constraintEnd_toEndOf="@id/tilChooseJobFirst" layout_constraintStart_toStartOf="@id/tilChooseJobFirst" layout_constraintTop_toBottomOf="@id/tilChooseJobFirst" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseJobSecond" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton ="false" ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_22dp" ="@string/action_next" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/tilChooseJobSecond" layout_constraintStart_toStartOf="@id/tilChooseJobSecond" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

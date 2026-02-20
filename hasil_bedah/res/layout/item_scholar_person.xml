@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" cardCornerRadius="@dimen/dimen_20dp" cardElevation="@dimen/dimen_8dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_box_peserta" ="fill_parent" ="wrap_content" ="-3.0dip">
+        <TextView ="@dimen/text_size_14sp" ="@android:color/white" ="@id/item_scholar_person_name" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" layout_constraintEnd_toStartOf="@id/item_scholar_person_img" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@android:color/white" ="@id/item_scholar_person_code" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/item_scholar_person_img" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/item_scholar_person_name" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <com.bpjstku.util.custom.CircleImageView ="@id/item_scholar_person_img" ="@dimen/dimen_48dp" ="@dimen/dimen_48dp" ="@drawable/ic_placeholder" ="@dimen/dimen_16dp" ="@dimen/dimen_4dp" civ_border_color="@color/colorPaleGreyNine" civ_border_width="@dimen/dimen_4dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

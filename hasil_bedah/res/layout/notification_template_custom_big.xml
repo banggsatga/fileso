@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="@id/notification_background" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@dimen/notification_large_icon_width" ="@dimen/notification_large_icon_height" layout="@layout/notification_template_icon_group" />
+    <LinearLayout ="top" ="vertical" ="fill_parent" ="wrap_content" ="@dimen/notification_large_icon_width">
+        <LinearLayout ="horizontal" ="@id/notification_main_column_container" ="fill_parent" ="wrap_content" ="@dimen/notification_large_icon_height">
+            <FrameLayout ="@id/notification_main_column" ="fill_parent" ="wrap_content" ="8.0dip" ="1.0" ="8.0dip" />
+            <FrameLayout ="@id/right_side" ="@dimen/notification_right_side_padding_top" ="wrap_content" ="wrap_content" ="8.0dip">
+                <ViewStub ="end|center|top" ="@id/time" ="gone" ="@layout/notification_template_part_time" ="wrap_content" ="wrap_content" />
+                <ViewStub ="end|center|top" ="@id/chronometer" ="gone" ="@layout/notification_template_part_chronometer" ="wrap_content" ="wrap_content" />
+                <TextView ="@style/TextAppearance.Compat.Notification.Info" ="end|bottom|center" ="@id/info" ="wrap_content" ="wrap_content" ="20.0dip" ="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView ="@id/action_divider" ="#29000000" ="gone" ="fill_parent" ="1.0dip" />
+        <LinearLayout ="horizontal" ="@id/actions" ="gone" ="fill_parent" ="wrap_content" ="-8.0dip" />
+    </LinearLayout>
+</FrameLayout>

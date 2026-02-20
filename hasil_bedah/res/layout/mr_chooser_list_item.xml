@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center_vertical" ="horizontal" ="24.0dip" ="24.0dip" ="fill_parent" ="wrap_content" ="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/mr_chooser_route_icon" ="24.0dip" ="24.0dip" ="24.0dip" />
+    <LinearLayout ="vertical" ="fill_parent" ="wrap_content" ="1.0dip">
+        <TextView ="@style/TextAppearance.MediaRouter.PrimaryText" ="marquee" ="@id/mr_chooser_route_name" ="fill_parent" ="32.0dip" ="true" />
+        <TextView ="@style/TextAppearance.MediaRouter.SecondaryText" ="marquee" ="@id/mr_chooser_route_desc" ="fill_parent" ="24.0dip" ="true" />
+    </LinearLayout>
+</LinearLayout>

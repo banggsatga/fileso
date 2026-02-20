@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView ="@id/place_search_horizontal_card_view" ="fill_parent" ="wrap_content" cardCornerRadius="?placesCornerRadius" cardElevation="0.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="?placesColorSurface" ="fill_parent" ="wrap_content" ="@drawable/place_widgets_foreground">
+        <include ="@id/place_search_attribution_container_top" layout="@layout/place_search_google_maps_attribution" />
+        <View ="@id/place_search_horizontal_top_gap" ="gone" ="fill_parent" ="?placesSpacingLarge" />
+        <TextView ="@id/place_search_text_top" ="?placesSpacingLarge" ="gone" ="fill_parent" ="wrap_content" ="?placesSpacingLarge" ="?placesSpacingLarge" />
+        <ProgressBar ="center_horizontal" ="@id/loading_indicator" ="gone" ="@dimen/gmp_sys_measurement_icon_size_small" ="@dimen/gmp_sys_measurement_icon_size_small" ="?placesSpacingLarge" ="?placesSpacingLarge" ="true" ="?placesSpacingLarge" ="?placesSpacingLarge" ="?placesColorPrimary" />
+        <androidx.constraintlayout.widget.ConstraintLayout ="@id/place_search_list_recycler_view_container" ="false" ="fill_parent" ="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView ="horizontal" ="@id/place_search_list_recycler_view" ="false" ="fill_parent" ="wrap_content" ="?placesSpacingLarge" ="?placesSpacingLarge" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+            <LinearLayout ="center" ="vertical" ="@id/scroller_button" ="@drawable/place_search_button_background" ="gone" ="@dimen/gmp_sys_measurement_tap_target" ="@dimen/gmp_sys_measurement_tap_target" ="?placesSpacingMedium" ="@dimen/place_search_widget_button_elevation" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent">
+                <ImageView ="@dimen/gmp_sys_measurement_icon_size_small" ="@dimen/gmp_sys_measurement_icon_size_small" ="@drawable/gs_arrow_forward_ios_vd_20" ="fitCenter" ="?placesColorOnSurface" ="@string/place_search_scroller_button_a11y_label" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView ="@id/place_search_text_bottom" ="?placesSpacingLarge" ="gone" ="fill_parent" ="wrap_content" ="?placesSpacingLarge" ="?placesSpacingLarge" />
+        <View ="@id/place_search_horizontal_bottom_gap" ="gone" ="fill_parent" ="?placesSpacingLarge" />
+        <include ="@id/place_search_attribution_container_bottom" ="gone" layout="@layout/place_search_google_maps_attribution" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView ="@android:color/white" ="fill_parent" ="fill_parent" layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="fill_parent" ="fill_parent">
+        <androidx.appcompat.widget.AppCompatButton ="center_vertical" ="@id/instruction_toggle" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/show_instruction" style="@style/ButtonSecondaryExpandable" />
+        <LinearLayout ="vertical" ="@id/instruction_layout" ="gone" ="fill_parent" ="wrap_content">
+            <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_1" style="@style/BankTransferInstruction.Number" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_alto_1" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_alto1" style="@style/BankTransferInstruction" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_2" style="@style/BankTransferInstruction.Number" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_alto_2" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_alto2" style="@style/BankTransferInstruction" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_3" style="@style/BankTransferInstruction.Number" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_alto_3" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_alto3" style="@style/BankTransferInstruction" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_4" style="@style/BankTransferInstruction.Number" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_alto_4" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_alto4" style="@style/BankTransferInstruction" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_5" style="@style/BankTransferInstruction.Number" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_alto_5" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_alto5" style="@style/BankTransferInstruction" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_6" style="@style/BankTransferInstruction.Number" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_alto_6" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_alto6" style="@style/BankTransferInstruction" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_7" style="@style/BankTransferInstruction.Number" />
+                <ImageView ="wrap_content" ="wrap_content" srcCompat="@drawable/instruction_alto_7" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="wrap_content" ="wrap_content" ="@string/instruction_alto7" style="@style/BankTransferInstruction" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

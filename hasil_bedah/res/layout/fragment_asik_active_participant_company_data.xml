@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="true" ="true" ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_12sp" ="center_vertical" ="@id/tvReminderVerifyDataCompany" ="@drawable/bg_rounded_macaroni_and_cheese" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@dimen/dimen_20dp" ="@string/label_compliance_work_domicile" ="@dimen/dimen_14dp" ="@drawable/ic_loud_speaker_circle" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.White.Medium" />
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilCompanyName" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_24dp" ="@string/hint_company_name" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataCompany" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataCompany" layout_constraintTop_toBottomOf="@id/tvReminderVerifyDataCompany" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="textCapCharacters" ="actionDone" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseLocation" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/hint_choose_location" layout_constraintEnd_toEndOf="@id/tilCompanyName" layout_constraintStart_toStartOf="@id/tilCompanyName" layout_constraintTop_toBottomOf="@id/tilCompanyName" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseLocation" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilChooseDomicile" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@string/hint_choose_domicile" ="@dimen/dimen_16dp" layout_constraintBottom_toTopOf="@id/btnNext" layout_constraintEnd_toEndOf="@id/tilChooseLocation" layout_constraintStart_toStartOf="@id/tilChooseLocation" layout_constraintTop_toBottomOf="@id/tilChooseLocation" layout_constraintVertical_bias="0.0" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtChooseDomicile" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton ="true" ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_27dp" ="@string/action_next" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/tilChooseDomicile" layout_constraintStart_toStartOf="@id/tilChooseDomicile" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

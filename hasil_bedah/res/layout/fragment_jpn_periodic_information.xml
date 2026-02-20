@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView ="fill_parent" ="fill_parent" ="true" ="never" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="vertical" ="fill_parent" ="fill_parent">
+        <androidx.cardview.widget.CardView ="@id/cvInfoJp" ="fill_parent" ="wrap_content" ="@dimen/dimen_30dp" ="@dimen/dimen_20dp" ="@dimen/dimen_30dp" ="true" ="@dimen/dimen_30dp" cardCornerRadius="@dimen/dimen_20dp" cardElevation="@dimen/dimen_8dp">
+            <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_box_peserta" ="fill_parent" ="fill_parent">
+                    <com.bpjstku.util.custom.CircleImageView ="@id/civProfile" ="@dimen/dimen_92dp" ="@dimen/dimen_92dp" ="@dimen/dimen_22dp" ="@drawable/ic_placeholder" ="@dimen/dimen_4dp" civ_border_color="@color/colorPaleGreyNine" civ_border_width="@dimen/dimen_4dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+                    <TextView ="@dimen/text_size_14sp" ="@id/tvGreeting" ="wrap_content" ="wrap_content" ="@dimen/dimen_11dp" ="Hello" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/civProfile" style="@style/BpjstkuTextViewPoppins.White.SemiBold" />
+                    <TextView ="@dimen/text_size_14sp" ="@id/tvNamesWorker" ="wrap_content" ="wrap_content" ="@dimen/dimen_2dp" ="Ahmat Sumingan Saleh" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvGreeting" style="@style/BpjstkuTextViewPoppins.White.Bold" />
+                    <TextView ="@dimen/text_size_10sp" ="@id/tvProgramsCovered" ="@drawable/bg_round_white" ="@dimen/dimen_10dp" ="@dimen/dimen_4dp" ="@dimen/dimen_10dp" ="@dimen/dimen_4dp" ="wrap_content" ="wrap_content" ="@dimen/dimen_15dp" ="@dimen/dimen_25dp" ="@string/label_pension_security" ="@dimen/dimen_8dp" ="@dimen/text_size_6sp" ="@drawable/ic_perisai_on" ="@dimen/dimen_10dp" ="@dimen/dimen_4dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvNamesWorker" style="@style/BpjstkuTextViewPoppins.Aloha.SemiBold" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView ="@dimen/text_size_14sp" ="center" ="@id/tvTitleTotalBenefit" ="wrap_content" ="wrap_content" ="@dimen/dimen_24dp" ="@dimen/dimen_15dp" ="@dimen/dimen_24dp" ="Silakan melakukan Konfirmasi untuk mendapatkan manfaat JP Berkala" ="@dimen/dimen_24dp" layout_constraintTop_toBottomOf="@id/tvNamesWorker" style="@style/BpjstkuTextViewPoppins.Black" />
+                <com.google.android.material.button.MaterialButton ="@dimen/text_size_14sp" ="@id/btnConfirmation" ="@dimen/dimen_20dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_24dp" ="@dimen/dimen_25dp" ="@dimen/dimen_24dp" ="@dimen/dimen_26dp" ="Konfirmasi Sekarang" ="@dimen/dimen_24dp" style="@style/BpjstkuButton.WhiteText" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <com.kennyc.view.MultiStateView ="@id/msvEligibility" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_vocational_eligibility_error" msv_loadingView="@layout/layout_vocation_check_elegibility_loading" msv_viewState="content">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+            <ImageView ="@id/imgVocationalEligibilityResult" ="wrap_content" ="wrap_content" ="@dimen/dimen_237dp" ="@drawable/ic_success" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+            <TextView ="@id/tvEligibilityResult" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_42dp" ="@dimen/dimen_20dp" ="@dimen/dimen_42dp" ="@string/label_eligibility_result" ="center" ="@dimen/dimen_42dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgVocationalEligibilityResult" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <Button ="@id/btnNext" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_44dp" ="@dimen/dimen_16dp" ="@dimen/dimen_44dp" ="@string/action_next" ="@dimen/dimen_44dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvEligibilityResult" style="@style/BpjstkuButton.WhiteText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.kennyc.view.MultiStateView>
+</androidx.constraintlayout.widget.ConstraintLayout>

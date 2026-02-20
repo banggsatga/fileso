@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView ="@id/imgProgram" ="@dimen/dimen_35dp" ="@dimen/dimen_35dp" ="@dimen/dimen_0dp" ="@dimen/dimen_10dp" ="@dimen/dimen_0dp" ="@drawable/ic_jaminan_jht" ="@dimen/dimen_0dp" layout_constraintDimensionRatio="16:9" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@dimen/text_size_10sp" ="@color/colorDarkMint" ="@id/tvProgramItem" ="@drawable/bg_round_darkmint10" ="@dimen/dimen_4dp" ="@dimen/dimen_4dp" ="@dimen/dimen_4dp" ="@dimen/dimen_4dp" ="wrap_content" ="wrap_content" ="@dimen/dimen_2dp" ="@string/label_jkk" ="@dimen/dimen_4dp" ="@dimen/text_size_6sp" ="@dimen/dimen_5dp" ="@dimen/dimen_20dp" ="@dimen/dimen_4dp" ="@dimen/dimen_4dp" style="@style/BpjstkuTextViewDmSans.White" />
+</LinearLayout>

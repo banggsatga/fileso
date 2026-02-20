@@ -1,0 +1,110 @@
+.class public Lcom/midtrans/sdk/corekit/models/CardResponse;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field private code:I
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "status_code"
+    .end annotation
+.end field
+
+.field private data:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Lcom/midtrans/sdk/corekit/models/SaveCardRequest;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private status:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "status_message"
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 65354
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getCode()I
+    .locals 1
+
+    .line 65353
+    iget v0, p0, Lcom/midtrans/sdk/corekit/models/CardResponse;->code:I
+
+    return v0
+.end method
+
+.method public getData()Ljava/util/ArrayList;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList<",
+            "Lcom/midtrans/sdk/corekit/models/SaveCardRequest;",
+            ">;"
+        }
+    .end annotation
+
+    .line 65352
+    iget-object v0, p0, Lcom/midtrans/sdk/corekit/models/CardResponse;->data:Ljava/util/ArrayList;
+
+    return-object v0
+.end method
+
+.method public getStatus()Ljava/lang/String;
+    .locals 1
+
+    .line 65351
+    iget-object v0, p0, Lcom/midtrans/sdk/corekit/models/CardResponse;->status:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public setCode(I)V
+    .locals 0
+
+    .line 65350
+    iput p1, p0, Lcom/midtrans/sdk/corekit/models/CardResponse;->code:I
+
+    return-void
+.end method
+
+.method public setData(Ljava/util/ArrayList;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Lcom/midtrans/sdk/corekit/models/SaveCardRequest;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 65349
+    iput-object p1, p0, Lcom/midtrans/sdk/corekit/models/CardResponse;->data:Ljava/util/ArrayList;
+
+    return-void
+.end method
+
+.method public setStatus(Ljava/lang/String;)V
+    .locals 0
+
+    .line 65348
+    iput-object p1, p0, Lcom/midtrans/sdk/corekit/models/CardResponse;->status:Ljava/lang/String;
+
+    return-void
+.end method

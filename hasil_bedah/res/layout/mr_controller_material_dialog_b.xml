@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="@id/mr_expandable_area" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="center" ="vertical" ="@id/mr_dialog_area" ="?colorBackgroundFloating" ="fill_parent" ="wrap_content">
+        <LinearLayout ="horizontal" ="@id/mr_title_bar" ="24.0dip" ="12.0dip" ="fill_parent" ="wrap_content">
+            <TextView ="@style/TextAppearance.MediaRouter.Title" ="end" ="center_vertical" ="@id/mr_name" ="0.0dip" ="72.0dip" ="true" ="1.0" />
+            <ImageButton ="center_vertical" ="@id/mr_close" ="?selectableItemBackgroundBorderless" ="48.0dip" ="48.0dip" ="?mediaRouteCloseDrawable" ="@string/mr_controller_close_description" />
+        </LinearLayout>
+        <FrameLayout ="@id/mr_custom_control" ="gone" ="fill_parent" ="wrap_content" />
+        <FrameLayout ="@id/mr_default_control" ="fill_parent" ="wrap_content">
+            <ImageView ="top" ="@id/mr_art" ="?colorPrimary" ="gone" ="fill_parent" ="wrap_content" ="fitXY" ="true" ="@string/mr_controller_album_art" />
+            <LinearLayout ="bottom" ="vertical" ="fill_parent" ="wrap_content" ="false">
+                <LinearLayout ="?mediaRouteControlPanelThemeOverlay" ="bottom" ="vertical" ="@id/mr_media_main_control" ="16.0dip" ="16.0dip" ="fill_parent" ="wrap_content">
+                    <include ="@id/mr_playback_control" layout="@layout/mr_playback_control" />
+                    <View ="@id/mr_control_divider" ="gone" ="fill_parent" ="8.0dip" />
+                    <include ="@id/mr_volume_control" layout="@layout/mr_volume_control" />
+                </LinearLayout>
+                <androidx.mediarouter.app.OverlayListView ="?mediaRouteControlPanelThemeOverlay" ="outsideOverlay" ="@id/mr_volume_group_list" ="@dimen/mr_controller_volume_group_list_padding_top" ="gone" ="false" ="fill_parent" ="wrap_content" ="false" />
+            </LinearLayout>
+        </FrameLayout>
+        <include layout="@layout/abc_alert_dialog_button_bar_material" />
+    </LinearLayout>
+</FrameLayout>

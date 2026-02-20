@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_16sp" ="@id/tvTuitionCompanyName" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="true" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+    <androidx.recyclerview.widget.RecyclerView ="@id/rvListTuitionCompany" ="fill_parent" ="wrap_content" />
+</LinearLayout>

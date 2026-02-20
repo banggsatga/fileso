@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center" ="vertical" ="@id/autocomplete_message_container" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@style/TextAppearance.Gmp.Sys.Typescale.BodyMedium" ="?placesColorOnSurface" ="@id/autocomplete_message_text_view" ="@dimen/gmp_sys_measurement_spacing_medium" ="@dimen/gmp_sys_measurement_spacing_medium" ="true" ="fill_parent" ="0.0dip" ="@string/autocomplete_no_matching_results_for_query" ="1.0" ="@dimen/gmp_sys_measurement_spacing_large" ="@dimen/gmp_sys_measurement_spacing_large" />
+    <View ="?placesColorOutlineDecorative" ="fill_parent" ="@dimen/place_widget_border_width" />
+</LinearLayout>

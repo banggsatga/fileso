@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector ="@dimen/mtrl_switch_thumb_size" ="@dimen/mtrl_switch_thumb_size" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="@id/pressed" ="@drawable/mtrl_switch_thumb_pressed" />
+    <item ="true" ="@id/checked" ="@drawable/mtrl_switch_thumb_checked" />
+    <item ="@id/with_icon" ="@drawable/mtrl_switch_thumb_checked" state_with_icon="true" />
+    <item ="@id/unchecked" ="@drawable/mtrl_switch_thumb_unchecked" />
+    <transition ="@drawable/mtrl_switch_thumb_pressed_checked" ="@id/checked" ="@id/pressed" />
+    <transition ="@drawable/mtrl_switch_thumb_pressed_checked" ="@id/with_icon" ="@id/pressed" />
+    <transition ="@drawable/mtrl_switch_thumb_pressed_unchecked" ="@id/unchecked" ="@id/pressed" />
+    <transition ="@drawable/mtrl_switch_thumb_checked_pressed" ="@id/pressed" ="@id/checked" />
+    <transition ="@drawable/mtrl_switch_thumb_checked_unchecked" ="@id/unchecked" ="@id/checked" />
+    <transition ="@drawable/mtrl_switch_thumb_checked_pressed" ="@id/pressed" ="@id/with_icon" />
+    <transition ="@drawable/mtrl_switch_thumb_unchecked_pressed" ="@id/pressed" ="@id/unchecked" />
+    <transition ="@drawable/mtrl_switch_thumb_unchecked_checked" ="@id/checked" ="@id/unchecked" />
+</animated-selector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="@id/container" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout ="@id/coordinator" ="true" ="fill_parent" ="fill_parent">
+        <View ="@id/touch_outside" ="false" ="fill_parent" ="fill_parent" ="false" ="no" />
+        <FrameLayout ="center|top" ="@id/design_bottom_sheet" ="fill_parent" ="wrap_content" layout_behavior="@string/bottom_sheet_behavior" style="?bottomSheetStyle" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

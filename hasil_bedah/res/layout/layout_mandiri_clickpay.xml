@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@dimen/sixteen_dp" ="fill_parent" ="fill_parent" layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="fill_parent" ="wrap_content" style="@style/TokenNotification" />
+    <com.google.android.material.textfield.TextInputLayout ="@id/container_card_number" ="true" ="true" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp">
+        <androidx.appcompat.widget.AppCompatEditText ="@id/edit_card_number" ="@id/edit_challenge_token" ="fill_parent" ="wrap_content" ="@string/hint_mandiri_debit_card_no" ="1" ="19" ="0123456789 " ="number" ="actionNext" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout ="@id/container_challenge_token" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp">
+        <androidx.appcompat.widget.AppCompatEditText ="@id/edit_challenge_token" ="fill_parent" ="wrap_content" ="@string/hint_challenge_token" ="1" ="6" ="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.core.widget.NestedScrollView ="@android:color/white" ="fill_parent" ="fill_parent">
+        <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+            <LinearLayout ="vertical" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp">
+                <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="wrap_content" ="wrap_content" ="@string/appli" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="end" ="end" ="0.0dip" ="wrap_content" ="@string/text_three" ="1.0" />
+                </LinearLayout>
+                <View ="@color/dark_gray" ="fill_parent" ="1.0dip" ="@dimen/eight_dp" />
+                <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="wrap_content" ="wrap_content" ="@string/input_1" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="end" ="@id/text_input_1" ="0.0dip" ="wrap_content" ="@string/text_input_one_here" ="1.0" />
+                </LinearLayout>
+                <View ="@color/dark_gray" ="fill_parent" ="1.0dip" ="@dimen/eight_dp" />
+                <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="wrap_content" ="wrap_content" ="@string/input_2" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="end" ="@id/text_input_2" ="0.0dip" ="wrap_content" ="@string/text_input_two_here" ="1.0" />
+                </LinearLayout>
+                <View ="@color/dark_gray" ="fill_parent" ="1.0dip" ="@dimen/eight_dp" />
+                <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="wrap_content" ="wrap_content" ="@string/input_3" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="end" ="@id/text_input_3" ="0.0dip" ="wrap_content" ="@string/text_input_three_here" ="1.0" />
+                </LinearLayout>
+                <View ="@color/dark_gray" ="fill_parent" ="1.0dip" ="@dimen/eight_dp" />
+            </LinearLayout>
+            <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+                <androidx.appcompat.widget.AppCompatButton ="center_vertical" ="@id/instruction_toggle" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/show_instruction" style="@style/ButtonSecondaryExpandable" />
+                <LinearLayout ="vertical" ="@id/instruction_layout" ="gone" ="fill_parent" ="wrap_content">
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="fill_parent" ="wrap_content" ="@string/mandiri_click_pay_instruction_step1" ="2.0dip" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="fill_parent" ="wrap_content" ="@string/mandiri_click_pay_instruction_step2" ="2.0dip" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="fill_parent" ="wrap_content" ="@string/mandiri_click_pay_instruction_step3" ="2.0dip" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="wrap_content" ="wrap_content" ="@string/mandiri_click_pay_instruction_step4" ="2.0dip" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="fill_parent" ="wrap_content" ="@string/mandiri_click_pay_instruction_step5" ="2.0dip" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="wrap_content" ="wrap_content" ="@string/mandiri_click_pay_instruction_step6" ="2.0dip" />
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="@dimen/sixteen_dp" ="@dimen/two_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="@string/mandiri_click_pay_instruction_step7" ="2.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

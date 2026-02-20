@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="@dimen/places_autocomplete_prediction_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/places_autocomplete_prediction_primary_text" ="@color/places_autocomplete_prediction_primary_text" ="end" ="bottom" ="@id/places_autocomplete_prediction_primary_text" ="fill_parent" ="0.0dip" ="1" ="true" ="1.0" />
+    <TextView ="@dimen/places_autocomplete_prediction_secondary_text" ="@color/places_autocomplete_prediction_secondary_text" ="end" ="top" ="@id/places_autocomplete_prediction_secondary_text" ="fill_parent" ="0.0dip" ="1" ="true" ="1.0" />
+</LinearLayout>

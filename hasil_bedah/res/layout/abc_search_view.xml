@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="horizontal" ="@id/search_bar" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="?android:textAppearanceMedium" ="?android:textColorPrimary" ="center_vertical" ="@id/search_badge" ="gone" ="wrap_content" ="fill_parent" ="2.0dip" ="0.0dip" />
+    <ImageView ="center_vertical" ="@id/search_button" ="true" ="wrap_content" ="fill_parent" ="@string/abc_searchview_description_search" style="?actionButtonStyle" />
+    <LinearLayout ="horizontal" ="@id/search_edit_frame" ="wrap_content" ="fill_parent" ="8.0dip" ="8.0dip" ="1.0" ="locale">
+        <ImageView ="center_vertical" ="@id/search_mag_icon" ="gone" ="@dimen/abc_dropdownitem_icon_width" ="wrap_content" ="centerInside" style="@style/RtlOverlay.Widget.AppCompat.SearchView.MagIcon" />
+        <LinearLayout ="center_vertical" ="horizontal" ="@id/search_plate" ="wrap_content" ="fill_parent" ="1.0">
+            <view ="end" ="center_vertical" ="@id/search_src_text" ="@null" ="@dimen/abc_dropdownitem_text_padding_left" ="@dimen/abc_dropdownitem_text_padding_right" ="0.0dip" ="36.0dip" ="true" ="1.0" ="textAutoComplete|textNoSuggestions" ="@id/search_edit_frame" ="actionSearch" ="wrap_content" ="0.0dip" ="0.0dip" class="androidx.appcompat.widget.SearchView$SearchAutoComplete" />
+            <ImageView ="center_vertical" ="@id/search_close_btn" ="?selectableItemBackgroundBorderless" ="8.0dip" ="8.0dip" ="true" ="wrap_content" ="fill_parent" ="@string/abc_searchview_description_clear" />
+        </LinearLayout>
+        <LinearLayout ="horizontal" ="@id/submit_area" ="wrap_content" ="fill_parent">
+            <ImageView ="center_vertical" ="@id/search_go_btn" ="?selectableItemBackgroundBorderless" ="16.0dip" ="16.0dip" ="true" ="gone" ="wrap_content" ="fill_parent" ="@string/abc_searchview_description_submit" />
+            <ImageView ="center_vertical" ="@id/search_voice_btn" ="?selectableItemBackgroundBorderless" ="16.0dip" ="16.0dip" ="true" ="gone" ="wrap_content" ="fill_parent" ="@string/abc_searchview_description_voice" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

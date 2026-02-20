@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout ="@id/tilKpjDeletable" ="fill_parent" ="wrap_content" ="@string/hint_kpj_number_meaning" endIconDrawable="@drawable/ic_chevron_right" endIconMode="custom" endIconTint="@color/colorDarkSkyBlue" startIconCheckable="true" style="@style/BpjstkuTextInputLayout" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputEditText ="11" ="textCapCharacters" ="actionNext" ="true" style="@style/BpjstkuTextInputEditText" />
+</com.google.android.material.textfield.TextInputLayout>

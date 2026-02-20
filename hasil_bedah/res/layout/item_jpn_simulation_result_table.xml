@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center_vertical" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@id/tvLabel" ="@dimen/dimen_0dp" ="wrap_content" ="0.5" ="@dimen/dimen_8dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <TextView ="@id/tvValue" ="@dimen/dimen_0dp" ="wrap_content" ="0.5" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+</LinearLayout>

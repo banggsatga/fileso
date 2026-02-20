@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.journeyapps.barcodescanner.BarcodeView ="@id/zxing_barcode_surface" ="fill_parent" ="fill_parent" />
+    <com.journeyapps.barcodescanner.ViewfinderView ="@id/zxing_viewfinder_view" ="fill_parent" ="fill_parent" />
+    <TextView ="@color/zxing_status_text" ="bottom|center" ="@id/zxing_status_view" ="@color/zxing_transparent" ="wrap_content" ="wrap_content" ="@string/zxing_msg_default_status" />
+</merge>

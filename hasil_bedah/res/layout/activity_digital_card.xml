@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgBackground" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/toolbarCenter" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <TextView ="@dimen/text_size_16sp" ="@id/tvChooseJamsostekNumberId" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_37dp" ="@dimen/dimen_20dp" ="@string/label_choose_digital_card" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/toolbarCenter" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+    <com.kennyc.view.MultiStateView ="@id/msvDigitalCard" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvChooseJamsostekNumberId" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/layout_default_loading">
+        <androidx.recyclerview.widget.RecyclerView ="@id/rvDigitalCard" ="fill_parent" ="fill_parent" />
+    </com.kennyc.view.MultiStateView>
+</androidx.constraintlayout.widget.ConstraintLayout>

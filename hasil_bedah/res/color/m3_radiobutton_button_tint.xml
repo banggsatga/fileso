@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="?colorOnSurface" ="@dimen/m3_comp_radio_button_disabled_unselected_icon_opacity" />
+    <item ="false" ="true" ="?colorOnSurface" ="@dimen/m3_comp_radio_button_disabled_selected_icon_opacity" />
+    <item ="true" ="true" ="?colorPrimary" />
+    <item ="true" ="true" ="?colorPrimary" />
+    <item ="true" ="?colorPrimary" ="true" />
+    <item ="true" ="?colorPrimary" />
+    <item ="true" ="true" ="?colorOnSurface" />
+    <item ="true" ="true" ="?colorOnSurface" />
+    <item ="true" ="?colorOnSurface" ="true" />
+    <item ="false" ="?colorOnSurfaceVariant" />
+</selector>

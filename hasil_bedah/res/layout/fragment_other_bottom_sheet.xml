@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@drawable/bottom_sheet_background" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View ="@color/colorPaleGreyFour" ="40.0dip" ="4.0dip" ="@dimen/dimen_15dp" ="true" />
+    <TextView ="@dimen/text_size_18sp" ="@id/tvOtherTitle" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_27dp" ="@dimen/dimen_35dp" ="@dimen/dimen_27dp" ="Semua Menu" ="true" ="@dimen/dimen_27dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <androidx.core.widget.NestedScrollView ="fill_parent" ="fill_parent" ="@id/tvOtherTitle" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toBottomOf="@id/tvOtherTitle">
+        <androidx.constraintlayout.widget.ConstraintLayout ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp">
+            <TextView ="@dimen/text_size_16sp" ="@id/tvOtherServices" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_18dp" ="@dimen/dimen_12dp" ="@dimen/dimen_18dp" ="Layanan BPJAMSOSTEK" ="@dimen/dimen_18dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvServices" ="false" ="fill_parent" ="wrap_content" ="@dimen/dimen_14dp" ="never" layout_constraintTop_toBottomOf="@id/tvOtherServices" />
+            <TextView ="@dimen/text_size_16sp" ="@id/tvOtherEntertainment" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="Promo &amp; Entertainment" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/rvServices" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvEntertainment" ="false" ="fill_parent" ="wrap_content" ="@dimen/dimen_14dp" ="never" layout_constraintTop_toBottomOf="@id/tvOtherEntertainment" />
+            <TextView ="@dimen/text_size_16sp" ="@id/tvOtherFinance" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_18dp" ="@dimen/dimen_16dp" ="@dimen/dimen_18dp" ="Finansial &amp; Kesejahteraan" ="@dimen/dimen_18dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/rvEntertainment" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvFinance" ="false" ="fill_parent" ="wrap_content" ="@dimen/dimen_14dp" ="never" layout_constraintTop_toBottomOf="@id/tvOtherFinance" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

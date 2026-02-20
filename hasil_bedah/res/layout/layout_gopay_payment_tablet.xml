@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/dark_gray" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@string/gopay_instruction" />
+    <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction1" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step1" />
+    </LinearLayout>
+    <LinearLayout ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction2" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step2" />
+    </LinearLayout>
+    <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction3" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step3" />
+    </LinearLayout>
+    <LinearLayout ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction4" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step4" />
+    </LinearLayout>
+    <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@id/instruction_no_5" ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction5" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step5" />
+    </LinearLayout>
+</LinearLayout>

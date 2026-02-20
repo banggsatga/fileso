@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@id/btn_pay_container" ="6.0dip" ="false" ="fill_parent" ="@dimen/button_size" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView ="fill_parent" ="fill_parent" cardCornerRadius="@dimen/two_dp" cardElevation="@dimen/two_dp" cardUseCompatPadding="true">
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="@id/button_primary" ="fill_parent" ="fill_parent" fb_defaultColor="@color/gray.primary" fb_focusColor="@color/colorAccentLight" fb_radius="@dimen/two_dp" fb_text="@string/pay_now" fb_textGravity="center_vertical" fb_textSize="@null" />
+        <ImageView ="right" ="@id/button_chevron" ="wrap_content" ="fill_parent" ="@dimen/four_dp" ="@null" ="@dimen/four_dp" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

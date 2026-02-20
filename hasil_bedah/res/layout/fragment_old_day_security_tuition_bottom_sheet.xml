@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@id/bottomSheetContainer" ="@drawable/bg_bottom_sheet" ="true" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kennyc.view.MultiStateView ="@id/msvGeneralList" ="@dimen/dimen_16dp" ="fill_parent" ="fill_parent" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/default_loading_layout">
+        <ScrollView ="fill_parent" ="fill_parent">
+            <LinearLayout ="fill_parent" ="fill_parent">
+                <RelativeLayout ="@drawable/bg_bottom_sheet" ="fill_parent" ="wrap_content">
+                    <View ="@id/imgLineBottomSheet" ="@color/colorLineBottomSheet" ="35.0dip" ="@dimen/dimen_4dp" ="@dimen/dimen_15dp" ="true" />
+                    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_18sp" ="@id/tvTitleBottomSheet" ="@dimen/dimen_16dp" ="@string/label_last_year_tuition" ="@id/imgLineBottomSheet" ="@dimen/dimen_30dp" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+                    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_16sp" ="@id/tvTitleBlthTuition" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_tuition_month" ="@id/tvTitleBottomSheet" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+                    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_16sp" ="@id/tvTitleTuitionValue" ="@dimen/dimen_16dp" ="@string/label_tuition_sum" ="@id/tvTitleBottomSheet" ="@dimen/dimen_30dp" ="true" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                    <androidx.recyclerview.widget.RecyclerView ="@id/rvListTuition" ="fill_parent" ="wrap_content" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" ="@id/tvTitleBlthTuition" ="@dimen/dimen_30dp" />
+                    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_16sp" ="@id/tvTitleSumTuition" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="Total" ="@id/rvListTuition" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+                    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_16sp" ="@id/tvSumTuition" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="Rp 2,000,000,000,000,00" ="@id/rvListTuition" ="@dimen/dimen_30dp" ="true" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                    <com.google.android.material.button.MaterialButton ="@id/btnBack" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@string/action_back" ="@id/tvSumTuition" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" style="@style/BpjstkuTextButton.WhiteBackground" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

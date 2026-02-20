@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView ="@id/cvNews" ="@dimen/dimen_156dp" ="@dimen/dimen_197dp" cardElevation="0.20000005dip" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+        <ImageView ="@id/imgIconBerita" ="fill_parent" ="@dimen/dimen_130dp" ="@drawable/ic_placeholder" ="TODO" />
+        <TextView ="@dimen/text_size_12sp" ="@color/colorWhite" ="@id/tvNewsDate" ="@drawable/btn_dark_mint_enable" ="@dimen/dimen_4dp" ="wrap_content" ="wrap_content" ="@dimen/dimen_96dp" ="@string/sample_date" ="@dimen/text_size_16sp" ="@dimen/dimen_13dp" layout_constraintStart_toStartOf="@id/imgBorderBerita" layout_constraintTop_toTopOf="@id/imgBorderBerita" />
+        <TextView ="@dimen/text_size_12sp" ="@id/tvBeritaLain" ="@dimen/dimen_125dp" ="wrap_content" ="@dimen/dimen_145dp" ="@string/label_news_title" ="@dimen/dimen_13dp" ="@dimen/dimen_13dp" layout_constraintEnd_toEndOf="@id/cvNews" layout_constraintStart_toStartOf="@id/cvNews" layout_constraintTop_toBottomOf="@id/cvNews" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

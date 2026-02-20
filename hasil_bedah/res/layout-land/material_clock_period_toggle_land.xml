@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButtonToggleGroup ="horizontal" ="@id/material_clock_period_toggle" ="gone" ="wrap_content" ="wrap_content" checkedButton="@id/material_clock_period_am_button" selectionRequired="true" singleSelection="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button ="@id/material_clock_period_am_button" ="0.0dip" ="@string/material_timepicker_am" ="1.0" ="4.0dip" ="4.0dip" style="?materialButtonOutlinedStyle" />
+    <Button ="@id/material_clock_period_pm_button" ="0.0dip" ="@string/material_timepicker_pm" ="1.0" ="4.0dip" ="4.0dip" style="?materialButtonOutlinedStyle" />
+</com.google.android.material.button.MaterialButtonToggleGroup>

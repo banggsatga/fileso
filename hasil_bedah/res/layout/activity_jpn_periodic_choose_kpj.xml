@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kennyc.view.MultiStateView ="@id/msvDigitalCard" ="fill_parent" ="fill_parent" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/layout_default_loading" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout ="fill_parent" ="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout ="@id/appbarNews" ="@android:color/transparent" ="true" ="fill_parent" ="wrap_content" elevation="@dimen/dimen_0dp" expanded="true">
+            <com.google.android.material.appbar.CollapsingToolbarLayout ="@android:color/transparent" ="fill_parent" ="wrap_content" layout_scrollFlags="scroll|exitUntilCollapsed">
+                <androidx.constraintlayout.widget.ConstraintLayout ="vertical" ="fill_parent" ="wrap_content">
+                    <ImageView ="@id/imgLapakAsikBackground" ="@drawable/bg_art_jpn" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_54dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+                    <ImageView ="@id/imgLapakAsikBackground2" ="@drawable/bg_art_pilih_peserta" ="367.0dip" ="299.0dip" ="90.0dip" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <include ="@id/layout_toolbar_center_pinned" layout="@layout/layout_toolbar_center_pinned" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout ="vertical" ="fill_parent" ="wrap_content" layout_behavior="@string/appbar_scrolling_view_behavior">
+            <TextView ="@dimen/text_size_18sp" ="@id/tvChooseParticipantKpj" ="wrap_content" ="wrap_content" ="@string/label_choose_participant" ="@dimen/dimen_35dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvDigitalCard" ="fill_parent" ="fill_parent" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.kennyc.view.MultiStateView>

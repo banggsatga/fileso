@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout ="@android:color/white" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/appbar_payment" />
+    <RelativeLayout ="vertical" ="fill_parent" ="fill_parent" layout_behavior="@string/appbar_scrolling_view_behavior">
+        <WebView ="@id/webview_container" ="fill_parent" ="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout ="center" ="vertical" ="@id/progress_container" ="@color/white" ="gone" ="fill_parent" ="fill_parent">
+        <include layout="@layout/layout_midtrans_progress" />
+    </LinearLayout>
+    <include ="start|bottom|center" ="wrap_content" ="wrap_content" layout="@layout/layout_sandbox_badge" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

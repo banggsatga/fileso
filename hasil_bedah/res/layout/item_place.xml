@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@id/root" ="?selectableItemBackground" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.Guideline ="vertical" ="@id/gdMarginStart" ="wrap_content" ="wrap_content" layout_constraintGuide_begin="@dimen/guide_start_margin" />
+    <androidx.constraintlayout.widget.Guideline ="vertical" ="@id/gdContent" ="wrap_content" ="wrap_content" layout_constraintGuide_begin="@dimen/guide_content_margin" />
+    <androidx.constraintlayout.widget.Guideline ="vertical" ="@id/gdMarginEnd" ="wrap_content" ="wrap_content" layout_constraintGuide_end="@dimen/guide_end_margin" />
+    <ImageView ="@id/ivPlaceType" ="wrap_content" ="wrap_content" ="?colorPrimary" layout_constraintBottom_toBottomOf="@id/tvPlaceAddress" layout_constraintStart_toStartOf="@id/gdMarginStart" layout_constraintTop_toTopOf="@id/tvPlaceName" srcCompat="@drawable/ic_map_marker_black_24dp" />
+    <TextView ="@style/TextAppearance.MaterialComponents.Body1" ="end" ="@id/tvPlaceName" ="0.0dip" ="wrap_content" ="@dimen/default_margin" ="1" layout_constraintEnd_toEndOf="@id/gdMarginEnd" layout_constraintStart_toStartOf="@id/gdContent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@style/TextAppearance.MaterialComponents.Body2" ="?android:textColorSecondary" ="end" ="@id/tvPlaceAddress" ="0.0dip" ="wrap_content" ="@dimen/default_margin" ="1" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/gdMarginEnd" layout_constraintStart_toStartOf="@id/tvPlaceName" layout_constraintTop_toBottomOf="@id/tvPlaceName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="?android:selectableItemBackground" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout ="@id/payment_info" ="fill_parent" ="wrap_content">
+        <RelativeLayout ="fill_parent" ="wrap_content">
+            <ImageView ="@id/img_payment_method_icon" ="40.0dip" ="40.0dip" ="@dimen/sixteen_dp" ="10.0dip" ="@dimen/sixteen_dp" ="10.0dip" ="true" ="@string/description_payment_method_icon" />
+            <LinearLayout ="vertical" ="@id/payment_text_container" ="fill_parent" ="wrap_content" ="@id/badge_promo" ="@id/img_payment_method_icon" ="true">
+                <com.midtrans.sdk.uikit.widgets.SemiBoldTextView ="@color/black" ="@id/text_payment_method_name" ="fill_parent" ="wrap_content" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="12.0sp" ="@color/black" ="end" ="center_horizontal" ="@id/text_payment_method_description" ="fill_parent" ="wrap_content" ="2" />
+            </LinearLayout>
+            <View ="@id/divider" ="@color/gray_divider" ="fill_parent" ="1.0dip" ="@id/payment_text_container" ="true" />
+            <ImageView ="@id/image_arrow_right" ="@dimen/twenty_four_dp" ="@dimen/twenty_four_dp" ="@dimen/eight_dp" ="@null" ="true" ="true" ="0.3" ="@dimen/eight_dp" ="true" />
+            <com.midtrans.sdk.uikit.widgets.FancyButton ="center_vertical" ="@id/badge_promo" ="@dimen/eight_dp" ="@dimen/four_dp" ="@dimen/eight_dp" ="@dimen/four_dp" ="gone" ="wrap_content" ="wrap_content" ="@id/image_arrow_right" ="true" ="@id/image_arrow_right" fb_defaultColor="@color/promoBadge" fb_radius="10.0sp" fb_text="promo" fb_textColor="@color/gray.primary_dark" fb_textSize="10.0dip" />
+        </RelativeLayout>
+        <LinearLayout ="vertical" ="@id/layout_payment_unavailable" ="@color/disable" ="invisible" ="false" ="fill_parent" ="fill_parent" ="0.5" />
+    </FrameLayout>
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="12.0sp" ="@color/black" ="@id/text_option_unavailable" ="gone" ="wrap_content" ="wrap_content" ="@dimen/four_dp" ="@dimen/four_dp" ="@string/payment_method_unavailable" ="1" ="@id/payment_info" ="true" />
+</RelativeLayout>

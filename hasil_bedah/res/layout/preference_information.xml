@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center_vertical" ="?android:scrollbarSize" ="fill_parent" ="wrap_content" ="?android:listPreferredItemHeight" ="?android:scrollbarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="0.0dip" ="wrap_content" ="16.0sp" ="6.0sp" ="6.0sp" ="6.0sp" ="1.0" ="16.0sp" ="6.0sp">
+        <TextView ="?android:textAppearanceLarge" ="?android:textColorSecondary" ="@android:id/title" ="wrap_content" ="wrap_content" ="true" />
+        <TextView ="?android:textAppearanceSmall" ="?android:textColorSecondary" ="@android:id/summary" ="wrap_content" ="wrap_content" ="2" ="@android:id/title" ="@android:id/title" ="@android:id/title" />
+    </RelativeLayout>
+    <LinearLayout ="center_vertical" ="vertical" ="@android:id/widget_frame" ="wrap_content" ="fill_parent" />
+</LinearLayout>

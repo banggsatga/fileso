@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kennyc.view.MultiStateView ="@id/msv_root" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout ="@id/msv_content" ="fill_parent" ="wrap_content" />
+</com.kennyc.view.MultiStateView>

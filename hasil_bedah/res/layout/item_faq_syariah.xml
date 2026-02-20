@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" cardCornerRadius="@dimen/dimen_1dp" cardElevation="@dimen/dimen_0dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="@id/llFaq" ="@drawable/border_grey" ="@dimen/dimen_8dp" ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_14sp" ="@id/questionFaqSyariah" ="fill_parent" ="wrap_content" ="@dimen/dimen_4dp" ="@drawable/ic_arrow_down" style="@style/BpjstkuTextViewDmSans.Black.Bold" />
+        <RelativeLayout ="@id/expandableLayout" ="visible" ="fill_parent" ="wrap_content">
+            <TextView ="@dimen/text_size_14sp" ="@id/answerFaqSyariah" ="@dimen/dimen_8dp" ="wrap_content" ="wrap_content" ="@dimen/dimen_2dp" ="inter_word" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

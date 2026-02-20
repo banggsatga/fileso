@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout ="@id/srlPaymentMethodAutoDebit" ="@dimen/dimen_5dp" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+            <include ="@id/layoutToolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+            <LinearLayout ="vertical" ="@id/llBankBriDD" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_32dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/layoutToolbar">
+                <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <ImageView ="center" ="@id/imgCategoryPayment" ="@dimen/dimen_18dp" ="@dimen/dimen_12dp" ="@dimen/dimen_80dp" ="@dimen/dimen_30dp" ="true" ="true" ="true" srcCompat="@null" />
+                    <TextView ="@dimen/text_size_12sp" ="bold" ="@android:color/black" ="center_vertical" ="@id/tvPaymentMethod" ="wrap_content" ="wrap_content" ="4.0dip" ="BRI Direct Debit" ="@id/imgCategoryPayment" ="true" />
+                    <TextView ="@dimen/text_size_10sp" ="center_vertical" ="@id/tvStatusBri" ="wrap_content" ="wrap_content" ="@dimen/dimen_4dp" ="@id/tvPaymentMethod" ="true" ="@drawable/ic_chevron_right" ="viewEnd" ="true" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Medium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View ="@id/viewBRISeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_2dp" layout_constraintEnd_toEndOf="@id/llBankBriDD" layout_constraintStart_toStartOf="@id/llBankBriDD" layout_constraintTop_toBottomOf="@id/llBankBriDD" />
+            <LinearLayout ="vertical" ="@id/llBankMandiri" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/viewBRISeparator">
+                <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <ImageView ="center" ="@id/imgBankMandiri" ="@dimen/dimen_18dp" ="@dimen/dimen_12dp" ="@dimen/dimen_80dp" ="@dimen/dimen_30dp" ="true" ="true" ="true" srcCompat="@null" />
+                    <TextView ="@dimen/text_size_12sp" ="bold" ="@android:color/black" ="center_vertical" ="@id/tvAutoDebetMandiri" ="wrap_content" ="wrap_content" ="4.0dip" ="Mandiri Direct Debit" ="@id/imgBankMandiri" ="true" />
+                    <TextView ="@dimen/text_size_10sp" ="center_vertical" ="@id/tvStatusMandiri" ="wrap_content" ="wrap_content" ="@dimen/dimen_4dp" ="@id/tvAutoDebetMandiri" ="true" ="@drawable/ic_chevron_right" ="viewEnd" ="true" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Medium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View ="@id/viewMandiriSeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_2dp" layout_constraintEnd_toEndOf="@id/llBankMandiri" layout_constraintStart_toStartOf="@id/llBankMandiri" layout_constraintTop_toBottomOf="@id/llBankMandiri" />
+            <LinearLayout ="vertical" ="@id/llBankBni" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/viewMandiriSeparator">
+                <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <ImageView ="center" ="@id/imgBankBni" ="@dimen/dimen_18dp" ="@dimen/dimen_12dp" ="@dimen/dimen_80dp" ="@dimen/dimen_30dp" ="true" ="true" ="true" srcCompat="@drawable/ic_bni_46" />
+                    <TextView ="@dimen/text_size_12sp" ="bold" ="@android:color/black" ="center_vertical" ="@id/tvAutoDebetBni" ="wrap_content" ="wrap_content" ="4.0dip" ="BNI" ="@id/imgBankBni" ="true" />
+                    <TextView ="@dimen/text_size_10sp" ="center_vertical" ="@id/tvStatusBni" ="wrap_content" ="wrap_content" ="@dimen/dimen_4dp" ="@id/tvAutoDebetBni" ="true" ="@drawable/ic_chevron_right" ="viewEnd" ="true" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Medium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View ="@id/viewBankBniSeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_2dp" layout_constraintEnd_toEndOf="@id/llBankBni" layout_constraintStart_toStartOf="@id/llBankBni" layout_constraintTop_toBottomOf="@id/llBankBni" />
+            <LinearLayout ="vertical" ="@id/llOvo" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/viewBankBniSeparator">
+                <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <ImageView ="center" ="@id/imgOvo" ="@dimen/dimen_18dp" ="@dimen/dimen_12dp" ="@dimen/dimen_80dp" ="@dimen/dimen_30dp" ="true" ="true" ="true" srcCompat="@drawable/bg_logo_ovo" />
+                    <TextView ="@dimen/text_size_12sp" ="bold" ="@android:color/black" ="center_vertical" ="@id/tvOvo" ="wrap_content" ="wrap_content" ="4.0dip" ="Ovo" ="@id/imgOvo" ="true" />
+                    <TextView ="@dimen/text_size_10sp" ="center_vertical" ="@id/tvStatusOvo" ="wrap_content" ="wrap_content" ="@dimen/dimen_4dp" ="@id/tvOvo" ="true" ="@drawable/ic_chevron_right" ="viewEnd" ="true" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Medium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View ="@id/viewOvoSeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_2dp" layout_constraintEnd_toEndOf="@id/llOvo" layout_constraintStart_toStartOf="@id/llOvo" layout_constraintTop_toBottomOf="@id/llOvo" />
+            <LinearLayout ="vertical" ="@id/llShopee" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/viewOvoSeparator">
+                <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <ImageView ="center" ="@id/imgShopee" ="@dimen/dimen_18dp" ="@dimen/dimen_12dp" ="@dimen/dimen_80dp" ="@dimen/dimen_30dp" ="true" ="true" ="true" srcCompat="@drawable/uikit_ic_shopeepay" />
+                    <TextView ="@dimen/text_size_12sp" ="bold" ="@android:color/black" ="center_vertical" ="@id/tvShopee" ="wrap_content" ="wrap_content" ="4.0dip" ="ShopeePay" ="@id/imgShopee" ="true" />
+                    <TextView ="@dimen/text_size_10sp" ="center_vertical" ="@id/tvStatusShopee" ="wrap_content" ="wrap_content" ="@dimen/dimen_4dp" ="@id/tvShopee" ="true" ="@drawable/ic_chevron_right" ="viewEnd" ="true" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Medium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View ="@id/viewShopeeSeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_2dp" layout_constraintEnd_toEndOf="@id/llShopee" layout_constraintStart_toStartOf="@id/llShopee" layout_constraintTop_toBottomOf="@id/llShopee" />
+            <LinearLayout ="vertical" ="@id/llDana" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/viewShopeeSeparator">
+                <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <ImageView ="center" ="@id/imgDana" ="@dimen/dimen_18dp" ="@dimen/dimen_12dp" ="@dimen/dimen_80dp" ="@dimen/dimen_30dp" ="true" ="true" ="true" srcCompat="@null" />
+                    <TextView ="@dimen/text_size_12sp" ="bold" ="@android:color/black" ="center_vertical" ="@id/tvDana" ="wrap_content" ="wrap_content" ="4.0dip" ="Dana" ="@id/imgDana" ="true" />
+                    <TextView ="@dimen/text_size_10sp" ="center_vertical" ="@id/tvStatusDana" ="wrap_content" ="wrap_content" ="@dimen/dimen_4dp" ="@id/tvDana" ="true" ="@drawable/ic_chevron_right" ="viewEnd" ="true" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Medium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View ="@id/viewDanaSeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_2dp" layout_constraintEnd_toEndOf="@id/llDana" layout_constraintStart_toStartOf="@id/llDana" layout_constraintTop_toBottomOf="@id/llDana" />
+            <LinearLayout ="vertical" ="@id/llLinkaja" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="true" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/viewDanaSeparator">
+                <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+                    <ImageView ="center" ="@id/imgLinkaja" ="@dimen/dimen_18dp" ="@dimen/dimen_12dp" ="@dimen/dimen_80dp" ="@dimen/dimen_30dp" ="true" ="true" ="true" srcCompat="@drawable/ic_linkaja" />
+                    <TextView ="@dimen/text_size_12sp" ="bold" ="@android:color/black" ="center_vertical" ="@id/tvLinkaja" ="wrap_content" ="wrap_content" ="4.0dip" ="LinkAja" ="@id/imgLinkaja" ="true" />
+                    <TextView ="@dimen/text_size_10sp" ="center_vertical" ="@id/tvStatusLinkaja" ="wrap_content" ="wrap_content" ="@dimen/dimen_4dp" ="@id/tvLinkaja" ="true" ="@drawable/ic_chevron_right" ="viewEnd" ="true" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Medium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View ="@id/viewLinkajaSeparator" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="@dimen/dimen_2dp" layout_constraintEnd_toEndOf="@id/llLinkaja" layout_constraintStart_toStartOf="@id/llLinkaja" layout_constraintTop_toBottomOf="@id/llLinkaja" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

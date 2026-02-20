@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" ="@dimen/dialog_margin" ="@dimen/dialog_margin" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@style/TextAppearance.MaterialComponents.Body2" ="?android:textColorPrimary" ="end" ="@id/tvPlaceName" ="0.0dip" ="wrap_content" ="@dimen/default_margin" ="1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@style/TextAppearance.MaterialComponents.Body2" ="?android:textColorSecondary" ="end" ="@id/tvPlaceAddress" ="0.0dip" ="wrap_content" ="4.0dip" ="@dimen/default_margin" ="2" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvPlaceName" />
+    <LinearLayout ="horizontal" ="@id/llPlaceImages" ="0.0dip" ="wrap_content" ="@dimen/default_margin" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvPlaceAddress">
+        <ImageView ="@id/ivPlacePhoto" ="gone" ="0.0dip" ="@dimen/place_confirm_images_height" ="centerCrop" ="0.65" ="@string/description_place_image" />
+        <ImageView ="@id/ivPlaceMap" ="gone" ="0.0dip" ="@dimen/place_confirm_images_height" ="centerCrop" ="0.35" ="@string/description_place_map" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

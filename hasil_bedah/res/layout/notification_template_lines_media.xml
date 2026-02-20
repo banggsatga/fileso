@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="2.0dip" ="8.0dip" ="2.0dip" ="wrap_content" ="wrap_content" ="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="horizontal" ="@id/line1" ="6.0dip" ="fill_parent" ="wrap_content" ="@dimen/notification_content_margin_start" ="@dimen/notification_content_margin_start">
+        <TextView ="@style/TextAppearance.Compat.Notification.Title.Media" ="marquee" ="@id/title" ="horizontal" ="fill_parent" ="wrap_content" ="true" ="1.0" />
+        <DateTimeView ="@style/TextAppearance.Compat.Notification.Time.Media" ="center" ="@id/time" ="8.0dip" ="gone" ="wrap_content" ="wrap_content" ="true" ="0.0" ="8.0dip" />
+        <Chronometer ="@style/TextAppearance.Compat.Notification.Time.Media" ="center" ="@id/chronometer" ="8.0dip" ="gone" ="wrap_content" ="wrap_content" ="true" ="0.0" ="8.0dip" />
+    </LinearLayout>
+    <TextView ="@style/TextAppearance.Compat.Notification.Line2.Media" ="marquee" ="@id/text2" ="gone" ="horizontal" ="fill_parent" ="wrap_content" ="@dimen/notification_content_margin_start" ="-2.0dip" ="-2.0dip" ="true" ="@dimen/notification_content_margin_start" />
+    <LinearLayout ="center_vertical" ="horizontal" ="@id/line3" ="fill_parent" ="wrap_content" ="@dimen/notification_content_margin_start" ="@dimen/notification_content_margin_start">
+        <TextView ="@style/TextAppearance.Compat.Notification.Media" ="marquee" ="center" ="@id/text" ="horizontal" ="0.0dip" ="wrap_content" ="true" ="1.0" />
+        <TextView ="@style/TextAppearance.Compat.Notification.Info.Media" ="center" ="center" ="@id/info" ="8.0dip" ="wrap_content" ="wrap_content" ="true" ="0.0" ="8.0dip" />
+    </LinearLayout>
+</LinearLayout>

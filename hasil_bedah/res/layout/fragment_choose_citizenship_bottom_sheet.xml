@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="@drawable/bottom_sheet_background" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <View ="@color/colorPaleGreyFour" ="40.0dip" ="4.0dip" ="@dimen/dimen_15dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_18sp" ="@id/tvChooseSegment" ="wrap_content" ="wrap_content" ="@dimen/dimen_35dp" ="@string/label_choose_citizenship" ="@dimen/dimen_27dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <RadioGroup ="@id/rgChooseCitizenship" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_27dp" ="@dimen/dimen_22dp" ="@dimen/dimen_27dp" ="@dimen/dimen_27dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvChooseSegment">
+            <RadioButton ="@dimen/text_size_16sp" ="@id/rbWniSegment" ="wrap_content" ="wrap_content" ="@dimen/dimen_10dp" ="true" ="@string/label_wni" style="@style/BpjstkuRadioButton.DmSansCharcoalGrey" />
+            <RadioButton ="@dimen/text_size_16sp" ="@id/rbWnaSegment" ="wrap_content" ="wrap_content" ="@dimen/dimen_10dp" ="false" ="@string/label_wna" style="@style/BpjstkuRadioButton.DmSansCharcoalGrey" />
+        </RadioGroup>
+        <Button ="@id/btnApply" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_30dp" ="@dimen/dimen_28dp" ="@dimen/dimen_30dp" ="@dimen/dimen_26dp" ="@string/action_apply" ="@dimen/dimen_30dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/rgChooseCitizenship" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

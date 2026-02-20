@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="horizontal" ="fill_parent" ="wrap_content" ="48.0dip" ="15.0dip" ="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="15.0sp" ="@color/browser_actions_text_color" ="center_vertical" ="@id/browser_actions_menu_item_text" ="0.0dip" ="wrap_content" ="10.0dip" ="1.0" ="10.0dip" />
+    <ImageView ="@id/browser_actions_menu_item_icon" ="8.0dip" ="8.0dip" ="20.0dip" ="fill_parent" ="centerInside" ="@null" />
+</LinearLayout>

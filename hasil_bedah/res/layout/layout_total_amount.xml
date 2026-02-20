@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="center_vertical" ="@dimen/eight_dp" ="6.0dip" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="@id/layout_amount" ="fill_parent" ="wrap_content">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/black" ="wrap_content" ="wrap_content" ="@string/payable_amount" ="true" />
+        <com.midtrans.sdk.uikit.widgets.BoldTextView ="@dimen/header_text_size" ="@color/black" ="@id/text_amount" ="wrap_content" ="wrap_content" ="@null" ="@dimen/eight_dp" ="true" ="true" />
+    </RelativeLayout>
+    <RelativeLayout ="fill_parent" ="wrap_content" ="@id/layout_amount">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="wrap_content" ="wrap_content" ="@string/order_id" ="true" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@id/text_order_id" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="true" ="true" />
+    </RelativeLayout>
+</RelativeLayout>

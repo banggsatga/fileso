@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout ="@id/wrapper_controls" ="fill_parent" ="@dimen/ucrop_height_wrapper_controls" ="0.0dip" ="true">
+        <ImageView ="@drawable/ucrop_wrapper_controls_shape" ="fill_parent" ="fill_parent" />
+        <LinearLayout ="center" ="horizontal" ="@id/layout_aspect_ratio" ="fill_parent" ="fill_parent" />
+        <include ="@id/layout_rotate_wheel" layout="@layout/ucrop_layout_rotate_wheel" />
+        <include ="@id/layout_scale_wheel" layout="@layout/ucrop_layout_scale_wheel" />
+    </FrameLayout>
+    <ImageView ="@id/controls_shadow" ="fill_parent" ="8.0dip" ="@drawable/ucrop_shadow_upside" ="@id/wrapper_controls" />
+    <LinearLayout ="center" ="horizontal" ="@id/wrapper_states" ="@color/ucrop_color_widget_background" ="fill_parent" ="@dimen/ucrop_height_wrapper_states" ="false" ="@id/controls_shadow">
+        <LinearLayout ="@id/state_aspect_ratio" style="@style/ucrop_WrapperIconState">
+            <ImageView ="center" ="vertical" ="@id/image_view_state_aspect_ratio" srcCompat="@drawable/ucrop_crop" style="@style/ucrop_ImageViewWidgetIcon" />
+            <TextView ="@id/text_view_crop" ="@string/ucrop_crop" style="@style/ucrop_TextViewWidget" />
+        </LinearLayout>
+        <LinearLayout ="@id/state_rotate" style="@style/ucrop_WrapperIconState">
+            <ImageView ="@id/image_view_state_rotate" srcCompat="@drawable/ucrop_rotate" style="@style/ucrop_ImageViewWidgetIcon" />
+            <TextView ="@id/text_view_rotate" ="@string/ucrop_rotate" style="@style/ucrop_TextViewWidget" />
+        </LinearLayout>
+        <LinearLayout ="@id/state_scale" style="@style/ucrop_WrapperIconState">
+            <ImageView ="@id/image_view_state_scale" srcCompat="@drawable/ucrop_scale" style="@style/ucrop_ImageViewWidgetIcon" />
+            <TextView ="@id/text_view_scale" ="@string/ucrop_scale" style="@style/ucrop_TextViewWidget" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

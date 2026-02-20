@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout ="center_horizontal" ="@id/gopay_qr_code_frame" ="@dimen/qr_code_size" ="@dimen/qr_code_size" ="@dimen/sixteen_dp">
+        <ImageView ="@id/gopay_qr_code" ="fill_parent" ="fill_parent" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="center" ="@id/gopay_reload_qr_button" ="gone" ="wrap_content" ="wrap_content" fb_iconPaddingRight="@dimen/four_dp" fb_iconResource="@null" fb_text="@string/reload_qr_code" style="@style/ButtonSecondary" />
+    </FrameLayout>
+    <com.midtrans.sdk.uikit.widgets.BoldTextView ="@dimen/twenty_two_sp" ="center_horizontal" ="@id/gopay_merchant_name" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" />
+    <LinearLayout ="horizontal" ="@color/bg_notification" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/gopay_expiration_desc" ="wrap_content" ="wrap_content" ="@string/gopay_expiration_message" />
+        <com.midtrans.sdk.uikit.widgets.BoldTextView ="@id/gopay_expiration_text" ="wrap_content" ="wrap_content" />
+    </LinearLayout>
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/dark_gray" ="@id/gopay_instruction_toggle" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@string/gopay_instruction" ="@null" />
+    <LinearLayout ="vertical" ="@id/gopay_instruction_layout" ="fill_parent" ="wrap_content">
+        <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+            <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction1" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step1" />
+        </LinearLayout>
+        <LinearLayout ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+            <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction2" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step2" />
+        </LinearLayout>
+        <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+            <TextView ="@id/instruction_no_5" ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction3" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step3" />
+        </LinearLayout>
+        <LinearLayout ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+            <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction4" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step4" />
+        </LinearLayout>
+        <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+            <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction5" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/gopay_instruction_tablet_step5" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

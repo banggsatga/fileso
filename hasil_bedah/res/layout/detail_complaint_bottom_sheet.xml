@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bottom_sheet_background" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View ="@id/line1" ="@color/colorPaleGreyTen" ="@dimen/dimen_40dp" ="@dimen/dimen_4dp" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@dimen/text_size_18sp" ="center" ="@id/tvTitle" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_24dp" ="@dimen/dimen_20dp" ="@string/label_detail_complaint" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/line1" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    <TextView ="@dimen/text_size_14sp" ="@id/tvDetail" ="gone" ="0.0dip" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="1.0" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitle" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    <androidx.constraintlayout.widget.Barrier ="@id/tvBarrierTop" ="wrap_content" ="wrap_content" barrierDirection="bottom" constraint_referenced_ids="tvTitle,tvDetail" />
+    <LinearLayout ="center" ="horizontal" ="@id/llStatusKpj" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/tvTitle">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvLabelKpjNotes" ="0.0dip" ="wrap_content" ="@string/label_status_notes_kpj" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="wrap_content" ="wrap_content" ="@string/label_colon" ="@dimen/dimen_5dp" ="@dimen/dimen_5dp" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvKpjNotes" ="0.0dip" ="wrap_content" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@id/llStatusAct" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/llStatusKpj">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvLabelKpjAct" ="0.0dip" ="wrap_content" ="@string/label_status_kpj_act" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="wrap_content" ="wrap_content" ="@string/label_colon" ="@dimen/dimen_5dp" ="@dimen/dimen_5dp" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvKpjAct" ="0.0dip" ="wrap_content" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@id/llNotes" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/llStatusAct">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvLabelAmountNotes" ="0.0dip" ="wrap_content" ="@string/label_notes_complaint" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="wrap_content" ="wrap_content" ="@string/label_colon" ="@dimen/dimen_5dp" ="@dimen/dimen_5dp" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvNotes" ="0.0dip" ="wrap_content" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@id/llNominalAct" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/llNotes">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvlabelAmountAct" ="0.0dip" ="wrap_content" ="@string/label_nominal_act" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvSemicolon1" ="wrap_content" ="wrap_content" ="@string/label_colon" ="@dimen/dimen_5dp" ="@dimen/dimen_5dp" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvAmountAct" ="0.0dip" ="wrap_content" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@id/llEmployee" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/llNominalAct">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvLabelTkNotes" ="0.0dip" ="wrap_content" ="@string/label_total_tk_notes" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvSemicolon2" ="wrap_content" ="wrap_content" ="@string/label_colon" ="@dimen/dimen_5dp" ="@dimen/dimen_5dp" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvTkNotes" ="0.0dip" ="wrap_content" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    </LinearLayout>
+    <LinearLayout ="horizontal" ="@id/llEmployeeAct" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/llEmployee">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvLabelTkAct" ="0.0dip" ="wrap_content" ="@string/label_total_tk_act" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvSemicolon3" ="wrap_content" ="wrap_content" ="@string/label_colon" ="@dimen/dimen_5dp" ="@dimen/dimen_5dp" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvTkAct" ="0.0dip" ="wrap_content" ="1.0" style="@style/BpjstkuTextViewPoppins.CharcoalGreyFour.SemiBold" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Barrier ="@id/tvBarrierBottom" ="wrap_content" ="wrap_content" barrierDirection="bottom" constraint_referenced_ids="llStatusKpj,llStatusAct,llNotes,llNominalAct,llEmployeeAct,llEmployee,tvDetail" />
+    <com.google.android.material.button.MaterialButton ="@dimen/text_size_14sp" ="@id/btnBack" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="visible" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@string/action_back" ="false" ="@font/poppins_semibold" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvBarrierBottom" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

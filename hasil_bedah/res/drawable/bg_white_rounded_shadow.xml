@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#00dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#00dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#10dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#10dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#20dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#20dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#30dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#30dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#40dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#40dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#50dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <padding ="0.75dip" />
+            <solid ="#50dfe2ee" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape ="rectangle">
+            <solid ="@color/colorWhite" />
+            <corners ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </shape>
+    </item>
+</layer-list>

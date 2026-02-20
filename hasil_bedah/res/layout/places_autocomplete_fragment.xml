@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center" ="horizontal" ="true" ="true" ="fill_parent" ="wrap_content" ="locale" ="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton ="@id/places_autocomplete_search_button" ="@null" ="@dimen/places_autocomplete_button_padding" ="wrap_content" ="wrap_content" ="@null" ="0.0" ="@string/places_autocomplete_search_hint" />
+    <EditText ="@dimen/places_autocomplete_search_input_text" ="@color/places_autocomplete_search_text" ="@color/places_autocomplete_search_hint" ="@id/places_autocomplete_search_input" ="@null" ="@dimen/places_autocomplete_search_input_padding" ="@dimen/places_autocomplete_search_input_padding" ="false" ="false" ="0.0dip" ="fill_parent" ="@string/places_autocomplete_search_hint" ="1" ="1" ="true" ="1.0" ="textNoSuggestions" ="no" />
+    <ImageButton ="@id/places_autocomplete_clear_button" ="@null" ="@dimen/places_autocomplete_button_padding" ="wrap_content" ="wrap_content" ="@null" ="0.0" ="@string/places_autocomplete_clear_button" />
+</LinearLayout>

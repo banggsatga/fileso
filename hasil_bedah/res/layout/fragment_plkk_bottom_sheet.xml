@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="@drawable/bottom_sheet_background" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <View ="@id/viewTopLine" ="@color/colorPaleGreyFour" ="@dimen/dimen_40dp" ="@dimen/dimen_4dp" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView ="@dimen/dimen_18dp" ="@id/tvPlkkNearest" ="wrap_content" ="wrap_content" ="@dimen/dimen_44dp" ="@string/label_plkk_nearest" ="@dimen/dimen_30dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilPLKKlocation" ="@color/colorPaleGreyFour" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_30dp" ="@dimen/dimen_11dp" ="@dimen/dimen_30dp" ="@string/hint_search_plkk" ="@dimen/dimen_30dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvPlkkNearest" style="@style/BpjstkuTextInputLayout.Search">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtPLKKlocation" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ScrollView ="fill_parent" ="wrap_content" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tilPLKKlocation">
+            <com.kennyc.view.MultiStateView ="fill_parent" ="wrap_content" msv_emptyView="@layout/default_layout" msv_errorView="@layout/default_layout" msv_loadingView="@layout/default_loading_layout">
+                <androidx.recyclerview.widget.RecyclerView ="@id/rvChoosePlkk" ="fill_parent" ="wrap_content" ="@dimen/dimen_22dp" ="@dimen/dimen_22dp" ="never" ="@dimen/dimen_22dp" />
+            </com.kennyc.view.MultiStateView>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

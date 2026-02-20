@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center" ="vertical" ="@drawable/places_widgets_dialog_background" ="?placesSpacingTwoExtraLarge" ="wrap_content" ="wrap_content" ="?placesSpacingTwoExtraLarge"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="?placesTextAppearanceHeadlineMedium" ="?placesColorOnSurface" ="wrap_content" ="wrap_content" ="@string/place_details_link_no_gmm_or_browser_error_title" />
+    <TextView ="?placesTextAppearanceBodyMedium" ="?placesColorOnSurface" ="?placesSpacingMedium" ="?placesSpacingMedium" ="wrap_content" ="wrap_content" ="@string/place_details_link_no_gmm_or_browser_error_body" />
+    <Button ="?placesTextAppearanceLabelLarge" ="?placesColorOnSecondaryContainer" ="@id/no_browser_error_ok" ="@drawable/places_widgets_button_background" ="?placesSpacingExtraSmall" ="?placesSpacingExtraSmall" ="fill_parent" ="wrap_content" ="@string/place_details_link_no_gmm_or_browser_error_ok_button" ="@null" />
+</LinearLayout>

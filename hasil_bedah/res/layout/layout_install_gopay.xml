@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="fill_parent" ="wrap_content" ="@string/notification_gojek_app" style="@style/GojekNotification" />
+    <LinearLayout ="center" ="vertical" ="fill_parent" ="wrap_content" ="true">
+        <ImageView ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="@null" />
+        <com.midtrans.sdk.uikit.widgets.BoldTextView ="@dimen/twenty_two_sp" ="@dimen/eight_dp" ="wrap_content" ="wrap_content" ="@string/whoops" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="center" ="@dimen/eight_dp" ="wrap_content" ="wrap_content" ="@string/no_gojek_message" />
+    </LinearLayout>
+    <com.midtrans.sdk.uikit.widgets.FancyButton ="@id/button_download_gojek" ="wrap_content" ="wrap_content" ="@dimen/sixteen_dp" ="true" ="true" fb_iconPaddingRight="@dimen/four_dp" fb_iconResource="@null" fb_text="@string/install_gojek_message" style="@style/ButtonSecondary" />
+</RelativeLayout>

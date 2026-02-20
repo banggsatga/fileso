@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar ="center_vertical" ="@id/toolbarWebview" ="@android:color/transparent" ="fill_parent" ="?actionBarSize" contentInsetEnd="@dimen/dimen_0dp" contentInsetStartWithNavigation="@dimen/dimen_0dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/text_size_18sp" ="start" ="@id/tvToolbarClose" ="@dimen/dimen_24dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="1" ="@dimen/dimen_14dp" ="@dimen/dimen_20dp" drawableStartCompat="@null" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <TextView ="@dimen/text_size_18sp" ="start" ="@id/tvToolbarBack" ="@dimen/dimen_24dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="1" ="@dimen/dimen_14dp" ="@null" ="@dimen/dimen_20dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <TextView ="@dimen/text_size_18sp" ="end" ="start" ="@id/tvToolbarWebviewTitle" ="fill_parent" ="wrap_content" ="BPJS Ketenagakerjaan" ="1" ="@dimen/dimen_20dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+</com.google.android.material.appbar.MaterialToolbar>

@@ -1,0 +1,36 @@
+.class public final synthetic LsetOnItemClickListener;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field private synthetic TuitionPaymentFragmentbindingInflater1:Lcom/bpjstku/presentation/membership/registration/PhoneVerificationActivity;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/bpjstku/presentation/membership/registration/PhoneVerificationActivity;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LsetOnItemClickListener;->TuitionPaymentFragmentbindingInflater1:Lcom/bpjstku/presentation/membership/registration/PhoneVerificationActivity;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    .line 0
+    iget-object v0, p0, LsetOnItemClickListener;->TuitionPaymentFragmentbindingInflater1:Lcom/bpjstku/presentation/membership/registration/PhoneVerificationActivity;
+
+    invoke-static {v0, p1}, Lcom/bpjstku/presentation/membership/registration/PhoneVerificationActivity;->TuitionPaymentFragmentspecialinlinedviewModeldefault3(Lcom/bpjstku/presentation/membership/registration/PhoneVerificationActivity;Landroid/view/View;)V
+
+    return-void
+.end method

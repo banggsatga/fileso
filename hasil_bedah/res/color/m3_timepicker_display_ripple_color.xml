@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="true" ="?colorOnPrimaryContainer" ="@dimen/m3_comp_time_picker_time_selector_pressed_state_layer_opacity" />
+    <item ="true" ="true" ="?colorOnPrimaryContainer" ="@dimen/m3_comp_time_picker_time_selector_focus_state_layer_opacity" />
+    <item ="true" ="?colorOnPrimaryContainer" ="@dimen/m3_comp_time_picker_time_selector_hover_state_layer_opacity" ="true" />
+    <item ="true" ="?colorOnPrimaryContainer" ="@dimen/m3_ripple_default_alpha" />
+    <item ="true" ="?colorOnPrimaryContainer" ="@dimen/m3_comp_time_picker_time_selector_pressed_state_layer_opacity" />
+    <item ="true" ="?colorOnSurface" ="@dimen/m3_comp_time_picker_time_selector_focus_state_layer_opacity" />
+    <item ="?colorOnSurface" ="@dimen/m3_comp_time_picker_time_selector_hover_state_layer_opacity" ="true" />
+    <item ="?colorOnSurface" ="@dimen/m3_ripple_default_alpha" />
+</selector>

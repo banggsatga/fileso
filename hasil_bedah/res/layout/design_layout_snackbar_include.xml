@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view ="@style/ThemeOverlay.AppCompat.Dark" ="bottom" ="fill_parent" ="wrap_content" class="com.google.android.material.snackbar.SnackbarContentLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@style/TextAppearance.Design.Snackbar.Message" ="end" ="start|center" ="@id/snackbar_text" ="@dimen/design_snackbar_padding_horizontal" ="@dimen/design_snackbar_padding_vertical" ="@dimen/design_snackbar_padding_horizontal" ="@dimen/design_snackbar_padding_vertical" ="wrap_content" ="wrap_content" ="@integer/design_snackbar_text_max_lines" ="1.0" ="viewStart" />
+    <Button ="?colorAccent" ="end|center" ="@id/snackbar_action" ="gone" ="wrap_content" ="wrap_content" ="@dimen/design_snackbar_extra_spacing_horizontal" ="48.0dip" ="@dimen/design_snackbar_extra_spacing_horizontal" style="?borderlessButtonStyle" />
+</view>

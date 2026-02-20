@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout ="@android:color/white" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/appbar_payment" />
+    <RelativeLayout ="vertical" ="fill_parent" ="wrap_content" ="@dimen/thirtytwo_dp" layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ScrollView ="@id/layout_container" ="fill_parent" ="wrap_content" ="true" ="true" ="true">
+            <include layout="@layout/layout_credit_card_register" />
+        </ScrollView>
+        <LinearLayout ="center_vertical" ="horizontal" ="@drawable/grey_rounded_background" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@id/layout_container">
+            <ImageView ="@id/cc_badge" ="fill_parent" ="wrap_content" ="@dimen/four_dp" ="@dimen/four_dp" ="@null" ="centerInside" ="@dimen/four_dp" ="@dimen/four_dp" />
+        </LinearLayout>
+        <include ="@id/btn_pay_container" layout="@layout/layout_primary_button" />
+    </RelativeLayout>
+    <LinearLayout ="center" ="vertical" ="@id/progress_container" ="@color/white" ="gone" ="fill_parent" ="fill_parent" ="0.93">
+        <include layout="@layout/layout_midtrans_progress" />
+    </LinearLayout>
+    <include ="start|bottom|center" ="wrap_content" ="wrap_content" layout="@layout/layout_sandbox_badge" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

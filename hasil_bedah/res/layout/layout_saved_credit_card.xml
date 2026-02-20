@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView ="@id/container_saved_card" ="fill_parent" ="wrap_content" />
+    <com.midtrans.sdk.uikit.widgets.FancyButton ="center_horizontal" ="@id/btn_add_card" ="wrap_content" ="wrap_content" ="19.0dip" fb_iconPaddingRight="@dimen/four_dp" fb_iconResource="@null" fb_text="@string/add_new_card" style="@style/ButtonSecondary" />
+</LinearLayout>

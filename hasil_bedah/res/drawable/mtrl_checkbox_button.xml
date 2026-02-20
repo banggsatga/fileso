@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="@id/checked" ="@drawable/mtrl_ic_checkbox_checked" />
+    <item ="@id/indeterminate" ="@drawable/mtrl_ic_checkbox_checked" state_indeterminate="true" />
+    <item ="false" ="@id/unchecked" ="@drawable/mtrl_ic_checkbox_unchecked" />
+    <transition ="@drawable/mtrl_checkbox_button_checked_unchecked" ="@id/unchecked" ="@id/checked" />
+    <transition ="@drawable/mtrl_checkbox_button_unchecked_checked" ="@id/checked" ="@id/unchecked" />
+    <transition ="@drawable/mtrl_checkbox_button_checked_unchecked" ="@id/unchecked" ="@id/indeterminate" />
+    <transition ="@drawable/mtrl_checkbox_button_unchecked_checked" ="@id/indeterminate" ="@id/unchecked" />
+</animated-selector>

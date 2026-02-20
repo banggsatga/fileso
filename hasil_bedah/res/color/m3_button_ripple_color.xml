@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="?colorOnPrimary" ="@dimen/m3_ripple_pressed_alpha" />
+    <item ="true" ="?colorOnPrimary" ="@dimen/m3_ripple_focused_alpha" />
+    <item ="?colorOnPrimary" ="@dimen/m3_ripple_hovered_alpha" ="true" />
+    <item ="?colorOnPrimary" ="@dimen/m3_ripple_default_alpha" />
+</selector>

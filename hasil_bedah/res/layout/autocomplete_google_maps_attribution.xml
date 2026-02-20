@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="@id/autocomplete_google_maps_attribution_image_container" ="fill_parent" ="wrap_content">
+        <LinearLayout ="end|center" ="horizontal" ="fill_parent" ="wrap_content">
+            <ImageView ="@id/autocomplete_google_maps_attribution_image" ="wrap_content" ="40.0dip" ="@drawable/google_maps_attribution_image" ="centerInside" ="@string/google_maps_attribution_image_description" />
+            <ImageButton ="@id/autocomplete_disclosure_icon" ="@android:color/transparent" ="@dimen/icon_padding_for_min_touch_target_18dp_icon" ="@dimen/gmp_sys_measurement_tap_target" ="@dimen/gmp_sys_measurement_tap_target" ="@drawable/gs_info_vd_24" ="centerInside" ="@string/place_widgets_legal_disclosures_icon_a11y_label" />
+        </LinearLayout>
+        <View ="@id/autocomplete_google_maps_attribution_image_separator" ="?placesColorOutlineDecorative" ="fill_parent" ="@dimen/place_widget_border_width" />
+    </LinearLayout>
+</merge>

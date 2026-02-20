@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@id/rootConstraint" ="@color/colorWhite" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgBackground" ="@dimen/dimen_0dp" ="wrap_content" ="@drawable/img_background_infoprogram" ="fitCenter" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/layoutMainToolbar" ="fill_parent" ="@dimen/bottom_nav_height" ="@dimen/dimen_5dp" layout_constraintTop_toTopOf="parent" layout="@layout/layout_main_toolbar" />
+    <FrameLayout ="@id/mainContainer" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintBottom_toTopOf="@id/bnvMain" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layoutMainToolbar" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView ="@id/bnvMain" ="@drawable/border_bottom_nav_top" ="fill_parent" ="wrap_content" itemIconSize="@dimen/dimen_24dp" itemIconTint="@color/selector_nav_icon" itemTextAppearanceActive="@style/BpjstkuBottomNavText" itemTextAppearanceInactive="@style/BpjstkuBottomNavText" itemTextColor="@color/selector_nav_icon" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" menu="@menu/menu_home_nav" />
+</androidx.constraintlayout.widget.ConstraintLayout>

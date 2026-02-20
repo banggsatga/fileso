@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="fill_parent" ="wrap_content">
+        <RelativeLayout ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout ="@id/full_name_til" ="fill_parent" ="wrap_content">
+                <androidx.appcompat.widget.AppCompatEditText ="@id/et_full_name" ="fill_parent" ="wrap_content" ="@string/hint_full_name" ="1" ="100" ="textPersonName|textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/email_til" ="fill_parent" ="wrap_content" ="@id/full_name_til">
+                <androidx.appcompat.widget.AppCompatEditText ="@id/et_email" ="fill_parent" ="wrap_content" ="@string/hint_email" ="1" ="100" ="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout ="@id/phone_til" ="fill_parent" ="wrap_content" ="@id/email_til">
+                <androidx.appcompat.widget.AppCompatEditText ="@id/et_phone" ="fill_parent" ="wrap_content" ="@string/hint_phone_number" ="1" ="15" ="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="@color/white" ="bottom|center" ="@id/btn_next" ="@dimen/activity_horizontal_margin" ="fill_parent" ="@dimen/button_size" ="true" ="true" fb_defaultColor="@color/gray.primary" fb_focusColor="@color/colorAccentLight" fb_text="@string/next" fb_textGravity="center_vertical" fb_textSize="16.0sp" />
+        <LinearLayout ="end|bottom|center" ="fill_parent" ="@dimen/button_size" ="true">
+            <ImageView ="center_vertical" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

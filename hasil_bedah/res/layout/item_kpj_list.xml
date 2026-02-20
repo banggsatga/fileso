@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgCard" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@drawable/ic_card_blue" ="@dimen/dimen_20dp" layout_constraintHorizontal_weight="1.0" layout_constraintLeft_toLeftOf="parent" layout_constraintRight_toLeftOf="@id/tvKpjNumber" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@dimen/text_size_16sp" ="@id/tvKpjNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@string/sample_kpj_number" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="@id/imgCard" layout_constraintHorizontal_weight="8.0" layout_constraintLeft_toRightOf="@id/imgCard" layout_constraintRight_toRightOf="@id/imgChecklist" layout_constraintTop_toTopOf="@id/imgCard" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+    <ImageView ="@id/imgChecklist" ="gone" ="@dimen/dimen_0dp" ="@dimen/dimen_24dp" ="@drawable/ic_success" layout_constraintBottom_toBottomOf="@id/imgCard" layout_constraintHorizontal_weight="1.0" layout_constraintLeft_toRightOf="@id/tvKpjNumber" layout_constraintRight_toRightOf="parent" layout_constraintTop_toTopOf="@id/imgCard" />
+    <View ="@color/colorPaleGreyFour" ="visible" ="@dimen/dimen_0dp" ="@dimen/dimen_1dp" ="@dimen/dimen_21dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgCard" />
+</androidx.constraintlayout.widget.ConstraintLayout>

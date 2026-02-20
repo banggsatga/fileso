@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge ="@id/material_timepicker_container" ="wrap_content" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.helper.widget.Flow ="vertical" ="@id/material_clock_display_and_toggle" ="0.0dip" ="wrap_content" ="20.0dip" constraint_referenced_ids="material_clock_display,material_clock_period_toggle" flow_verticalGap="@dimen/material_clock_period_toggle_vertical_gap" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/material_clock_display" ="wrap_content" ="wrap_content" layout="@layout/material_clock_display" />
+    <include ="@id/material_clock_period_toggle" ="0.0dip" ="wrap_content" layout="@layout/material_clock_period_toggle_land" />
+    <com.google.android.material.timepicker.ClockFaceView ="@id/material_clock_face" ="wrap_content" ="wrap_content" ="@dimen/clock_face_margin_start" layout_constraintStart_toEndOf="@id/material_clock_display_and_toggle" layout_constraintTop_toTopOf="parent" />
+</merge>

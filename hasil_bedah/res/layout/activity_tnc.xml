@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout ="@android:color/white" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout ="@id/main_appbar" ="fill_parent" ="wrap_content">
+        <androidx.appcompat.widget.Toolbar ="@id/main_toolbar" ="@android:color/white" ="fill_parent" ="?actionBarSize" contentInsetLeft="0.0dip" contentInsetStart="0.0dip" contentInsetStartWithNavigation="0.0dip" style="@style/ThemeOverlay.AppCompat.ActionBar">
+            <RelativeLayout ="center" ="horizontal" ="fill_parent" ="fill_parent" ="@dimen/fifty_six_dp" ="@dimen/fifty_six_dp">
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/tool_bar_title_size" ="@color/dark_gray" ="center_horizontal" ="@id/merchant_name" ="wrap_content" ="wrap_content" ="@string/tnc_title" ="true" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout ="vertical" ="fill_parent" ="wrap_content" layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ScrollView ="fill_parent" ="wrap_content" ="@id/container_item_details" ="true">
+            <include ="fill_parent" ="wrap_content" layout="@layout/layout_tnc_bni_point" />
+        </ScrollView>
+        <View ="@color/light_gray" ="fill_parent" ="@dimen/two_dp" ="@id/button_primary" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="@id/button_primary" ="fill_parent" ="@dimen/button_size" ="true" fb_defaultColor="@android:color/transparent" fb_focusColor="@color/colorAccentLight" fb_radius="@dimen/two_dp" fb_text="@string/ok" fb_textColor="@color/dark_gray_primer" fb_textGravity="center_vertical" fb_textSize="@null" />
+    </RelativeLayout>
+    <include layout="@layout/layout_loading_and_badge" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

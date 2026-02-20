@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="horizontal" ="@id/material_clock_display" ="wrap_content" ="wrap_content" ="false" ="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/material_hour_tv" layout="@layout/material_time_chip" />
+    <include layout="@layout/material_clock_display_divider" />
+    <include ="@id/material_minute_tv" layout="@layout/material_time_chip" />
+</LinearLayout>

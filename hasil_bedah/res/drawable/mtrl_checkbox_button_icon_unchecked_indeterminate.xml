@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector ="@drawable/mtrl_ic_indeterminate" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target ="@string/mtrl_checkbox_button_icon_path_group_name" ="@drawable/$mtrl_checkbox_button_icon_unchecked_indeterminate__0" />
+    <target ="@string/mtrl_checkbox_button_icon_path_group_name" ="@drawable/$mtrl_checkbox_button_icon_unchecked_indeterminate__1" />
+    <target ="@string/mtrl_checkbox_button_icon_path_name" ="@drawable/$mtrl_checkbox_button_icon_unchecked_indeterminate__2" />
+</animated-vector>

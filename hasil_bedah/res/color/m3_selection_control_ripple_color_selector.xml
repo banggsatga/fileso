@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="true" ="?colorOnSurface" ="@dimen/m3_ripple_selectable_pressed_alpha" />
+    <item ="true" ="true" ="?colorPrimary" ="@dimen/m3_ripple_focused_alpha" />
+    <item ="true" ="?colorPrimary" ="@dimen/m3_ripple_hovered_alpha" ="true" />
+    <item ="true" ="?colorPrimary" ="@dimen/m3_ripple_default_alpha" />
+    <item ="true" ="?colorPrimary" ="@dimen/m3_ripple_selectable_pressed_alpha" />
+    <item ="true" ="?colorOnSurface" ="@dimen/m3_ripple_focused_alpha" />
+    <item ="?colorOnSurface" ="@dimen/m3_ripple_hovered_alpha" ="true" />
+    <item ="?colorOnSurface" ="@dimen/m3_ripple_default_alpha" />
+</selector>

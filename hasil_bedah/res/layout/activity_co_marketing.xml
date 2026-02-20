@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kennyc.view.MultiStateView ="@id/msvContent" ="fill_parent" ="fill_parent" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/layout_default_loading" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout ="fill_parent" ="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout ="@id/appbarNews" ="@android:color/transparent" ="true" ="fill_parent" ="wrap_content" elevation="@dimen/dimen_0dp" expanded="true">
+            <com.google.android.material.appbar.CollapsingToolbarLayout ="@android:color/transparent" ="fill_parent" ="wrap_content" layout_scrollFlags="scroll|exitUntilCollapsed">
+                <androidx.constraintlayout.widget.ConstraintLayout ="vertical" ="fill_parent" ="wrap_content">
+                    <ImageView ="@id/imgComar" ="@drawable/ic_bg_comar" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="centerCrop" layout_constraintDimensionRatio="4:3" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+                    <TextView ="@dimen/text_size_16sp" ="@id/tvTitleDiscount" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="60.0dip" ="@dimen/dimen_20dp" ="@dimen/dimen_7dp" ="@string/label_title_discount" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.White.SemiBold" />
+                    <TextView ="@dimen/text_size_12sp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@string/label_desc_discount" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitleDiscount" style="@style/BpjstkuTextViewDmSans.White" />
+                    <TextView ="@dimen/text_size_14sp" ="@color/colorCoolGrey" ="center_vertical" ="@id/tvSearchMerchant" ="@dimen/dimen_10dp" ="@dimen/dimen_15dp" ="@dimen/dimen_10dp" ="@dimen/dimen_15dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_18dp" ="@dimen/dimen_20dp" ="@string/label_search_merchant" ="@drawable/ic_search" ="@font/dmsans_reguler" ="@color/colorCoolGrey" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_15dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgComar" style="@style/BpjstkuTextInputEditText" />
+                    <TextView ="@dimen/text_size_18sp" ="@id/tvNewVoucher" ="gone" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_20dp" ="@string/label_new_voucher" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvSearchMerchant" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+                    <androidx.recyclerview.widget.RecyclerView ="@id/rvVoucher" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_20dp" ="false" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvNewVoucher" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.google.android.material.appbar.MaterialToolbar ="center_vertical" ="@id/toolbarComar" ="@color/colorBlue" ="fill_parent" ="?actionBarSize" contentInsetEnd="@dimen/dimen_0dp" contentInsetStartWithNavigation="@dimen/dimen_0dp" layout_collapseMode="pin" navigationIcon="@null">
+                    <TextView ="@dimen/text_size_18sp" ="end" ="center" ="@id/tvToolbarTitle" ="fill_parent" ="wrap_content" ="@string/appbar_co_marketing" ="1" ="@dimen/dimen_32dp" style="@style/BpjstkuTextViewPoppins.White.SemiBold" />
+                </com.google.android.material.appbar.MaterialToolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout ="vertical" ="fill_parent" ="wrap_content" layout_behavior="@string/appbar_scrolling_view_behavior">
+            <TextView ="@dimen/text_size_18sp" ="@id/tvVision" ="gone" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="Promo Terbaru" ="@dimen/dimen_20dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+            <com.google.android.material.card.MaterialCardView ="@id/cvPromos" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_2dp" cardElevation="@dimen/dimen_2dp" cardPreventCornerOverlap="true" cardUseCompatPadding="true">
+                <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+                    <ImageView ="@id/imgVoucherBanner" ="@drawable/ic_placeholder_wide" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="centerCrop" layout_constraintDimensionRatio="3:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout ="horizontal" ="fill_parent" ="wrap_content" ="@dimen/dimen_14dp" ="@dimen/dimen_10dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgVoucherBanner">
+                        <LinearLayout ="vertical" ="0.0dip" ="wrap_content" ="1.0">
+                            <TextView ="@dimen/text_size_12sp" ="end" ="@id/tvVoucherName" ="fill_parent" ="wrap_content" ="Vision+ Promo" ="2" ="true" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+                            <TextView ="@dimen/text_size_12sp" ="end" ="@id/tvVoucherCode" ="wrap_content" ="wrap_content" ="@dimen/dimen_5dp" ="Voucher Code: 38DAWIV" ="2" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+                        </LinearLayout>
+                        <com.google.android.material.button.MaterialButton ="@dimen/text_size_11sp" ="center" ="end" ="@id/btnUsePromo" ="wrap_content" ="@dimen/dimen_40dp" ="Gunakan Promo" ="false" ="@dimen/dimen_14dp" style="@style/BpjstkuButton.DarkMint01Background.DarkMint" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView ="@dimen/text_size_18sp" ="@id/tvNewMerchant" ="gone" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_20dp" ="@string/label_new_merchant" ="@dimen/dimen_20dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvMerchant" ="gone" ="fill_parent" ="fill_parent" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.kennyc.view.MultiStateView>

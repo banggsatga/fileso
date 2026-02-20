@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/card_description" ="@dimen/twelve_dp" ="@dimen/four_dp" ="@dimen/twelve_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/twenty_dp" ="@dimen/twelve_dp" ="@dimen/twelve_dp" style="@style/AtmBersamaNotification" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/tertiary_text_size" ="@color/dark_gray" ="@id/bank_description" ="fill_parent" ="wrap_content" ="@dimen/twelve_dp" ="@dimen/four_dp" ="@dimen/twelve_dp" ="@dimen/four_dp" ="@dimen/twelve_dp" ="@dimen/twelve_dp" textAllCaps="true" />
+    <LinearLayout ="vertical" ="@color/lighter_gray" ="fill_parent" ="wrap_content" ="@dimen/twelve_dp">
+        <ImageView ="@id/bank_preview" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="center" ="@id/bank_toggle" ="fill_parent" ="wrap_content" ="@dimen/two_dp" fb_iconPaddingRight="@dimen/four_dp" fb_iconResource="@null" style="@style/ButtonBankListExpand" />
+    </LinearLayout>
+</LinearLayout>

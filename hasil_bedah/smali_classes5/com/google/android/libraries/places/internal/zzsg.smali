@@ -1,0 +1,26 @@
+.class public final Lcom/google/android/libraries/places/internal/zzsg;
+.super Ljava/lang/Object;
+.source ""
+
+
+# static fields
+.field public static final zza:Lcom/google/android/libraries/places/internal/zzsd;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    const-string v0, "do_not_log_to_logcat"
+
+    const-class v1, Ljava/lang/Boolean;
+
+    invoke-static {v0, v1}, Lcom/google/android/libraries/places/internal/zzsd;->zza(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/libraries/places/internal/zzsd;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/libraries/places/internal/zzsg;->zza:Lcom/google/android/libraries/places/internal/zzsd;
+
+    return-void
+.end method

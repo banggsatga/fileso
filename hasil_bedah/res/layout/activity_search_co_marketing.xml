@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar_center" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <LinearLayout ="horizontal" ="@id/llFilter" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar_center">
+        <TextView ="@dimen/text_size_14sp" ="center_vertical" ="@id/tvLocation" ="0.0dip" ="wrap_content" ="@string/label_location" ="6.0dip" ="1.0" ="@drawable/ic_label_location" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+        <TextView ="@dimen/text_size_14sp" ="center_vertical" ="@id/tvCategory" ="0.0dip" ="wrap_content" ="@string/label_category" ="6.0dip" ="1.0" ="@drawable/ic_label_category" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputEditText ="@dimen/text_size_14sp" ="@color/colorCoolGrey" ="center_vertical" ="@id/edtSearch" ="@dimen/dimen_10dp" ="@dimen/dimen_15dp" ="@dimen/dimen_10dp" ="@dimen/dimen_15dp" ="true" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" ="@dimen/dimen_20dp" ="@string/label_search_merchant" ="1" ="textFilter" ="actionSearch" ="@drawable/ic_search" ="@font/dmsans_reguler" ="@color/colorCoolGrey" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_15dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/llFilter" style="@style/BpjstkuTextInputEditText">
+        <requestFocus />
+    </com.google.android.material.textfield.TextInputEditText>
+    <LinearLayout ="vertical" ="fill_parent" ="0.0dip" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/edtSearch">
+        <ImageView ="center" ="@id/imResultEmpty" ="visible" ="wrap_content" ="wrap_content" ="@drawable/ic_no_result_icon" />
+        <androidx.recyclerview.widget.RecyclerView ="@id/rvMerchant" ="gone" ="fill_parent" ="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

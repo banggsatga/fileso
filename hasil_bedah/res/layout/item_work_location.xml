@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="@color/colorWhite" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="wrap_content" ="wrap_content">
+        <TextView ="@dimen/text_size_16sp" ="@id/tvWorkLocationCity" ="wrap_content" ="wrap_content" ="@dimen/dimen_21dp" ="@dimen/dimen_21dp" ="@string/sample_work_location_1" ="@dimen/dimen_30dp" ="@dimen/dimen_21dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <ImageView ="@id/imgSelected" ="visible" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@drawable/ic_success" ="@dimen/dimen_30dp" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="@id/tvWorkLocationCity" />
+        <View ="@color/colorPaleGreyFour" ="fill_parent" ="@dimen/dimen_1dp" ="@dimen/dimen_21dp" layout_constraintTop_toBottomOf="@id/tvWorkLocationCity" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

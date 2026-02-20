@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="horizontal" ="@id/month_navigation_bar" ="@dimen/mtrl_calendar_navigation_top_padding" ="@dimen/mtrl_calendar_navigation_bottom_padding" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout ="0.0dip" ="fill_parent" ="1.0">
+        <com.google.android.material.button.MaterialButton ="start|center" ="start" ="@id/month_navigation_fragment_toggle" ="wrap_content" ="@dimen/mtrl_calendar_navigation_height" ="0.0dip" ="0.0dip" icon="@drawable/material_ic_menu_arrow_down_black_24dp" iconGravity="textEnd" iconPadding="4.0dip" style="?materialCalendarYearNavigationButton" />
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton ="center" ="@id/month_navigation_previous" ="@dimen/mtrl_min_touch_target_size" ="@dimen/mtrl_calendar_navigation_height" ="0.0dip" ="0.0dip" ="@string/mtrl_picker_a11y_prev_month" icon="@drawable/material_ic_keyboard_arrow_previous_black_24dp" style="?materialCalendarMonthNavigationButton" />
+    <com.google.android.material.button.MaterialButton ="center" ="@id/month_navigation_next" ="@dimen/mtrl_min_touch_target_size" ="@dimen/mtrl_calendar_navigation_height" ="0.0dip" ="0.0dip" ="@string/mtrl_picker_a11y_next_month" icon="@drawable/material_ic_keyboard_arrow_next_black_24dp" style="?materialCalendarMonthNavigationButton" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@dimen/twenty_dp" ="fill_parent" ="fill_parent" ="@dimen/sixteen_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@string/danamon_online_description_1" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@string/danamon_online_description_2" />
+    <androidx.appcompat.widget.AppCompatButton ="center_vertical" ="@id/instruction_toggle" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/show_instruction" style="@style/ButtonSecondaryExpandable" />
+    <LinearLayout ="vertical" ="@id/container_instruction" ="gone" ="fill_parent" ="wrap_content">
+        <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction1" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/danamon_online_instruction_step1" />
+        </LinearLayout>
+        <LinearLayout ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction2" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/danamon_online_instruction_step2" />
+        </LinearLayout>
+        <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="@dimen/sixteen_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction3" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextViewWithLink ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="fill_parent" ="wrap_content" ="@string/danamon_online_instruction_step3" ="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

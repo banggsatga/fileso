@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/ef_font_medium" ="@id/tv_empty_images" ="@dimen/ef_spacing_double" ="gone" ="wrap_content" ="wrap_content" ="@string/ef_msg_empty_images" ="true" />
+    <ProgressBar ="@id/progress_bar" ="gone" ="100.0dip" ="100.0dip" ="true" />
+    <com.esafirm.imagepicker.view.SnackBarView ="@id/ef_snackbar" ="@color/ef_black_alpha_aa" ="fill_parent" ="56.0dip" ="@id/recyclerView" ="true" />
+    <androidx.recyclerview.widget.RecyclerView ="@id/recyclerView" ="fill_parent" ="fill_parent" />
+</RelativeLayout>

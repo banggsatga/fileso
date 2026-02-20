@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView ="fill_parent" ="fill_parent" ="true" ="never" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="vertical" ="fill_parent" ="fill_parent">
+        <TextView ="@dimen/text_size_18sp" ="@id/tvServiceProgram" ="wrap_content" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@string/label_service_program" ="true" ="@dimen/dimen_20dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <androidx.recyclerview.widget.RecyclerView ="@id/rvPrograms" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@id/tvServiceProgram" ="never" />
+        <com.google.android.material.button.MaterialButton ="@dimen/text_size_12sp" ="@id/btnOtherProgram" ="@dimen/dimen_9dp" ="@dimen/dimen_9dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@string/action_other_program" ="@id/rvPrograms" ="@dimen/dimen_20dp" ="@dimen/dimen_9dp" cornerRadius="@dimen/dimen_4dp" icon="@drawable/ic_arrow_forward" iconGravity="end" iconPadding="-24.0dip" iconTint="@color/colorDarkMint" style="@style/BpjstkuButton.DarkMint01Background.DarkMint" />
+        <TextView ="@dimen/text_size_18sp" ="@id/tvOtherService" ="fill_parent" ="wrap_content" ="@dimen/dimen_24dp" ="@string/label_other_service" ="@id/btnOtherProgram" ="@id/btnOtherProgram" ="@id/btnOtherProgram" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <androidx.recyclerview.widget.RecyclerView ="@id/rvServices" ="false" ="fill_parent" ="wrap_content" ="@dimen/dimen_14dp" ="@id/tvOtherService" ="never" />
+        <com.kennyc.view.MultiStateView ="@id/msvBanner" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@id/rvServices" msv_errorView="@layout/layout_error_small" msv_loadingView="@layout/default_loading_layout">
+            <RelativeLayout ="@id/containerBanner" ="fill_parent" ="fill_parent">
+                <TextView ="@dimen/text_size_18sp" ="center_vertical" ="@id/tvPromo" ="@string/label_promo" ="@id/btnSeeAllPromo" ="@id/btnSeeAllPromo" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                <com.google.android.material.button.MaterialButton ="@dimen/text_size_12sp" ="@id/btnSeeAllPromo" ="@dimen/dimen_10dp" ="@string/action_see_all_promo" ="@dimen/dimen_12dp" ="true" style="@style/BpjstkuTextButton.CoolGrey.SemiBold" />
+                <com.asksira.loopingviewpager.LoopingViewPager ="center" ="@id/vpPromoBanner" ="false" ="fill_parent" ="wrap_content" ="@dimen/dimen_12dp" ="@dimen/dimen_16dp" ="@id/tvPromo" autoScroll="true" isInfinite="true" scrollInterval="5000" />
+                <com.rd.PageIndicatorView ="@id/dotsIndicatorBanner" ="@dimen/dimen_0dp" ="wrap_content" ="wrap_content" ="@dimen/dimen_12dp" ="@id/vpPromoBanner" ="@dimen/dimen_16dp" ="@id/vpPromoBanner" piv_animationType="slide" piv_dynamicCount="true" piv_interactiveAnimation="true" piv_radius="@dimen/dimen_6dp" piv_selectedColor="@color/colorPrimary" piv_unselectedColor="@color/colorPinkishGrey" />
+            </RelativeLayout>
+        </com.kennyc.view.MultiStateView>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

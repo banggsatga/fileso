@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/viewBackgroundPartner" ="@drawable/bg_dashboard" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintDimensionRatio="1:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_18sp" ="@id/tvTitleMitraList" ="@dimen/dimen_0dp" ="@dimen/dimen_32dp" ="@string/label_list_partner" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <androidx.appcompat.widget.AppCompatTextView ="@id/tvProvince" ="@dimen/dimen_2dp" layout_constraintStart_toStartOf="@id/tvTitleMitraList" layout_constraintTop_toBottomOf="@id/tvTitleMitraList" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <ImageView ="@id/ivArrorRight" ="wrap_content" ="wrap_content" ="@drawable/ic_arror_right_grey" ="@dimen/dimen_7dp" layout_constraintBottom_toBottomOf="@id/tvCity" layout_constraintStart_toEndOf="@id/tvProvince" layout_constraintTop_toTopOf="@id/tvProvince" />
+    <androidx.appcompat.widget.AppCompatTextView ="end" ="@id/tvCity" ="@dimen/dimen_0dp" ="1" ="@dimen/dimen_7dp" ="@dimen/dimen_8dp" layout_constraintBottom_toBottomOf="@id/tvProvince" layout_constraintEnd_toStartOf="@id/btnFilterPartner" layout_constraintStart_toEndOf="@id/ivArrorRight" layout_constraintTop_toTopOf="@id/tvProvince" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <com.google.android.material.button.MaterialButton ="@id/btnFilterPartner" ="@dimen/dimen_48dp" ="@dimen/dimen_48dp" ="20.0dip" icon="@drawable/ic_filter" iconGravity="textStart" iconPadding="@dimen/dimen_0dp" iconTint="@color/colorWhite" layout_constraintBottom_toBottomOf="@id/tvCity" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="@id/tvTitleMitraList" style="@style/BpjstkuButtonDmSans.DarkSkyBluBackground" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout ="@id/swipeRefreshLayout" ="fill_parent" ="@dimen/dimen_0dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvProvince">
+        <com.kennyc.view.MultiStateView ="@id/msvPartner" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" msv_emptyView="@layout/default_error_layout" msv_errorView="@layout/default_error_layout" msv_loadingView="@layout/default_loading_layout">
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvPartner" ="fill_parent" ="fill_parent" ="@dimen/dimen_4dp" />
+        </com.kennyc.view.MultiStateView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

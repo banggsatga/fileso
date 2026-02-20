@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup ="@id/rgChooseJamsNumberId" ="wrap_content" ="wrap_content">
+        <RadioButton ="@dimen/text_size_16sp" ="@id/rbChooseJamsNumberId" ="@android:color/transparent" ="true" ="@null" ="@string/label_jamsostek_number_id" ="@dimen/dimen_14dp" ="@drawable/bg_radio_button_green" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    </RadioGroup>
+</LinearLayout>

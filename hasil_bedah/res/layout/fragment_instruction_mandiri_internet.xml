@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView ="@android:color/white" ="fill_parent" ="fill_parent" layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="fill_parent" ="fill_parent">
+        <androidx.appcompat.widget.AppCompatButton ="center_vertical" ="@id/instruction_toggle" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/show_instruction" style="@style/ButtonSecondaryExpandable" />
+        <LinearLayout ="vertical" ="@id/instruction_layout" ="gone" ="fill_parent" ="fill_parent">
+            <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/four_dp">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_1" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="fill_parent" ="wrap_content" ="@string/mandiri_internet_instruction_step1" ="2.0dip" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_2" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/mandiri_internet_instruction_step2" ="2.0dip" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/four_dp">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_3" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="fill_parent" ="wrap_content" ="@string/mandiri_internet_instruction_step3" ="2.0dip" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_4" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/mandiri_internet_instruction_step4" ="2.0dip" />
+            </LinearLayout>
+            <LinearLayout ="horizontal" ="@color/light_gray" ="@dimen/eight_dp" ="@dimen/five_dp" ="@dimen/eight_dp" ="@dimen/five_dp" ="fill_parent" ="wrap_content" ="@dimen/four_dp">
+                <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/instruction_5" />
+                <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="@color/light_gray" ="fill_parent" ="wrap_content" ="@string/mandiri_internet_instruction_step5" ="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

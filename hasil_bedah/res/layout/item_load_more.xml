@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="vertical" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar ="@id/pbLoadMore" ="wrap_content" ="wrap_content" ="true" />
+    <TextView ="center" ="@id/tvLoadMoreError" ="?selectableItemBackground" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="@string/action_tap_to_retry" ="true" />
+</RelativeLayout>

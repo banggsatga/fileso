@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@id/legal_disclosures_dialog_root" ="@drawable/places_widgets_dialog_background" ="?placesSpacingTwoExtraLarge" ="fill_parent" ="wrap_content" ="?placesSpacingTwoExtraLarge"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView ="start" ="@id/legal_disclosures_scroll_view" ="fill_parent" ="wrap_content">
+        <LinearLayout ="vertical" ="fill_parent" ="wrap_content">
+            <LinearLayout ="vertical" ="@id/reviews_disclosure_container" ="gone" ="wrap_content" ="wrap_content">
+                <TextView ="?placesTextAppearanceHeadlineMedium" ="?placesColorOnSurface" ="@id/reviews_disclosure_title" ="wrap_content" ="wrap_content" ="@string/reviews_disclosure_title" />
+                <TextView ="?placesTextAppearanceBodyMedium" ="?placesColorOnSurface" ="@id/reviews_disclosure_body" ="?placesSpacingSmall" ="wrap_content" ="wrap_content" ="@string/reviews_disclosure_body" />
+                <LinearLayout ="start|center" ="horizontal" ="@id/reviews_disclosure_learn_more_link" ="@dimen/place_details_widget_full_button_vertical_padding" ="@dimen/place_details_widget_full_button_vertical_padding" ="true" ="true" ="wrap_content" ="wrap_content" ="?placesSpacingExtraSmall" ="?placesSpacingMedium" ="@dimen/min_touch_target_size_for_a11y" ="@dimen/min_touch_target_size_for_a11y" ="@string/reviews_disclosure_learn_more" ="?placesSpacingMedium">
+                    <TextView ="?placesTextAppearanceLabelLarge" ="?placesColorPrimary" ="@id/reviews_disclosure_learn_more_link_text" ="false" ="false" ="wrap_content" ="wrap_content" ="@string/reviews_disclosure_learn_more" />
+                    <ImageView ="@id/reviews_disclosure_learn_more_link_icon" ="false" ="false" ="wrap_content" ="wrap_content" ="@drawable/gs_open_in_new_vd_24" ="fitCenter" ="?placesColorPrimary" ="no" ="?placesSpacingExtraSmall" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout ="vertical" ="@id/about_these_results_container" ="?placesSpacingMedium" ="gone" ="wrap_content" ="wrap_content">
+                <TextView ="?placesTextAppearanceHeadlineMedium" ="?placesColorOnSurface" ="@id/about_these_results_title" ="wrap_content" ="wrap_content" ="@string/about_these_results_title" />
+                <TextView ="?placesTextAppearanceBodyMedium" ="?placesColorOnSurface" ="@id/about_these_results_body" ="?placesSpacingSmall" ="wrap_content" ="wrap_content" ="@string/about_these_results_body" />
+                <LinearLayout ="start|center" ="horizontal" ="@id/about_these_results_link" ="@dimen/place_details_widget_full_button_vertical_padding" ="@dimen/place_details_widget_full_button_vertical_padding" ="true" ="true" ="wrap_content" ="wrap_content" ="?placesSpacingExtraSmall" ="@dimen/min_touch_target_size_for_a11y" ="@dimen/min_touch_target_size_for_a11y" ="@string/reviews_disclosure_learn_more" ="?placesSpacingMedium">
+                    <TextView ="?placesTextAppearanceLabelLarge" ="?placesColorPrimary" ="@id/about_these_results_link_text" ="false" ="false" ="wrap_content" ="wrap_content" ="@string/reviews_disclosure_learn_more" />
+                    <ImageView ="@id/about_these_results_link_icon" ="false" ="false" ="wrap_content" ="wrap_content" ="@drawable/gs_open_in_new_vd_24" ="fitCenter" ="?placesColorPrimary" ="no" ="?placesSpacingExtraSmall" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout ="vertical" ="@id/review_ordering_container" ="gone" ="wrap_content" ="wrap_content" ="?placesSpacingMedium">
+                <TextView ="?placesTextAppearanceHeadlineMedium" ="?placesColorOnSurface" ="@id/review_ordering_title" ="wrap_content" ="wrap_content" ="@string/review_ordering_title" />
+                <TextView ="?placesTextAppearanceBodyMedium" ="?placesColorOnSurface" ="@id/review_ordering_body" ="?placesSpacingSmall" ="?placesSpacingSmall" ="wrap_content" ="wrap_content" ="@string/reviews_ordering_body" />
+            </LinearLayout>
+            <LinearLayout ="vertical" ="@id/terms_container" ="wrap_content" ="wrap_content">
+                <TextView ="?placesTextAppearanceHeadlineMedium" ="?placesColorOnSurface" ="wrap_content" ="wrap_content" ="@string/google_maps_terms_title" />
+                <LinearLayout ="start" ="horizontal" ="?placesSpacingMedium" ="wrap_content" ="wrap_content">
+                    <LinearLayout ="start|center" ="horizontal" ="@id/view_terms_link" ="@dimen/place_details_widget_full_button_vertical_padding" ="@dimen/place_details_widget_full_button_vertical_padding" ="true" ="true" ="wrap_content" ="wrap_content" ="?placesSpacingExtraSmall" ="@dimen/min_touch_target_size_for_a11y" ="@dimen/min_touch_target_size_for_a11y" ="@string/view_terms_link_content_description" ="?placesSpacingMedium">
+                        <TextView ="?placesTextAppearanceLabelLarge" ="?placesColorPrimary" ="@id/view_terms_link_text" ="false" ="false" ="wrap_content" ="wrap_content" ="@string/view_terms_link" />
+                        <ImageView ="@id/view_terms_link_icon" ="false" ="false" ="wrap_content" ="wrap_content" ="@drawable/gs_open_in_new_vd_24" ="fitCenter" ="?placesColorPrimary" ="no" ="?placesSpacingExtraSmall" />
+                    </LinearLayout>
+                    <LinearLayout ="start|center" ="horizontal" ="@id/view_privacy_link" ="@dimen/place_details_widget_full_button_vertical_padding" ="@dimen/place_details_widget_full_button_vertical_padding" ="true" ="true" ="wrap_content" ="wrap_content" ="?placesSpacingExtraSmall" ="@dimen/min_touch_target_size_for_a11y" ="@dimen/min_touch_target_size_for_a11y" ="@string/view_privacy_link_content_description" ="?placesSpacingMedium">
+                        <TextView ="?placesTextAppearanceLabelLarge" ="?placesColorPrimary" ="@id/view_privacy_link_text" ="false" ="false" ="wrap_content" ="wrap_content" ="@string/view_privacy_link" />
+                        <ImageView ="@id/view_privacy_link_icon" ="false" ="false" ="wrap_content" ="wrap_content" ="@drawable/gs_open_in_new_vd_24" ="fitCenter" ="?placesColorPrimary" ="no" ="?placesSpacingExtraSmall" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Button ="?placesTextAppearanceLabelLarge" ="?placesColorOnSecondaryContainer" ="@id/legal_disclosures_ok" ="@drawable/places_widgets_button_background" ="?placesSpacingExtraSmall" ="?placesSpacingExtraSmall" ="fill_parent" ="wrap_content" ="?placesSpacingMedium" ="@string/legal_disclosures_ok" ="@null" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

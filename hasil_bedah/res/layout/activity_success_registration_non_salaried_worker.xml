@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgStatusPayment" ="wrap_content" ="wrap_content" ="@dimen/dimen_100dp" ="@drawable/ic_sending_data" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+    <TextView ="@dimen/text_size_20sp" ="@id/tvTitlePayment" ="wrap_content" ="wrap_content" ="@dimen/dimen_30dp" ="@string/label_waiting_tuition_payment" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgStatusPayment" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <TextView ="@id/tvDescriptionPayment" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_38dp" ="@dimen/dimen_20dp" ="@dimen/dimen_38dp" ="@string/label_instruction_payment_tuition_unregistered" ="center" ="@dimen/dimen_38dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitlePayment" style="@style/BpjstkuTextViewDmSans" />
+    <TextView ="wrap_content" ="wrap_content" ="@string/label_thanks" layout_constraintBottom_toTopOf="@id/btnOk" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvDescriptionPayment" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+    <Button ="@id/btnOk" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_32dp" ="@dimen/dimen_32dp" ="@dimen/dimen_24dp" ="@string/action_ok" ="@dimen/dimen_32dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" style="@style/BpjstkuButton.WhiteText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

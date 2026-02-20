@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@id/container_all" ="0.0dip" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View ="@drawable/cast_mini_controller_gradient_light" ="fill_parent" ="5.0dip" />
+    <RelativeLayout ="@id/container_current" ="fill_parent" ="@dimen/cast_mini_controller_icon_height">
+        <View ="@id/center" ="invisible" ="fill_parent" ="1.0dip" ="true" />
+        <ImageView ="@id/icon_view" ="@dimen/cast_mini_controller_icon_width" ="@dimen/cast_mini_controller_icon_height" ="@drawable/cast_album_art_placeholder" ="centerCrop" ="true" ="true" />
+        <ImageView ="@id/button_0" ="wrap_content" ="wrap_content" ="@dimen/cast_mini_controller_control_button_margin" ="@id/button_1" ="true" ="@dimen/cast_mini_controller_control_button_margin" ="@id/button_1" />
+        <ImageView ="@id/button_1" ="wrap_content" ="wrap_content" ="@dimen/cast_mini_controller_control_button_margin" ="@id/button_2" ="true" ="@dimen/cast_mini_controller_control_button_margin" ="@id/button_2" />
+        <ImageView ="@id/button_2" ="wrap_content" ="wrap_content" ="8.0dip" ="true" ="true" ="8.0dip" ="true" />
+        <TextView ="?castTitleTextAppearance" ="end" ="@id/title_view" ="fill_parent" ="wrap_content" ="15.0dip" ="8.0dip" ="-3.0dip" ="1" ="@id/button_0" ="@id/icon_view" ="@id/center" ="15.0dip" ="8.0dip" ="@id/button_0" ="@id/icon_view" />
+        <TextView ="?castSubtitleTextAppearance" ="end" ="@id/subtitle_view" ="fill_parent" ="wrap_content" ="3.0dip" ="1" ="@id/button_0" ="@id/icon_view" ="@id/center" ="@id/title_view" ="@id/title_view" ="@id/button_0" ="@id/icon_view" ="@id/title_view" ="@id/title_view" />
+        <ProgressBar ="@id/progressBar" ="fill_parent" ="5.0dip" ="@drawable/cast_mini_controller_progress_drawable" ="true" ="ltr" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </RelativeLayout>
+</LinearLayout>

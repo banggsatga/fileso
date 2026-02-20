@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="bottom" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_white" ="@dimen/dimen_25dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+        <TextView ="@id/tvChooseSourcePhoto" ="wrap_content" ="wrap_content" ="@string/label_choose_source_photo" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.Dark.SemiBold" />
+        <ImageButton ="@id/imgTakeFromPhoto" ="@drawable/border_pale_grey_five_selector" ="@dimen/dimen_20dp" ="@dimen/dimen_68dp" ="@dimen/dimen_68dp" ="@dimen/dimen_12dp" ="@drawable/ic_camera_source" layout_constraintStart_toStartOf="@id/tvChooseSourcePhoto" layout_constraintTop_toBottomOf="@id/tvChooseSourcePhoto" />
+        <ImageButton ="@id/imgTakeFromGallery" ="@drawable/border_pale_grey_five_selector" ="@dimen/dimen_20dp" ="@dimen/dimen_68dp" ="@dimen/dimen_68dp" ="@drawable/ic_photo" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="@id/imgTakeFromPhoto" layout_constraintStart_toEndOf="@id/imgTakeFromPhoto" layout_constraintTop_toTopOf="@id/imgTakeFromPhoto" />
+        <TextView ="@dimen/text_size_12sp" ="@id/tvTakePhoto" ="@dimen/dimen_3dp" ="@string/label_take_photo" layout_constraintEnd_toEndOf="@id/imgTakeFromPhoto" layout_constraintStart_toStartOf="@id/imgTakeFromPhoto" layout_constraintTop_toBottomOf="@id/imgTakeFromPhoto" style="@style/BpjstkuTextViewBarlow.Dark" />
+        <TextView ="@dimen/text_size_12sp" ="@id/tvGallery" ="@dimen/dimen_3dp" ="@string/label_gallery" layout_constraintEnd_toEndOf="@id/imgTakeFromGallery" layout_constraintStart_toStartOf="@id/imgTakeFromGallery" layout_constraintTop_toBottomOf="@id/imgTakeFromGallery" style="@style/BpjstkuTextViewBarlow.Dark" />
+        <com.google.android.material.button.MaterialButton ="@id/btnCancel" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_28dp" ="@string/action_cancel" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvGallery" strokeColor="@color/colorTomato" strokeWidth="@dimen/dimen_1dp" style="@style/BpjstkuTextButton.Tomato.SemiBold" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

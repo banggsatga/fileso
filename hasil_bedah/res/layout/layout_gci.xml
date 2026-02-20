@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout ="@id/card_number_container" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText ="@id/edit_gci_card_number" ="fill_parent" ="wrap_content" ="@string/hint_giftcard_number" ="1" ="19" ="0123456789 " ="number" ="actionNext" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout ="@id/password_container" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText ="@id/edit_gci_password" ="fill_parent" ="wrap_content" ="@string/hint_giftcard_password" ="1" ="6" ="numberPassword" ="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView ="@color/faint_yellow" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@string/info_gci_payment" />
+</LinearLayout>

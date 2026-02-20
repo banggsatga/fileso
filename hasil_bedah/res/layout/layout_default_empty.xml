@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@id/error_layout" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgError" ="gone" ="@dimen/dimen_120dp" ="@dimen/dimen_120dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.3" />
+    <TextView ="@dimen/text_size_16sp" ="bold" ="@color/colorCharcoalGrey" ="@id/tvTitle" ="wrap_content" ="wrap_content" ="@dimen/dimen_32dp" ="@string/error_message_empty_content" ="center" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgError" />
+    <TextView ="@color/colorCharcoalGrey" ="center_horizontal" ="@id/tvMessage" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" ="@string/error_message_empty_message" ="center" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

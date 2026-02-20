@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="vertical" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="gone" layout="@layout/layout_midtrans_progress" />
+    <include ="start|bottom|center" ="wrap_content" ="wrap_content" layout="@layout/layout_sandbox_badge" />
+</FrameLayout>

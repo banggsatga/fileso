@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.view.menu.ListMenuItemView ="vertical" ="fill_parent" ="wrap_content" ="196.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/group_divider" ="@drawable/abc_list_divider_material" ="fill_parent" ="1.0dip" ="4.0dip" ="4.0dip" />
+    <LinearLayout ="@id/content" ="true" ="fill_parent" ="?dropdownListPreferredItemHeight" style="@style/RtlOverlay.Widget.AppCompat.PopupMenuItem">
+        <TextView ="?textAppearanceLargePopupMenu" ="center_vertical" ="@id/title" ="true" ="wrap_content" ="wrap_content" ="true" style="@style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Title" />
+        <Space ="0.0dip" ="1.0dip" ="1.0" />
+        <TextView ="?textAppearanceSmallPopupMenu" ="center_vertical" ="@id/shortcut" ="true" ="wrap_content" ="wrap_content" ="true" style="@style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Shortcut" />
+        <ImageView ="center" ="@id/submenuarrow" ="gone" ="wrap_content" ="wrap_content" ="center" style="@style/RtlOverlay.Widget.AppCompat.PopupMenuItem.SubmenuArrow" />
+    </LinearLayout>
+</androidx.appcompat.view.menu.ListMenuItemView>

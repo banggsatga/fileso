@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="bottom" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="bottom" ="@drawable/bg_rounded_white" ="@dimen/dimen_24dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp">
+        <ImageView ="@id/imgSuccess" ="wrap_content" ="wrap_content" ="@drawable/ic_success" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.3" />
+        <TextView ="@dimen/text_size_24sp" ="@id/tvSuccessTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_30dp" ="@dimen/dimen_20dp" ="@string/label_success_exclamation" ="center" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgSuccess" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tvSuccessDescription" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="center" layout_constraintEnd_toEndOf="@id/tvSuccessTitle" layout_constraintStart_toStartOf="@id/tvSuccessTitle" layout_constraintTop_toBottomOf="@id/tvSuccessTitle" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+        <com.google.android.material.button.MaterialButton ="@id/btnPositive" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_37dp" ="@string/action_ok_back" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="@id/tvSuccessDescription" layout_constraintStart_toStartOf="@id/tvSuccessDescription" layout_constraintTop_toBottomOf="@id/tvSuccessDescription" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="vertical" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar_center" layout="@layout/layout_toolbar_center" />
+    <WebView ="@id/browser" ="fill_parent" ="fill_parent" ="@id/layout_toolbar_center" />
+    <RelativeLayout ="center" ="@id/second_RL" ="fill_parent" ="fill_parent">
+        <ProgressBar ="center" ="@id/progressBar" ="gone" ="wrap_content" ="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

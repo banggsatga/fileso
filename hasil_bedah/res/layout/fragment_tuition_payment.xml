@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kennyc.view.MultiStateView ="@id/msvContent" ="fill_parent" ="fill_parent" ="true" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/default_error_layout" msv_loadingView="@layout/default_loading_layout" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+        <androidx.core.widget.NestedScrollView ="@id/scroll" ="@dimen/dimen_16dp" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintBottom_toTopOf="@id/btnPaymentProcess" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilIdNumber" ="0.0dip" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_24dp" ="@dimen/dimen_20dp" ="@string/hint_tuition_payment" ="@dimen/dimen_20dp" endIconMode="clear_text" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText ="16" ="\ 0123456789" ="number" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout ="@id/containerPaymentMethod" ="fill_parent" ="wrap_content" ="@dimen/dimen_18dp" layout_constraintTop_toBottomOf="@id/tilIdNumber">
+                    <TextView ="@id/tvTitleChooseMethodPayment" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="Pilih Jenis Pembayaran Iuran" ="@dimen/dimen_20dp" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+                    <androidx.recyclerview.widget.RecyclerView ="horizontal" ="@id/rvListMethodPayment" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="16.0dip" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/tvTitleChooseMethodPayment" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout ="@id/ContainerPeriodsPayment" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_24dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/containerPaymentMethod">
+                    <TextView ="@id/tvPaymentForLabel" ="fill_parent" ="wrap_content" ="@string/label_payment_for" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+                    <RadioGroup ="@id/rgPaymentPeriod" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" layout_constraintTop_toBottomOf="@id/tvPaymentForLabel">
+                        <RadioButton ="@dimen/text_size_14sp" ="@id/rbOneMonthPeriod" ="fill_parent" ="wrap_content" ="0" ="@string/label_1_month" ="0" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+                        <RadioButton ="@dimen/text_size_14sp" ="@id/rbTwoMonthPeriod" ="fill_parent" ="wrap_content" ="0" ="@string/label_2_month" ="0" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+                        <RadioButton ="@dimen/text_size_14sp" ="@id/rbThreeMonthPeriod" ="fill_parent" ="wrap_content" ="@dimen/dimen_4dp" ="true" ="1" ="@string/label_3_month" ="0" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+                        <RadioButton ="@dimen/text_size_14sp" ="@id/rbSixMonthPeriod" ="fill_parent" ="wrap_content" ="@dimen/dimen_4dp" ="0" ="@string/label_6_month" ="1" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+                        <RadioButton ="@dimen/text_size_14sp" ="@id/rbTwelveMonthPeriod" ="fill_parent" ="wrap_content" ="@dimen/dimen_4dp" ="1" ="@string/label_12_month" ="1" style="@style/BpjstkuRadioButton.DmSansCoolGrey" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView ="@dimen/text_size_12sp" ="center_vertical" ="@id/tvInfoAutoDebit" ="@drawable/bg_rounded_4dp_custom_green" ="@dimen/dimen_14dp" ="gone" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@dimen/dimen_20dp" ="@string/label_instruction_autodebet" ="@dimen/dimen_14dp" ="@drawable/ic_warning" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/containerPaymentMethod" style="@style/BpjstkuTextViewDmSans.White.Medium" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.button.MaterialButton ="false" ="@id/btnPaymentProcess" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@dimen/dimen_16dp" ="@string/action_next" ="@dimen/dimen_24dp" ="@dimen/dimen_20dp" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.kennyc.view.MultiStateView>

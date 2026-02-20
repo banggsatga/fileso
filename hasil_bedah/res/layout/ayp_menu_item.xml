@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="horizontal" ="?selectableItemBackground" ="@dimen/ayp_menu_item_padding" ="true" ="true" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/ayp_menu_item_text_size" ="@color/ayp_menu_text" ="center" ="@id/text" ="fill_parent" ="wrap_content" ="12.0dip" />
+</LinearLayout>

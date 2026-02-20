@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_14sp" ="@id/tvNameLocationBranchOFfice" ="0.0dip" ="@dimen/dimen_16dp" ="@string/label_sample_regional_office" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_12sp" ="@id/tvDescLocationBranchOFfice" ="@dimen/dimen_0dp" ="@dimen/dimen_8dp" ="@dimen/dimen_16dp" ="@string/label_sample_location_desc_regional_office" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/imgArrowRegionalOffice" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvNameLocationBranchOFfice" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <androidx.appcompat.widget.AppCompatImageView ="@id/imgArrowRegionalOffice" ="wrap_content" ="wrap_content" ="@drawable/ic_arrow_right_grey" layout_constraintBottom_toBottomOf="@id/tvDescLocationBranchOFfice" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="@id/tvDescLocationBranchOFfice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

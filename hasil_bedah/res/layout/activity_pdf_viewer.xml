@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar ="@style/ThemeOverlay.AppCompat.Dark.ActionBar" ="@id/toolbar" ="?colorPrimary" ="0.0dip" ="?actionBarSize" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" navigationIcon="?homeAsUpIndicator" title="PDF Viewer" titleTextColor="@android:color/white" />
+    <ScrollView ="@id/scrollView" ="0.0dip" ="0.0dip" layout_constraintBottom_toTopOf="@id/layoutControls" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/toolbar">
+        <ImageView ="@id/imageViewPdf" ="fill_parent" ="wrap_content" ="fitCenter" ="true" ="PDF Page" />
+    </ScrollView>
+    <ProgressBar ="@id/progressBar" ="gone" ="wrap_content" ="wrap_content" layout_constraintBottom_toBottomOf="@id/scrollView" layout_constraintEnd_toEndOf="@id/scrollView" layout_constraintStart_toStartOf="@id/scrollView" layout_constraintTop_toTopOf="@id/scrollView" />
+    <LinearLayout ="horizontal" ="@id/layoutControls" ="?colorSurface" ="16.0dip" ="0.0dip" ="wrap_content" ="4.0dip" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent">
+        <Button ="@id/btnPrevious" ="0.0dip" ="wrap_content" ="Previous" ="1.0" ="8.0dip" />
+        <TextView ="16.0sp" ="bold" ="center_vertical" ="@id/textPageInfo" ="wrap_content" ="wrap_content" ="1 / 1" ="8.0dip" ="8.0dip" />
+        <Button ="@id/btnNext" ="0.0dip" ="wrap_content" ="Next" ="1.0" ="8.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+.class public final Landroidx/activity/Api34Impl;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u00c1\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J/\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\u0008H\u0007\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\u0015\u0010\r\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\n\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u0015\u0010\u000f\u001a\u00020\u00082\u0006\u0010\u0005\u001a\u00020\n\u00a2\u0006\u0004\u0008\u000f\u0010\u0010J\u0015\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\n\u00a2\u0006\u0004\u0008\u0011\u0010\u000eJ\u0015\u0010\u0012\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\n\u00a2\u0006\u0004\u0008\u0012\u0010\u000e"
+    }
+    d2 = {
+        "Landroidx/activity/Api34Impl;",
+        "",
+        "<init>",
+        "()V",
+        "",
+        "p0",
+        "p1",
+        "p2",
+        "",
+        "p3",
+        "Landroid/window/BackEvent;",
+        "createOnBackEvent",
+        "(FFFI)Landroid/window/BackEvent;",
+        "progress",
+        "(Landroid/window/BackEvent;)F",
+        "swipeEdge",
+        "(Landroid/window/BackEvent;)I",
+        "touchX",
+        "touchY"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final INSTANCE:Landroidx/activity/Api34Impl;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 65354
+    new-instance v0, Landroidx/activity/Api34Impl;
+
+    invoke-direct {v0}, Landroidx/activity/Api34Impl;-><init>()V
+
+    sput-object v0, Landroidx/activity/Api34Impl;->INSTANCE:Landroidx/activity/Api34Impl;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 93
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final createOnBackEvent(FFFI)Landroid/window/BackEvent;
+    .locals 1
+
+    .line 96
+    new-instance v0, Landroid/window/BackEvent;
+
+    invoke-direct {v0, p1, p2, p3, p4}, Landroid/window/BackEvent;-><init>(FFFI)V
+
+    return-object v0
+.end method
+
+.method public final progress(Landroid/window/BackEvent;)F
+    .locals 1
+
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 98
+    invoke-virtual {p1}, Landroid/window/BackEvent;->getProgress()F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final swipeEdge(Landroid/window/BackEvent;)I
+    .locals 1
+
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 104
+    invoke-virtual {p1}, Landroid/window/BackEvent;->getSwipeEdge()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final touchX(Landroid/window/BackEvent;)F
+    .locals 1
+
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 100
+    invoke-virtual {p1}, Landroid/window/BackEvent;->getTouchX()F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final touchY(Landroid/window/BackEvent;)F
+    .locals 1
+
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 102
+    invoke-virtual {p1}, Landroid/window/BackEvent;->getTouchY()F
+
+    move-result p1
+
+    return p1
+.end method

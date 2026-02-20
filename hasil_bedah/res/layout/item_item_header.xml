@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="center_vertical" ="vertical" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="center_vertical" ="fill_parent" ="wrap_content" ="@dimen/eight_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/header_text_size" ="bold" ="@color/white" ="@id/total_amount" ="wrap_content" ="wrap_content" ="true" ="true" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="bold" ="@color/white" ="wrap_content" ="wrap_content" ="@string/payable_amount" ="true" />
+    </RelativeLayout>
+    <RelativeLayout ="center_vertical" ="fill_parent" ="wrap_content" ="@dimen/two_dp" ="@dimen/eight_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/white" ="@id/text_order_id" ="wrap_content" ="wrap_content" ="true" ="true" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/white" ="wrap_content" ="wrap_content" ="@string/order_id" ="true" />
+    </RelativeLayout>
+    <RelativeLayout ="@id/item_details_container" ="fill_parent" ="wrap_content">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="@color/white" ="wrap_content" ="wrap_content" ="@string/text_price" ="true" ="true" ="true" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="@color/white" ="wrap_content" ="wrap_content" ="@string/text_items" ="true" ="true" ="true" />
+    </RelativeLayout>
+    <View ="@id/divider" ="@color/gray_divider" ="fill_parent" ="0.5dip" ="@dimen/four_dp" ="@dimen/four_dp" />
+</LinearLayout>

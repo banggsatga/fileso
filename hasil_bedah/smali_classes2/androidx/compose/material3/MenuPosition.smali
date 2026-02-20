@@ -1,0 +1,457 @@
+.class public final Landroidx/compose/material3/MenuPosition;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/compose/material3/MenuPosition$Horizontal;,
+        Landroidx/compose/material3/MenuPosition$Vertical;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\t\u0008\u00c1\u0002\u0018\u00002\u00020\u0001:\u0002\u0013\u0014B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0019\u0010\u0007\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004H\u0007\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u0019\u0010\t\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004H\u0007\u00a2\u0006\u0004\u0008\t\u0010\u0008J\u0019\u0010\n\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004H\u0007\u00a2\u0006\u0004\u0008\n\u0010\u0008J\u0019\u0010\u000c\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004H\u0007\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0019\u0010\u000e\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004H\u0007\u00a2\u0006\u0004\u0008\u000e\u0010\rJ\u0019\u0010\u000f\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004H\u0007\u00a2\u0006\u0004\u0008\u000f\u0010\rJ\u0019\u0010\u0010\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004H\u0007\u00a2\u0006\u0004\u0008\u0010\u0010\rJ\u0019\u0010\u0011\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004H\u0007\u00a2\u0006\u0004\u0008\u0011\u0010\u0008J\u0019\u0010\u0012\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0004H\u0007\u00a2\u0006\u0004\u0008\u0012\u0010\u0008"
+    }
+    d2 = {
+        "Landroidx/compose/material3/MenuPosition;",
+        "",
+        "<init>",
+        "()V",
+        "",
+        "p0",
+        "Landroidx/compose/material3/MenuPosition$Vertical;",
+        "bottomToAnchorTop",
+        "(I)Landroidx/compose/material3/MenuPosition$Vertical;",
+        "bottomToWindowBottom",
+        "centerToAnchorTop",
+        "Landroidx/compose/material3/MenuPosition$Horizontal;",
+        "endToAnchorEnd",
+        "(I)Landroidx/compose/material3/MenuPosition$Horizontal;",
+        "leftToWindowLeft",
+        "rightToWindowRight",
+        "startToAnchorStart",
+        "topToAnchorBottom",
+        "topToWindowTop",
+        "Horizontal",
+        "Vertical"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final $stable:I
+
+.field public static final INSTANCE:Landroidx/compose/material3/MenuPosition;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 65354
+    new-instance v0, Landroidx/compose/material3/MenuPosition;
+
+    invoke-direct {v0}, Landroidx/compose/material3/MenuPosition;-><init>()V
+
+    sput-object v0, Landroidx/compose/material3/MenuPosition;->INSTANCE:Landroidx/compose/material3/MenuPosition;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 38
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic bottomToAnchorTop$default(Landroidx/compose/material3/MenuPosition;IILjava/lang/Object;)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 140
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/MenuPosition;->bottomToAnchorTop(I)Landroidx/compose/material3/MenuPosition$Vertical;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic bottomToWindowBottom$default(Landroidx/compose/material3/MenuPosition;IILjava/lang/Object;)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 178
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/MenuPosition;->bottomToWindowBottom(I)Landroidx/compose/material3/MenuPosition$Vertical;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic centerToAnchorTop$default(Landroidx/compose/material3/MenuPosition;IILjava/lang/Object;)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 151
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/MenuPosition;->centerToAnchorTop(I)Landroidx/compose/material3/MenuPosition$Vertical;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic endToAnchorEnd$default(Landroidx/compose/material3/MenuPosition;IILjava/lang/Object;)Landroidx/compose/material3/MenuPosition$Horizontal;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 92
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/MenuPosition;->endToAnchorEnd(I)Landroidx/compose/material3/MenuPosition$Horizontal;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic leftToWindowLeft$default(Landroidx/compose/material3/MenuPosition;IILjava/lang/Object;)Landroidx/compose/material3/MenuPosition$Horizontal;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 106
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/MenuPosition;->leftToWindowLeft(I)Landroidx/compose/material3/MenuPosition$Horizontal;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic rightToWindowRight$default(Landroidx/compose/material3/MenuPosition;IILjava/lang/Object;)Landroidx/compose/material3/MenuPosition$Horizontal;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 119
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/MenuPosition;->rightToWindowRight(I)Landroidx/compose/material3/MenuPosition$Horizontal;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic startToAnchorStart$default(Landroidx/compose/material3/MenuPosition;IILjava/lang/Object;)Landroidx/compose/material3/MenuPosition$Horizontal;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 78
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/MenuPosition;->startToAnchorStart(I)Landroidx/compose/material3/MenuPosition$Horizontal;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic topToAnchorBottom$default(Landroidx/compose/material3/MenuPosition;IILjava/lang/Object;)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 129
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/MenuPosition;->topToAnchorBottom(I)Landroidx/compose/material3/MenuPosition$Vertical;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic topToWindowTop$default(Landroidx/compose/material3/MenuPosition;IILjava/lang/Object;)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 165
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/MenuPosition;->topToWindowTop(I)Landroidx/compose/material3/MenuPosition$Vertical;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final bottomToAnchorTop(I)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 3
+
+    .line 142
+    sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getBottom()Landroidx/compose/ui/Alignment$Vertical;
+
+    move-result-object v0
+
+    .line 143
+    sget-object v1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/Alignment$Companion;->getTop()Landroidx/compose/ui/Alignment$Vertical;
+
+    move-result-object v1
+
+    .line 141
+    new-instance v2, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Vertical;
+
+    invoke-direct {v2, v0, v1, p1}, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Vertical;-><init>(Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Vertical;I)V
+
+    check-cast v2, Landroidx/compose/material3/MenuPosition$Vertical;
+
+    return-object v2
+.end method
+
+.method public final bottomToWindowBottom(I)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 2
+
+    .line 180
+    sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getBottom()Landroidx/compose/ui/Alignment$Vertical;
+
+    move-result-object v0
+
+    .line 179
+    new-instance v1, Landroidx/compose/material3/WindowAlignmentMarginPosition$Vertical;
+
+    invoke-direct {v1, v0, p1}, Landroidx/compose/material3/WindowAlignmentMarginPosition$Vertical;-><init>(Landroidx/compose/ui/Alignment$Vertical;I)V
+
+    check-cast v1, Landroidx/compose/material3/MenuPosition$Vertical;
+
+    return-object v1
+.end method
+
+.method public final centerToAnchorTop(I)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 3
+
+    .line 153
+    sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getCenterVertically()Landroidx/compose/ui/Alignment$Vertical;
+
+    move-result-object v0
+
+    .line 154
+    sget-object v1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/Alignment$Companion;->getTop()Landroidx/compose/ui/Alignment$Vertical;
+
+    move-result-object v1
+
+    .line 152
+    new-instance v2, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Vertical;
+
+    invoke-direct {v2, v0, v1, p1}, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Vertical;-><init>(Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Vertical;I)V
+
+    check-cast v2, Landroidx/compose/material3/MenuPosition$Vertical;
+
+    return-object v2
+.end method
+
+.method public final endToAnchorEnd(I)Landroidx/compose/material3/MenuPosition$Horizontal;
+    .locals 3
+
+    .line 94
+    sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getEnd()Landroidx/compose/ui/Alignment$Horizontal;
+
+    move-result-object v0
+
+    .line 95
+    sget-object v1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/Alignment$Companion;->getEnd()Landroidx/compose/ui/Alignment$Horizontal;
+
+    move-result-object v1
+
+    .line 93
+    new-instance v2, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Horizontal;
+
+    invoke-direct {v2, v0, v1, p1}, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Horizontal;-><init>(Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Horizontal;I)V
+
+    check-cast v2, Landroidx/compose/material3/MenuPosition$Horizontal;
+
+    return-object v2
+.end method
+
+.method public final leftToWindowLeft(I)Landroidx/compose/material3/MenuPosition$Horizontal;
+    .locals 2
+
+    .line 108
+    sget-object v0, Landroidx/compose/ui/AbsoluteAlignment;->INSTANCE:Landroidx/compose/ui/AbsoluteAlignment;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/AbsoluteAlignment;->getLeft()Landroidx/compose/ui/Alignment$Horizontal;
+
+    move-result-object v0
+
+    .line 107
+    new-instance v1, Landroidx/compose/material3/WindowAlignmentMarginPosition$Horizontal;
+
+    invoke-direct {v1, v0, p1}, Landroidx/compose/material3/WindowAlignmentMarginPosition$Horizontal;-><init>(Landroidx/compose/ui/Alignment$Horizontal;I)V
+
+    check-cast v1, Landroidx/compose/material3/MenuPosition$Horizontal;
+
+    return-object v1
+.end method
+
+.method public final rightToWindowRight(I)Landroidx/compose/material3/MenuPosition$Horizontal;
+    .locals 2
+
+    .line 121
+    sget-object v0, Landroidx/compose/ui/AbsoluteAlignment;->INSTANCE:Landroidx/compose/ui/AbsoluteAlignment;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/AbsoluteAlignment;->getRight()Landroidx/compose/ui/Alignment$Horizontal;
+
+    move-result-object v0
+
+    .line 120
+    new-instance v1, Landroidx/compose/material3/WindowAlignmentMarginPosition$Horizontal;
+
+    invoke-direct {v1, v0, p1}, Landroidx/compose/material3/WindowAlignmentMarginPosition$Horizontal;-><init>(Landroidx/compose/ui/Alignment$Horizontal;I)V
+
+    check-cast v1, Landroidx/compose/material3/MenuPosition$Horizontal;
+
+    return-object v1
+.end method
+
+.method public final startToAnchorStart(I)Landroidx/compose/material3/MenuPosition$Horizontal;
+    .locals 3
+
+    .line 80
+    sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getStart()Landroidx/compose/ui/Alignment$Horizontal;
+
+    move-result-object v0
+
+    .line 81
+    sget-object v1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/Alignment$Companion;->getStart()Landroidx/compose/ui/Alignment$Horizontal;
+
+    move-result-object v1
+
+    .line 79
+    new-instance v2, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Horizontal;
+
+    invoke-direct {v2, v0, v1, p1}, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Horizontal;-><init>(Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Horizontal;I)V
+
+    check-cast v2, Landroidx/compose/material3/MenuPosition$Horizontal;
+
+    return-object v2
+.end method
+
+.method public final topToAnchorBottom(I)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 3
+
+    .line 131
+    sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getTop()Landroidx/compose/ui/Alignment$Vertical;
+
+    move-result-object v0
+
+    .line 132
+    sget-object v1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/Alignment$Companion;->getBottom()Landroidx/compose/ui/Alignment$Vertical;
+
+    move-result-object v1
+
+    .line 130
+    new-instance v2, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Vertical;
+
+    invoke-direct {v2, v0, v1, p1}, Landroidx/compose/material3/AnchorAlignmentOffsetPosition$Vertical;-><init>(Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Vertical;I)V
+
+    check-cast v2, Landroidx/compose/material3/MenuPosition$Vertical;
+
+    return-object v2
+.end method
+
+.method public final topToWindowTop(I)Landroidx/compose/material3/MenuPosition$Vertical;
+    .locals 2
+
+    .line 167
+    sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getTop()Landroidx/compose/ui/Alignment$Vertical;
+
+    move-result-object v0
+
+    .line 166
+    new-instance v1, Landroidx/compose/material3/WindowAlignmentMarginPosition$Vertical;
+
+    invoke-direct {v1, v0, p1}, Landroidx/compose/material3/WindowAlignmentMarginPosition$Vertical;-><init>(Landroidx/compose/ui/Alignment$Vertical;I)V
+
+    check-cast v1, Landroidx/compose/material3/MenuPosition$Vertical;
+
+    return-object v1
+.end method

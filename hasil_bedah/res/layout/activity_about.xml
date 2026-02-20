@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="16.0dip" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kennyc.view.MultiStateView ="@id/msv" ="fill_parent" ="fill_parent" msv_emptyView="@layout/default_error_layout" msv_errorView="@layout/default_error_layout" msv_loadingView="@layout/default_loading_layout">
+        <LinearLayout ="vertical" ="395.0dip" ="fill_parent">
+            <TextView ="@id/tv_about" ="fill_parent" ="wrap_content" ="about" />
+            <TextView ="@id/tv_email" ="fill_parent" ="wrap_content" ="email" />
+            <TextView ="@id/tv_phone" ="fill_parent" ="wrap_content" ="phone" />
+        </LinearLayout>
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

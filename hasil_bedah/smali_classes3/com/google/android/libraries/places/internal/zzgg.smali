@@ -1,0 +1,47 @@
+.class final synthetic Lcom/google/android/libraries/places/internal/zzgg;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/android/gms/tasks/Continuation;
+
+
+# static fields
+.field static final synthetic zza:Lcom/google/android/libraries/places/internal/zzgg;
+
+
+# direct methods
+.method public static synthetic constructor <clinit>()V
+    .locals 1
+
+    .line 65354
+    new-instance v0, Lcom/google/android/libraries/places/internal/zzgg;
+
+    invoke-direct {v0}, Lcom/google/android/libraries/places/internal/zzgg;-><init>()V
+
+    sput-object v0, Lcom/google/android/libraries/places/internal/zzgg;->zza:Lcom/google/android/libraries/places/internal/zzgg;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .locals 0
+
+    .line 65353
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic then(Lcom/google/android/gms/tasks/Task;)Ljava/lang/Object;
+    .locals 0
+
+    .line 65352
+    invoke-static {p1}, Lcom/google/android/libraries/places/internal/zzhb;->zzB(Lcom/google/android/gms/tasks/Task;)Lcom/google/android/gms/tasks/Task;
+
+    move-result-object p1
+
+    return-object p1
+.end method

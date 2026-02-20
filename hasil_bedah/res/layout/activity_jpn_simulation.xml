@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="true" ="true" ="fill_parent" ="wrap_content" ="@dimen/dimen_19dp">
+        <include ="@id/layout_toolbar" layout="@layout/layout_toolbar_center" />
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilBirthDate" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_37dp" ="@dimen/dimen_20dp" ="@string/hint_birth_date_on_id_card" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" style="@style/BpjstkuTextInputLayout.Calender">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtBirthDate" ="date" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilJpnStart" ="gone" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_37dp" ="@dimen/dimen_20dp" ="@string/label_Jpn_Start" ="@dimen/dimen_20dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tilBirthDate" style="@style/BpjstkuTextInputLayout.Calender">
+            <com.google.android.material.textfield.TextInputEditText ="@id/edtJpnStart" ="date" style="@style/BpjstkuAutoCompleteTextViewCalender" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.card.MaterialCardView ="@id/cvAverageSalary" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tilBirthDate" strokeColor="@color/colorPaleGrey" strokeWidth="@dimen/dimen_1dp">
+            <RelativeLayout ="fill_parent" ="wrap_content">
+                <TextView ="@dimen/text_size_16sp" ="@id/tvPrefixAverageSalary" ="@color/colorPaleGreyFour" ="@dimen/dimen_20dp" ="wrap_content" ="wrap_content" ="@string/label_prefix_rupiah" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+            </RelativeLayout>
+            <com.google.android.material.textfield.TextInputLayout ="end" ="@id/tilAverageSalary" ="@color/colorWhite" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="wrap_content" ="wrap_content" ="@dimen/dimen_350dp" ="@string/hint_salary_now" ="@dimen/dimen_60dp" ="@dimen/dimen_12dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/cvAverageSalary" style="@style/BpjstkuTextInputLayout.Prefixed">
+                <com.google.android.material.textfield.TextInputEditText ="@id/edtAverageSalary" ="number" style="@style/BpjstkuTextInputEditTextPrefixed" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilIncreaseSalaryperYear" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_increase_salary_per_year" layout_constraintEnd_toEndOf="@id/tilBirthDate" layout_constraintStart_toStartOf="@id/tilBirthDate" layout_constraintTop_toBottomOf="@id/cvAverageSalary" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="@id/tvIncreaseSalaryperYear" ="number" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton ="false" ="@id/btnCountSimulation" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@string/action_count_simulation" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="@id/tilBirthDate" layout_constraintStart_toStartOf="@id/tilBirthDate" layout_constraintTop_toBottomOf="@id/tilIncreaseSalaryperYear" style="@style/BpjstkuButton.WhiteText" />
+        <androidx.constraintlayout.widget.ConstraintLayout ="@id/informationContainer" ="@drawable/bg_rounded_white" ="@dimen/dimen_19dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_18dp" ="@dimen/dimen_20dp" ="@dimen/dimen_18dp" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/btnCountSimulation">
+            <TextView ="@dimen/text_size_12sp" ="center_vertical" ="@id/tvDescription" ="wrap_content" ="wrap_content" ="@dimen/dimen_14dp" ="@dimen/dimen_13dp" ="@dimen/dimen_14dp" ="@string/title_information" ="@dimen/dimen_13dp" ="@drawable/ic_loud_speaker_circle_reverse_color" ="@dimen/dimen_14dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <TextView ="@dimen/text_size_12sp" ="@id/tvSimulationResult" ="fill_parent" ="wrap_content" ="@dimen/dimen_17dp" ="@string/label_information_detail" ="@dimen/dimen_57dp" ="@dimen/dimen_15dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvDescription" style="@style/BpjstkuTextViewPoppins.CharcoalGrey" />
+            <TextView ="@dimen/text_size_12sp" ="@id/tvAssumptionTitle" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@string/title_asumtion" ="@dimen/dimen_57dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvSimulationResult" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <TextView ="@dimen/text_size_12sp" ="@id/tvAssumptionDesc" ="@dimen/dimen_10dp" ="@dimen/dimen_21dp" ="@string/label_asumtion_detail" ="@dimen/dimen_57dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvAssumptionTitle" style="@style/BpjstkuTextViewPoppins.CharcoalGrey" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

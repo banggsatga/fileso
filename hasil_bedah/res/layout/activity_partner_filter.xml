@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_16sp" ="@id/tvChooseProvinceAndCity" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="@dimen/dimen_24dp" ="@dimen/dimen_20dp" ="@string/label_choose_province_and_city" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" style="@style/BpjstkuTextViewDmSans.Black.Bold" />
+    <com.google.android.material.textfield.TextInputLayout ="@id/tilProvince" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_province" layout_constraintEnd_toEndOf="@id/tvChooseProvinceAndCity" layout_constraintStart_toStartOf="@id/tvChooseProvinceAndCity" layout_constraintTop_toBottomOf="@id/tvChooseProvinceAndCity" style="@style/BpjstkuTextInputLayout.GeneralDropdown">
+        <com.google.android.material.textfield.TextInputEditText ="@id/edtProvince" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout ="@id/tilCity" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@string/label_city" layout_constraintEnd_toEndOf="@id/tilProvince" layout_constraintStart_toStartOf="@id/tilProvince" layout_constraintTop_toBottomOf="@id/tilProvince" style="@style/BpjstkuTextInputLayout.Partner">
+        <com.google.android.material.textfield.TextInputEditText ="@id/edtCity" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton ="@id/btnApply" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="@dimen/dimen_21dp" ="@string/action_apply" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/tilCity" layout_constraintStart_toStartOf="@id/tilCity" layout_constraintTop_toBottomOf="@id/tilCity" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

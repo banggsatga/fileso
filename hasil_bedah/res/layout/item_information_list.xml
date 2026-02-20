@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView ="@drawable/bg_rounded_white" ="fill_parent" ="wrap_content" ="@dimen/dimen_10dp" ="@dimen/dimen_10dp" ="@dimen/dimen_10dp" cardElevation="@dimen/dimen_40dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@id/rvInformationCategoryItemsContainer" ="fill_parent" ="@dimen/dimen_68dp" ="@dimen/dimen_10dp" ="@dimen/dimen_10dp" ="@dimen/dimen_10dp">
+        <TextView ="@dimen/text_size_14sp" ="@id/tvInformationCategoryItem" ="wrap_content" ="@dimen/dimen_24dp" ="24.0dip" ="24.0dip" ="@string/sample_email" ="24.0dip" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <ImageView ="@id/imgArrowRight" ="wrap_content" ="wrap_content" ="@dimen/dimen_22dp" ="@color/colorDarkMint" ="@dimen/dimen_22dp" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

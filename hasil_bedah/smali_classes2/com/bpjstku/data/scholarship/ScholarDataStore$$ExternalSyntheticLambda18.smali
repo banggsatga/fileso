@@ -1,0 +1,32 @@
+.class public final synthetic Lcom/bpjstku/data/scholarship/ScholarDataStore$$ExternalSyntheticLambda18;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 0
+    check-cast p1, Lcom/bpjstku/data/scholarship/model/response/ScholarshipBenefitResponse;
+
+    invoke-static {p1}, Lcom/bpjstku/data/scholarship/ScholarDataStore;->$r8$lambda$S8Jd2uTT-scclPaSRQJGKn03JAo(Lcom/bpjstku/data/scholarship/model/response/ScholarshipBenefitResponse;)Lcom/bpjstku/data/scholarship/model/response/ScholarshipBenefitResponse;
+
+    move-result-object p1
+
+    return-object p1
+.end method

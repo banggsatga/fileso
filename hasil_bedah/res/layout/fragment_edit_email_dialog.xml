@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout ="bottom" ="fill_parent" ="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_white" ="@dimen/dimen_25dp" ="@dimen/dimen_25dp" ="true" ="true" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_25dp">
+            <TextView ="@id/tvEditEmail" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@string/label_edit_email" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.Dark.SemiBold" />
+            <TextView ="@dimen/text_size_12sp" ="@id/tvEditEmailInstruction" ="wrap_content" ="wrap_content" ="@dimen/dimen_8dp" ="@string/label_edit_email_instruction" layout_constraintEnd_toEndOf="@id/tvEditEmail" layout_constraintStart_toStartOf="@id/tvEditEmail" layout_constraintTop_toBottomOf="@id/tvEditEmail" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            <com.google.android.material.textfield.TextInputLayout ="@id/tilEmail" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_24dp" ="@string/hint_your_new_email" layout_constraintEnd_toEndOf="@id/tvEditEmailInstruction" layout_constraintStart_toStartOf="@id/tvEditEmailInstruction" layout_constraintTop_toBottomOf="@id/tvEditEmailInstruction" style="@style/BpjstkuTextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText ="textEmailAddress" style="@style/BpjstkuTextInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button ="false" ="@id/btnSaveEmail" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_19dp" ="@dimen/dimen_23dp" ="@string/action_save" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/tilEmail" layout_constraintStart_toStartOf="@id/tilEmail" layout_constraintTop_toBottomOf="@id/tilEmail" layout_constraintVertical_bias="0.0" style="@style/BpjstkuButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</ScrollView>

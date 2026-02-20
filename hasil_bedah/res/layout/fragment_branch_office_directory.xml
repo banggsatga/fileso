@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@color/colorWhite" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_18sp" ="@id/tvTitleBottomSheet" ="@dimen/dimen_16dp" ="@string/label_branch_office_directory" ="@dimen/dimen_30dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <androidx.appcompat.widget.AppCompatImageView ="@id/imgCollapseBottomSheetDirectory" ="@dimen/dimen_30dp" ="@dimen/dimen_30dp" ="@dimen/dimen_16dp" ="@drawable/ic_arrow_down" ="@dimen/dimen_24dp" ="true" />
+    <View ="@id/viewLineHeader" ="@color/colorGrey" ="fill_parent" ="@dimen/dimen_1dp" ="@dimen/dimen_21dp" ="@id/imgCollapseBottomSheetDirectory" />
+    <androidx.appcompat.widget.AppCompatImageView ="@id/imgBack" ="wrap_content" ="wrap_content" ="@dimen/dimen_15dp" ="@null" ="@id/viewLineHeader" ="@dimen/dimen_25dp" />
+    <androidx.appcompat.widget.AppCompatTextView ="@id/tvNameRegionalOffice" ="@dimen/dimen_19dp" ="@id/viewLineHeader" ="@dimen/dimen_13dp" ="@id/imgBack" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+    <View ="@id/viewLineBody" ="@color/colorGrey" ="fill_parent" ="@dimen/dimen_1dp" ="@dimen/dimen_13dp" ="@id/imgBack" />
+    <com.kennyc.view.MultiStateView ="@id/msvRegionalBranchOffice" ="fill_parent" ="fill_parent" ="@id/viewLineBody" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/default_loading_layout">
+        <RelativeLayout ="fill_parent" ="fill_parent">
+            <androidx.appcompat.widget.SearchView ="@style/BpjstkuSearchView" ="@id/svSearchItem" ="@drawable/bg_search_view" ="false" ="fill_parent" ="wrap_content" ="@dimen/dimen_25dp" ="@dimen/dimen_16dp" ="@dimen/dimen_25dp" ="@dimen/dimen_25dp" iconifiedByDefault="false" queryBackground="@null" queryHint="@string/hint_search_branch_office" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvBranchOfficeDirectory" ="fill_parent" ="fill_parent" ="@dimen/dimen_25dp" ="@dimen/dimen_25dp" ="@id/svSearchItem" ="@dimen/dimen_25dp" />
+        </RelativeLayout>
+    </com.kennyc.view.MultiStateView>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+.class public final Lcom/google/android/libraries/places/internal/zzbhd;
+.super Ljava/lang/Object;
+.source ""
+
+
+# direct methods
+.method public static zza(Lcom/google/android/libraries/places/internal/zzbgj;)[B
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/libraries/places/internal/zzbgj;->zzb()[B
+
+    move-result-object p0
+
+    return-object p0
+.end method

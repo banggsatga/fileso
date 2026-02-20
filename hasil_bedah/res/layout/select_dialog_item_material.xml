@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView ="?textAppearanceListItemSmall" ="?textColorAlertDialogListItem" ="marquee" ="center_vertical" ="@android:id/text1" ="?listPreferredItemPaddingLeft" ="?listPreferredItemPaddingRight" ="fill_parent" ="wrap_content" ="?listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

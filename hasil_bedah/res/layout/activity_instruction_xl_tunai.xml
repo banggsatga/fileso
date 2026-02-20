@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@color/white" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/appbar_payment" />
+    <include ="fill_parent" ="wrap_content" layout="@layout/fragment_instruction_xl_tunai" />
+</LinearLayout>

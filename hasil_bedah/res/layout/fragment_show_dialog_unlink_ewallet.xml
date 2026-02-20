@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_white" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+            <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_16sp" ="@id/tvTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" ="@dimen/dimen_20dp" ="Apakah anda yakin stop sambungkan Motionpay pada JMO?" ="center" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.Bold" />
+            <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_14sp" ="@id/tvMessage" ="0.0dip" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" ="@dimen/dimen_20dp" ="Untuk menggunakan Saldo Motionpay, anda harus menyambungkan kembali akun e-Wallet MotionPay pada aplikasi JMO" ="center" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitle" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+            <com.google.android.material.button.MaterialButton ="true" ="@dimen/text_size_12sp" ="@id/btnCancel" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_32dp" ="@dimen/dimen_4dp" ="@dimen/dimen_20dp" ="Batal" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/btnDeleteAccount" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvMessage" style="@style/BpjstkuOutlinedButtonCharcoalGrey" />
+            <com.google.android.material.button.MaterialButton ="true" ="@dimen/text_size_12sp" ="@id/btnDeleteAccount" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_4dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="Stop sambungkan" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/btnCancel" layout_constraintTop_toTopOf="@id/btnCancel" style="@style/BpjstkuOutlinedButtonRed" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@drawable/bg_bottom_sheet" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_18sp" ="@id/tvTitleBottomSheet" ="@dimen/dimen_16dp" ="@string/label_jmo_service" ="@dimen/dimen_30dp" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+    <View ="@id/viewLineBottomSheet" ="@color/colorGrey" ="fill_parent" ="1.0dip" ="@dimen/dimen_21dp" ="@id/tvTitleBottomSheet" />
+    <com.kennyc.view.MultiStateView ="@id/msvMenu" ="fill_parent" ="fill_parent" ="@dimen/dimen_32dp" ="@id/viewLineBottomSheet" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/default_loading_layout">
+        <RelativeLayout ="fill_parent" ="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvServices" ="fill_parent" ="fill_parent" ="@dimen/dimen_25dp" ="@dimen/dimen_25dp" ="@dimen/dimen_25dp" />
+        </RelativeLayout>
+    </com.kennyc.view.MultiStateView>
+    <com.google.android.material.button.MaterialButton ="@id/btnCloseDialog" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_32dp" ="@string/action_dismiss" ="true" ="@dimen/dimen_20dp" style="@style/BpjstkuTextButton.WhiteBackground" />
+</RelativeLayout>

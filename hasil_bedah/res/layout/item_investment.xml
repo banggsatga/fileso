@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" ="@dimen/dimen_16dp" ="@dimen/dimen_8dp" cardCornerRadius="@dimen/dimen_8dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@id/container" ="fill_parent" ="fill_parent" ="@dimen/dimen_12dp">
+        <ImageView ="@id/iv_invest" ="@dimen/dimen_60dp" ="@dimen/dimen_60dp" ="@drawable/ic_placeholder" ="fitCenter" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_16sp" ="@id/tv_title" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_12dp" layout_constraintBottom_toBottomOf="@id/iv_invest" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/iv_invest" layout_constraintTop_toTopOf="@id/iv_invest" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tv_company" ="gone" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_12dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/iv_invest" layout_constraintTop_toBottomOf="@id/tv_title" style="@style/BpjstkuTextViewPoppins.CoolGrey" />
+        <TextView ="@dimen/text_size_14sp" ="@id/tv_description" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_8dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/iv_invest" style="@style/BpjstkuTextViewPoppins.Black" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView ="@id/mtrl_calendar_months" ="fill_parent" ="fill_parent" ="@android:color/transparent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

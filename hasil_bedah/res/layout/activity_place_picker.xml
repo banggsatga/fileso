@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout ="@id/coordinator" ="true" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout ="@id/appBarLayout" ="true" ="fill_parent" ="wrap_content" theme="@style/PingTheme.AppBarOverlay">
+        <com.google.android.material.appbar.CollapsingToolbarLayout ="@id/collapsingToolbarLayout" ="fill_parent" ="fill_parent" contentScrim="?colorPrimarySurface" layout_scrollFlags="scroll|exitUntilCollapsed|snap" titleEnabled="false">
+            <androidx.constraintlayout.widget.ConstraintLayout ="@id/mapContainer" ="?colorSurface" ="true" ="fill_parent" ="fill_parent" layout_collapseMode="parallax" layout_collapseParallaxMultiplier="0.4">
+                <FrameLayout ="@id/frameMap" ="fill_parent" ="0.0dip" ="@dimen/selector_margin" layout_constraintBottom_toTopOf="@id/ivMarkerSelect" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent">
+                    <fragment ="com.google.android.gms.maps.SupportMapFragment" ="@id/map" ="fill_parent" ="fill_parent" />
+                    <ImageView ="center" ="wrap_content" ="wrap_content" srcCompat="@drawable/ic_map_marker_select_red_48dp" />
+                </FrameLayout>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton ="@id/btnMyLocation" ="wrap_content" ="wrap_content" ="@dimen/default_margin" ="@dimen/default_margin" backgroundTint="?colorSurface" fabCustomSize="@dimen/button_my_location_size" layout_constraintBottom_toBottomOf="@id/frameMap" layout_constraintEnd_toEndOf="@id/frameMap" rippleColor="?colorOnSurface" srcCompat="@drawable/ic_crosshairs_gps_black_24dp" tint="?colorOnSurface" />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton ="@id/btnRefreshLocation" ="wrap_content" ="wrap_content" ="@dimen/default_margin" ="@dimen/default_margin" backgroundTint="?colorSurface" fabCustomSize="@dimen/button_my_location_size" layout_constraintBottom_toTopOf="@id/btnMyLocation" layout_constraintEnd_toEndOf="@id/frameMap" rippleColor="?colorOnSurface" srcCompat="@drawable/ic_refresh_black_24dp" tint="?colorOnSurface" />
+                <ImageView ="@id/ivMarkerSelect" ="@dimen/selector_margin" ="@string/picker_select_this" ="@dimen/guide_start_margin" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" srcCompat="@drawable/ic_map_marker_black_24dp" style="@style/PingIcon.Secondary" />
+                <TextView ="@style/TextAppearance.MaterialComponents.Subtitle1" ="?colorSecondary" ="@id/tvLocationSelect" ="wrap_content" ="wrap_content" ="@string/picker_select_this" ="@dimen/guide_content_margin" layout_constraintBottom_toTopOf="@id/ivMarkerSelect" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/ivMarkerSelect" />
+                <androidx.core.widget.ContentLoadingProgressBar ="@id/pbLoading" ="visible" ="@dimen/icon_size_small" ="@dimen/icon_size_small" ="true" layout_constraintBottom_toTopOf="@id/ivMarkerSelect" layout_constraintEnd_toStartOf="@id/btnMyLocation" layout_constraintStart_toEndOf="@id/btnMyLocation" layout_constraintTop_toBottomOf="@id/ivMarkerSelect" style="@style/Widget.AppCompat.ProgressBar" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.Toolbar ="@style/PingTheme.AppBarOverlay" ="@id/toolbar" layout_collapseMode="pin" title="@string/picker_title" style="@style/PingToolbarStyle" />
+            <com.google.android.material.card.MaterialCardView ="@id/cardSearch" ="fill_parent" ="@dimen/card_search_height" ="@dimen/card_search_margin_top" ="@dimen/card_search_margin_horizontal" ="@dimen/card_search_margin_horizontal" cardElevation="@dimen/material_elevation_app_bar" layout_collapseMode="parallax" layout_collapseParallaxMultiplier="0.7" rippleColor="@android:color/transparent">
+                <ImageView ="center_vertical" ="@android:string/search_go" ="@dimen/card_search_content_start_margin" srcCompat="@drawable/ic_magnify_black_24dp" style="@style/PingIcon.OnSurface" />
+                <TextView ="@style/TextAppearance.MaterialComponents.Body1" ="@color/material_on_surface_emphasis_medium" ="center_vertical" ="wrap_content" ="wrap_content" ="@android:string/search_go" ="@dimen/card_search_content_margin" />
+            </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView ="fill_parent" ="fill_parent" layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout ="vertical" ="fill_parent" ="fill_parent">
+            <TextView ="@style/TextAppearance.MaterialComponents.Body2" ="?android:textColorSecondary" ="fill_parent" ="wrap_content" ="@dimen/default_margin" ="8.0dip" ="@string/picker_or_select_nearby" ="@dimen/guide_start_margin" />
+            <androidx.recyclerview.widget.RecyclerView ="@id/rvNearbyPlaces" ="fill_parent" ="fill_parent" layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_white" ="@dimen/dimen_20dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+        <ImageView ="@id/imgSuccess" ="@dimen/dimen_50dp" ="@dimen/dimen_50dp" ="@dimen/dimen_44dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+        <TextView ="@dimen/text_size_18sp" ="@id/tvResultTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_22dp" ="center" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgSuccess" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <TextView ="@id/tvInfoMessage" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_6dp" ="@dimen/dimen_39dp" ="@dimen/text_size_6sp" ="center" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvResultTitle" layout_goneMarginTop="@dimen/dimen_10dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

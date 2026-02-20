@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="@dimen/sixteen_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="@color/white" ="@id/item_price" ="wrap_content" ="wrap_content" ="true" ="true" ="true" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="@color/white" ="@id/item_name" ="wrap_content" ="wrap_content" ="true" ="true" ="true" />
+</RelativeLayout>

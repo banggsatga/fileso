@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset ="@dimen/abc_button_inset_horizontal_material" ="@dimen/abc_button_inset_horizontal_material" ="@dimen/abc_button_inset_vertical_material" ="@dimen/abc_button_inset_vertical_material"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ripple ="?android:colorControlHighlight">
+        <item>
+            <selector>
+                <item ="false">
+                    <shape ="rectangle">
+                        <corners ="@dimen/abc_control_corner_material" />
+                        <solid ="?android:colorButtonNormal" />
+                        <padding ="@dimen/abc_button_padding_horizontal_material" ="@dimen/abc_button_padding_vertical_material" ="@dimen/abc_button_padding_horizontal_material" ="@dimen/abc_button_padding_vertical_material" />
+                    </shape>
+                </item>
+                <item>
+                    <shape ="rectangle">
+                        <corners ="@dimen/abc_control_corner_material" />
+                        <solid ="?android:colorAccent" />
+                        <padding ="@dimen/abc_button_padding_horizontal_material" ="@dimen/abc_button_padding_vertical_material" ="@dimen/abc_button_padding_horizontal_material" ="@dimen/abc_button_padding_vertical_material" />
+                    </shape>
+                </item>
+            </selector>
+        </item>
+    </ripple>
+</inset>

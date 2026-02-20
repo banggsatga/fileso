@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.bpjstku" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA2"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.USE_SIP"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <queries>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.gojek.app"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.bluestacks"/>
+        <package android:name="com.bignox.app"/>
+        <package android:name="com.vphone.launcher"/>
+        <package android:name="com.vmos.pro"/>
+        <package android:name="com.genymobile.genymotion"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+    </queries>
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.bpjstku.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.bpjstku.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:configChanges="orientation|screenSize" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_jmo_launcher" android:label="@string/app_name_jmo" android:name=".base.BpjstkuApplication" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_jmo_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="false">
+        <activity android:exported="false" android:name=".presentation.util.SertakanWebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="PDF Viewer" android:name=".util.pdf.PdfViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.eclaim.claim.ClaimOldDaySecurityReactivationActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@null"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/maps_api_key"/>
+        <activity android:exported="true" android:name=".presentation.splash.SplashscreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name=".presentation.main.MainActivity" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="bpjsketenagakerjaan.page.link" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bpjsketenagakerjaan.onelink.me" android:pathPrefix="/Av3v" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bpjstku"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name=".presentation.membership.login.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.RegistrationActivationPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.ActivationSuccessActivity"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.indonesianmigrantworker.IndonesianMigrantWorkerActivationActivity"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.RegistrationActivationVerifyPhoneOtpActivity"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.PhoneActivationVerificationActivity"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.EmailActivationVerificationActivity"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.RegistrationActivationVerifyEmailOtpActivity"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.salariedworker.SalariedWorkerActivationActivity"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.ChooseMembershipActivationActivity"/>
+        <activity android:exported="false" android:name=".presentation.membership.accountactivation.ChooseNationalityActivationActivity"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.ChooseMembershipRegistrationTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.nonsalariedworker.TermsAndConditionRegistrationNonSalariedWorkerParticipantActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.RegistrationPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.RegistrationVerifyPhoneOtpActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.PhoneVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.RegistrationVerifyEmailOtpActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.EmailVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.ChooseNationalityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.ChooseMembershipActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.RegistrationStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.RegistrationSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.nonsalariedworker.NonSalariedWorkerRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.nonsalariedworker.NonSalariedWorkerConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.indonesianmigranworker.IndonesianMigrantWorkerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.indonesianmigranworker.IndonesianMigrantWorkerRegistrationSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.registeredmember.IndonesianMigrantWorkerRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.registeredmember.SalariedWorkerRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.registration.registeredmember.NonSalariedWorkerBpjstkRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.forgotaccount.reset.ResetPasswordByPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.forgotpassword.reset.ResetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name=".presentation.membership.forgotaccount.inputnik.ForgotAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name=".presentation.membership.forgotaccount.inputnik.GetOtpMethodActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name=".presentation.membership.forgotaccount.verifyotp.VerifyOtpByPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name=".presentation.membership.forgotpassword.verifyotp.VerifyOtpActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.forgotpassword.inputemail.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.RegisterBniAutodebetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.AuthenticationOtpBniAutodebetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.LinkingAccountPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.TermsConditionRecurringActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.RegisterAutoDebetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.RegisterRecurringSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.AuthenticationOtpDirectDebitActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.CustomerInformationDirectDebitActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.PaymentOneTimeSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.PaymentAuthenticationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.PaymentFailedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.RegisterAutoDebetEwalletActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.SuccessRegistrationNonSalariedWorkerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.PaymentSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.PaymentAutoDebetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.PaymentNonInstantDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.PaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.membership.payment.OneTimePaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.ProgramActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.ProgramDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jkm.JkmChoosenMembershipActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jkk.JkkChooseMembershipActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jkm.JkmServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jkk.JkkServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.evidence.ReceiptClaimOldDaySecurityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.evidence.EvidenceClaimOldDaySecurityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.eclaim.claim.ClaimOldDaySecurityWorkTerminationParticipantConfirmationActivity"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.eclaim.claim.ClaimOldDaySecurityWorkTerminationParticipantActivity"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.eclaim.claim.ClaimChooseMembershipActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.eclaim.claim.ClaimOldDaySecurityTermsConditionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.eclaim.claim.ClaimOldDaySecurityViewBalanceJhtActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.eclaim.claim.ClaimSubmissionSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.eclaim.claim.ClaimSubmissionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.OldDaySecurityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.simulation.OldDaySecuritySimulationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.tracking.ClaimTrackingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.tracking.ClaimTrackingTimelineActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.balancecheck.OldDaySecurityBalanceCheckActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jht.olddaysecurity.rsjht.OldDaySecurityCheckRsjhtActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jpn.jpnPeriodic.JpnPeriodicCheckEligibleActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jpn.jpnPeriodic.JpnPeriodicInformationVerifiedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jpn.jpnPeriodic.JpnPeriodicActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jpn.jpnPeriodic.JpnPeriodicChooseKpjActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jpn.JpnSimulationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jpn.JpnSimulationResultActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jpn.JpnMainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jkp.claim.JkpEligibilityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jkp.tracking.JkpClaimTrackingTimelineActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jkp.tracking.JkpClaimTrackingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jkp.claim.JkpClaimActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.program.jkp.JkpMainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.account.setting.NonactiveAutodebetActivity"/>
+        <activity android:exported="false" android:name=".presentation.account.setting.EditPhoneNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.account.setting.EditEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.account.setting.addkpj.AddKpjActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.account.setting.ChangeProfilePhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.account.setting.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name=".presentation.account.verify.AccountVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.about.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.about.ApplicationVersionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.about.UpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.ict.WebViewIctActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.point.PointWebViewActivity"/>
+        <activity android:exported="false" android:name=".presentation.investation.InvestmentListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.investation.InvestasiConcentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.openbanking.TncBankActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.openbanking.ListBankActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.podcast.VideoListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Comarketing.Search"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name=".presentation.podcast.VideoPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.ewallet.EwalletUnlinkActivity"/>
+        <activity android:exported="false" android:name=".presentation.multibiller.TermsAndAgreementBillerActivity"/>
+        <activity android:exported="false" android:name=".presentation.multibiller.MultiBillerWebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.support.ContactCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.ewallet.EWalletMotionConnectActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.ewallet.EWalletActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.danasiaga.DanaSiagaConcentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.promo.DetailVoucherActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Comarketing.Search"/>
+        <activity android:exported="false" android:name=".presentation.promo.DetailPromoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Comarketing.Search"/>
+        <activity android:exported="false" android:name=".presentation.promo.SearchCoMarketingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Comarketing.Search"/>
+        <activity android:exported="false" android:name=".presentation.promo.CoMarketingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Comarketing"/>
+        <activity android:exported="false" android:name=".presentation.scholarship.select.ScholarSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.scholarship.confirm.ScholarHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.scholarship.confirm.ScholarConfirmActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.scholarship.confirm.ScholarConfirmedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.scholarship.benefit.ScholarBenefitActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.support.SupportActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.danasiaga.PinangWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.util.WebviewCustomActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.streaming.TermsAndAgreementVisionPlusActivity"/>
+        <activity android:exported="false" android:name=".presentation.streaming.TermsAndAgreementRctiPlusActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name=".presentation.util.NewWebviewCustomActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name=".presentation.streaming.ListStreamingActivity"/>
+        <activity android:exported="false" android:name=".presentation.digitalcard.ChangeTuitionBpuMembership"/>
+        <activity android:exported="false" android:name=".presentation.util.WebViewLapakAsikActivity"/>
+        <activity android:exported="false" android:name=".presentation.additionalservices.AdditionalServicesActivity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name=".presentation.danasiaga.DanaSiagaActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.loyalti.ListFeatureLoyaltiActivity"/>
+        <activity android:exported="false" android:name=".presentation.loyalti.LoyaltiActivity"/>
+        <activity android:exported="false" android:name=".presentation.bsu.CheckEligibleBsuResultActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.maintenance.MaintenanceActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.syariah.SyariahCheckEakadStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.syariah.SyariahChooseCardMembershipActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.syariah.SyariahActivationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.syariah.TermAndConditionSyariahActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.syariah.FaqSyariahServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.syariah.SyariahPrintEakadDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.syariah.SyariahPrintEakadActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.syariah.SyariahActivationDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.asik.active.AsikActiveParticipantSubmissionCheckActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name=".presentation.asik.active.verifyotp.AsikVerifyOtpFromPhone" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name=".presentation.asik.active.verifyotp.AsikVerifyOtpFromEmail" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.tuition.TuitionPaymentDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.tuition.TuitionPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.digitalcard.ImageDigitalCardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.vocational.VocationalRatingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.vocational.VocationalRegisteredParticipantActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.vocational.VocationalCheckEligibilityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.vocational.VocationalRegistrationResultActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.vocational.VocationalVerifyPhoneOtpActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.vocational.VocationalTrainingDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.vocational.VocationalBannerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.digitalcard.DetailDigitalCardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.digitalcard.DigitalCardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.vocational.VocationalRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.tuition.TuitionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.tuition.TuitionPaymentCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.report.ChooseReportingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.report.ReportAccidentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.asik.resign.salariedworker.AsikResignSalariedWorkerRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.promo.PromoDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.promo.PromoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.news.DetailNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.asik.resign.nonsalariedworker.AsikResignNonSalariedWorkerRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.asik.resign.AsikResignProgramActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.asik.active.AsikActiveParticipantActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.asik.AsikMembershipStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.branchoffice.BranchOfficeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.partner.PartnerFilterActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.partner.PartnerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.notification.NotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.complaint.DetailComplaintHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Comarketing.Search"/>
+        <activity android:exported="false" android:name=".presentation.complaint.ComplaintHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Comarketing.Search"/>
+        <activity android:exported="false" android:name=".presentation.complaint.NonRegisterCompanyComplaintActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.complaint.DataUnmatchedComplaintActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.complaint.ChooseComplaintActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.onboarding.OnBoardingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name=".presentation.program.jht.olddaysecurity.eclaim.claim.CheckEligibilityOldDaySecurityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name=".presentation.vocational.VocationalDisabledActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name=".presentation.compose.feature.scholarship.ui.ScholarshipGranteeActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name=".service.BpjstkuFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.bpjstku.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="vida_activation_key" android:value="LWmoXY5UJVCw+/95hxd+hsZEQf6HrbTz9qk8R4Bbl1CbWe3qUoeKbzo8dOcktYBAKcfwUQgLoxS2MnU5akdC6GUbYDw9jO4XTGVanIHqLw/YlVuKnufgRg65P0LFLdt+xkRB/oettPP2qTxHgFuXUJtZ7epSh4pvOjx05yS1gEApx/BRCAujFLYydTlqR0LoOEyDDw/FdXBp4+ITesqJS3cM/gAvpyIhre28B8Ubw3k="/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <activity android:name="com.midtrans.sdk.uikit.activities.UserDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.activities.PaymentMethodsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.mandiri_clickpay.MandiriClickPayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.bri_epay.BriEpayPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.cimb_click.CimbClickPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.mandiri_ecash.MandiriEcashPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.indosat_dompetku.IndosatDompetkuPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.indomaret.payment.IndomaretPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.indomaret.status.IndomaretStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.telkomsel_cash.TelkomselCashPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.xl_tunai.payment.XlTunaiPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.xl_tunai.status.XlTunaiStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.xl_tunai.XlTunaiInstructionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.kioson.payment.KiosonPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.kioson.status.KiosonStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.gci.GciPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.creditcard.details.CreditCardDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.status.PaymentStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.creditcard.saved.SavedCreditCardActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.creditcard.bankpoints.BankPointsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.banktransfer.list.BankTransferListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.banktransfer.payment.BankTransferPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.banktransfer.status.VaPaymentStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.banktransfer.status.VaOtherBankPaymentStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.banktransfer.status.MandiriBillStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.creditcard.register.CardRegistrationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.gopay.payment.GoPayPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.shopeepay.payment.ShopeePayPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.gopay.status.GoPayStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.shopeepay.status.ShopeePayStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.danamon_online.DanamonOnlineActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.bca_klikbca.payment.KlikBcaPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.bca_klikbca.status.KlikBcaStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.bca_klikpay.BcaKlikPayPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.alfamart.payment.AlfamartPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.alfamart.status.AlfamartStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.webview.WebViewPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.creditcard.tnc.TermsAndConditionsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.midtrans.sdk.uikit.views.akulaku.AkulakuActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.midtrans.sdk.uikit.views.uob.UobListActivity"/>
+        <activity android:name="com.midtrans.sdk.uikit.views.uob.app.UobAppPaymentActivity"/>
+        <activity android:name="com.midtrans.sdk.uikit.views.uob.web.UobWebPaymentActivity"/>
+        <service android:exported="false" android:name="com.midtrans.raygun.RaygunPostService" android:process=":raygunpostservice"/>
+        <activity android:launchMode="singleTop" android:name="com.rtchagas.pingplacepicker.ui.PlacePickerActivity" android:theme="@style/PingTheme.NoStatus"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.google.android.libraries.places.widget.BasicPlaceAutocompleteActivity" android:theme="@style/AutocompleteFullscreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.google.android.libraries.places.widget.PlaceAutocompleteActivity" android:theme="@style/AutocompleteFullscreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.google.android.libraries.places.widget.internal.photoviewer.PlacesLightboxActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="id.vida.liveness.ui.HostActivity" android:screenOrientation="portrait" android:theme="@style/VIDALivenessTheme"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <activity android:name="com.karumi.dexter.DexterActivity" android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.esafirm.imagepicker.features.ImagePickerActivity" android:theme="@style/ef_AppTheme"/>
+        <provider android:authorities="com.bpjstku.imagepicker.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.esafirm.imagepicker.helper.ImagePickerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/image_picker_provider_paths"/>
+        </provider>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <provider android:authorities="com.bpjstku.provider.datadog.rum" android:exported="false" android:name="com.datadog.android.rum.DdRumContentProvider"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="a" android:value=""/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.bpjstku.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.bpjstku.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.bpjstku.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <provider android:authorities="com.bpjstku.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.bpjstku.triple.papua.qualifications" android:exported="false" android:name="androidx.FastestIyy"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:exported="false" android:name="com.pairip.licensecheck.LicenseActivity"/>
+        <provider android:authorities="com.bpjstku.com.pairip.licensecheck.LicenseContentProvider" android:exported="false" android:name="com.pairip.licensecheck.LicenseContentProvider"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+</manifest>

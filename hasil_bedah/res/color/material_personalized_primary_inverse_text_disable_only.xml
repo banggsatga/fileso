@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="@color/material_personalized_color_text_primary_inverse_disable_only" ="@dimen/material_emphasis_medium" />
+    <item ="@color/material_personalized_color_text_primary_inverse_disable_only" />
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" ="@dimen/dimen_20dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="?selectableItemBackground" ="fill_parent" ="fill_parent">
+        <TextView ="@dimen/text_size_16sp" ="@id/tvProgramTitle" ="@dimen/dimen_0dp" ="@dimen/dimen_16dp" ="@dimen/dimen_24dp" ="@dimen/dimen_16dp" ="@dimen/dimen_24dp" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toStartOf="@id/imgStatusCheck" layout_constraintStart_toEndOf="@id/imgProgram" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <ImageView ="@id/imgProgram" ="@dimen/dimen_36dp" ="@dimen/dimen_36dp" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="@id/tvProgramTitle" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="@id/tvProgramTitle" />
+        <ImageView ="@id/imgStatusCheck" ="visible" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@drawable/ic_chevron_right" ="@dimen/dimen_8dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

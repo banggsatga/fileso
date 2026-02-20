@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView ="@id/cvPartner" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_4dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="vertical" ="?selectableItemBackground" ="fill_parent" ="wrap_content">
+        <TextView ="@id/tvLocationNamePartner" ="fill_parent" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+        <androidx.appcompat.widget.AppCompatTextView ="@dimen/text_size_12sp" ="@id/tvLocationDescPartner" ="fill_parent" ="@dimen/dimen_24dp" ="@dimen/dimen_4dp" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

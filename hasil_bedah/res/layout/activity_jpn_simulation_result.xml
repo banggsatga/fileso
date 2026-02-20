@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+    <com.kennyc.view.MultiStateView ="@id/msvContent" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/layout_toolbar" msv_emptyView="@layout/layout_default_empty" msv_errorView="@layout/layout_default_error" msv_loadingView="@layout/layout_default_loading">
+        <androidx.viewpager.widget.ViewPager ="@id/vpJpnSimulationResult" ="fill_parent" ="wrap_content">
+            <com.google.android.material.tabs.TabLayout ="@id/tabJpnSimulationResult" ="fill_parent" ="wrap_content" tabBackground="@color/colorWhite" tabIndicatorColor="@color/colorDarkMint" tabSelectedTextColor="@color/colorDarkMint" tabTextAppearance="@style/BpjstkuProgramDetailTabTextAppearance" tabTextColor="@color/colorCoolGrey" />
+        </androidx.viewpager.widget.ViewPager>
+    </com.kennyc.view.MultiStateView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="center" ="horizontal" ="@id/autocomplete_prediction_container" ="@dimen/gmp_sys_measurement_spacing_small" ="@dimen/gmp_sys_measurement_spacing_small" ="fill_parent" ="wrap_content" ="@dimen/gmp_sys_measurement_spacing_large" ="@dimen/gmp_sys_measurement_spacing_large">
+        <FrameLayout ="@id/list_item_icon_container" ="@dimen/gmp_sys_measurement_icon_size_large" ="@dimen/gmp_sys_measurement_icon_size_large" ="@dimen/gmp_sys_measurement_spacing_medium">
+            <ImageView ="@id/list_item_icon_background" ="@dimen/gmp_sys_measurement_icon_size_large" ="@dimen/gmp_sys_measurement_icon_size_large" ="@drawable/autocomplete_list_item_icon_background" ="@null" ="no" />
+            <ImageView ="center" ="@id/list_item_icon" ="@dimen/gmp_sys_measurement_icon_size_small" ="@dimen/gmp_sys_measurement_icon_size_small" ="@drawable/location_on_icon" ="@null" ="no" />
+        </FrameLayout>
+        <LinearLayout ="center" ="vertical" ="@id/autocomplete_prediction_text_container" ="fill_parent" ="wrap_content">
+            <TextView ="@style/TextAppearance.Gmp.Sys.Typescale.LabelLarge" ="?placesColorOnSurface" ="end" ="@id/autocomplete_prediction_primary_text" ="wrap_content" ="wrap_content" ="true" ="1.0" />
+            <TextView ="@style/TextAppearance.Gmp.Sys.Typescale.BodySmall" ="?placesColorOnSurfaceVariant" ="end" ="@id/autocomplete_prediction_secondary_text" ="wrap_content" ="wrap_content" ="true" ="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View ="@id/autocomplete_prediction_list_separator" ="?placesColorOutlineDecorative" ="fill_parent" ="@dimen/place_widget_border_width" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.tabs.TabLayout ="@id/tab_instructions" ="@color/white" ="fill_parent" ="wrap_content" tabGravity="fill" tabIndicatorColor="@color/gray.primary" tabIndicatorHeight="3.0dip" tabMode="fixed" tabSelectedTextColor="@color/dark_gray" tabTextColor="@color/faint_gray" />
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@id/text_validity" ="fill_parent" ="wrap_content" style="@style/OtherVaNotification" />
+    <LinearLayout ="vertical" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp">
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/dark_gray" ="@dimen/eight_dp" ="@dimen/four_dp" ="wrap_content" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@string/virtual_account_number" ="@dimen/eight_dp" />
+        <LinearLayout ="horizontal" ="@color/light_gray" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/va_number_size" ="center" ="@id/text_virtual_account_number" ="@dimen/eight_dp" ="0.0dip" ="wrap_content" ="@dimen/eight_dp" ="@string/virtual_account_number" ="1.0" ="@dimen/eight_dp" />
+            <com.midtrans.sdk.uikit.widgets.FancyButton ="center_vertical" ="@id/button_copy_va" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="visible" ="wrap_content" ="fill_parent" fb_text="@string/copy" style="@style/ButtonSecondaryTransparent" />
+        </LinearLayout>
+        <com.midtrans.sdk.uikit.widgets.MagicViewPager ="@id/pager_instruction" ="fill_parent" ="wrap_content" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="@id/button_download_instruction" ="visible" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" fb_iconPaddingRight="@dimen/four_dp" fb_iconResource="@null" fb_text="@string/download_instruction" style="@style/ButtonSecondary" />
+    </LinearLayout>
+</LinearLayout>

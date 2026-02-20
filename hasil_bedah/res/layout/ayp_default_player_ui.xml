@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View ="@id/panel" ="@android:color/black" ="true" ="true" ="fill_parent" ="fill_parent" />
+    <RelativeLayout ="@id/controls_container" ="@android:color/transparent" ="fill_parent" ="fill_parent">
+        <View ="@id/drop_shadow_top" ="@drawable/ayp_drop_shadow_top" ="fill_parent" ="64.0dip" ="true" />
+        <View ="@id/drop_shadow_bottom" ="@drawable/ayp_drop_shadow_bottom" ="fill_parent" ="64.0dip" ="true" />
+        <TextView ="14.0sp" ="@android:color/white" ="end" ="@id/video_title" ="8.0dip" ="wrap_content" ="wrap_content" ="" ="1" ="true" ="@id/extra_views_container" ="true" />
+        <LinearLayout ="horizontal" ="@id/extra_views_container" ="8.0dip" ="wrap_content" ="wrap_content" ="true" ="true">
+            <ImageView ="@id/menu_button" ="@drawable/ayp_background_item_selected" ="true" ="gone" ="true" ="wrap_content" ="wrap_content" ="@null" ="@string/ayp_open_video_in_youtube" />
+        </LinearLayout>
+        <ImageView ="@id/play_pause_button" ="@drawable/ayp_background_item_selected" ="8.0dip" ="true" ="invisible" ="true" ="wrap_content" ="wrap_content" ="@null" ="true" ="@string/ayp_play_button" />
+        <ProgressBar ="@id/progress" ="wrap_content" ="wrap_content" ="true" style="@style/Widget.AppCompat.ProgressBar" />
+        <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="wrap_content" ="true" ="true" ="true">
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.ui.views.YouTubePlayerSeekBar ="@id/youtube_player_seekbar" ="0.0dip" ="wrap_content" ="100.0dip" ="1.0" color="@color/ayp_red" fontSize="12.0sp" />
+            <TextView ="12.0sp" ="@android:color/white" ="center_vertical" ="@id/live_video_indicator" ="8.0dip" ="gone" ="wrap_content" ="wrap_content" ="@string/ayp_live" />
+            <ImageView ="@id/youtube_button" ="@drawable/ayp_background_item_selected" ="8.0dip" ="true" ="true" ="wrap_content" ="wrap_content" ="@null" ="@string/ayp_open_video_in_youtube" />
+            <ImageView ="@id/fullscreen_button" ="@drawable/ayp_background_item_selected" ="8.0dip" ="true" ="true" ="wrap_content" ="wrap_content" ="@null" ="@string/ayp_full_screen_button" />
+        </LinearLayout>
+        <ImageView ="@id/custom_action_left_button" ="@drawable/ayp_background_item_selected" ="8.0dip" ="true" ="gone" ="true" ="wrap_content" ="wrap_content" ="32.0dip" ="@null" ="true" ="@string/ayp_custom_action_left" ="@id/play_pause_button" />
+        <ImageView ="@id/custom_action_right_button" ="@drawable/ayp_background_item_selected" ="8.0dip" ="true" ="gone" ="true" ="wrap_content" ="wrap_content" ="32.0dip" ="@null" ="true" ="@string/ayp_custom_action_right" ="@id/play_pause_button" />
+    </RelativeLayout>
+</FrameLayout>

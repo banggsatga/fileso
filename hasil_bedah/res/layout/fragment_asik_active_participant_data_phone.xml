@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView ="@dimen/text_size_12sp" ="center_vertical" ="@id/tvReminderVerifyDataPhone" ="@drawable/bg_rounded_macaroni_and_cheese" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="@dimen/dimen_25dp" ="@dimen/dimen_20dp" ="@string/label_please_fill_your_contact" ="@dimen/dimen_14dp" ="@drawable/ic_warning" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.White.Medium" />
+        <com.google.android.material.card.MaterialCardView ="@id/cvPhoneNumber" ="@dimen/dimen_0dp" ="@dimen/dimen_60dp" ="@dimen/dimen_24dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPhone" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPhone" layout_constraintTop_toBottomOf="@id/tvReminderVerifyDataPhone" strokeColor="@color/colorPaleGrey" strokeWidth="@dimen/dimen_1dp">
+            <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+                <com.google.android.material.textfield.TextInputLayout ="center_vertical" ="start|center" ="@id/tilChooseCountryCode" ="@color/colorPaleGreyFour" ="wrap_content" ="@dimen/dimen_0dp" boxBackgroundColor="@color/colorPaleGreyFour" layout_constraintBottom_toBottomOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextInputLayout.Dropdown.Black">
+                    <AutoCompleteTextView ="@dimen/text_size_14sp" ="@color/colorCharcoalGrey" ="@id/actvSpinnerCountryCode" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="wrap_content" ="fill_parent" ="@string/sample_code_country" ="@font/dmsans_bold" ="@id/actvSpinnerCountryCode" ="@dimen/dimen_16dp" style="@style/BpjstkuAutoCompleteTextViewDropDown" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout ="@id/tilPhoneNumber" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@string/hint_phone_num" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/tilChooseCountryCode" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextInputLayout.Prefixed">
+                    <com.google.android.material.textfield.TextInputEditText ="@id/edtPhoneNumber" ="12" ="\ 0123456789" ="phone" ="actionNext" ="no" style="@style/BpjstkuTextInputEditTextPrefixed" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton ="@id/btnNext" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_80dp" ="@dimen/dimen_22dp" ="@string/action_next" ="@dimen/dimen_14dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="@id/tvReminderVerifyDataPhone" layout_constraintStart_toStartOf="@id/tvReminderVerifyDataPhone" layout_constraintTop_toBottomOf="@id/cvPhoneNumber" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

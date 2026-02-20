@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="wrap_content" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.maps.android.ui.RotationLayout ="vertical" ="wrap_content" ="wrap_content">
+        <TextView ="center_horizontal" ="@id/amu_text" ="10.0dip" ="5.0dip" ="10.0dip" ="5.0dip" ="wrap_content" ="wrap_content" />
+    </com.google.maps.android.ui.RotationLayout>
+</LinearLayout>

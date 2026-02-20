@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+        <include layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_center" />
+        <LinearLayout ="vertical" ="@id/llTitleAuth" ="@dimen/dimen_12dp" ="@dimen/dimen_12dp" ="fill_parent" ="wrap_content" ="true" ="@dimen/dimen_12dp" layout_constraintTop_toBottomOf="@id/toolbar">
+            <RelativeLayout ="horizontal" ="fill_parent" ="wrap_content">
+                <ImageView ="center_vertical" ="@id/imgCategoryPayment" ="@dimen/dimen_80dp" ="@dimen/dimen_30dp" ="4.0dip" ="@id/tvPaymentMethod" ="true" srcCompat="@null" />
+                <TextView ="@dimen/text_size_20sp" ="bold" ="@android:color/black" ="center" ="@id/tvPaymentMethod" ="@dimen/dimen_18dp" ="@dimen/dimen_12dp" ="wrap_content" ="wrap_content" ="BRI Direct Debit" ="true" ="true" ="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView ="@dimen/text_size_18sp" ="@id/tvCustomerInformation" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_18dp" ="@dimen/dimen_20dp" ="Informasi Akun" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/llTitleAuth" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilEmailAddress" ="false" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_6dp" ="@string/label_email" endIconMode="clear_text" layout_constraintEnd_toEndOf="@id/tvCustomerInformation" layout_constraintStart_toStartOf="@id/tvCustomerInformation" layout_constraintTop_toBottomOf="@id/tvCustomerInformation" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="textEmailAddress" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.card.MaterialCardView ="@id/tilPhoneNumber" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_6dp" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardElevation="@dimen/dimen_0dp" layout_constraintEnd_toEndOf="@id/tilEmailAddress" layout_constraintStart_toStartOf="@id/tilEmailAddress" layout_constraintTop_toBottomOf="@id/tilEmailAddress" layout_constraintVertical_bias="0.0" strokeColor="@color/colorPaleGrey" strokeWidth="@dimen/dimen_1dp">
+            <RelativeLayout ="fill_parent" ="wrap_content">
+                <TextView ="@dimen/text_size_16sp" ="@id/tvPrefix" ="@color/colorPaleGreyFour" ="@dimen/dimen_20dp" ="wrap_content" ="wrap_content" ="@string/label_prefix_indonesia_phone" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+                <EditText ="@id/edtPhoneNumber" ="@null" ="fill_parent" ="wrap_content" ="8XXXXXXXXXX" ="1" ="1" ="12" ="\ 0123456789" ="@id/tvPrefix" ="@id/tvPrefix" ="phone" ="actionDone" ="@dimen/dimen_18dp" ="8.0dip" ="@id/tvPrefix" ="no" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView ="@dimen/text_size_18sp" ="@id/tvTitleDebitCardInfo" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_12dp" ="@dimen/dimen_20dp" ="Informasi Kartu Debit" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/tilPhoneNumber" style="@style/BpjstkuTextViewPoppins.Black.SemiBold" />
+        <com.google.android.material.textfield.TextInputLayout ="@id/tilValueLastFourDigitDebitCard" ="false" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_6dp" ="4 Angka Terakhir Kartu Debit" endIconMode="clear_text" layout_constraintEnd_toEndOf="@id/tvTitleDebitCardInfo" layout_constraintStart_toStartOf="@id/tvTitleDebitCardInfo" layout_constraintTop_toBottomOf="@id/tvTitleDebitCardInfo" style="@style/BpjstkuTextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText ="4" ="\ 0123456789" ="number" style="@style/BpjstkuTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.msa.dateedittext.DateEditText ="@id/edtExpiredValue" ="@dimen/dimen_20dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_6dp" ="Expired Date (MM/YY)" ="\ 0123456789" dateFormat="MMyy" dividerCharacter="slash" layout_constraintEnd_toEndOf="@id/tilValueLastFourDigitDebitCard" layout_constraintStart_toStartOf="@id/tilValueLastFourDigitDebitCard" layout_constraintTop_toBottomOf="@id/tilValueLastFourDigitDebitCard" style="@style/BpjstkuTextInputEditText" />
+        <Button ="@id/btnProcess" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_42dp" ="@dimen/dimen_20dp" ="@dimen/dimen_18dp" ="Lanjut" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintTop_toBottomOf="@id/edtExpiredValue" layout_constraintVertical_bias="1.0" style="@style/BpjstkuButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

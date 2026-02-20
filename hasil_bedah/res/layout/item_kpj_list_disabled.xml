@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout ="@id/tilIdKpj" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" ="@string/hint_kpj_number_meaning" style="@style/BpjstkuTextInputLayoutUnderline.Disabled"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputEditText ="false" ="@id/edtIdKpj" ="number" style="@style/BpjstkuTextInputEditTextUnderline" />
+</com.google.android.material.textfield.TextInputLayout>

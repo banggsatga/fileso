@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector ="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="true" ="@android:color/transparent" />
+    <item ="false" ="@android:color/transparent" />
+    <item ="true">
+        <bitmap ="center" ="@null" />
+    </item>
+    <item>
+        <bitmap ="center" ="@null" />
+    </item>
+</selector>

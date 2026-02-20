@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView ="fill_parent" ="fill_parent" ="true" ="never" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ="vertical" ="fill_parent" ="fill_parent">
+        <androidx.cardview.widget.CardView ="@id/cvInfoJp" ="fill_parent" ="wrap_content" ="@dimen/dimen_30dp" ="@dimen/dimen_20dp" ="@dimen/dimen_30dp" ="true" ="@dimen/dimen_30dp" cardCornerRadius="@dimen/dimen_20dp" cardElevation="@dimen/dimen_8dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_box_peserta" ="fill_parent" ="wrap_content" ="-8.0dip">
+                <com.bpjstku.util.custom.CircleImageView ="@id/civProfile" ="@dimen/dimen_72dp" ="@dimen/dimen_72dp" ="@dimen/dimen_22dp" ="@dimen/dimen_4dp" civ_border_color="@color/colorPaleGreyNine" civ_border_width="@dimen/dimen_4dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+                <TextView ="@dimen/text_size_14sp" ="@id/tvGreeting" ="wrap_content" ="wrap_content" ="@dimen/dimen_10dp" ="Hello" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/civProfile" style="@style/BpjstkuTextViewPoppins.White.Bold" />
+                <TextView ="@dimen/text_size_14sp" ="center" ="@id/tvNamesWorker" ="@dimen/dimen_10dp" ="@dimen/dimen_4dp" ="@dimen/dimen_10dp" ="@dimen/dimen_4dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_25dp" ="Ahmat Sumingan Saleh" ="@dimen/dimen_8dp" ="@dimen/text_size_6sp" ="@dimen/dimen_10dp" ="@dimen/dimen_4dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvGreeting" style="@style/BpjstkuTextViewPoppins.White.Bold" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView ="@id/rvServices" ="false" ="fill_parent" ="wrap_content" ="@dimen/dimen_14dp" ="@id/cvInfoJp" ="never" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

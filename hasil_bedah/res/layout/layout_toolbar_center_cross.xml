@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar ="center_vertical" ="@id/toolbar" ="@android:color/transparent" ="fill_parent" ="?actionBarSize" contentInsetEnd="@dimen/dimen_0dp" contentInsetStartWithNavigation="@dimen/dimen_0dp" navigationIcon="@drawable/ic_cross" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/text_size_18sp" ="end" ="center" ="@id/tvToolbarTitle" ="fill_parent" ="wrap_content" ="Verifikasi Akun" ="1" ="@dimen/dimen_32dp" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+</com.google.android.material.appbar.MaterialToolbar>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView ="@color/colorWhite" ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+        <com.google.android.material.card.MaterialCardView ="@id/cvMaintenance" ="@android:color/transparent" ="@dimen/dimen_0dp" ="0.0dip" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" cardCornerRadius="@dimen/dimen_24dp" layout_constraintBottom_toBottomOf="parent" layout_constraintDimensionRatio="6:6" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" layout_constraintVertical_bias="0.15">
+            <ImageView ="@id/imgMaintenance" ="fill_parent" ="fill_parent" ="fitCenter" />
+        </com.google.android.material.card.MaterialCardView>
+        <TextView ="@dimen/text_size_16sp" ="@id/tvMaintenanceMessage" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_18dp" ="@dimen/dimen_20dp" ="center" ="@dimen/dimen_20dp" layout_constraintTop_toBottomOf="@id/cvMaintenance" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <com.google.android.material.button.MaterialButton ="@id/btnOk" ="@dimen/dimen_22dp" ="@dimen/dimen_20dp" ="@dimen/dimen_22dp" ="@dimen/dimen_20dp" ="0.0dip" ="wrap_content" ="@dimen/dimen_38dp" ="@string/action_dismiss" ="false" ="center" ="@dimen/dimen_22dp" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="@id/tvMaintenanceMessage" layout_constraintStart_toStartOf="@id/tvMaintenanceMessage" layout_constraintTop_toBottomOf="@id/tvMaintenanceMessage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView ="false" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" ="@dimen/dimen_20dp" ="@dimen/dimen_8dp" cardCornerRadius="@dimen/dimen_8dp" cardElevation="@dimen/dimen_4dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="vertical" ="fill_parent" ="wrap_content">
+        <TextView ="@dimen/text_size_16sp" ="@id/tvLpkName" ="wrap_content" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_24dp" layout_constraintBottom_toTopOf="@id/divider" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey.Bold" />
+        <com.google.android.material.button.MaterialButton ="@id/btnBlkProfile" ="wrap_content" ="wrap_content" ="@string/action_see_profile" layout_constraintEnd_toEndOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextButton.DarkSkyBlue" />
+        <View ="@id/divider" ="@dimen/dimen_10dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvLpkName" style="@style/Divider" />
+        <androidx.recyclerview.widget.RecyclerView ="@id/rvVocationalTraining" ="fill_parent" ="wrap_content" layout_constraintTop_toBottomOf="@id/divider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView ="@id/cvInformationKpj" ="@dimen/dimen_0dp" ="wrap_content" cardBackgroundColor="@color/colorWhite" cardCornerRadius="@dimen/dimen_4dp" cardPreventCornerOverlap="true" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" strokeColor="@color/colorGrey" strokeWidth="@dimen/dimen_1dp">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="fill_parent">
+            <ImageView ="@id/imgWarning" ="@drawable/ic_exclamation_water_blue" ="@dimen/dimen_24dp" ="@dimen/dimen_24dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" />
+            <TextView ="@dimen/text_size_12sp" ="@id/tvTitleInformationKpj" ="@dimen/dimen_0dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@dimen/dimen_20dp" ="Ketik ulang Nomor Kartu (08xxxxxx11) dengan benar dan sesuai tanpa sensor atau kosongkan jika tidak merasa memiliki Nomor Kartu tersebut." ="inherit" ="@dimen/dimen_16dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toEndOf="@id/imgWarning" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.Black" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.textfield.TextInputLayout ="insideInset" ="@id/tilKpj" ="vertical" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="@string/hint_kpj_number_meaning" ="always" ="@dimen/dimen_16dp" errorEnabled="true" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/cvInformationKpj" style="@style/BpjstkuTextInputLayout">
+        <com.google.android.material.textfield.TextInputEditText ="11" ="textCapCharacters" ="actionNext" style="@style/BpjstkuTextInputEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

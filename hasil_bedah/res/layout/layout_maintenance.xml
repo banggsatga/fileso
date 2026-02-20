@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="false" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="fill_parent" ="0.0dip" ="@null" ="fitCenter" ="1.0" />
+    <LinearLayout ="center" ="vertical" ="visible" ="fill_parent" ="wrap_content">
+        <com.midtrans.sdk.uikit.widgets.BoldTextView ="28.0sp" ="center" ="center_horizontal" ="@id/text_maintenance_title" ="wrap_content" ="wrap_content" ="@string/failed_title" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/sixteen_sp" ="center" ="@id/text_maintenance_message" ="wrap_content" ="wrap_content" ="@dimen/thirtytwo_dp" ="@dimen/sixteen_dp" ="@dimen/thirtytwo_dp" ="@dimen/sixteen_dp" ="@string/timeout_message" ="@dimen/thirtytwo_dp" ="@dimen/thirtytwo_dp" />
+        <com.midtrans.sdk.uikit.widgets.FancyButton ="center_horizontal" ="@id/button_maintenance_retry" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="visible" ="wrap_content" ="@dimen/button_size" ="@dimen/sixteen_dp" ="@dimen/thirtytwo_dp" fb_borderColor="?colorPrimary" fb_borderWidth="1.0dip" fb_defaultColor="@android:color/white" fb_focusColor="@color/colorAccentLight" fb_iconColor="?colorPrimary" fb_radius="5.0dip" fb_text="@string/try_again" fb_textColor="?colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

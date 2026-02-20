@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="@id/layout_main" ="@color/gray.primary" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView ="fill_parent" ="fill_parent" layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout ="vertical" ="@dimen/sixteen_dp" ="fill_parent" ="fill_parent">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="18.0sp" ="bold" ="@color/white" ="center" ="@id/text_status_title" ="fill_parent" ="wrap_content" ="@string/payment_successful" ="2" />
+            <View ="center" ="@color/white" ="@dimen/fortytwo_dp" ="@dimen/four_dp" ="@dimen/eight_dp" ="@dimen/twenty_four_dp" />
+            <ImageView ="center_horizontal" ="@id/image_status_payment" ="@dimen/sixtyfour_dp" ="@dimen/sixtyfour_dp" ="@dimen/eight_dp" ="@null" ="@string/description_success_transaction" />
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/thirtytwo_sp" ="@color/white" ="center" ="@id/text_status_message" ="@dimen/eight_dp" ="fill_parent" ="wrap_content" ="@dimen/eight_dp" ="@string/thank_you" />
+            <com.midtrans.sdk.uikit.widgets.SemiBoldTextView ="@dimen/secondary_text_size" ="bold" ="@color/white" ="center" ="center_horizontal" ="@id/text_status_error_message" ="gone" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="@string/payment_unsuccessful_msg" />
+            <LinearLayout ="vertical" ="@id/layout_status_details" ="fill_parent" ="wrap_content" ="@dimen/twenty_four_dp">
+                <LinearLayout ="vertical" ="@id/layout_status_order" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="center_horizontal" ="horizontal" ="visible" ="fill_parent" ="wrap_content">
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="bold" ="@color/white" ="wrap_content" ="wrap_content" ="@string/status_order_id" />
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/white" ="right" ="@id/text_order_id" ="fill_parent" ="wrap_content" ="@string/text_order_id_here" />
+                    </LinearLayout>
+                    <View ="@color/material_grey" ="fill_parent" ="1.0dip" ="@dimen/two_dp" ="@dimen/two_dp" />
+                </LinearLayout>
+                <LinearLayout ="vertical" ="@id/layout_status_total_amount" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="center_vertical" ="horizontal" ="visible" ="fill_parent" ="wrap_content">
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="bold" ="@color/white" ="wrap_content" ="wrap_content" ="@string/status_payable_amount" />
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/white" ="right" ="@id/text_status_amount" ="fill_parent" ="wrap_content" ="@string/text_amount_here" />
+                    </LinearLayout>
+                    <View ="@color/material_grey" ="fill_parent" ="1.0dip" ="@dimen/two_dp" ="@dimen/two_dp" />
+                </LinearLayout>
+                <LinearLayout ="vertical" ="@id/layout_status_promo" ="gone" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="center_vertical" ="horizontal" ="visible" ="fill_parent" ="wrap_content">
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="bold" ="@color/white" ="wrap_content" ="wrap_content" ="@string/status_promo_amount" />
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/white" ="right" ="@id/text_status_promo_amount" ="fill_parent" ="wrap_content" ="@string/text_amount_here" />
+                    </LinearLayout>
+                    <View ="@color/material_grey" ="fill_parent" ="1.0dip" ="@dimen/two_dp" ="@dimen/two_dp" />
+                </LinearLayout>
+                <LinearLayout ="vertical" ="@id/layout_status_point_amount" ="gone" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="center_vertical" ="horizontal" ="visible" ="fill_parent" ="wrap_content">
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="bold" ="@color/white" ="wrap_content" ="wrap_content" ="@string/status_redeemed_point" />
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/white" ="right" ="@id/text_point_amount" ="fill_parent" ="wrap_content" ="@string/text_amount_here" />
+                    </LinearLayout>
+                    <View ="@color/material_grey" ="fill_parent" ="1.0dip" ="@dimen/two_dp" ="@dimen/two_dp" />
+                </LinearLayout>
+                <LinearLayout ="vertical" ="@id/layout_status_due_amount" ="gone" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="wrap_content">
+                        <com.midtrans.sdk.uikit.widgets.BoldTextView ="@dimen/small_text_size" ="bold" ="@color/white" ="wrap_content" ="wrap_content" ="@string/status_due_amount" />
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/white" ="right" ="@id/text_status_due_amount" ="fill_parent" ="wrap_content" ="@string/text_due_amount_here" />
+                    </LinearLayout>
+                    <View ="@color/material_grey" ="fill_parent" ="1.0dip" ="@dimen/two_dp" ="@dimen/two_dp" />
+                </LinearLayout>
+                <LinearLayout ="vertical" ="@id/layout_status_due_installment" ="gone" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="center_vertical" ="horizontal" ="fill_parent" ="wrap_content">
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="bold" ="@color/white" ="wrap_content" ="wrap_content" ="@string/status_due_installment" />
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/white" ="right" ="@id/text_status_due_installment" ="fill_parent" ="wrap_content" ="@string/due_installment_here" />
+                    </LinearLayout>
+                    <View ="@color/material_grey" ="fill_parent" ="1.0dip" ="@dimen/two_dp" ="@dimen/two_dp" />
+                </LinearLayout>
+                <LinearLayout ="vertical" ="@id/layout_status_payment_type" ="fill_parent" ="wrap_content">
+                    <LinearLayout ="center_vertical" ="fill_parent" ="wrap_content">
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/small_text_size" ="bold" ="@color/white" ="wrap_content" ="wrap_content" ="@string/text_payment_type" />
+                        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="normal" ="@color/white" ="right" ="@id/text_payment_type" ="fill_parent" ="wrap_content" ="@string/text_payment_type_here" />
+                    </LinearLayout>
+                    <View ="@color/material_grey" ="fill_parent" ="1.0dip" ="@dimen/two_dp" ="@dimen/two_dp" />
+                </LinearLayout>
+                <com.midtrans.sdk.uikit.widgets.FancyButton ="center_horizontal" ="@id/button_status_see_instruction" ="gone" ="wrap_content" ="wrap_content" ="@dimen/twenty_dp" fb_borderColor="@color/white" fb_borderWidth="1.0dip" fb_defaultColor="@android:color/transparent" fb_focusColor="@color/colorAccentLight" fb_iconColor="?colorPrimary" fb_iconPaddingRight="@dimen/four_dp" fb_iconResource="@null" fb_radius="5.0dip" fb_text="@string/see_instruction" fb_textColor="@color/white" style="@style/ButtonSecondary" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout ="bottom|center" ="fill_parent" ="wrap_content">
+        <include ="@id/btn_pay_container" layout="@layout/layout_primary_button" />
+    </LinearLayout>
+</FrameLayout>

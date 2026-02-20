@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="@id/ucrop_photobox" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar ="@id/toolbar" ="@color/ucrop_color_toolbar" ="fill_parent" ="wrap_content" ="?actionBarSize">
+        <TextView ="@color/ucrop_color_toolbar_widget" ="start" ="@id/toolbar_title" ="wrap_content" ="wrap_content" ="@string/ucrop_label_edit_photo" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout ="@id/ucrop_frame" ="fill_parent" ="wrap_content" ="-12.0dip" ="@id/controls_wrapper" ="@id/toolbar">
+        <ImageView ="center" ="@id/image_view_logo" ="@dimen/ucrop_default_crop_logo_size" ="@dimen/ucrop_default_crop_logo_size" srcCompat="@drawable/ucrop_vector_ic_crop" />
+        <com.yalantis.ucrop.view.UCropView ="@id/ucrop" ="fill_parent" ="fill_parent" ="0.0" />
+    </FrameLayout>
+    <FrameLayout ="@id/controls_wrapper" ="gone" ="fill_parent" ="wrap_content" ="true" />
+</RelativeLayout>

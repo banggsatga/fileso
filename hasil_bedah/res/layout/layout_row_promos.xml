@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="horizontal" ="fill_parent" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="16.0sp" ="@color/promoAmount" ="@id/text_promo_amount" ="wrap_content" ="wrap_content" ="6.0dip" ="@string/amount" ="true" ="true" />
+    <androidx.appcompat.widget.AppCompatCheckBox ="14.0sp" ="@color/dark_gray_primer" ="@id/check_promo_name" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="@string/promo" ="@id/text_promo_amount" ="true" ="@dimen/four_dp" ="@id/text_promo_amount" />
+</RelativeLayout>

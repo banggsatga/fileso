@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@color/colorWhite" ="@dimen/dimen_16dp" ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/imgLogo" ="@dimen/dimen_202dp" ="@dimen/dimen_50dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" srcCompat="@drawable/ic_logo_jmo" />
+    <TextView ="@dimen/text_size_10sp" ="@id/tvInfo" ="@dimen/dimen_32dp" ="@string/label_splashscreen_message" ="center" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" style="@style/BpjstkuTextViewDmSans.SlateGrey" />
+</androidx.constraintlayout.widget.ConstraintLayout>

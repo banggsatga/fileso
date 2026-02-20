@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ="vertical" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout ="@drawable/bg_rounded_white" ="@dimen/dimen_20dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp">
+        <TextView ="@dimen/text_size_12sp" ="@id/tvInfo" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_1dp" ="@string/label_terms_condition_dialog_title_vision_plus" ="inter_word" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <androidx.appcompat.widget.AppCompatCheckBox ="@dimen/text_size_12sp" ="top" ="@id/cbAgreeTermCondition" ="@dimen/dimen_4dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_12dp" ="@string/label_agree_terms_condition_vision_plus" ="inter_word" buttonTint="@color/colorDarkMint" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvInfo" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+        <com.google.android.material.button.MaterialButton ="@id/btnNextVisionPlus" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_18dp" ="@string/action_ok_vision_plus" ="@dimen/dimen_14dp" layout_constraintEnd_toEndOf="@id/cbAgreeTermCondition" layout_constraintStart_toStartOf="@id/cbAgreeTermCondition" layout_constraintTop_toBottomOf="@id/cbAgreeTermCondition" style="@style/BpjstkuButton.WhiteText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

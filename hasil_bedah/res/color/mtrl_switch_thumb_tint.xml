@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="false" ="?colorOnSurface" ="@dimen/m3_comp_switch_disabled_unselected_handle_opacity" />
+    <item ="false" ="true" ="?colorSurface" ="@dimen/m3_comp_switch_disabled_selected_handle_opacity" />
+    <item ="true" ="true" ="?colorPrimaryContainer" />
+    <item ="true" ="?colorOnPrimary" />
+    <item ="true" ="?colorOnSurfaceVariant" />
+    <item ="?colorOutline" />
+</selector>

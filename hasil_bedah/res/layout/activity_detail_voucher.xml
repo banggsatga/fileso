@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="fill_parent" ="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include ="@id/layout_toolbar" ="fill_parent" ="wrap_content" ="true" ="true" ="true" layout="@layout/layout_toolbar_center" />
+    <ScrollView ="fill_parent" ="fill_parent" ="true" ="@id/layout_toolbar" ="true" ="never" ="true" ="true">
+        <androidx.constraintlayout.widget.ConstraintLayout ="fill_parent" ="wrap_content">
+            <TextView ="@dimen/text_size_18sp" ="@id/tvTitleVoucher" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="Gratis 1 Bulan Berlangganan Vision+ Premium" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+            <ImageView ="@id/imgVoucherBanner" ="@drawable/ic_placeholder_wide" ="@dimen/dimen_0dp" ="@dimen/dimen_0dp" ="@dimen/dimen_20dp" ="10.0dip" ="@dimen/dimen_20dp" ="centerCrop" ="@dimen/dimen_20dp" layout_constraintDimensionRatio="3:1" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvTitleVoucher" />
+            <TextView ="@dimen/text_size_12sp" ="@id/tvDescVoucher" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_10dp" ="@dimen/dimen_20dp" ="@string/info_vision_plus" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/imgVoucherBanner" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            <TextView ="@dimen/text_size_12sp" ="@id/tvReedemStep" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@string/step_reedem_voucher" ="@dimen/dimen_20dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvDescVoucher" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+            <LinearLayout ="vertical" ="fill_parent" ="wrap_content" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" ="@dimen/dimen_20dp" layout_constraintBottom_toBottomOf="parent" layout_constraintEnd_toEndOf="parent" layout_constraintHorizontal_bias="1.0" layout_constraintStart_toStartOf="parent" layout_constraintTop_toBottomOf="@id/tvReedemStep" layout_constraintVertical_bias="1.0">
+                <com.google.android.material.button.MaterialButton ="@dimen/text_size_14sp" ="@id/btnRedeem" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" ="visible" ="fill_parent" ="wrap_content" ="@dimen/dimen_30dp" ="@string/label_redeem_voucher" ="true" ="@font/poppins_semibold" ="@dimen/dimen_14dp" ="@dimen/dimen_14dp" style="@style/BpjstkuButton.WhiteText" />
+                <LinearLayout ="vertical" ="@id/llRedeemSection" ="gone" ="fill_parent" ="wrap_content">
+                    <TextView ="@dimen/text_size_18sp" ="center" ="fill_parent" ="wrap_content" ="@dimen/dimen_8dp" ="@string/label_redeem_code" style="@style/BpjstkuTextViewPoppins.CharcoalGrey.SemiBold" />
+                    <TextView ="@dimen/text_size_20sp" ="@color/colorPrimary" ="center" ="@id/tvRedeemCode" ="@drawable/bg_rounded_green_border" ="@dimen/dimen_9dp" ="@dimen/dimen_9dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_6dp" ="3DXYZQ" ="@dimen/dimen_9dp" style="@style/BpjstkuTextViewPoppins.DarkMint.SemiBold" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

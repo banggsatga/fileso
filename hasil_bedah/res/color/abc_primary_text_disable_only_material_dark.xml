@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="@color/bright_foreground_disabled_material_dark" />
+    <item ="@color/bright_foreground_material_dark" />
+</selector>

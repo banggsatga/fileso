@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="vertical" ="@color/colorAccentLight" ="fill_parent" ="fill_parent" ="true" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView ="@color/colorAccentLight" ="fill_parent" ="fill_parent" ="true">
+        <RelativeLayout ="@dimen/eight_dp" ="@dimen/eight_dp" ="@dimen/eight_dp" ="fill_parent" ="wrap_content">
+            <androidx.cardview.widget.CardView ="@id/billing_address_view" ="fill_parent" ="wrap_content" cardCornerRadius="4.0dip" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+                <RelativeLayout ="@android:color/white" ="@dimen/sixteen_dp" ="fill_parent" ="fill_parent">
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/big_text" ="@android:color/black" ="@id/text_billing" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="@string/billing_address" ="true" />
+                    <com.google.android.material.textfield.TextInputLayout ="@id/address_til" ="fill_parent" ="wrap_content" ="@id/text_billing">
+                        <androidx.appcompat.widget.AppCompatEditText ="@id/et_address" ="fill_parent" ="wrap_content" ="@string/hint_address" ="1" ="300" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout ="@id/city_til" ="fill_parent" ="wrap_content" ="@id/address_til">
+                        <androidx.appcompat.widget.AppCompatEditText ="@id/et_city" ="fill_parent" ="wrap_content" ="@string/hint_city" ="1" ="100" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout ="@id/zip_til" ="fill_parent" ="wrap_content" ="@id/city_til">
+                        <androidx.appcompat.widget.AppCompatEditText ="@id/et_zipcode" ="fill_parent" ="wrap_content" ="@string/hint_zip_code" ="1" ="5" ="@id/zip_til" ="true" ="number" ="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout ="@id/country_til" ="fill_parent" ="wrap_content" ="@id/zip_til">
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView ="@id/et_country" ="fill_parent" ="wrap_content" ="@string/hint_country" ="1" ="100" ="actionDone" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView ="fill_parent" ="wrap_content" ="8.0dip" ="@id/billing_address_view" cardCornerRadius="4.0dip" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+                <RelativeLayout ="@android:color/white" ="@dimen/sixteen_dp" ="fill_parent" ="fill_parent">
+                    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/big_text" ="@android:color/black" ="@id/text_shipping" ="wrap_content" ="wrap_content" ="@dimen/sixteen_dp" ="@string/shipping_address" ="true" />
+                    <androidx.appcompat.widget.SwitchCompat ="@id/cb_shipping_address" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="true" ="@string/shipping_cb_message" ="@id/text_shipping" />
+                    <RelativeLayout ="@id/shipping_address_container" ="@dimen/button_size" ="gone" ="fill_parent" ="wrap_content" ="@id/cb_shipping_address">
+                        <com.google.android.material.textfield.TextInputLayout ="@id/shipping_address_til" ="fill_parent" ="wrap_content">
+                            <androidx.appcompat.widget.AppCompatEditText ="@id/et_shipping_address" ="fill_parent" ="wrap_content" ="@string/hint_address" ="1" ="textPostalAddress" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout ="@id/shipping_city_til" ="fill_parent" ="wrap_content" ="@id/shipping_address_til">
+                            <androidx.appcompat.widget.AppCompatEditText ="@id/et_shipping_city" ="fill_parent" ="wrap_content" ="@string/hint_city" ="1" ="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout ="@id/shipping_zip_til" ="fill_parent" ="wrap_content" ="@id/shipping_city_til">
+                            <androidx.appcompat.widget.AppCompatEditText ="@id/et_shipping_zipcode" ="fill_parent" ="wrap_content" ="@string/hint_zip_code" ="1" ="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout ="@id/shipping_country_til" ="fill_parent" ="wrap_content" ="@id/shipping_zip_til">
+                            <androidx.appcompat.widget.AppCompatAutoCompleteTextView ="@id/et_shipping_country" ="fill_parent" ="wrap_content" ="@string/hint_country" ="1" ="text" ="actionDone" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.midtrans.sdk.uikit.widgets.FancyButton ="@color/white" ="@id/btn_next" ="@dimen/activity_horizontal_margin" ="fill_parent" ="@dimen/button_size" ="true" fb_defaultColor="@color/gray.primary" fb_focusColor="@color/colorAccentLight" fb_text="@string/next" fb_textGravity="center_vertical" fb_textSize="16.0sp" />
+    <LinearLayout ="end|bottom|center" ="fill_parent" ="@dimen/button_size" ="true">
+        <ImageView ="center_vertical" ="wrap_content" ="wrap_content" ="@dimen/eight_dp" ="@null" />
+    </LinearLayout>
+</RelativeLayout>

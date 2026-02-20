@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="wrap_content" ="locale" ="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout ="horizontal" ="@id/places_autocomplete_search_bar_container" ="?colorPrimary" ="fill_parent" ="wrap_content" ="?actionBarSize">
+        <include layout="@layout/places_autocomplete_impl_search_bar" />
+    </LinearLayout>
+    <View ="@drawable/places_autocomplete_toolbar_shadow" ="fill_parent" ="4.0dip" />
+    <View ="@id/places_autocomplete_search_bar_separator" ="0.0dip" ="0.0dip" />
+    <androidx.recyclerview.widget.RecyclerView ="@id/places_autocomplete_list" ="fill_parent" ="0.0dip" ="@android:color/white" ="1.0" ="@dimen/places_autocomplete_search_bar_margin" />
+    <include layout="@layout/places_autocomplete_impl_error" />
+    <include layout="@layout/places_autocomplete_impl_powered_by_google" />
+</LinearLayout>

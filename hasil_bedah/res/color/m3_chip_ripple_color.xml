@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="true" ="true" ="?colorOnSurfaceVariant" ="@dimen/m3_ripple_selectable_pressed_alpha" />
+    <item ="true" ="true" ="?colorOnSecondaryContainer" ="@dimen/m3_ripple_focused_alpha" />
+    <item ="true" ="?colorOnSecondaryContainer" ="@dimen/m3_ripple_hovered_alpha" ="true" />
+    <item ="true" ="?colorOnSecondaryContainer" ="@dimen/m3_ripple_default_alpha" />
+    <item ="true" ="true" ="?colorOnSecondaryContainer" ="@dimen/m3_ripple_selectable_pressed_alpha" />
+    <item ="false" ="true" ="?colorOnSurfaceVariant" ="@dimen/m3_ripple_pressed_alpha" />
+    <item ="true" ="?colorOnSurfaceVariant" ="@dimen/m3_ripple_focused_alpha" />
+    <item ="?colorOnSurfaceVariant" ="@dimen/m3_ripple_hovered_alpha" ="true" />
+    <item ="?colorOnSurfaceVariant" ="@dimen/m3_ripple_default_alpha" />
+</selector>

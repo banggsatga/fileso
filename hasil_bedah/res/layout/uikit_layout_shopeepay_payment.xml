@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ="vertical" ="fill_parent" ="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/primary_text_size" ="@color/dark_gray" ="@dimen/sixteen_dp" ="@dimen/sixteen_dp" ="fill_parent" ="wrap_content" ="@dimen/sixteen_dp" ="@string/uikit_shopeepay_instruction" />
+    <LinearLayout ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction1" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/uikit_shopeepay_instruction_step1" />
+    </LinearLayout>
+    <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction2" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/uikit_shopeepay_instruction_step2" />
+    </LinearLayout>
+    <LinearLayout ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction3" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/uikit_shopeepay_instruction_step3" />
+    </LinearLayout>
+    <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction4" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/uikit_shopeepay_instruction_step4" />
+    </LinearLayout>
+    <LinearLayout ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction5" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/uikit_shopeepay_instruction_step5" />
+    </LinearLayout>
+    <LinearLayout ="@color/light_gray" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="@dimen/sixteen_dp" ="@dimen/four_dp" ="fill_parent" ="wrap_content" ="2.0dip">
+        <TextView ="@dimen/twenty_four_dp" ="wrap_content" ="@string/number_instruction6" />
+        <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/secondary_text_size" ="@color/black" ="fill_parent" ="wrap_content" ="@string/uikit_shopeepay_instruction_step6" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout ="@id/main_appbar" ="fill_parent" ="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar ="@id/main_toolbar" ="@android:color/white" ="fill_parent" ="?actionBarSize" contentInsetLeft="0.0dip" contentInsetStart="0.0dip" contentInsetStartWithNavigation="0.0dip" style="@style/ThemeOverlay.AppCompat.ActionBar">
+        <LinearLayout ="center_vertical" ="vertical" ="fill_parent" ="fill_parent" ="@dimen/eight_dp" ="@dimen/eight_dp">
+            <com.midtrans.sdk.uikit.widgets.DefaultTextView ="@dimen/tool_bar_merchant_name_size" ="center_vertical" ="@id/text_page_merchant_name" ="gone" ="fill_parent" ="wrap_content" ="@dimen/five_dp" ="@dimen/five_dp" />
+            <ImageView ="@id/merchant_logo" ="gone" ="wrap_content" ="@dimen/logo_height" ="fitStart" ="true" />
+            <com.midtrans.sdk.uikit.widgets.SemiBoldTextView ="@dimen/tool_bar_title_size" ="@color/dark_gray" ="end" ="@id/text_page_title" ="fill_parent" ="wrap_content" ="true" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>

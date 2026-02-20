@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item ="false" ="?colorOutline" ="@dimen/m3_comp_outlined_card_disabled_outline_opacity" />
+    <item ="true" ="?colorSecondary" />
+    <item ="?colorOutlineVariant" ="true" />
+    <item ="true" ="?colorOnSurface" />
+    <item ="true" ="?colorOutlineVariant" />
+    <item ="?colorOutlineVariant" state_dragged="true" />
+    <item ="?colorOutlineVariant" />
+</selector>

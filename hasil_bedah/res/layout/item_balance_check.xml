@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout ="@dimen/dimen_16dp" ="@dimen/dimen_16dp" ="fill_parent" ="wrap_content" ="@dimen/dimen_16dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView ="@dimen/text_size_12sp" ="@id/tvBalanceInformationTitle" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_10dp" layout_constraintEnd_toEndOf="parent" layout_constraintStart_toStartOf="parent" layout_constraintTop_toTopOf="parent" style="@style/BpjstkuTextViewDmSans.CoolGrey" />
+    <TextView ="@dimen/text_size_16sp" ="@id/tvBalanceInformationValue" ="@dimen/dimen_0dp" ="wrap_content" ="@dimen/dimen_6dp" ="@string/sample_balance_value" layout_constraintEnd_toEndOf="@id/tvBalanceInformationTitle" layout_constraintStart_toStartOf="@id/tvBalanceInformationTitle" layout_constraintTop_toBottomOf="@id/tvBalanceInformationTitle" style="@style/BpjstkuTextViewDmSans.CharcoalGrey" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ="center_vertical" ="wrap_content" ="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView ="@id/spring_dot" ="@drawable/spring_dot_background" ="8.0dip" ="8.0dip" ="true" />
+</RelativeLayout>
